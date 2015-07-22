@@ -1,0 +1,17 @@
+# c_raganovo
+
+# County Title
+title = c_raganovo
+
+# Settlements
+max_settlements = 3
+
+b_raganovo = castle
+b_masovitse = temple
+#b_raganovo_2 = temple
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

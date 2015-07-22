@@ -1,0 +1,19 @@
+# c_kosos
+
+# County Title
+title = c_kosos
+
+# Settlements
+max_settlements = 5
+
+b_kosos = castle
+b_destri = temple
+b_parinea = city
+b_samon = temple
+#b_kosos_2 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

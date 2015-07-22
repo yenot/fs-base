@@ -1,0 +1,21 @@
+# c_viscisi
+
+# County Title
+title = c_viscisi
+
+# Settlements
+max_settlements = 7
+
+b_viscisi = castle
+b_polavica = temple
+b_ilucia = city
+b_orpanicare = city
+b_tiberica = temple
+b_stuore = city
+#b_viscisi_2 = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

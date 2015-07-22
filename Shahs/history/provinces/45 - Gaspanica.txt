@@ -1,0 +1,20 @@
+# c_gaspanica
+
+# County Title
+title = c_gaspanica
+
+# Settlements
+max_settlements = 6
+
+b_gaspanica = castle
+b_sartica = temple
+#b_gaspanica_2 = temple
+#b_gaspanica_3 = castle
+#b_gaspanica_4 = city
+#b_gaspanica_5 = temple
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

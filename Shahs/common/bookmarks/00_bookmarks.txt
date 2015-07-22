@@ -1,0 +1,8 @@
+bookmark =
+{
+	name = "BM_SOMEDAY"
+	desc = "BM_SOMEDAY_DESC"
+	date = 1066.1.1
+	
+	character = 1000007  # Principe Cosma Camari of Lycinia
+}

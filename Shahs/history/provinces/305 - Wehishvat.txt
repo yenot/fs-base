@@ -1,0 +1,16 @@
+# c_wehishvat
+
+# County Title
+title = c_wehishvat
+
+# Settlements
+max_settlements = 2
+
+b_wehishvat = castle
+#b_wehishvat_2 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

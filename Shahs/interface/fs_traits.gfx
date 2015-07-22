@@ -1,0 +1,87 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_heirs_party"
+		texturefile = "gfx/traits/heirs_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_first_generation_party"
+		texturefile = "gfx/traits/first_generation_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_meritocratic_party"
+		texturefile = "gfx/traits/meritocratic_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_hereditary_party"
+		texturefile = "gfx/traits/hereditary_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+		spriteType = {
+		name = "GFX_trait_militaristic_party"
+		texturefile = "gfx/traits/militaristic_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_plutocratic_party"
+		texturefile = "gfx/traits/plutocratic_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_centralized_army_party"
+		texturefile = "gfx/traits/centralized_army_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_local_army_party"
+		texturefile = "gfx/traits/local_army_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+			spriteType = {
+		name = "GFX_trait_budget_control_party"
+		texturefile = "gfx/traits/budget_control_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_spending_party"
+		texturefile = "gfx/traits/spending_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_deregulation_party"
+		texturefile = "gfx/traits/deregulation_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_monopolization_party"
+		texturefile = "gfx/traits/monopolization_party.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+}

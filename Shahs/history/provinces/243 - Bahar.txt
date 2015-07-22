@@ -1,0 +1,18 @@
+# c_bahar
+
+# County Title
+title = c_bahar
+
+# Settlements
+max_settlements = 4
+
+b_bahar = castle
+b_zahray = temple
+#b_bahar_2 = temple
+#b_bahar_3 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

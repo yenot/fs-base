@@ -1,0 +1,20 @@
+# c_sandua
+
+# County Title
+title = c_sandua
+
+# Settlements
+max_settlements = 6
+
+b_sandua = castle
+b_basilica = temple
+b_questerrona = castle
+b_actarica = temple
+b_trossi = city
+#b_sandua_2 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

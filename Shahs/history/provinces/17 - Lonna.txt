@@ -1,0 +1,19 @@
+# c_lonna
+
+# County Title
+title = c_lonna
+
+# Settlements
+max_settlements = 5
+
+b_lonna = castle
+b_antonica = temple
+b_talpua = city
+b_polete = castle
+#b_lonna_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

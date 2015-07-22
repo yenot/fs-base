@@ -1,0 +1,279 @@
+e_rebels = {
+	rebel = yes
+	landless = yes
+	primary = yes
+
+	culture = auletian
+	tribe = yes
+
+	color={ 0 0 0 }
+	color2={ 0 0 0 }
+}
+
+e_pirates = {
+	pirate = yes
+	landless = yes
+	primary = yes
+
+	culture = auletian
+	tribe = yes
+
+	color={ 0 0 0 }
+	color2={ 0 0 0 }
+}
+
+
+###########################
+#Colors
+###########################
+
+d_dender = {
+	color={ 136 216 200 }
+	capital = 139 # c_dender
+}
+
+d_hestia = {
+	color={ 136 216 200 }
+}
+
+d_hymarrhion = {
+	color={ 119 185 172 }
+}
+
+d_kferida = {
+	color={ 218 192 89 }
+}
+
+d_monnea = {
+	color={ 220 235 162 }
+}
+
+d_polekidia = {
+	color={ 149 202 215 }
+}
+
+d_psilokarrhion = {
+	color={ 13 104 86 }
+}
+
+d_stakameton = {
+	color={ 211 218 22 }
+}
+
+#Melida
+
+d_garupol = {
+	color={ 112 183 238 }
+}
+
+d_byala_tserkva = {
+	color={ 122 141 116 }
+}
+
+d_damianograd = {
+	color={ 202 177 76 }
+}
+
+d_granopol = {
+	color={ 47 65 36 }
+}
+
+d_molivograd = {
+	color={ 198 140 223 }
+}
+
+d_temren = {
+	color={ 146 63 71 }
+}
+
+d_trasuna = {
+	color={ 192 147 212 }
+}
+
+d_turna = {
+	color={ 46 61 119 }
+}
+
+#Phlemensia
+
+d_telemir = {
+		color={ 188 188 149 }
+}
+
+d_barkos = {
+		color={ 133 141 59 }
+}
+
+
+d_visgard = {
+		color={ 76 188 205 }
+}
+
+d_bras = {
+		color={ 205 76 145 }
+}
+
+d_imrek = {
+		color={ 63 61 91 }
+}
+
+d_nessinea = {
+		color={ 237 242 164 }
+}
+
+#d_dender = {
+#		color={  }
+#}
+
+#Psilensia
+
+d_elikaria = {
+		color={ 108 72 48 }
+}
+
+d_lagida = {
+		color={ 34 165 205 }
+}
+
+d_lousania = {
+		color={ 42 81 27 }
+}
+
+d_moriman = {
+		color={ 232 217 118 }
+}
+
+d_numarnia = {
+		color={ 135 92 113 }
+}
+
+d_pardica = {
+		color={ 80 138 130 }
+}
+
+#############################
+
+#Wuzurg Estashahr
+
+e_wuzurg_estashahr = {
+	color={ 243 241 235 }
+}
+
+#Asbaryar
+
+k_asbaryar = {
+		color={ 162 154 113 }
+}
+
+d_danushparwanag = {
+		color={ 142 122 220 }
+}
+
+d_dashtawaran = {
+		color={ 54 176 95 }
+}
+
+d_farrummeddeh = {
+		color={ 211 222 137 }
+}
+
+d_kulangdeh = {
+		color={ 12 134 117 }
+}
+
+d_kurkan = {
+		color={ 226 158 222 }
+}
+
+##############################
+
+#Pargodeos
+
+
+
+#Kolonea
+
+k_kolonea = {
+		color={ 188 123 66 }
+}
+
+d_urantia = {
+		color={ 39 88 112 }
+}
+
+d_akaridon = {
+		color={ 27 164 32 }
+}
+
+d_alkesia = {
+		color={ 98 161 223 }
+}
+
+d_baria = {
+		color={ 223 98 215 }
+}
+
+d_kolonea = {
+		color={ 145 81 104 }
+}
+
+d_taria = {
+		color={ 189 206 155 }
+}
+
+###########################
+#Capitals
+###########################
+
+e_wuzurg_estashahr = {
+	
+	capital = 260 #Dahikofan
+	
+}
+
+k_xedvar = {
+	
+	capital = 260 #Dahikofan
+	
+}
+
+k_kayastan = {
+	
+	capital = 298 #Dahikofan
+	
+}
+
+
+###########################
+#Merchant Republics
+###########################
+
+b_mesemberitos = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_samatis = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_kelepontos = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_barkos = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_eumarikos = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_aikaris = {
+	culture = kraitan
+	religion = celestinian
+}

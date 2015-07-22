@@ -1,0 +1,19 @@
+# c_eklesam
+
+# County Title
+title = c_eklesam
+
+# Settlements
+max_settlements = 5
+
+b_norkasand = castle
+b_peri = city
+b_kataserin = castle
+#b_eklesam = castle
+#b_eklesam_2 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,19 @@
+# c_farrozaveshkar
+
+# County Title
+title = c_farrozaveshkar
+
+# Settlements
+max_settlements = 5
+
+b_farrozaveshkar = castle
+b_perozkird = city
+#b_farrozaveshkar_2 = temple
+#b_farrozaveshkar_3 = castle
+#b_farrozaveshkar_4 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

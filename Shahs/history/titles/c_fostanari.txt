@@ -1,0 +1,10 @@
+# c_fostanari @Auletia|Lycinia|Liletto
+500.1.1={
+	law = agnatic_succession
+	law = succ_appointment
+}
+800.1.1={
+	liege=d_liletto
+}
+
+1066.1.1={ holder=1000048 }

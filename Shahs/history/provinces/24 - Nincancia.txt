@@ -1,0 +1,19 @@
+# c_nincancia
+
+# County Title
+title = c_nincancia
+
+# Settlements
+max_settlements = 5
+
+b_nincancia = castle
+b_lederi = castle
+b_beanica = temple
+#b_nincancia_2 = castle
+#b_nincancia_3 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

@@ -1,0 +1,19 @@
+# c_karaenea
+
+# County Title
+title = c_karaenea
+
+# Settlements
+max_settlements = 5
+
+b_karaenea = castle
+b_osterinos = castle
+b_entopolis = city
+#b_karaenea_2 = castle
+#b_karaenea_3 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

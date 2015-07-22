@@ -1,0 +1,19 @@
+# c_polikyrron
+
+# County Title
+title = c_polikyrron
+
+# Settlements
+max_settlements = 5
+
+b_upaliki = castle
+b_hagios_ioannos = temple
+b_enisos = city
+b_kepsida = city
+#b_polikyrron = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

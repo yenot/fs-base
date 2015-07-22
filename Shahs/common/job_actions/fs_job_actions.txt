@@ -1,0 +1,22 @@
+##########################################
+# COUNCILLOR ACTIONS
+##########################################
+# attribute = [diplomacy/stewardship/intrigue/martial/learning] - Character attribute is multiplied with the modifiers
+# trigger = Province scope trigger to determine if the action is meaningful in a province (the player character is FROM)
+# Events that can trigger off this action. This info is only used by the GUI.
+# All modifiers (like 'local_build_time_modifier') are multiplied by the attribute
+
+#First Minister
+
+action_concentrate_on_economic_affairs = {
+	attribute = diplomacy
+	
+	trigger = {
+		any_province_lord = {
+			character = FROM
+		}
+		is_capital = yes
+	}
+	
+	events = { 1000000230 }
+}

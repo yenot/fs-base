@@ -1,0 +1,18 @@
+# c_mersea
+
+# County Title
+title = c_mersea
+
+# Settlements
+max_settlements = 4
+
+b_mersea = castle
+b_astasica = city
+#b_mersea_2 = temple
+#b_mersea_3 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

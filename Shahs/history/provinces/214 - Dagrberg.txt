@@ -1,0 +1,19 @@
+# c_dagrberg
+
+# County Title
+title = c_dagrberg
+
+# Settlements
+max_settlements = 5
+
+b_oshilfthorpe = castle
+b_slabenkirk = temple
+b_ufalhelm = city
+b_kreshemnirheim = temple
+#b_dagrberg = city
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

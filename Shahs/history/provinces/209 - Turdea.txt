@@ -1,0 +1,17 @@
+# c_turdea
+
+# County Title
+title = c_turdea
+
+# Settlements
+max_settlements = 3
+
+b_agarica = castle
+b_ispica = temple
+#b_turdea = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,20 @@
+# c_ortia
+
+# County Title
+title = c_ortia
+
+# Settlements
+max_settlements = 6
+
+b_ortia = castle
+b_sandarica = temple
+#b_ortia_2 = temple
+#b_ortia_3 = castle
+#b_ortia_4 = city
+#b_ortia_5 = temple
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

@@ -1,0 +1,211 @@
+#Army modifiers: levy size, commanding abilities
+
+no_levies = {
+	icon = 31
+	levy_size = -1000
+}
+
+lots_of_levies = {
+	icon = 13
+	castle_levy_size = 100
+}
+
+location_of_an_army_1 = {
+	icon = 13
+	castle_levy_size = 1
+}
+
+location_of_an_army_2 = {
+	icon = 13
+	castle_levy_size = 2
+}
+
+location_of_an_army_3 = {
+	icon = 13
+	castle_levy_size = 3
+}
+
+location_of_an_army_4 = {
+	icon = 13
+	castle_levy_size = 4
+}
+
+location_of_an_army_5 = {
+	icon = 13
+	castle_levy_size = 5
+}
+
+location_of_an_army_6 = {
+	icon = 13
+	castle_levy_size = 6
+}
+
+location_of_an_army_7 = {
+	icon = 13
+	castle_levy_size = 7
+}
+
+location_of_an_army_8 = {
+	icon = 13
+	castle_levy_size = 8
+}
+
+location_of_an_army_9 = {
+	icon = 13
+	castle_levy_size = 9
+}
+
+location_of_an_army_10 = {
+	icon = 13
+	castle_levy_size = 10
+}
+
+location_of_an_army_11 = {
+	icon = 13
+	castle_levy_size = 11
+}
+
+location_of_an_army_12 = {
+	icon = 13
+	castle_levy_size = 12
+}
+
+location_of_an_army_13 = {
+	icon = 13
+	castle_levy_size = 13
+}
+
+location_of_an_army_14 = {
+	icon = 13
+	castle_levy_size = 14
+}
+
+location_of_an_army_15 = {
+	icon = 13
+	castle_levy_size = 15
+}
+
+location_of_an_army_16 = {
+	icon = 13
+	castle_levy_size = 16
+}
+
+location_of_an_army_17 = {
+	icon = 13
+	castle_levy_size = 17
+}
+
+location_of_an_army_18 = {
+	icon = 13
+	castle_levy_size = 18
+}
+
+location_of_an_army_19 = {
+	icon = 13
+	castle_levy_size = 19
+}
+
+location_of_an_army_20 = {
+	icon = 13
+	castle_levy_size = 20
+}
+
+location_of_an_army_21 = {
+	icon = 13
+	castle_levy_size = 21
+}
+
+location_of_an_army_22 = {
+	icon = 13
+	castle_levy_size = 22
+}
+
+location_of_an_army_23 = {
+	icon = 13
+	castle_levy_size = 23
+}
+
+location_of_an_army_24 = {
+	icon = 13
+	castle_levy_size = 24
+}
+
+location_of_an_army_25 = {
+	icon = 13
+	castle_levy_size = 25
+}
+
+location_of_an_army_26 = {
+	icon = 13
+	castle_levy_size = 26
+}
+
+location_of_an_army_27 = {
+	icon = 13
+	castle_levy_size = 27
+}
+
+location_of_an_army_28 = {
+	icon = 13
+	castle_levy_size = 28
+}
+
+location_of_an_army_29 = {
+	icon = 13
+	castle_levy_size = 29
+}
+
+location_of_an_army_30 = {
+	icon = 13
+	castle_levy_size = 30
+}
+
+location_of_an_army_31 = {
+	icon = 13
+	castle_levy_size = 31
+}
+
+location_of_an_army_32 = {
+	icon = 13
+	castle_levy_size = 32
+}
+
+location_of_an_army_33 = {
+	icon = 13
+	castle_levy_size = 33
+}
+
+location_of_an_army_34 = {
+	icon = 13
+	castle_levy_size = 34
+}
+
+location_of_an_army_35 = {
+	icon = 13
+	castle_levy_size = 35
+}
+
+location_of_an_army_36 = {
+	icon = 13
+	castle_levy_size = 36
+}
+
+location_of_an_army_37 = {
+	icon = 13
+	castle_levy_size = 37
+}
+
+location_of_an_army_38 = {
+	icon = 13
+	castle_levy_size = 38
+}
+
+location_of_an_army_39 = {
+	icon = 13
+	castle_levy_size = 39
+}
+
+location_of_an_army_40 = {
+	icon = 13
+	castle_levy_size = 40
+}

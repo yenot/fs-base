@@ -1,0 +1,19 @@
+# c_tisaro
+
+# County Title
+title = c_tisaro
+
+# Settlements
+max_settlements = 5
+
+b_tisaro = castle
+b_suvastia = temple
+b_gripperida = city
+b_trunarica = temple
+#b_tisaro_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

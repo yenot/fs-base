@@ -1,0 +1,139 @@
+1000000 = {
+    name = "Camari"
+    culture = auletian
+}
+
+1000001 = {
+    name = "Calatti"
+    culture = auletian
+}
+
+1000002 = {
+    name = "Ferano"
+    culture = auletian
+}
+
+1000003 = {
+    name = "Rugia"
+    culture = auletian
+}
+
+1000004 = {
+    name = "Genveri"
+    culture = auletian
+}
+
+1000005 = {
+    name = "Vazzi"
+    culture = auletian
+}
+
+1000006 = {
+    name = "di Ufari"
+    culture = auletian
+}
+
+1000007 = {
+    name = "di Satti"
+    culture = auletian
+}
+
+1000008 = {
+    name = "Varcetti"
+    culture = auletian
+}
+
+1000009 = {
+    name = "Umpano"
+    culture = auletian
+}
+
+1000010 = {
+    name = "Scholari"
+    culture = auletian
+}
+
+1000011 = {
+    name = "Nonilaso"
+    culture = auletian
+}
+
+1000012 = {
+    name = "Torronero"
+    culture = auletian
+}
+
+1000013 = {
+    name = "Benucesare"
+    culture = auletian
+}
+
+1000014 = {
+    name = "Apazzi"
+    culture = auletian
+}
+
+1000015 = {
+    name = "Tirono"
+    culture = auletian
+}
+
+1000016 = {
+    name = "Viatercerra"
+    culture = auletian
+}
+
+1000017 = {
+    name = "Leciso"
+    culture = auletian
+}
+
+1000018 = {
+    name = "Semano"
+    culture = auletian
+}
+
+1000328 = {
+    name = "Veglione"
+    culture = auletian
+}
+
+1000332 = {
+    name = "Dirosi"
+    culture = auletian
+}
+
+1000334 = {
+    name = "Beliotti"
+    culture = auletian
+}
+
+1000337 = {
+    name = "Della Camassa"
+    culture = auletian
+}
+
+1000338 = {
+    name = "Ganzani"
+    culture = auletian
+}
+
+1000331 = {
+    name = "Ravidetti"
+    culture = auletian
+}
+
+1000327 = {
+    name = "De Mari"
+    culture = auletian
+}
+
+1000300 = {
+    name = "De Pirono"
+    culture = auletian
+}
+
+1000325 = {
+    name = "Cansato"
+    culture = auletian
+}

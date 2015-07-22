@@ -1,0 +1,73 @@
+#########################################
+##Court factions and there activities####
+#########################################
+
+namespace = fsfact
+
+#Imperial factions
+
+#Initialization - apparently it is not needed
+
+ character_event = {
+	 id = fsfact.0
+	 hide_window = yes
+	 is_triggered_only = yes
+	
+	 trigger = {
+		 primary_title = { has_law = vice_royalty_2 }
+	 }
+	
+	 immediate = {
+		 set_character_flag = influence_should_be_in_place
+		 set_variable = { which = militarist_influence value = 1 }
+		 set_variable = { which = plutocrat_influence value = 1 }
+		 set_variable = { which = army_centralization_influence value = 1 }
+		 set_variable = { which = army_decentralization_influence value = 1 }
+		 set_variable = { which = spender_influence value = 1 }
+		 set_variable = { which = low_spender_influence value = 1 } 
+		 set_variable = { which = deregulator_influence value = 1 }
+		 set_variable = { which = monopolist_influence value = 1 } 
+	 }
+ }
+
+#Transfer to new ruler
+
+character_event = {
+	id = fsfact.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+			has_law = vice_royalty_2
+			is_primary_holder_title = yes
+		}
+	}
+	
+	immediate = {
+		ROOT = {
+			current_heir = {
+				set_variable = { which = militarist_influence which = ROOT }
+				set_variable = { which = plutocrat_influence which = ROOT }
+				set_variable = { which = army_centralization_influence which = ROOT }
+				set_variable = { which = army_decentralization_influence which = ROOT }
+				set_variable = { which = spender_influence which = ROOT }
+				set_variable = { which = low_spender_influence which = ROOT } 
+				set_variable = { which = deregulator_influence which = ROOT }
+				set_variable = { which = monopolist_influence which = ROOT }
+				set_variable = { which = wealth value = 10000 }
+				set_variable = { which = gold value = 10000 }
+			}
+		}
+#		ROOT = {
+#			set_variable = { which = militarist_influence which = militarist_influence_new }
+#			set_variable = { which = plutocrat_influence which = plutocrat_influence_new }
+#			set_variable = { which = army_centralization_influence which = army_centralization_influence_new }
+#			set_variable = { which = army_decentralization_influence which = army_decentralization_influence_new }
+#			set_variable = { which = spender_influence which = spender_influence_new }
+#			set_variable = { which = low_spender_influence which = low_spender_influence_new } 
+#			set_variable = { which = deregulator_influence which = deregulator_influence_new }
+#			set_variable = { which = monopolist_influence which = monopolist_influence_new }
+#		}
+	}
+}

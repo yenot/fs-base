@@ -1,0 +1,21 @@
+# c_karas
+
+# County Title
+title = c_karas
+
+# Settlements
+max_settlements = 7
+
+b_karas = castle
+b_hagios_fabianos = temple
+b_hagios_leonidos = temple
+#b_karas_2 = castle
+#b_karas_3 = city
+#b_karas_4 = temple
+#b_karas_5 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

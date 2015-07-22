@@ -1,0 +1,21 @@
+# c_pravia
+
+# County Title
+title = c_pravia
+
+# Settlements
+max_settlements = 7
+
+b_pravia = castle
+b_evanderica = temple
+#b_pravia_2 = temple
+#b_pravia_3 = castle
+#b_pravia_4 = city
+#b_pravia_5 = temple
+#b_pravia_6 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

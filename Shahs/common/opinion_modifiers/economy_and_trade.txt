@@ -1,0 +1,7 @@
+#Trade roots workaround and other economic stuff
+
+is_trade_partner = {
+	opinion = 5
+	months = 2400
+	inherit = yes
+}	

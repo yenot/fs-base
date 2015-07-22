@@ -1,0 +1,21 @@
+# c_markay
+
+# County Title
+title = c_markay
+
+# Settlements
+max_settlements = 7
+
+b_farazmehmanshadkird = castle
+b_faranjaxan = temple
+b_kamsan = city
+b_revazahar = castle
+#b_markay = city
+#b_markay_2 = temple
+#b_markay_3 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

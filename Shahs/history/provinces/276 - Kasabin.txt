@@ -1,0 +1,17 @@
+# c_kasabin
+
+# County Title
+title = c_kasabin
+
+# Settlements
+max_settlements = 3
+
+b_kasabin = castle
+b_werxod = temple
+b_kohmankasr = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

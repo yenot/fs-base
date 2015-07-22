@@ -1,0 +1,18 @@
+# c_nessinea
+
+# County Title
+title = c_nessinea
+
+# Settlements
+max_settlements = 4
+
+b_talnik = castle
+b_namyatovo = city
+#b_nessinea = temple
+#b_nessinea_2 = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

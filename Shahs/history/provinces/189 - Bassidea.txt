@@ -1,0 +1,20 @@
+# c_bassidea
+
+# County Title
+title = c_bassidea
+
+# Settlements
+max_settlements = 6
+
+b_bassidea = castle
+b_anharrion = temple
+b_hymekarreon = city
+b_sameniki = city
+#b_bassidea_2 = city
+#b_bassidea_3 = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

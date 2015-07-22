@@ -1,0 +1,18 @@
+# c_centida
+
+# County Title
+title = c_centida
+
+# Settlements
+max_settlements = 4
+
+b_patar = castle
+b_vedemica = temple
+b_levenida = city
+#b_centida = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

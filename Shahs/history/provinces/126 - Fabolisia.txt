@@ -1,0 +1,19 @@
+# c_fabolisia
+
+# County Title
+title = c_fabolisia
+
+# Settlements
+max_settlements = 5
+
+b_basinon = castle
+b_strusion = city
+b_gorsis = city
+b_hagios_ignatos = temple
+#b_fabolisia = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

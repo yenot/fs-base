@@ -1,0 +1,21 @@
+# c_hestia
+
+# County Title
+title = c_hestia
+
+# Settlements
+max_settlements = 7
+
+b_hestia = castle
+b_bistachos = temple
+b_hagios_pericles = temple
+b_anorica = city
+b_eletani = castle
+b_phynasia = temple
+b_kopeson = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

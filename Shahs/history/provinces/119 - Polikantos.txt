@@ -1,0 +1,19 @@
+# c_polikantos
+
+# County Title
+title = c_polikantos
+
+# Settlements
+max_settlements = 5
+
+b_polikantos = castle
+b_trasion = city
+b_mefedos = castle
+#b_polikantos_2 = castle
+#b_polikantos_3 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

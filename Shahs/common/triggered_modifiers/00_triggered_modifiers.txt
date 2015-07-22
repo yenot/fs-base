@@ -1,0 +1,51 @@
+#Triggered modifiers
+
+classical_education = {
+
+	potential = {
+		is_ruler = yes
+	}
+		
+	trigger = {
+		age = 16
+		is_independent = no
+		primary_title = {
+			is_vice_royalty = yes
+		}
+		governance_expected_from_stewardship = 0
+	}
+		
+	icon = 2
+	
+	stewardship = 4
+	diplomacy = 4
+	learning = 4
+	
+	martial = -12
+		
+}
+
+nonclassical_education = {
+
+	potential = {
+		is_ruler = yes
+	}
+		
+	trigger = {
+		age = 16
+		is_independent = no
+		primary_title = {
+			is_vice_royalty = yes
+		}
+		NOT = { governance_expected = -2 }
+	}
+		
+	icon = 20
+	
+	stewardship = -4
+	diplomacy = -4
+	learning = -4
+	
+	martial = 12
+		
+}

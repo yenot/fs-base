@@ -1,0 +1,18 @@
+# c_ocine
+
+# County Title
+title = c_ocine
+
+# Settlements
+max_settlements = 4
+
+b_ocine = castle
+b_amicica = temple
+#b_ocine_2 = temple
+#b_ocine_3 = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

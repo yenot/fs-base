@@ -1,0 +1,18 @@
+# c_lagida
+
+# County Title
+title = c_lagida
+
+# Settlements
+max_settlements = 4
+
+b_teri = castle
+b_goski_2 = castle
+b_evaropagos = castle
+#b_lagida = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

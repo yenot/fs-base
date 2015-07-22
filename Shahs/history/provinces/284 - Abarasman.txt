@@ -1,0 +1,21 @@
+# c_abarasman
+
+# County Title
+title = c_abarasman
+
+# Settlements
+max_settlements = 7
+
+b_gogriman = castle
+b_hortashpahr = temple
+b_samay = city
+b_ringard = castle
+#b_abarasman = city
+#b_abarasman_2 = temple
+#b_abarasman_3 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

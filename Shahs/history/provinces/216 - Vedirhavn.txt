@@ -1,0 +1,16 @@
+# c_vedirhavn
+
+# County Title
+title = c_vedirhavn
+
+# Settlements
+max_settlements = 2
+
+b_anstorp = castle
+b_fastenkyrr = temple
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

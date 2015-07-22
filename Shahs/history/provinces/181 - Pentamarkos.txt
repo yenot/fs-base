@@ -1,0 +1,18 @@
+# c_pentamarkos
+
+# County Title
+title = c_pentamarkos
+
+# Settlements
+max_settlements = 4
+
+b_pentamarkos = castle
+b_pulmia = temple
+b_fession = castle
+#b_pentamarkos_2 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

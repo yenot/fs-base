@@ -1,0 +1,21 @@
+# c_bissini
+
+# County Title
+title = c_bissini
+
+# Settlements
+max_settlements = 7
+
+b_bissini = castle
+b_tobuida = city
+b_adriana = temple
+b_spauvino = castle
+b_stabrinaro = castle
+b_parvia = city
+#b_bissini_2 = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

@@ -1,0 +1,21 @@
+# c_torhida
+
+# County Title
+title = c_torhida
+
+# Settlements
+max_settlements = 7
+
+b_arkimon = castle
+b_hagios_anacletos = temple
+b_askiropolis = castle
+b_kuladia = city
+b_hagios_iulianus = temple
+#b_torhida = temple
+#b_torhida_2 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

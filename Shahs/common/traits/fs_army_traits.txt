@@ -1,0 +1,5 @@
+leading_army = {
+	pilgrimage = yes
+	random = no
+	vassal_opinion = 5
+}

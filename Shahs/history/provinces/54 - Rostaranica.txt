@@ -1,0 +1,21 @@
+# c_rostaranica
+
+# County Title
+title = c_rostaranica
+
+# Settlements
+max_settlements = 7
+
+b_rostaranica = castle
+b_anacletica = temple
+b_coprit = castle
+#b_rostaranica_2 = castle
+#b_rostaranica_3 = city
+#b_rostaranica_4 = temple
+#b_rostaranica_5 = castle
+
+# Misc
+culture = hamult
+religion = celestinian
+
+#History

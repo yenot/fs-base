@@ -1,0 +1,17 @@
+# c_numarnia
+
+# County Title
+title = c_numarnia
+
+# Settlements
+max_settlements = 3
+
+b_tropouli = castle
+b_karkatelson_2 = temple
+b_skabis = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

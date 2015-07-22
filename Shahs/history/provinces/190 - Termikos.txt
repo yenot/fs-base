@@ -1,0 +1,17 @@
+# c_termikos
+
+# County Title
+title = c_termikos
+
+# Settlements
+max_settlements = 3
+
+b_termikos = castle
+b_kessinia = temple
+#b_termikos_2 = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

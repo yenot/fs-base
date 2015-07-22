@@ -1,0 +1,16 @@
+# c_urantia
+
+# County Title
+title = c_urantia
+
+# Settlements
+max_settlements = 2
+
+b_scavrion = castle
+b_sare = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,16 @@
+# c_kurkav
+
+# County Title
+title = c_kurkav
+
+# Settlements
+max_settlements = 2
+
+b_kurkav = castle
+b_palawadenwiran = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

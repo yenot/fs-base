@@ -1,0 +1,19 @@
+# c_remero
+
+# County Title
+title = c_remero
+
+# Settlements
+max_settlements = 5
+
+b_remero = castle
+b_deserica = temple
+b_cemerito = city
+b_dioflavori = castle
+#b_remero_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

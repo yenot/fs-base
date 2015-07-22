@@ -1,0 +1,17 @@
+# c_kanrax
+
+# County Title
+title = c_kanrax
+
+# Settlements
+max_settlements = 3
+
+b_kanrax = castle
+b_badros = city
+b_emedharwar = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

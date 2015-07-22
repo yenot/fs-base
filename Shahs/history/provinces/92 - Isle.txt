@@ -1,0 +1,18 @@
+# c_isle
+
+# County Title
+title = c_isle
+
+# Settlements
+max_settlements = 4
+
+b_isle = castle
+#b_isle_2 = city
+#b_isle_3 = temple
+#b_isle_4 = castle
+
+# Misc
+culture = hamult
+religion = celestinian
+
+#History

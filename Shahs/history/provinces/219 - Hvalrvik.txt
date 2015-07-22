@@ -1,0 +1,19 @@
+# c_hvalrvik
+
+# County Title
+title = c_hvalrvik
+
+# Settlements
+max_settlements = 5
+
+b_miselbru = castle
+b_todelrud = castle
+b_tonskaheim = city
+b_tannis = city
+b_miklakresir = temple
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

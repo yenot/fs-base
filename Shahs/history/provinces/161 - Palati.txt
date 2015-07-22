@@ -1,0 +1,20 @@
+# c_palati
+
+# County Title
+title = c_palati
+
+# Settlements
+max_settlements = 6
+
+b_klyasevo = castle
+b_kosterniki = temple
+#b_palati = temple
+#b_palati_2 = castle
+#b_palati_3 = city
+#b_palati_4 = temple
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

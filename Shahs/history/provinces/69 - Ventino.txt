@@ -1,0 +1,20 @@
+# c_ventino
+
+# County Title
+title = c_ventino
+
+# Settlements
+max_settlements = 6
+
+b_ventino = castle
+b_enumica = temple
+b_salidica = city
+b_selmica = temple
+b_portoadria = city
+#b_ventino_2 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

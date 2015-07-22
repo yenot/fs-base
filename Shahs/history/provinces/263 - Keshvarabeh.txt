@@ -1,0 +1,19 @@
+# c_keshvarabeh
+
+# County Title
+title = c_keshvarabeh
+
+# Settlements
+max_settlements = 5
+
+b_monang = castle
+b_kospan = temple
+b_pakpalayasman = castle
+b_barmay = city
+#b_keshvarabeh = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

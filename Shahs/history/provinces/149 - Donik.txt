@@ -1,0 +1,17 @@
+# c_donik
+
+# County Title
+title = c_donik
+
+# Settlements
+max_settlements = 3
+
+b_donik = castle
+b_surmaiki = city
+b_tatyanovo = temple
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

@@ -1,0 +1,20 @@
+# c_byala_tserkva
+
+# County Title
+title = c_byala_tserkva
+
+# Settlements
+max_settlements = 6
+
+b_byala_tserkva = castle
+b_oistaron = city
+b_paraikea = temple
+b_livenik = city
+#b_byala_tserkva_2 = city
+#b_byala_tserkva_3 = temple
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

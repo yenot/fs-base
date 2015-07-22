@@ -1,0 +1,21 @@
+# c_granopol
+
+# County Title
+title = c_granopol
+
+# Settlements
+max_settlements = 7
+
+b_granopol = castle
+b_sine_vartovo = city
+b_repnevo = castle
+b_supravitse = temple
+#b_granopol_2 = city
+#b_granopol_3 = temple
+#b_granopol_4 = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

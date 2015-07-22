@@ -1,0 +1,18 @@
+# c_carvan
+
+# County Title
+title = c_carvan
+
+# Settlements
+max_settlements = 4
+
+b_carvan = castle
+b_paterina = temple
+b_damito = castle
+#b_carvan_2 = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

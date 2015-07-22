@@ -1,0 +1,16 @@
+# c_taria
+
+# County Title
+title = c_taria
+
+# Settlements
+max_settlements = 2
+
+b_kairanason = castle
+b_maratica = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

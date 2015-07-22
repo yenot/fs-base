@@ -1,0 +1,18 @@
+# c_brogiwafrdeh
+
+# County Title
+title = c_brogiwafrdeh
+
+# Settlements
+max_settlements = 4
+
+b_potrexwar = castle
+b_darabaxtar = temple
+b_deber = city
+#b_brogiwafrdeh = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

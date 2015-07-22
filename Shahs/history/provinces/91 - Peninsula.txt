@@ -1,0 +1,21 @@
+# c_peninsula
+
+# County Title
+title = c_peninsula
+
+# Settlements
+max_settlements = 7
+
+b_peninsula = castle
+#b_peninsula_2 = city
+#b_peninsula_3 = temple
+#b_peninsula_4 = castle
+#b_peninsula_5 = city
+#b_peninsula_6 = temple
+#b_peninsula_7 = castle
+
+# Misc
+culture = hamult
+religion = celestinian
+
+#History

@@ -1,0 +1,16 @@
+# c_noraikea
+
+# County Title
+title = c_noraikea
+
+# Settlements
+max_settlements = 2
+
+b_rosentia = castle
+b_pantavernon = temple
+
+# Misc
+culture = kraitan
+religion = sabanean
+
+#History

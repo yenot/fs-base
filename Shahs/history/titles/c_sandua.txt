@@ -1,0 +1,10 @@
+# c_sandua @Auletia|Lycinia|Lepanica
+500.1.1={
+	law = agnatic_succession
+	law = succ_appointment
+}
+800.1.1={
+	liege=d_lepanica
+}
+
+1066.1.1={ holder=1000026 }

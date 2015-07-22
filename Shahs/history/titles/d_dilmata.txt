@@ -1,0 +1,11 @@
+# Dilmata
+500.1.1={
+	law = agnatic_succession
+	law = succ_appointment
+	vice_royalty = yes
+}
+800.1.1={
+	liege=k_lycinia
+}
+
+1066.1.1={ holder=1000049 }

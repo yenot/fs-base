@@ -1,0 +1,18 @@
+# c_vitezzo
+
+# County Title
+title = c_vitezzo
+
+# Settlements
+max_settlements = 4
+
+b_vitezzo = castle
+b_severina = temple
+#b_vitezzo_2 = temple
+#b_vitezzo_3 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

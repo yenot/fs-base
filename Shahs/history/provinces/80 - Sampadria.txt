@@ -1,0 +1,18 @@
+# c_sampadria
+
+# County Title
+title = c_sampadria
+
+# Settlements
+max_settlements = 4
+
+b_sampadria = castle
+b_gennadia = temple
+#b_sampadria_2 = temple
+#b_sampadria_3 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

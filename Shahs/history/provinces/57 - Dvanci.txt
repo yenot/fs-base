@@ -1,0 +1,18 @@
+# c_dvanci
+
+# County Title
+title = c_dvanci
+
+# Settlements
+max_settlements = 4
+
+b_doriacino = castle
+b_regia = temple
+#b_dvanci = temple
+#b_dvanci_2 = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

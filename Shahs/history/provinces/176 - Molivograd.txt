@@ -1,0 +1,18 @@
+# c_molivograd
+
+# County Title
+title = c_molivograd
+
+# Settlements
+max_settlements = 4
+
+b_molivograd = castle
+b_velnikovo = temple
+#b_molivograd_2 = temple
+#b_molivograd_3 = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

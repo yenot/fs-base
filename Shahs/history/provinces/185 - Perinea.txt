@@ -1,0 +1,17 @@
+# c_perinea
+
+# County Title
+title = c_perinea
+
+# Settlements
+max_settlements = 3
+
+b_phusikea = castle
+b_kambikos = temple
+b_apresea = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,49 @@
+#UMAN
+technology = {
+	titles = {
+		d_ketrion
+		d_hestia
+		d_dender
+		d_hymarrhion
+		d_kferida
+		d_monnea
+		d_polekidia
+		d_psilokarrhion
+		d_stakameton
+		d_garupol
+		d_bras
+		d_byala_tserkva
+		d_damianograd
+		d_granopol
+		d_imrek
+		d_molivograd
+		d_nessinea
+		d_temren
+		d_trasuna
+		d_turna
+		d_telemir
+		d_barkos
+		d_visgard
+		d_elikaria
+		d_lagida
+		d_lousania
+		d_moriman
+		d_numarnia
+		d_pardica
+	}
+	769 = {
+		military = 0
+		economy = 0
+		culture = 0
+	}
+	1066 = {
+		military = 0.5
+		economy = 1.0
+		culture = 1.0
+	}
+	1473 = {
+		military = 5.0
+		economy = 5.0
+		culture = 5.0
+	}
+}

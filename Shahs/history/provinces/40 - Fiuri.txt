@@ -1,0 +1,18 @@
+# c_fiuri
+
+# County Title
+title = c_fiuri
+
+# Settlements
+max_settlements = 4
+
+b_seprensato = castle
+b_corpaneri = city
+b_abrasia = temple
+#b_fiuri = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

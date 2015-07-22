@@ -1,0 +1,18 @@
+# c_onci
+
+# County Title
+title = c_onci
+
+# Settlements
+max_settlements = 4
+
+b_onci = castle
+b_tarnica = temple
+#b_onci_2 = temple
+#b_onci_3 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

@@ -1,0 +1,21 @@
+# c_dahikofan
+
+# County Title
+title = c_dahikofan
+
+# Settlements
+max_settlements = 7
+
+b_dahikofan = castle
+b_behruzshpas = temple
+b_termuzhaf = city
+b_pabudgamar = castle
+b_erkeman = city
+#b_dahikofan_2 = temple
+#b_dahikofan_3 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

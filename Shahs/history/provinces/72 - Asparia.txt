@@ -1,0 +1,21 @@
+# c_asparia
+
+# County Title
+title = c_asparia
+
+# Settlements
+max_settlements = 7
+
+b_motteorigi = castle
+b_dvinica = city
+b_brannica = temple
+#b_asparia = castle
+#b_asparia_2 = city
+#b_asparia_3 = temple
+#b_asparia_4 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

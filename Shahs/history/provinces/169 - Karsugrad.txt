@@ -1,0 +1,18 @@
+# c_karsugrad
+
+# County Title
+title = c_karsugrad
+
+# Settlements
+max_settlements = 4
+
+b_borovino = castle
+b_popovitse = temple
+b_stara_markea = city
+#b_karsugrad = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

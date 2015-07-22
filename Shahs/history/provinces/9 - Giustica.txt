@@ -1,0 +1,18 @@
+# c_giustica
+
+# County Title
+title = c_giustica
+
+# Settlements
+max_settlements = 4
+
+b_laverni = castle
+b_asplenica = temple
+#b_giustica = temple
+#b_giustica_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

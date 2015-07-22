@@ -1,0 +1,18 @@
+# c_dahmunbayur
+
+# County Title
+title = c_dahmunbayur
+
+# Settlements
+max_settlements = 4
+
+b_kosharj = castle
+b_berhay = city
+b_sahar = temple
+b_gashnaz = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

@@ -1,0 +1,229 @@
+#some lazy fix for celestinian branches
+
+namespace = celestinian
+
+character_event = {
+	id = celestinian.0
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = celestinian
+		NOT = { has_character_flag = branch_assigned_manually }
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					top_liege = { #Realm is a heavenly kingdom
+						government = heavenly_kingdom_government
+					}
+					AND = { #I am a heavenly kingdom
+						government = heavenly_kingdom_government
+					}
+				}
+			}
+			add_trait = koinobiotic_celestinian
+		}
+		
+		if = {
+			limit = {
+				AND = {
+					NOT = {
+						top_liege = { #Realm is not a heavenly kingdom
+							government = heavenly_kingdom_government
+						}
+						AND = { #I am not a heavenly kingdom
+							government = heavenly_kingdom_government
+						}
+					}
+				trait = koinobiotic_celestinian
+				}
+			}
+			random_list = {
+				60 = {
+					add_trait = oikumenic_celestinian
+				}
+				10 = {
+					add_trait = anachoritic_celestinian
+				}
+				40 = {
+					add_trait = eraunatic_celestinian
+				}
+				20 = {
+					add_trait = meletatic_celestinian
+				}
+				400 = {
+					add_trait = arcadic_celestinian
+					modifier = {
+						factor = 0
+						NOT = { culture_group = wedemer }
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				AND = {
+					NOT = {
+						culture_group = wedemer
+					}
+				trait = arcadic_celestinian
+				}
+			}
+			random_list = {
+				60 = {
+					add_trait = oikumenic_celestinian
+				}
+				10 = {
+					add_trait = anachoritic_celestinian
+				}
+				40 = {
+					add_trait = eraunatic_celestinian
+				}
+				20 = {
+					add_trait = meletatic_celestinian
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				NOT = {
+					trait = arcadic_celestinian
+				}
+				culture_group = wedemer
+			}
+			random = {
+				70 = {
+					add_trait = arcadic_celestinian
+				}
+			}
+		}
+
+		if = {
+			limit = { #Those are rare
+				trait = anachoritic_celestinian
+			}
+			random_list = {
+				60 = {
+					add_trait = oikumenic_celestinian
+				}
+				40 = {
+					add_trait = eraunatic_celestinian
+				}
+				10 = {
+					#leave as is
+				}
+				20 = {
+					add_trait = meletatic_celestinian
+				}
+				400 = {
+					add_trait = arcadic_celestinian
+					modifier = {
+						factor = 0
+						NOT = { culture_group = wedemer }
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = { #Those are rare
+				trait = meletatic_celestinian
+			}
+			random_list = {
+				60 = {
+					add_trait = oikumenic_celestinian
+				}
+				40 = {
+					add_trait = eraunatic_celestinian
+				}
+				10 = {
+					add_trait = anachoritic_celestinian
+				}
+				20 = {
+					#leave as is
+				}
+				400 = {
+					add_trait = arcadic_celestinian
+					modifier = {
+						factor = 0
+						NOT = { culture_group = wedemer }
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = { #None at all
+				NOT = {
+					trait = eraunatic_celestinian
+					trait = anachoritic_celestinian
+					trait = oikumenic_celestinian
+					trait = koinobiotic_celestinian
+					trait = arcadic_celestinian
+					trait = meletatic_celestinian
+				}
+			}
+			random_list = {
+				60 = {
+					add_trait = oikumenic_celestinian
+				}
+				40 = {
+					add_trait = eraunatic_celestinian
+				}
+				10 = {
+					add_trait = anachoritic_celestinian
+				}
+				20 = {
+					add_trait = meletatic_celestinian
+				}
+				400 = {
+					add_trait = arcadic_celestinian
+					modifier = {
+						factor = 0
+						NOT = { culture_group = wedemer }
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = koinobiotic_celestinian
+			}
+			if = {
+				limit = {
+					OR = {
+						is_republic = yes
+						is_patrician = yes
+					}
+				}
+				add_trait = technites
+			}
+			if = {
+				limit = {
+					is_feudal = yes
+					NOT = { is_patrician = yes }
+				}
+				add_trait = stratiotes
+			}
+			if = {
+				limit = {
+					is_theocracy = yes
+				}
+				add_trait = prothetis
+			}
+		}
+	}
+}
+
+#		eraunatic_celestinian
+#		anachoritic_celestinian
+#		oikumenic_celestinian
+#		koinobiotic_celestinian
+#		arcadic_celestinian
+#		meletatic_celestinian

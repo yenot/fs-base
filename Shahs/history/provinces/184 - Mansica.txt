@@ -1,0 +1,18 @@
+# c_mansica
+
+# County Title
+title = c_mansica
+
+# Settlements
+max_settlements = 4
+
+b_desineros = castle
+b_bakaritos = temple
+#b_mansica = temple
+#b_mansica_2 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

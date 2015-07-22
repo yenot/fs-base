@@ -1,0 +1,21 @@
+# c_bakiatida
+
+# County Title
+title = c_bakiatida
+
+# Settlements
+max_settlements = 7
+
+b_mennosos = castle
+b_kasencia = castle
+b_hagia_iouliana = temple
+#b_bakiatida = castle
+#b_bakiatida_2 = city
+#b_bakiatida_3 = temple
+#b_bakiatida_4 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

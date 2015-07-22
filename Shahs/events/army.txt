@@ -1,0 +1,1328 @@
+namespace = army
+
+#Hey, dude, do take control of your army
+letter_event = {
+	id = army.0
+	desc = EVTARMYDESC0
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAARMY0
+		set_character_flag = receiving_control_of_an_army
+	}
+}
+
+letter_event = {
+	id = army.1
+	desc = EVTARMYDESC1
+	
+	trigger = {
+		independent = yes
+		any_realm_character = {
+			had_character_flag = { flag = receiving_control_of_an_army days = 1 }
+			#ROOT = { NOT = { has_raised_levies = PREV } }
+		}
+	}
+	
+	option = {
+		name = EVTOPTAARMY1
+		random_realm_character = {
+			limit = {
+				has_character_flag = receiving_control_of_an_army
+			}
+			spawn_unit = {
+				owner = THIS
+				province = ROOT
+				home = ROOT
+				match_character = ROOT
+				match_mult = 1.0
+				attrition = 1.0
+				maintenance_multiplier = 1.0
+				earmark = royal_army_forces
+			}
+			clr_character_flag = receiving_control_of_an_army
+		}
+		#disband_event_forces = royal_army_forces
+		hidden_tooltip = { any_realm_province = { remove_province_modifier = no_levies } }
+	}
+}
+
+province_event = {
+	id = army.3 #Province levies amount maintenance
+	hide_window = yes
+	desc = EVTARMYDESC3
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		has_province_flag = army_location
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTAARMY3
+		#Clear the field
+		any_province_lord = {
+			any_demesne_title = { 
+				limit = {
+					tier = baron
+					location = {
+						province = ROOT
+					}
+					OR = {
+						has_title_flag = first_army_holding
+						has_title_flag = second_army_holding
+						has_title_flag = third_army_holding
+						has_title_flag = fourth_army_holding
+						has_title_flag = fifth_army_holding
+					}
+				}
+				remove_building = conscription_office_1
+				remove_building = conscription_office_2
+				remove_building = conscription_office_3
+				remove_building = conscription_office_4
+				remove_building = conscription_office_5
+				remove_building = conscription_office_6
+				remove_building = conscription_office_7
+				remove_building = conscription_office_8
+				remove_building = conscription_office_9
+				remove_building = conscription_office_10
+				remove_building = conscription_office_11
+				remove_building = conscription_office_12
+				remove_building = conscription_office_13
+				remove_building = conscription_office_14
+				remove_building = conscription_office_15
+				remove_building = conscription_office_16
+				remove_building = conscription_office_17
+				remove_building = conscription_office_18
+				remove_building = conscription_office_19
+				remove_building = conscription_office_20
+				remove_building = conscription_office_21
+				remove_building = conscription_office_22
+				remove_building = conscription_office_23
+				remove_building = conscription_office_24
+				remove_building = conscription_office_25
+				remove_building = conscription_office_26
+				remove_building = conscription_office_27
+				remove_building = conscription_office_28
+				remove_building = conscription_office_29
+				remove_building = conscription_office_30
+				remove_building = conscription_office_31
+				remove_building = conscription_office_32
+				remove_building = conscription_office_33
+				remove_building = conscription_office_34
+				remove_building = conscription_office_35
+				remove_building = conscription_office_36
+				remove_building = conscription_office_37
+				remove_building = conscription_office_38
+				remove_building = conscription_office_39
+				remove_building = conscription_office_40
+			}
+		}
+		holder_scope = { top_liege = { set_character_flag = maintenance_fired } }
+		if = {
+			limit = {
+				holder_scope = {
+					top_liege = {
+						any_realm_province = { count = 5 }
+						NOT = { any_realm_province = { count = 10 } }
+					}
+				}
+			}
+			any_province_lord = {
+				any_demesne_title = { 
+					limit = {
+						tier = baron
+						location = {
+							province = ROOT
+						}
+						OR = {
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}
+					}
+					#Add appropriate conscription office
+					add_building = conscription_office_1
+				}
+			}
+			break = yes
+		}
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 10 }	
+						NOT = { any_realm_province = { count = 15 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_2		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 15 }	
+						NOT = { any_realm_province = { count = 20 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_3		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 20 }	
+						NOT = { any_realm_province = { count = 25 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_4		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 25 }	
+						NOT = { any_realm_province = { count = 30 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_5		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 30 }	
+						NOT = { any_realm_province = { count = 35 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_6		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 35 }	
+						NOT = { any_realm_province = { count = 40 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_7		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 40 }	
+						NOT = { any_realm_province = { count = 45 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_8		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 45 }	
+						NOT = { any_realm_province = { count = 50 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_9		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 50 }	
+						NOT = { any_realm_province = { count = 55 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_10		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 55 }	
+						NOT = { any_realm_province = { count = 60 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_11		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 60 }	
+						NOT = { any_realm_province = { count = 65 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_12		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 65 }	
+						NOT = { any_realm_province = { count = 70 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_13		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 70 }	
+						NOT = { any_realm_province = { count = 75 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_14		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 75 }	
+						NOT = { any_realm_province = { count = 80 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_15		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 80 }	
+						NOT = { any_realm_province = { count = 85 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_16		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 85 }	
+						NOT = { any_realm_province = { count = 90 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_17		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 90 }	
+						NOT = { any_realm_province = { count = 95 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_18		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 95 }	
+						NOT = { any_realm_province = { count = 100 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_19		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 100 }	
+						NOT = { any_realm_province = { count = 105 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_20		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 105 }	
+						NOT = { any_realm_province = { count = 110 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_21		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 110 }	
+						NOT = { any_realm_province = { count = 115 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_22		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 115 }	
+						NOT = { any_realm_province = { count = 120 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_23		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 120 }	
+						NOT = { any_realm_province = { count = 125 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_24		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 125 }	
+						NOT = { any_realm_province = { count = 130 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_25		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 130 }	
+						NOT = { any_realm_province = { count = 135 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_26		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 135 }	
+						NOT = { any_realm_province = { count = 140 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_27		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 140 }	
+						NOT = { any_realm_province = { count = 145 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_28		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 145 }	
+						NOT = { any_realm_province = { count = 150 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_29		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 150 }	
+						NOT = { any_realm_province = { count = 155 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_30		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 155 }	
+						NOT = { any_realm_province = { count = 160 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_31		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 160 }	
+						NOT = { any_realm_province = { count = 165 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_32		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 165 }	
+						NOT = { any_realm_province = { count = 170 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_33		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 170 }	
+						NOT = { any_realm_province = { count = 175 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_34		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 175 }	
+						NOT = { any_realm_province = { count = 180 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_35		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 180 }	
+						NOT = { any_realm_province = { count = 185 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_36		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 185 }	
+						NOT = { any_realm_province = { count = 190 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_37		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 190 }	
+						NOT = { any_realm_province = { count = 195 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_38		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 195 }	
+						NOT = { any_realm_province = { count = 200 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_39		
+				}			
+			}				
+			break = yes				
+		}					
+		if = {					
+			limit = {				
+				holder_scope = {			
+					top_liege = {		
+						any_realm_province = { count = 200 }	
+						NOT = { any_realm_province = { count = 205 } }	
+					}		
+				}			
+			}				
+			any_province_lord = {				
+				any_demesne_title = { 			
+					limit = {		
+						tier = baron	
+						location = {	
+							province = ROOT
+						}	
+						OR = {	
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}	
+					}		
+					#Add appropriate conscription office		
+					add_building = conscription_office_40		
+				}			
+			}				
+			break = yes				
+		}
+	}
+}

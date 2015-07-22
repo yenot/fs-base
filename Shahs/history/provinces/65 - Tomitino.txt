@@ -1,0 +1,20 @@
+# c_tomitino
+
+# County Title
+title = c_tomitino
+
+# Settlements
+max_settlements = 6
+
+b_lenini = castle
+b_ludorica = temple
+#b_tomitino = temple
+#b_tomitino_2 = castle
+#b_tomitino_3 = city
+#b_tomitino_4 = temple
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

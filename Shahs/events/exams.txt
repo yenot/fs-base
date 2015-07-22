@@ -1,0 +1,2328 @@
+##################################
+#Imperial exam event chain
+##################################
+
+namespace = exam
+
+character_event = {
+	id = exam.0 #assignment of exam trait
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		independent = yes
+		primary_title = { has_law = vice_royalty_2 }
+	}
+	
+	immediate = {
+		any_realm_character = {
+			if = {
+				limit = {
+					tier = count
+				}
+				add_trait = passed_county_exam
+			}
+		}
+		any_realm_character = {
+			if = {
+				limit = {
+					tier = duke
+				}
+				add_trait = passed_duchy_exam
+				remove_trait = passed_county_exam
+			}
+		}
+		any_realm_character = {
+			if = {
+				limit = {
+					is_councillor = yes
+					liege = { character = ROOT }
+				}
+				add_trait = passed_court_exam
+				remove_trait = passed_county_exam
+				remove_trait = passed_duchy_exam
+			}
+		}
+	}
+}
+
+character_event = {
+	id = exam.1 #County exam start
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		independent = yes
+		primary_title = { has_law = vice_royalty_2 }
+		OR = {
+			any_realm_character = { has_character_flag = preparing_to_take_county_exam }
+			any_realm_character = { has_character_flag = preparing_to_take_duchy_exam }
+			any_realm_character = { has_character_flag = preparing_to_take_court_exam }
+		}
+		NOT = {
+			has_character_flag = holding_county_exam
+			has_character_flag = holding_duchy_exam
+			has_character_flag = holding_court_exam
+		}
+	}
+	
+	immediate = {
+		set_variable = { which = "county_exam_participants" value = 0 }
+		set_variable = { which = "duchy_exam_participants" value = 0 }
+		set_variable = { which = "court_exam_participants" value = 0 }
+		set_variable = { which = "county_exam_nobles_passed" value = 0 }
+		set_variable = { which = "duchy_exam_nobles_passed" value = 0 }
+		set_variable = { which = "court_exam_nobles_passed" value = 0 }
+		
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = preparing_to_take_county_exam
+				}
+			character_event = { id = exam.2 } #County exam event
+			ROOT = { change_variable = { which = "county_exam_participants" value = 1 } }
+			}
+		}
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = preparing_to_take_duchy_exam
+				}
+			character_event = { id = exam.6 } #Duchy exam event
+			ROOT = { change_variable = { which = "duchy_exam_participants" value = 1 } }
+			}
+		}
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = preparing_to_take_court_exam
+				}
+			character_event = { id = exam.11 } #Court exam event
+			ROOT = { change_variable = { which = "court_exam_participants" value = 1 } }
+			}
+		}
+		set_character_flag = holding_county_exam
+		set_character_flag = holding_duchy_exam
+		set_character_flag = holding_court_exam
+		set_character_flag = holding_exam
+	}
+}
+
+character_event = {
+	id = exam.2 #County exam start
+	title = EVTNAMEEXAM2
+	desc = EVTDESCEXAM2
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = preparing_to_take_county_exam
+	}
+	
+	option = {
+		name = EVTOPTAEXAM2
+		trigger = {
+			NOT = {
+				diplomacy = 15
+				stewardship = 15
+				learning = 15
+			}
+		}
+		random_list = {
+			50 = {
+				FROM = {
+					subtract_variable = { which = "county_exam_participants" value = 1 }
+					change_variable = { which = "county_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_county_exam } #Pass 
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 8
+				}
+				modifier = {
+					factor = 1.2
+					learning = 10
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 14
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 7 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 10
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 14
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 7 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROM = {
+					subtract_variable = { which = "county_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_county_exam } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBEXAM2
+		trigger = {
+			diplomacy = 15
+		}
+		tooltip_info = diplomacy
+		hidden_tooltip = { set_character_flag = passed_county_exam } #Too good to fail
+		FROM = {
+			subtract_variable = { which = "county_exam_participants" value = 1 }
+			change_variable = { which = "county_exam_nobles_passed" value = 1 }
+		}
+	}
+	option = {
+		name = EVTOPTCEXAM2
+		trigger = {
+			stewardship = 15
+		}
+		tooltip_info = stewardship
+		hidden_tooltip = { set_character_flag = passed_county_exam } #Too good to fail
+		FROM = {
+			subtract_variable = { which = "county_exam_participants" value = 1 }
+			change_variable = { which = "county_exam_nobles_passed" value = 1 }
+		}
+	}
+	option = {
+		name = EVTOPTDEXAM2
+		trigger = {
+			learning = 15
+		}
+		tooltip_info = learning
+		hidden_tooltip = { set_character_flag = passed_county_exam } #Too good to fail
+		FROM = {
+			subtract_variable = { which = "county_exam_participants" value = 1 }
+			change_variable = { which = "county_exam_nobles_passed" value = 1 }
+		}
+	}
+}
+
+character_event = {
+	id = exam.3 #County exam end
+	hide_window = yes
+	
+	trigger = {
+		independent = yes
+		primary_title = { has_law = vice_royalty_2 }
+		any_realm_character = {
+			OR = {
+				has_character_flag = passed_county_exam
+				has_character_flag = failed_county_exam
+			}
+		}
+		has_character_flag = holding_county_exam
+		is_variable_equal = { which = "county_exam_participants" value = 0 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = passed_county_exam
+				}
+				character_event = { id = exam.4 }
+			}
+		}
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = failed_county_exam
+				}
+				character_event = { id = exam.5 }
+			}
+		}
+		clr_character_flag = holding_county_exam
+		if = {
+			limit = {
+				NOT = {
+					has_character_flag = holding_duchy_exam
+					has_character_flag = holding_court_exam
+				}
+			}
+			character_event = { id = exam.100 }
+		}
+	}
+}
+	
+character_event = {
+	id = exam.4 #County exam passed
+	title = EVTNAMEEXAM4
+	desc = EVTDESCEXAM4
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAEXAM4
+		add_trait = passed_county_exam
+		hidden_tooltip = {
+			clr_character_flag = preparing_to_take_county_exam
+			if = {
+				limit = {
+					landless = yes
+				}
+				random_realm_character = {
+					limit = {
+						tier = count
+					}
+					ROOT = {
+						move_character = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = exam.5 #County exam passed
+	title = EVTNAMEEXAM5
+	desc = EVTDESCEXAM5
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAEXAM5
+		clr_character_flag = preparing_to_take_county_exam
+	}
+}
+
+character_event = {
+	id = exam.6 #Duchy exam start
+	title = EVTNAMEEXAM6
+	desc = EVTDESCEXAM6
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = preparing_to_take_duchy_exam
+	}
+	
+	option = {
+		name = EVTOPTAEXAM6
+		trigger = {
+			NOT = {
+				learning = 18
+			}
+		}
+		#tooltip = USELEARNING
+		random_list = {
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = duchy_exam_first_test_success
+					set_character_flag = used_learning
+					character_event = { id = exam.7 }
+				} #Good 
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 10
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 14
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = duchy_exam_first_test_failure
+					set_character_flag = used_learning
+					character_event = { id = exam.7 }
+				 } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBEXAM6
+		trigger = {
+			NOT = {
+				diplomacy = 18
+			}
+		}
+		#tooltip = USEDIPLOMACY
+		random_list = {
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = duchy_exam_first_test_success
+					set_character_flag = used_diplomacy
+					character_event = { id = exam.7 }
+				} #Good 
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 10
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 14
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = duchy_exam_first_test_failure
+					set_character_flag = used_diplomacy
+					character_event = { id = exam.7 }
+				 } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCEXAM6
+		trigger = {
+			NOT = {
+				stewardship = 18
+			}
+		}
+		#tooltip = USESTWEARDSHIP
+		random_list = {
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = duchy_exam_first_test_success
+					set_character_flag = used_stewardship
+					character_event = { id = exam.7 }
+				} #Good 
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = duchy_exam_first_test_failure
+					set_character_flag = used_stewardship
+					character_event = { id = exam.7 }
+				} #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDEXAM6
+		trigger = {
+			learning = 18
+		}
+		tooltip_info = learning
+		hidden_tooltip = {
+			set_character_flag = duchy_exam_first_test_success
+			set_character_flag = used_diplomacy
+			character_event = { id = exam.7 }
+		} #Too good to fail
+	}
+	option = {
+		name = EVTOPTEEXAM6
+		trigger = {
+			stewardship = 18
+		}
+		tooltip_info = stewardship
+		hidden_tooltip = {
+			set_character_flag = duchy_exam_first_test_success
+			set_character_flag = used_stewardship
+			character_event = { id = exam.7 }
+		} #Too good to fail
+	}
+	option = {
+		name = EVTOPTFEXAM6
+		trigger = {
+			diplomacy = 18
+		}
+		tooltip_info = diplomacy
+		hidden_tooltip = {
+			set_character_flag = duchy_exam_first_test_success
+			set_character_flag = used_learning
+			character_event = { id = exam.7 }
+		} #Too good to fail
+	}
+}
+
+character_event = {
+	id = exam.7 #Duchy exam, second part
+	title = EVTNAMEEXAM7
+	desc = EVTDESCEXAM7
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = preparing_to_take_duchy_exam
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = EVTOPTAEXAM7
+		random_list = {
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "duchy_exam_participants" value = 1 }
+					change_variable = { which = "duchy_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_duchy_exam } #Pass
+				modifier = {
+					factor = 0.3333
+					has_character_flag = used_learning
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 10
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 14
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "duchy_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_duchy_exam } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBEXAM7
+		random_list = {
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "duchy_exam_participants" value = 1 }
+					change_variable = { which = "duchy_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_duchy_exam } #Pass
+				modifier = {
+					factor = 0.3333
+					has_character_flag = used_diplomacy
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 10
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 14
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "duchy_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_duchy_exam }#Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCEXAM7
+		random_list = {
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "duchy_exam_participants" value = 1 }
+					change_variable = { which = "duchy_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_duchy_exam } #Pass
+				modifier = {
+					factor = 0.3333
+					has_character_flag = used_stewardship
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "duchy_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_duchy_exam } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDEXAM7
+		random_list = {
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "duchy_exam_participants" value = 1 }
+					change_variable = { which = "duchy_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_duchy_exam } #Pass
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 10
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 12
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 14
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "duchy_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_duchy_exam } #Fail
+			}
+		}
+	}
+}
+
+character_event = {
+	id = exam.8 #Duchy exam end
+	hide_window = yes
+	
+	trigger = {
+		independent = yes
+		primary_title = { has_law = vice_royalty_2 }
+		any_realm_character = {
+			OR = {
+				has_character_flag = passed_duchy_exam
+				has_character_flag = failed_duchy_exam
+			}
+		}
+		has_character_flag = holding_duchy_exam
+		is_variable_equal = { which = "duchy_exam_participants" value = 0 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = passed_duchy_exam
+				}
+				character_event = { id = exam.9 }
+			}
+		}
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = failed_duchy_exam
+				}
+				character_event = { id = exam.10 }
+			}
+		}
+		clr_character_flag = holding_duchy_exam
+		if = {
+			limit = {
+				NOT = {
+					has_character_flag = holding_court_exam
+					has_character_flag = holding_county_exam
+				}
+			}
+			character_event = { id = exam.100 }
+		}
+	}
+}
+
+character_event = {
+	id = exam.9 #Duchy exam passed
+	title = EVTNAMEEXAM9
+	desc = EVTDESCEXAM9
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAEXAM9
+		add_trait = passed_duchy_exam
+		hidden_tooltip = {
+			clr_character_flag = preparing_to_take_duchy_exam
+			if = {
+				limit = {
+					landless = yes
+				}
+				random_realm_character = {
+					limit = {
+						tier = duke
+					}
+					ROOT = {
+						move_character = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = exam.10 #Duchy exam passed
+	title = EVTNAMEEXAM10
+	desc = EVTDESCEXAM10
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAEXAM10
+		clr_character_flag = preparing_to_take_duchy_exam
+	}
+}
+
+character_event = {
+	id = exam.11 #Court exam start
+	title = EVTNAMEEXAM11
+	desc = EVTDESCEXAM11
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = preparing_to_take_court_exam
+	}
+	
+	option = {
+		name = EVTOPTAEXAM11
+		trigger = {
+			NOT = {
+				OR = {
+					AND = {
+						learning = 18
+						diplomacy = 10
+					}
+					AND = {
+						learning = 10
+						diplomacy = 18
+					}
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = court_exam_first_test_success
+					set_character_flag = used_learning
+					set_character_flag = used_diplomacy
+					character_event = { id = exam.12 }
+				} #Good 
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 10
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 14
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 10
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 14
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = court_exam_first_test_failure
+					set_character_flag = used_learning
+					set_character_flag = used_diplomacy
+					character_event = { id = exam.12 }
+				 } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBEXAM11
+		trigger = {
+			NOT = {
+				OR = {
+					AND = {
+						diplomacy = 18
+						stewardship = 10
+					}
+					AND = {
+						diplomacy = 10
+						stewardship = 18
+					}
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = court_exam_first_test_success
+					set_character_flag = used_diplomacy
+					set_character_flag = used_stewardship
+					character_event = { id = exam.12 }
+				} #Good 
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 10
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 14
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = court_exam_first_test_failure
+					set_character_flag = used_diplomacy
+					set_character_flag = used_stewardship
+					character_event = { id = exam.12 }
+				 } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCEXAM11
+		trigger = {
+			NOT = {
+				OR = {
+					AND = {
+						learning = 18
+						stewardship = 10
+					}
+					AND = {
+						learning = 10
+						stewardship = 18
+					}
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = court_exam_first_test_success
+					set_character_flag = used_stewardship
+					set_character_flag = used_learning
+					character_event = { id = exam.12 }
+				} #Good 
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 10
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 14
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				hidden_tooltip = {
+					set_character_flag = court_exam_first_test_failure
+					set_character_flag = used_stewardship
+					set_character_flag = used_learning
+					character_event = { id = exam.12 }
+				} #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDEXAM11
+		trigger = {
+			AND = {
+				learning = 18
+				OR = {
+					stewardship = 10
+					diplomacy = 10
+				}
+			}
+		}
+		tooltip_info = learning
+		hidden_tooltip = {
+			set_character_flag = court_exam_first_test_success
+			set_character_flag = used_diplomacy
+			character_event = { id = exam.12 }
+		} #Too good to fail
+	}
+	option = {
+		name = EVTOPTEEXAM11
+		trigger = {
+			AND = {
+				stewardship = 18
+				OR = {
+					learning = 10
+					diplomacy = 10
+				}
+			}
+		}
+		tooltip_info = stewardship
+		hidden_tooltip = {
+			set_character_flag = court_exam_first_test_success
+			set_character_flag = used_stewardship
+			character_event = { id = exam.12 }
+		} #Too good to fail
+	}
+	option = {
+		name = EVTOPTFEXAM11
+		trigger = {
+			AND = {
+				diplomacy = 18
+				OR = {
+					stewardship = 10
+					learning = 10
+				}
+			}
+		}
+		tooltip_info = diplomacy
+		hidden_tooltip = {
+			set_character_flag = court_exam_first_test_success
+			set_character_flag = used_learning
+			character_event = { id = exam.12 }
+		} #Too good to fail
+	}
+}
+
+character_event = {
+	id = exam.12 #Court exam, second part
+	title = EVTNAMEEXAM12
+	desc = EVTDESCEXAM12
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = preparing_to_take_court_exam
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = EVTOPTAEXAM12
+		random_list = {
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "court_exam_participants" value = 1 }
+					change_variable = { which = "court_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_court_exam } #Pass
+				modifier = {
+					factor = 0.3333
+					has_character_flag = used_learning
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 10
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 14
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "court_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_court_exam } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBEXAM12
+		random_list = {
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "court_exam_participants" value = 1 }
+					change_variable = { which = "court_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_court_exam } #Pass
+				modifier = {
+					factor = 0.3333
+					has_character_flag = used_diplomacy
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 10
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 14
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "court_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_court_exam }#Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCEXAM12
+		random_list = {
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "court_exam_participants" value = 1 }
+					change_variable = { which = "court_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_court_exam } #Pass
+				modifier = {
+					factor = 0.3333
+					has_character_flag = used_stewardship
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "court_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_court_exam } #Fail
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDEXAM12
+		random_list = {
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "court_exam_participants" value = 1 }
+					change_variable = { which = "court_exam_nobles_passed" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = passed_court_exam } #Pass
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 3 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 7 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { intrigue = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 10
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 12
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 14
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { stewardship = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.2
+					stewardship = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { diplomacy = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 12
+				}
+				modifier = {
+					factor = 1.2
+					diplomacy = 16
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 1 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 0.8
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.2
+					learning = 12
+				}
+				modifier = {
+					factor = 1.2
+					learning = 16
+				}
+				modifier = {
+					factor = 1.2
+					trait = poet
+				}
+				modifier = {
+					factor = 1.2
+					trait = diligent
+				}
+			}
+			50 = {
+				FROMFROM = {
+					subtract_variable = { which = "court_exam_participants" value = 1 }
+				}
+				hidden_tooltip = { set_character_flag = failed_court_exam } #Fail
+			}
+		}
+	}
+}
+
+character_event = {
+	id = exam.13 #Court exam end
+	hide_window = yes
+	
+	trigger = {
+		independent = yes
+		primary_title = { has_law = vice_royalty_2 }
+		any_realm_character = {
+			OR = {
+				has_character_flag = passed_court_exam
+				has_character_flag = failed_court_exam
+			}
+		}
+		has_character_flag = holding_court_exam
+		is_variable_equal = { which = "court_exam_participants" value = 0 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = passed_court_exam
+				}
+				character_event = { id = exam.14 }
+			}
+		}
+		any_realm_character = {
+			if = {
+				limit = {
+					has_character_flag = failed_court_exam
+				}
+				character_event = { id = exam.15 }
+			}
+		}
+		clr_character_flag = holding_court_exam
+		if = {
+			limit = {
+				NOT = {
+					has_character_flag = holding_duchy_exam
+					has_character_flag = holding_county_exam
+				}
+			}
+			character_event = { id = exam.100 }
+		}
+	}
+}
+
+character_event = {
+	id = exam.14 #Court exam passed
+	title = EVTNAMEEXAM14
+	desc = EVTDESCEXAM14
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAEXAM14
+		add_trait = passed_court_exam
+		hidden_tooltip = {
+			clr_character_flag = preparing_to_take_court_exam
+			if = {
+				limit = {
+					landless = yes
+				}
+				top_liege = {
+					ROOT = {
+						move_character = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = exam.15 #Court exam passed
+	title = EVTNAMEEXAM15
+	desc = EVTDESCEXAM15
+	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAEXAM15
+		clr_character_flag = preparing_to_take_court_exam
+	}
+}
+
+				random_realm_character = {
+					limit = {
+						tier = count
+					}
+					ROOT = {
+						move_character = PREV
+					}
+				}
+				
+character_event = {
+	id = exam.100
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_character_flag = holding_exam
+		NOT = {
+			has_character_flag = holding_county_exam
+			has_character_flag = holding_duchy_exam
+			has_character_flag = holding_court_exam
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+	
+	}
+}

@@ -1,0 +1,5 @@
+#Opinion from bureaucratic interactions and parties
+
+opinion_presecutes_merchants = {
+	opinion = -5
+}

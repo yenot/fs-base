@@ -1,0 +1,18 @@
+# c_covadi
+
+# County Title
+title = c_covadi
+
+# Settlements
+max_settlements = 4
+
+b_monua = castle
+b_antonida = temple
+#b_covadi = temple
+#b_covadi_2 = castle
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

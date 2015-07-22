@@ -1,0 +1,18 @@
+# c_nemsirhof
+
+# County Title
+title = c_nemsirhof
+
+# Settlements
+max_settlements = 4
+
+b_nemsirhof = castle
+#b_nemsirhof_2 = city
+#b_nemsirhof_3 = temple
+#b_nemsirhof_4 = castle
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

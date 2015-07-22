@@ -1,0 +1,19 @@
+# c_ortos
+
+# County Title
+title = c_ortos
+
+# Settlements
+max_settlements = 5
+
+b_ortos = temple
+b_tamphorin = castle
+b_monkidiki = city
+b_kata = temple
+#b_ortos_2 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

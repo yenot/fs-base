@@ -1,0 +1,17 @@
+# c_alkesia
+
+# County Title
+title = c_alkesia
+
+# Settlements
+max_settlements = 3
+
+b_evkras = castle
+b_linimea = temple
+b_larnica = city
+
+# Misc
+culture = kraitan
+religion = sabanean
+
+#History

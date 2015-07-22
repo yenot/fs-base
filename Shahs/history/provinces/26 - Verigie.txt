@@ -1,0 +1,19 @@
+# c_verigie
+
+# County Title
+title = c_verigie
+
+# Settlements
+max_settlements = 5
+
+b_verigie = castle
+b_restomari = castle
+b_cinica = temple
+b_doninova = castle
+#b_verigie_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

@@ -1,0 +1,18 @@
+# c_bona
+
+# County Title
+title = c_bona
+
+# Settlements
+max_settlements = 4
+
+b_bona = castle
+b_orantina = temple
+#b_bona_2 = temple
+#b_bona_3 = castle
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

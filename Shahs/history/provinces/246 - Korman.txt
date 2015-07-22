@@ -1,0 +1,17 @@
+# c_korman
+
+# County Title
+title = c_korman
+
+# Settlements
+max_settlements = 3
+
+b_shabazrisxap = castle
+b_bohtarihasman = temple
+b_asmanabezfrayad = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

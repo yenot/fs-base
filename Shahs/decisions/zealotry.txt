@@ -1,0 +1,45 @@
+decisions = {
+
+#	set_variable_decision = {
+#	
+#		potential = {
+#			is_playable = yes
+#		}
+#		
+#		effect = {
+#			set_variable = { which = "zealotry" value = 1 }
+#			set_character_flag = flag_one
+#			set_character_flag = flag_two
+#		}
+#		
+#		revoke_allowed = {
+#			always = no
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	
+#	set_variable_decision_2 = {
+#	
+#		potential = {
+#			is_playable = yes
+#			has_character_flag = flag_two
+#		}
+#		
+#		effect = {
+#			set_variable = { which = "zealotry" value = 1 }
+#			set_character_flag = flag_one
+#			set_character_flag = flag_one
+#		}
+#		
+#		revoke_allowed = {
+#			always = no
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+}

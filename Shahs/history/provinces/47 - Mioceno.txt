@@ -1,0 +1,21 @@
+# c_mioceno
+
+# County Title
+title = c_mioceno
+
+# Settlements
+max_settlements = 7
+
+b_tograbe = castle
+b_sarindica = temple
+#b_mioceno = temple
+#b_mioceno_2 = castle
+#b_mioceno_3 = city
+#b_mioceno_4 = temple
+#b_mioceno_5 = castle
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

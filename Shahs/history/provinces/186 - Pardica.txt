@@ -1,0 +1,18 @@
+# c_pardica
+
+# County Title
+title = c_pardica
+
+# Settlements
+max_settlements = 4
+
+b_laspaianos = castle
+b_eriaphea = temple
+b_sapoxentia = castle
+#b_pardica = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

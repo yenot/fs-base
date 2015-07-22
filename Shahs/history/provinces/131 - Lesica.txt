@@ -1,0 +1,18 @@
+# c_lesica
+
+# County Title
+title = c_lesica
+
+# Settlements
+max_settlements = 4
+
+b_kaiploniki = castle
+b_hyderion = city
+b_abouniki = castle
+#b_lesica = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

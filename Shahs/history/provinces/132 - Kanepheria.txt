@@ -1,0 +1,19 @@
+# c_kanepheria
+
+# County Title
+title = c_kanepheria
+
+# Settlements
+max_settlements = 5
+
+b_anaupsion = castle
+b_rastakos = temple
+#b_kanepheria = temple
+#b_kanepheria_2 = castle
+#b_kanepheria_3 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,19 @@
+# c_gerrinasos
+
+# County Title
+title = c_gerrinasos
+
+# Settlements
+max_settlements = 5
+
+b_tarmaton = castle
+b_hagios_korsos = temple
+b_kenasi = temple
+b_nasaea = city
+#b_gerrinasos = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

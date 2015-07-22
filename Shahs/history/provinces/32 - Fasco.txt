@@ -1,0 +1,19 @@
+# c_fasco
+
+# County Title
+title = c_fasco
+
+# Settlements
+max_settlements = 5
+
+b_fasco = castle
+b_larica = castle
+b_flavia = temple
+#b_fasco_2 = castle
+#b_fasco_3 = city
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

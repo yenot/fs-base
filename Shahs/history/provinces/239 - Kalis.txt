@@ -1,0 +1,18 @@
+# c_kalis
+
+# County Title
+title = c_kalis
+
+# Settlements
+max_settlements = 4
+
+b_kalis = castle
+b_potiniki = city
+b_santibakion = temple
+#b_kalis_2 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

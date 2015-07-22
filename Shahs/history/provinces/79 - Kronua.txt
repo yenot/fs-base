@@ -1,0 +1,21 @@
+# c_kronua
+
+# County Title
+title = c_kronua
+
+# Settlements
+max_settlements = 7
+
+b_kronua = castle
+b_tuvica = temple
+b_funmiaco = castle
+#b_kronua_2 = castle
+#b_kronua_3 = city
+#b_kronua_4 = temple
+#b_kronua_5 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

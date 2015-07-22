@@ -1,0 +1,18 @@
+# c_nastova
+
+# County Title
+title = c_nastova
+
+# Settlements
+max_settlements = 4
+
+b_nastova = castle
+b_agiana = temple
+#b_nastova_2 = temple
+#b_nastova_3 = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

@@ -1,0 +1,17 @@
+# c_polidarmania
+
+# County Title
+title = c_polidarmania
+
+# Settlements
+max_settlements = 3
+
+b_gorginea = castle
+b_karkatelson = temple
+b_fession_2 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,19 @@
+# c_niceri
+
+# County Title
+title = c_niceri
+
+# Settlements
+max_settlements = 5
+
+b_niceri = castle
+b_torica = temple
+b_solvia = castle
+#b_niceri_2 = castle
+#b_niceri_3 = city
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

@@ -1,0 +1,17 @@
+# c_spedxan
+
+# County Title
+title = c_spedxan
+
+# Settlements
+max_settlements = 3
+
+b_spedxan = castle
+b_nihuftihfarah = city
+b_benasash = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

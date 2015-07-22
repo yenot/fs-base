@@ -1,0 +1,20 @@
+# c_bistrim
+
+# County Title
+title = c_bistrim
+
+# Settlements
+max_settlements = 6
+
+b_bistrim = castle
+b_baxarmosaht = temple
+b_merjharsad = city
+b_sirvas = city
+#b_bistrim_2 = city
+#b_bistrim_3 = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

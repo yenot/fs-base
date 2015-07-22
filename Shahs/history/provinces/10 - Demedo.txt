@@ -1,0 +1,18 @@
+# c_demedo
+
+# County Title
+title = c_demedo
+
+# Settlements
+max_settlements = 4
+
+b_cevisso = castle
+b_bastambrica = temple
+#b_demedo = temple
+#b_demedo_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

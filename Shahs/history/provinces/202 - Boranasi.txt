@@ -1,0 +1,19 @@
+# c_boranasi
+
+# County Title
+title = c_boranasi
+
+# Settlements
+max_settlements = 5
+
+b_boranasi = castle
+b_lamica = city
+b_sakrapis = temple
+#b_boranasi_2 = castle
+#b_boranasi_3 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

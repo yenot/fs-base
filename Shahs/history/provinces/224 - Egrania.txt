@@ -1,0 +1,18 @@
+# c_egrania
+
+# County Title
+title = c_egrania
+
+# Settlements
+max_settlements = 4
+
+b_ontorin = castle
+b_tolkar = temple
+b_odilaria = city
+b_geraion = city
+
+# Misc
+culture = kraitan
+religion = sabanean
+
+#History

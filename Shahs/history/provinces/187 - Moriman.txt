@@ -1,0 +1,19 @@
+# c_moriman
+
+# County Title
+title = c_moriman
+
+# Settlements
+max_settlements = 5
+
+b_moriman = castle
+b_goski = castle
+b_rataka = temple
+#b_moriman_2 = castle
+#b_moriman_3 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

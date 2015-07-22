@@ -1,0 +1,153 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_toggle_hiring_decisions_on"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_toggle_hiring_decisions_off"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_troops_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_end_adding_troops_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_light_infantry_squad_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_archer_squad_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_heavy_infantry_squad_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_light_cavalry_squad_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_heavy_cavalry_squad_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_horse_archer_squad_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_war_elephant_squad_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_add_camel_cavalry_squad_to_first_army"
+		texturefile = "gfx/interface/decision_icon_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_take_control_of_an_army"
+		texturefile = "gfx/interface/decision_icon_take_control_of_an_army.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_refrain_from_taking_control_of_an_army"
+		texturefile = "gfx/interface/decision_icon_take_control_of_an_army.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_take_control_of_the_first_army"
+		texturefile = "gfx/interface/decision_icon_take_control_of_an_army.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_take_control_of_the_second_army"
+		texturefile = "gfx/interface/decision_icon_take_control_of_an_army.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_take_control_of_the_third_army"
+		texturefile = "gfx/interface/decision_icon_take_control_of_an_army.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_take_control_of_the_fourth_army"
+		texturefile = "gfx/interface/decision_icon_take_control_of_an_army.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_take_control_of_the_fifth_army"
+		texturefile = "gfx/interface/decision_icon_take_control_of_an_army.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_participate_in_the_next_county_examination"
+		texturefile = "gfx/interface/decision_icon_try_to_pass_county_exam.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_participate_in_the_next_duchy_examination"
+		texturefile = "gfx/interface/decision_icon_try_to_pass_duchy_exam.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_participate_in_the_next_court_examination"
+		texturefile = "gfx/interface/decision_icon_try_to_pass_county_exam.dds"
+	}
+}

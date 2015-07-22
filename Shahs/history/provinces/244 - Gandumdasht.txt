@@ -1,0 +1,19 @@
+# c_gandumdasht
+
+# County Title
+title = c_gandumdasht
+
+# Settlements
+max_settlements = 5
+
+b_dant = castle
+b_dadarayaftayzen = city
+#b_gandumdasht = temple
+#b_gandumdasht_2 = castle
+#b_gandumdasht_3 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

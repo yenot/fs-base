@@ -1,0 +1,42 @@
+# Island regions - no land path from the continent
+# The AI needs these to optimize path finding
+#
+# NOTE: do not add any regions here that are NOT islands
+
+# Regions can be declared with one or more of the following fields:
+#	duchies = { }, takes duchy title names declared in landed_titles.txt
+#	counties = { }, takes county title names declared in landed_titles.txt
+#	provinces = { }, takes province id numbers declared in /history/provinces
+#	regions = { }, a region can also include other regions, however the subregions needs to be declared before the parent region. 
+#		E.g. If the region world_europe contains the region world_europe_west then world_europe_west needs to be declared as a region before (i.e. higher up in this file) world_europe.
+
+world_kasava_auletia = {
+	duchies = {
+		d_dianovi d_bolestrina d_dilmata d_lepanica d_lepe d_liletto d_nantica d_torusca d_bascat d_dumnir d_mascati d_medova d_monbria d_bercino d_donnovia d_golbari d_nintere d_ventino d_colpari d_giuronnova d_santipina d_vorisiana
+	}
+}
+
+world_kasava_rarica = {
+	duchies = {
+		d_norfeld
+	}
+}
+
+world_kasava_uman = {
+	duchies = {
+		d_hestia d_hymarrhion d_psilokarrhion d_polekidia d_monnea d_stakameton d_kferida d_dender d_garupol d_trasuna d_byala_tserkva d_turna d_damianograd d_bras d_imrek d_temren d_nessinea d_molivograd d_granopol d_elikaria d_lousania d_lagida d_moriman d_pardica d_numarnia d_telemir d_barkos d_visgard
+	}
+}
+
+world_kasava_nordika = {
+	duchies = {
+		d_megurster d_samhey d_dagrberg d_hvalrvik
+	}
+}
+
+world_kasava_shartica = {
+	duchies = {
+		d_urantia d_kolonea d_alkesia d_taria d_akaridon d_baria d_danushparwanag d_farrummeddeh d_kulangdeh d_dashtawaran d_kurkan d_taspur d_gaxbrashired d_teraz d_spedxan d_dahikofan d_poraxdesh d_shanresor d_markay d_dalman d_ketrion d_marzabaxtar d_keshrev d_sechahan d_bisxar
+	}
+}
+

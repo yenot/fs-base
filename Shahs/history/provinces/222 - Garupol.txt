@@ -1,0 +1,19 @@
+# c_garupol
+
+# County Title
+title = c_garupol
+
+# Settlements
+max_settlements = 5
+
+b_garupol = castle
+b_fanam = temple
+b_saltanik = castle
+#b_garupol_2 = castle
+#b_garupol_3 = city
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

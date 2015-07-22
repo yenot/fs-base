@@ -1,0 +1,20 @@
+# c_beridice
+
+# County Title
+title = c_beridice
+
+# Settlements
+max_settlements = 6
+
+b_semiad = castle
+b_massi = city
+b_rebica = temple
+b_fenocci = city
+b_ulpinico = city
+#b_beridice = temple
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

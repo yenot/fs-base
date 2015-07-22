@@ -1,0 +1,19 @@
+# c_darmakarvos
+
+# County Title
+title = c_darmakarvos
+
+# Settlements
+max_settlements = 5
+
+b_darmakarvos = castle
+b_arradoikea = temple
+b_daharos = temple
+#b_darmakarvos_2 = castle
+#b_darmakarvos_3 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

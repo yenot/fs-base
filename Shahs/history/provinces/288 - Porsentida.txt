@@ -1,0 +1,20 @@
+# c_porsentida
+
+# County Title
+title = c_porsentida
+
+# Settlements
+max_settlements = 6
+
+b_porsentida = castle
+b_slodi = city
+b_girravia = temple
+b_omosilaria = city
+#b_porsentida_2 = city
+#b_porsentida_3 = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

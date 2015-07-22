@@ -1,0 +1,18 @@
+# c_tarwenafrashdeh
+
+# County Title
+title = c_tarwenafrashdeh
+
+# Settlements
+max_settlements = 4
+
+b_tormkod_2 = castle
+b_narpolasag = city
+b_akrarsahoy = temple
+b_samunkird = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

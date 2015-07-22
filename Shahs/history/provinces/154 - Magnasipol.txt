@@ -1,0 +1,18 @@
+# c_magnasipol
+
+# County Title
+title = c_magnasipol
+
+# Settlements
+max_settlements = 4
+
+b_magnasipol = castle
+b_lesniki = temple
+#b_magnasipol_2 = temple
+#b_magnasipol_3 = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

@@ -1,0 +1,11 @@
+# Kingdom{name='Lycinia'}
+500.1.1={
+	law = agnatic_succession
+	law = succ_primogeniture
+	law = centralization_3
+	law = vice_royalty_2
+	law = meritocracy_1
+	law = army_centralization_4
+}
+
+1066.1.1={ holder=1000007 }

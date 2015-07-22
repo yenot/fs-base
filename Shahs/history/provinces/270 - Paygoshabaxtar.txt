@@ -1,0 +1,16 @@
+# c_paygoshabaxtar
+
+# County Title
+title = c_paygoshabaxtar
+
+# Settlements
+max_settlements = 2
+
+b_tomar = castle
+b_padishtakamran = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

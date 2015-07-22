@@ -1,0 +1,20 @@
+# c_belbano
+
+# County Title
+title = c_belbano
+
+# Settlements
+max_settlements = 6
+
+b_belbano = castle
+b_asparica = temple
+b_baonica = temple
+b_liccino = city
+b_pluticcine = city
+#b_belbano_2 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

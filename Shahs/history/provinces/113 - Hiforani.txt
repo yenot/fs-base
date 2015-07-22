@@ -1,0 +1,18 @@
+# c_hiforani
+
+# County Title
+title = c_hiforani
+
+# Settlements
+max_settlements = 4
+
+b_eupamitoi = castle
+b_ifinea = temple
+#b_hiforani = temple
+#b_hiforani_2 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,18 @@
+# c_gondahr
+
+# County Title
+title = c_gondahr
+
+# Settlements
+max_settlements = 4
+
+b_garruz = castle
+b_kas = city
+#b_gondahr = temple
+#b_gondahr_2 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

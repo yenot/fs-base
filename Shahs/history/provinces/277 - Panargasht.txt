@@ -1,0 +1,21 @@
+# c_panargasht
+
+# County Title
+title = c_panargasht
+
+# Settlements
+max_settlements = 7
+
+b_uslivan = castle
+b_pohishkavsang = temple
+b_farrasman = city
+b_tesarp = castle
+#b_panargasht = city
+#b_panargasht_2 = temple
+#b_panargasht_3 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

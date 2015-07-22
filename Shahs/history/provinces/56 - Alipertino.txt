@@ -1,0 +1,19 @@
+# c_alipertino
+
+# County Title
+title = c_alipertino
+
+# Settlements
+max_settlements = 5
+
+b_alipertino = castle
+b_puatrid = castle
+b_augustina = temple
+b_sarticera = city
+#b_alipertino_2 = city
+
+# Misc
+culture = hamult
+religion = celestinian
+
+#History

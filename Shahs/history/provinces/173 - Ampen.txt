@@ -1,0 +1,19 @@
+# c_ampen
+
+# County Title
+title = c_ampen
+
+# Settlements
+max_settlements = 5
+
+b_vanazevo = castle
+b_kapolitse = temple
+b_gernanka = city
+#b_ampen = castle
+#b_ampen_2 = city
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

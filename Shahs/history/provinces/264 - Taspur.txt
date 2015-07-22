@@ -1,0 +1,19 @@
+# c_taspur
+
+# County Title
+title = c_taspur
+
+# Settlements
+max_settlements = 5
+
+b_taspur = castle
+b_vahramkird = temple
+b_kadshar = city
+#b_taspur_2 = castle
+#b_taspur_3 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

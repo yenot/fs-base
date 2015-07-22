@@ -1,0 +1,19 @@
+# c_nessirea
+
+# County Title
+title = c_nessirea
+
+# Settlements
+max_settlements = 5
+
+b_raduseliki = castle
+b_borsos = city
+#b_nessirea = temple
+#b_nessirea_2 = castle
+#b_nessirea_3 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

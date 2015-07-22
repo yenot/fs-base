@@ -1,0 +1,16 @@
+# c_pauray
+
+# County Title
+title = c_pauray
+
+# Settlements
+max_settlements = 2
+
+b_tagram = castle
+b_panasagird = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

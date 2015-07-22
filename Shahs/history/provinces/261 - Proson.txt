@@ -1,0 +1,16 @@
+# c_proson
+
+# County Title
+title = c_proson
+
+# Settlements
+max_settlements = 2
+
+b_veshataspar = castle
+b_baragod = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

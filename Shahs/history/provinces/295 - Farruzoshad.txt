@@ -1,0 +1,18 @@
+# c_farruzoshad
+
+# County Title
+title = c_farruzoshad
+
+# Settlements
+max_settlements = 4
+
+b_farruzoshad = castle
+b_gestikarnag = city
+#b_farruzoshad_2 = temple
+#b_farruzoshad_3 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

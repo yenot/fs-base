@@ -1,0 +1,19 @@
+# c_camarica
+
+# County Title
+title = c_camarica
+
+# Settlements
+max_settlements = 5
+
+b_camarica = castle
+b_slavica = temple
+b_spariotia = city
+b_pastravittore = castle
+#b_camarica_2 = city
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

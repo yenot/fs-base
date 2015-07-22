@@ -1,0 +1,11 @@
+# c_scala @Auletia|Holsida|Golbari
+500.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+800.1.1={
+	liege=d_golbari
+}
+1066.1.1={
+	holder=1000234
+}

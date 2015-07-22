@@ -1,0 +1,20 @@
+# c_marhammand
+
+# County Title
+title = c_marhammand
+
+# Settlements
+max_settlements = 6
+
+b_marhammand = castle
+b_nisheragashayan = temple
+b_xezvard = castle
+b_wistaxperozkird = city
+b_baroygesongan = temple
+b_huramman = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

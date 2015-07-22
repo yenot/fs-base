@@ -1,0 +1,18 @@
+# c_bras
+
+# County Title
+title = c_bras
+
+# Settlements
+max_settlements = 4
+
+b_dolni_polev = castle
+b_torkovo = city
+b_kalishte = castle
+#b_bras = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

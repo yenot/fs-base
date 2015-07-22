@@ -1,0 +1,19 @@
+# c_fungat
+
+# County Title
+title = c_fungat
+
+# Settlements
+max_settlements = 5
+
+b_fungat = castle
+b_bentina = temple
+b_lisino = city
+b_fenrica = temple
+#b_fungat_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

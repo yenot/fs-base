@@ -1,0 +1,21 @@
+# c_dender
+
+# County Title
+title = c_dender
+
+# Settlements
+max_settlements = 7
+
+b_dender = city
+b_nantophos = city
+b_hagia_tatiana = temple
+b_bremir = city
+b_setnara = city
+b_nomastis = castle
+#b_dender_2 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

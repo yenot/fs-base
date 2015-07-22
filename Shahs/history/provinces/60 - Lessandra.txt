@@ -1,0 +1,21 @@
+# c_lessandra
+
+# County Title
+title = c_lessandra
+
+# Settlements
+max_settlements = 7
+
+b_marvania = castle
+b_stefanica = temple
+#b_lessandra = temple
+#b_lessandra_2 = castle
+#b_lessandra_3 = city
+#b_lessandra_4 = temple
+#b_lessandra_5 = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

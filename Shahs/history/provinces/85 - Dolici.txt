@@ -1,0 +1,18 @@
+# c_dolici
+
+# County Title
+title = c_dolici
+
+# Settlements
+max_settlements = 4
+
+b_dolici = castle
+b_milinero = city
+b_termina = temple
+#b_dolici_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

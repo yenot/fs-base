@@ -1,0 +1,18 @@
+# c_gorni_polev
+
+# County Title
+title = c_gorni_polev
+
+# Settlements
+max_settlements = 4
+
+b_gorni_polev = castle
+b_lopyatino = temple
+#b_gorni_polev_2 = temple
+#b_gorni_polev_3 = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

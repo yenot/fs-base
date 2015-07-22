@@ -1,0 +1,95 @@
+heirs_party = {
+	random = no
+	opposites = { first_generation_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 15
+}
+
+first_generation_party = {
+	random = no
+	opposites = { heirs_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 15
+}
+
+meritocratic_party = {
+	random = no
+	opposites = { hereditary_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 30
+}
+
+hereditary_party = {
+	random = no
+	opposites = { meritocratic_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 30
+}	
+
+militaristic_party = {
+	random = no
+	opposites = { plutocratic_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 15
+}
+
+plutocratic_party = {
+	random = no
+	opposites = { militaristic_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 15
+}
+
+local_army_party = {
+	random = no
+	opposites = { centralized_army_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 30
+}
+
+centralized_army_party = {
+	random = no
+	opposites = { local_army_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 30
+}	
+
+budget_control_party = {
+	random = no
+	opposites = { spending_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 30
+}
+
+spending_party = {
+	random = no
+	opposites = { budget_control_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 30
+}
+
+deregulation_party = {
+	random = no
+	opposites = { monopolization_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 30
+}
+
+monopolization_party = {
+	random = no
+	opposites = { deregulation_party }
+	same_opinion = 20
+	opposite_opinion = -40
+	ai_ambition = 30
+}	

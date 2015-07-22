@@ -1,0 +1,18 @@
+# c_stefaniki
+
+# County Title
+title = c_stefaniki
+
+# Settlements
+max_settlements = 4
+
+b_stefaniki = castle
+b_gurinets = temple
+#b_stefaniki_2 = temple
+#b_stefaniki_3 = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

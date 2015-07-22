@@ -1,0 +1,17 @@
+# c_skarnea
+
+# County Title
+title = c_skarnea
+
+# Settlements
+max_settlements = 3
+
+b_erkinos = castle
+b_baiteron = city
+b_soronis = temple
+
+# Misc
+culture = kraitan
+religion = sabanean
+
+#History

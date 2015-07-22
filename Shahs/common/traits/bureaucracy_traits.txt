@@ -1,0 +1,18 @@
+passed_county_exam = {
+	random = no
+	customizer = no
+}
+
+passed_duchy_exam = {
+	random = no
+	customizer = no
+	learning = 1
+}
+
+passed_court_exam = {
+	random = no
+	customizer = no
+	learning = 2
+	stewardship = 1
+	diplomacy = 1
+}

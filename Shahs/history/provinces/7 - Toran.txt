@@ -1,0 +1,19 @@
+# c_toran
+
+# County Title
+title = c_toran
+
+# Settlements
+max_settlements = 5
+
+b_toran = castle
+b_publica = temple
+#b_toran_2 = temple
+#b_toran_3 = castle
+#b_toran_4 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

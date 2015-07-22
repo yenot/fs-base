@@ -1,0 +1,19 @@
+# c_lotesica
+
+# County Title
+title = c_lotesica
+
+# Settlements
+max_settlements = 5
+
+b_meninia = castle
+b_hipodamianos = city
+b_tenaikos = temple
+b_antonea = castle
+#b_lotesica = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

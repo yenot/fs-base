@@ -1,0 +1,20 @@
+# c_mattarida
+
+# County Title
+title = c_mattarida
+
+# Settlements
+max_settlements = 6
+
+b_mattarida = castle
+b_dilmarica = temple
+#b_mattarida_2 = temple
+#b_mattarida_3 = castle
+#b_mattarida_4 = city
+#b_mattarida_5 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

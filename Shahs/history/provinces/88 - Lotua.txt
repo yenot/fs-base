@@ -1,0 +1,20 @@
+# c_lotua
+
+# County Title
+title = c_lotua
+
+# Settlements
+max_settlements = 6
+
+b_lotua = castle
+b_lapiraselo = castle
+b_valentia = temple
+#b_lotua_2 = castle
+#b_lotua_3 = city
+#b_lotua_4 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

@@ -1,0 +1,16 @@
+# c_okromis
+
+# County Title
+title = c_okromis
+
+# Settlements
+max_settlements = 2
+
+b_paikeniki = castle
+b_barlab = temple
+
+# Misc
+culture = kraitan
+religion = sabanean
+
+#History

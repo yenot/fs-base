@@ -1,0 +1,18 @@
+# c_gramo
+
+# County Title
+title = c_gramo
+
+# Settlements
+max_settlements = 4
+
+b_temnida = castle
+b_nova_zatarevo = city
+#b_gramo = temple
+#b_gramo_2 = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

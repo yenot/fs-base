@@ -1,0 +1,19 @@
+# c_baria
+
+# County Title
+title = c_baria
+
+# Settlements
+max_settlements = 5
+
+b_kasavia = castle
+b_serpinea = city
+b_phesmer = temple
+b_salastica = city
+#b_baria = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,20 @@
+# c_garomseradoshast
+
+# County Title
+title = c_garomseradoshast
+
+# Settlements
+max_settlements = 6
+
+b_padxwar = castle
+b_surinwenagasman = temple
+b_puroy = city
+b_saxarapadigar = temple
+#b_garomseradoshast = city
+#b_garomseradoshast_2 = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

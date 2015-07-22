@@ -1,0 +1,28 @@
+#some lazy fix for government types
+
+namespace = fs_government
+
+character_event = {
+	id = fs_government.0
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			top_liege = { government = heavenly_kingdom_government }
+			top_liege = { government = bureaucratic_government }
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { top_liege = { government = heavenly_kingdom_government } }
+			set_government_type = heavenly_kingdom_government
+		}
+		
+		if = {
+			limit = { top_liege = { government = bureaucratic_government } }
+			set_government_type = bureaucratic_government
+		}
+	}
+}

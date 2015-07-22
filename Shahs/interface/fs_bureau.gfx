@@ -1,0 +1,12 @@
+objectTypes = {
+}
+
+spriteTypes = {
+	
+	#domestic_court.gfx
+	spriteType = {
+		name = "GFX_action_concentrate_on_economic_affairs"
+		texturefile = "gfx\\interface\\job_concentrate_on_economic_affairs.dds"
+		noOfFrames = 2
+	}
+}

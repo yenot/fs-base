@@ -1,0 +1,11 @@
+# Golbari
+500.1.1={
+	law = cognatic_succession
+	law = succ_gavelkind
+}
+800.1.1={
+	liege=k_holsida
+}
+1066.1.1={
+	holder=1000234
+}

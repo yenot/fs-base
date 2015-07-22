@@ -1,0 +1,21 @@
+# c_nitezza
+
+# County Title
+title = c_nitezza
+
+# Settlements
+max_settlements = 7
+
+b_nitezza = castle
+b_marnica = temple
+b_elvigari = city
+b_tatrini = castle
+b_laitica = temple
+b_coridica = castle
+#b_nitezza_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

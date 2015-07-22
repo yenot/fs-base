@@ -1,0 +1,20 @@
+# c_satti
+
+# County Title
+title = c_satti
+
+# Settlements
+max_settlements = 6
+
+b_satti = castle
+b_portestino = city
+b_silvia = temple
+#b_satti_2 = castle
+#b_satti_3 = city
+#b_satti_4 = temple
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

@@ -1,0 +1,19 @@
+# c_elsidiki
+
+# County Title
+title = c_elsidiki
+
+# Settlements
+max_settlements = 5
+
+b_kastariki = castle
+b_genia = temple
+#b_elsidiki = temple
+#b_elsidiki_2 = castle
+#b_elsidiki_3 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

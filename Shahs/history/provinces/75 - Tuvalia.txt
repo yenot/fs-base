@@ -1,0 +1,18 @@
+# c_tuvalia
+
+# County Title
+title = c_tuvalia
+
+# Settlements
+max_settlements = 4
+
+b_tuvalia = castle
+b_nilicce = city
+b_apracsia = temple
+#b_tuvalia_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

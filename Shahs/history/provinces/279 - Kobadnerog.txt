@@ -1,0 +1,20 @@
+# c_kobadnerog
+
+# County Title
+title = c_kobadnerog
+
+# Settlements
+max_settlements = 6
+
+b_vatashp = castle
+b_fihruzwizir = temple
+b_amrahorsag = city
+b_zanodaxor = temple
+#b_kobadnerog = city
+#b_kobadnerog_2 = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

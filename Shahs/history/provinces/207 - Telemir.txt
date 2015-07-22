@@ -1,0 +1,20 @@
+# c_telemir
+
+# County Title
+title = c_telemir
+
+# Settlements
+max_settlements = 6
+
+b_telemir = castle
+b_kreontida = temple
+b_kistraiki = city
+b_dmara = temple
+#b_telemir_2 = city
+#b_telemir_3 = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

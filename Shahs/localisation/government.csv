@@ -1,0 +1,7 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+bureaucratic_government;Bureaucratic;;;;;;;;;;;;;
+bureaucratic_government_desc;Bureaucratic realms rely on a strata of professional officials to govern the country. This type of government tends to be very stable but strong and influencial ministers might at times render their supreme ruler powerless in his own kingdom.;;;;;;;;;;;;;
+heavenly_kingdom_government;Heavenly Kingdom;;;;;;;;;;;;;
+heavenly_kingdom_government_desc;Heavenly Kingdom;;;;;;;;;;;;;
+DYNAMIC_HOLY_ORDER;Acolytes of [Root.GetFirstName];;;;;;;;;;;;;
+GRANDMASTER;Grand Master;;;;;;;;;;;;;

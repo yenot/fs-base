@@ -1,0 +1,19 @@
+# c_portocalaro
+
+# County Title
+title = c_portocalaro
+
+# Settlements
+max_settlements = 5
+
+b_portocalaro = castle
+b_stadiana = temple
+b_godaretti = city
+b_marcia = temple
+#b_portocalaro_2 = city
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

@@ -1,0 +1,20 @@
+# c_cerezzo
+
+# County Title
+title = c_cerezzo
+
+# Settlements
+max_settlements = 6
+
+b_cerezzo = castle
+b_aerica = temple
+b_lissa = city
+b_damirocino = city
+b_ribatti = city
+#b_cerezzo_2 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

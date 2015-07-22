@@ -1,0 +1,17 @@
+# c_keshrev
+
+# County Title
+title = c_keshrev
+
+# Settlements
+max_settlements = 3
+
+b_keshrev = castle
+b_javedasman = temple
+#b_keshrev_2 = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

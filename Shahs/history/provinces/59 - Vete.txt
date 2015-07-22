@@ -1,0 +1,19 @@
+# c_vete
+
+# County Title
+title = c_vete
+
+# Settlements
+max_settlements = 5
+
+b_vete = castle
+b_luciana = temple
+b_vobbreno = city
+b_tuiccito = castle
+#b_vete_2 = city
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

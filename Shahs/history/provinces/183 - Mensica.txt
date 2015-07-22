@@ -1,0 +1,18 @@
+# c_mensica
+
+# County Title
+title = c_mensica
+
+# Settlements
+max_settlements = 4
+
+b_kavernasos = castle
+b_kenedikaros = temple
+b_geflikenida = castle
+b_phenolia = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

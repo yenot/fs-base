@@ -1,0 +1,17 @@
+# c_kasterheim
+
+# County Title
+title = c_kasterheim
+
+# Settlements
+max_settlements = 3
+
+b_karum = castle
+b_menirgard = city
+b_komlthorpe = city
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

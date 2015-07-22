@@ -1,0 +1,19 @@
+# c_escravineti
+
+# County Title
+title = c_escravineti
+
+# Settlements
+max_settlements = 5
+
+b_escravineti = castle
+b_tempreneri = castle
+b_uranica = temple
+#b_escravineti_2 = castle
+#b_escravineti_3 = city
+
+# Misc
+culture = hamult
+religion = celestinian
+
+#History

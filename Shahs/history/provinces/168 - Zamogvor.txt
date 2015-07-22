@@ -1,0 +1,18 @@
+# c_zamogvor
+
+# County Title
+title = c_zamogvor
+
+# Settlements
+max_settlements = 4
+
+b_kolenishte = castle
+b_nova_markea = city
+b_tavritse = castle
+#b_zamogvor = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

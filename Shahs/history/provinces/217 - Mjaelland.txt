@@ -1,0 +1,18 @@
+# c_mjaelland
+
+# County Title
+title = c_mjaelland
+
+# Settlements
+max_settlements = 4
+
+b_fiskrbolstadir = castle
+b_alkfstadir = temple
+b_fodrthorpe = city
+#b_mjaelland = castle
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

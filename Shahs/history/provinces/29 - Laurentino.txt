@@ -1,0 +1,21 @@
+# c_laurentino
+
+# County Title
+title = c_laurentino
+
+# Settlements
+max_settlements = 7
+
+b_laurentino = castle
+b_asteria = temple
+b_bonsaneri = city
+b_bonoarocci = city
+b_stomaricci = castle
+#b_laurentino_2 = temple
+#b_laurentino_3 = castle
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

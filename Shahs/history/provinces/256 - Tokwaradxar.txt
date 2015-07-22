@@ -1,0 +1,19 @@
+# c_tokwaradxar
+
+# County Title
+title = c_tokwaradxar
+
+# Settlements
+max_settlements = 5
+
+b_shanardebegan = castle
+b_bahrampadwizen = temple
+b_pirkahal = city
+#b_tokwaradxar = castle
+#b_tokwaradxar_2 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

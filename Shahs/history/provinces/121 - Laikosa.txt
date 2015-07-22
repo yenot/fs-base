@@ -1,0 +1,18 @@
+# c_laikosa
+
+# County Title
+title = c_laikosa
+
+# Settlements
+max_settlements = 4
+
+b_spantaiki = castle
+b_kasos = temple
+b_esporea = city
+#b_laikosa = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

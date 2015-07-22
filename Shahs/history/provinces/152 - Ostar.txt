@@ -1,0 +1,18 @@
+# c_ostar
+
+# County Title
+title = c_ostar
+
+# Settlements
+max_settlements = 4
+
+b_varosevo = castle
+b_donketino = temple
+#b_ostar = temple
+#b_ostar_2 = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

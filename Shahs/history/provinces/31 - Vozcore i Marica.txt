@@ -1,0 +1,18 @@
+# c_vozcore_i_marica
+
+# County Title
+title = c_vozcore_i_marica
+
+# Settlements
+max_settlements = 4
+
+b_ilveran = castle
+b_ignacia = temple
+#b_vozcore_i_marica = temple
+#b_vozcore_i_marica_2 = castle
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

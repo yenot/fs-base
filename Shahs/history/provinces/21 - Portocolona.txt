@@ -1,0 +1,20 @@
+# c_portocolona
+
+# County Title
+title = c_portocolona
+
+# Settlements
+max_settlements = 6
+
+b_portocolona = castle
+b_topica = temple
+b_fonigretto = castle
+b_bellonia = city
+b_usavete = city
+#b_portocolona_2 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

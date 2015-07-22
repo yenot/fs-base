@@ -1,0 +1,18 @@
+# c_olato
+
+# County Title
+title = c_olato
+
+# Settlements
+max_settlements = 4
+
+b_olato = castle
+b_flavica = temple
+#b_olato_2 = temple
+#b_olato_3 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

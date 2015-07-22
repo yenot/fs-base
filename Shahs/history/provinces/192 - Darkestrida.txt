@@ -1,0 +1,17 @@
+# c_darkestrida
+
+# County Title
+title = c_darkestrida
+
+# Settlements
+max_settlements = 3
+
+b_kalaniki = castle
+b_diodatia = temple
+b_borkarea = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

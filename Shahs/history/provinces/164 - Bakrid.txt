@@ -1,0 +1,18 @@
+# c_bakrid
+
+# County Title
+title = c_bakrid
+
+# Settlements
+max_settlements = 4
+
+b_kastelnik = castle
+b_malo_ristovo = city
+#b_bakrid = temple
+#b_bakrid_2 = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

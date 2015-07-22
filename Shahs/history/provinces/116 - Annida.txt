@@ -1,0 +1,19 @@
+# c_annida
+
+# County Title
+title = c_annida
+
+# Settlements
+max_settlements = 5
+
+b_histopouli = castle
+b_psollion = city
+b_hagia_agathia = temple
+#b_annida = castle
+#b_annida_2 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

@@ -1,0 +1,20 @@
+# c_giulitano
+
+# County Title
+title = c_giulitano
+
+# Settlements
+max_settlements = 6
+
+b_umpilito = castle
+b_sarcaricci = castle
+b_quarticena = temple
+b_farar = castle
+b_cino = castle
+#b_giulitano = temple
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

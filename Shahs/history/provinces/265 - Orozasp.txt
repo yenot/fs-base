@@ -1,0 +1,16 @@
+# c_orozasp
+
+# County Title
+title = c_orozasp
+
+# Settlements
+max_settlements = 2
+
+b_orozasp = castle
+b_doshastardewar = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

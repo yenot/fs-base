@@ -1,0 +1,18 @@
+# c_kovach
+
+# County Title
+title = c_kovach
+
+# Settlements
+max_settlements = 4
+
+b_droevinki = castle
+b_gemino = temple
+b_krayovitse = city
+#b_kovach = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

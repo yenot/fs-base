@@ -1,0 +1,17 @@
+# c_taboev
+
+# County Title
+title = c_taboev
+
+# Settlements
+max_settlements = 3
+
+b_taboev = castle
+b_krasnogorevo = city
+#b_taboev_2 = temple
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

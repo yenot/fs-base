@@ -1,0 +1,18 @@
+# c_karpoevo
+
+# County Title
+title = c_karpoevo
+
+# Settlements
+max_settlements = 4
+
+b_karpoevo = castle
+b_staro_zatarevo = city
+b_archidarevo = temple
+#b_karpoevo_2 = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

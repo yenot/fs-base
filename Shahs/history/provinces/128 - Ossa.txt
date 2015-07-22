@@ -1,0 +1,19 @@
+# c_ossa
+
+# County Title
+title = c_ossa
+
+# Settlements
+max_settlements = 5
+
+b_hynkae = castle
+b_komiton = temple
+b_spiriketos = castle
+#b_ossa = castle
+#b_ossa_2 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

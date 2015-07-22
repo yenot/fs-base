@@ -1,0 +1,58 @@
+#Lycinia
+
+technology = {
+	titles = {
+		d_bolestrina
+		d_dianovi
+		d_dilmata
+		d_lepanica
+		d_lepe
+		d_liletto
+		d_nantica
+		d_torusca
+	}
+	
+	769 = {
+		military = 1.2
+		economy = 1.5
+		culture = 1.5
+	}
+		
+	1337 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
+	}
+}
+
+technology = {
+	titles = {
+		d_dianovi
+	}
+
+	769 = {
+		military = 1.2
+		economy = 1.5
+		culture = 1.5
+		
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3.0
+		TECH_CASTLE_CONSTRUCTION = 2.0
+		TECH_TEMPLE_CONSTRUCTION = 2.0
+		TECH_LEGALISM = 2.0
+	}
+		
+	1337 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
+		
+		TECH_FORTIFICATIONS_CONSTRUCTION = 4.5
+		TECH_CASTLE_CONSTRUCTION = 4.5
+		TECH_TEMPLE_CONSTRUCTION = 4.5
+		TECH_LEGALISM = 4.5
+	}
+}
+
+
+
+

@@ -1,0 +1,19 @@
+# c_sardadasht
+
+# County Title
+title = c_sardadasht
+
+# Settlements
+max_settlements = 5
+
+b_sardadasht = castle
+b_pervar = temple
+b_barwar = temple
+#b_sardadasht_2 = castle
+#b_sardadasht_3 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

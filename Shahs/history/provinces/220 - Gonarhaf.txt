@@ -1,0 +1,18 @@
+# c_gonarhaf
+
+# County Title
+title = c_gonarhaf
+
+# Settlements
+max_settlements = 4
+
+b_bekjarheim = castle
+b_rekeisi = temple
+#b_gonarhaf = temple
+#b_gonarhaf_2 = castle
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

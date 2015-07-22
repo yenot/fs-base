@@ -1,0 +1,21 @@
+# c_monpiet
+
+# County Title
+title = c_monpiet
+
+# Settlements
+max_settlements = 7
+
+b_monpiet = castle
+b_tippo = city
+b_iustinica = temple
+#b_monpiet_2 = castle
+#b_monpiet_3 = city
+#b_monpiet_4 = temple
+#b_monpiet_5 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

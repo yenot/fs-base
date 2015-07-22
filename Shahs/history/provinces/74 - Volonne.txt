@@ -1,0 +1,19 @@
+# c_volonne
+
+# County Title
+title = c_volonne
+
+# Settlements
+max_settlements = 5
+
+b_volonne = castle
+b_tolvia = castle
+b_solopina = temple
+b_dacci = city
+#b_volonne_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

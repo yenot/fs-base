@@ -1,0 +1,21 @@
+# c_namir
+
+# County Title
+title = c_namir
+
+# Settlements
+max_settlements = 7
+
+b_sokandargird = castle
+b_kasxvaran = temple
+b_trakay = temple
+b_mewagfraxdeh = temple
+b_mahroy = city
+#b_namir = temple
+#b_namir_2 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

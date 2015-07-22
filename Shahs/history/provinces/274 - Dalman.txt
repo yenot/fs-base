@@ -1,0 +1,18 @@
+# c_dalman
+
+# County Title
+title = c_dalman
+
+# Settlements
+max_settlements = 4
+
+b_dalman = castle
+b_poxtanamag = city
+b_kohrsang = temple
+b_shnayasman = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

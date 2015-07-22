@@ -1,0 +1,30 @@
+#Events related to bureaucratic government head
+
+character_event = {
+	id = 1000000230
+	title = EVTNAME1000000230
+	hide_window = yes
+	#desc = EVTDESC910
+	#picture = GFX_evt_emissary
+	#border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		has_job_action = action_concentrate_on_economic_affairs
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = {
+		name = EVTOPTABUREAU1
+		location = { add_province_modifier = { name = good_governance_results duration = -1} }
+		ai_chance = { factor = 50 }
+	}
+	
+		option = {
+		name = EVTOPTABUREAU2
+		location = { add_province_modifier = { name = poor_governance_results duration = -1} }
+		ai_chance = { factor = 50 }
+	}
+}

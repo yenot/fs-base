@@ -1,0 +1,4351 @@
+namespace = party
+
+# Bureaucratic parties
+
+# Party formation
+
+# Heirs party formation
+
+character_event = {
+	id = party.1
+	desc = EVTDESCPARTY1
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = heirs_party
+				trait = first_generation_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+			OR = {
+				father_even_if_dead = {
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This fails to check whom said forebearer served, might be foreign bureaucrat
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This fails to check whom said forebearer served, might be foreign bureaucrat
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			trait = hereditary_party
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY1 #Party created
+		add_trait = heirs_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY1 #Party not created
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				trait = meritocratic_party
+			}
+			modifier = {
+				factor = 0.1
+				trait = hereditary_party
+			}
+		}
+	}
+}
+
+#Upstarts party formation
+
+character_event = {
+	id = party.2
+	desc = EVTDESCPARTY2
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = heirs_party
+				trait = first_generation_party
+			}
+			any_realm_character = {
+				OR = {
+					trait = heirs_party
+					trait = hereditary_party
+				}
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+			NOT = {
+				father_even_if_dead = {
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This fails to check whom said forebearer served, might be foreign bureaucrat
+					}
+				}
+			}
+			NOT = {
+				mother_even_if_dead = {
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This fails to check whom said forebearer served, might be foreign bureaucrat
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			trait = meritocratic_party
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY2 #Party created
+		add_trait = first_generation_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY2 #Party not created
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				trait = hereditary_party
+			}
+			modifier = {
+				factor = 0.1
+				trait = meritocratic_party
+			}
+		}
+	}
+}
+
+# Hereditary party formation
+
+character_event = {
+	id = party.3
+	desc = EVTDESCPARTY3
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = hereditary_party
+				trait = meritocratic_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			trait = heirs_party
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY3 #Party created
+		add_trait = hereditary_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY3 #Party not created
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 4
+				trait = first_generation_party
+			}
+			modifier = {
+				factor = 0.7
+				trait = heirs_party
+			}
+		}
+	}
+}
+
+#Meritocratic party formation
+
+character_event = {
+	id = party.4
+	desc = EVTDESCPARTY4
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = hereditary_party
+				trait = meritocratic_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			trait = first_generation_party
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY4 #Party created
+		add_trait = meritocratic_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY4 #Party not created
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				trait = heirs_party
+			}
+			modifier = {
+				factor = 0.7
+				trait = first_generation_party
+			}
+		}
+	}
+}
+
+# Militaristic party formation
+
+character_event = {
+	id = party.5
+	desc = EVTDESCPARTY5
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = militaristic_party
+				trait = plutocratic_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			has_minor_title = royal_army_officer
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY5 #Party created
+		add_trait = militaristic_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY5 #Party not created
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+#Plutocratic party formation
+
+character_event = {
+	id = party.6
+	desc = EVTDESCPARTY6
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		ai = yes
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = militaristic_party
+				trait = plutocratic_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			yearly_income = 100
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY6 #Party created
+		add_trait = plutocratic_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY6 #Party not created
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+#Centralized army party formation
+
+character_event = {
+	id = party.7
+	desc = EVTDESCPARTY7
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = centralized_army_party
+				trait = local_army_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.3
+			has_minor_title = royal_army_officer
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY7 #Party created
+		add_trait = centralized_army_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY7 #Party not created
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+#Local army party formation
+
+character_event = {
+	id = party.8
+	desc = EVTDESCPARTY8
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = centralized_army_party
+				trait = local_army_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 4
+			has_minor_title = royal_army_officer
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY8 #Party created
+		add_trait = local_army_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY8 #Party not created
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+#Budget control party formation
+
+character_event = {
+	id = party.9
+	desc = EVTDESCPARTY1
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = budget_control_party
+				trait = spending_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			trait = deregulation_party
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY9 #Party created
+		add_trait = budget_control_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY9 #Party not created
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				trait = monopolization_party
+			}
+			modifier = {
+				factor = 0.1
+				trait = deregulation_party
+			}
+		}
+	}
+}
+
+#Spending party formation
+
+character_event = {
+	id = party.10
+	desc = EVTDESCPARTY10
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = budget_control_party
+				trait = spending_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			trait = monopolization_party
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY10 #Party created
+		add_trait = spending_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY10 #Party not created
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				trait = deregulation_party
+			}
+			modifier = {
+				factor = 0.1
+				trait = monopolization_party
+			}
+		}
+	}
+}
+
+#Deregulation party formation
+
+character_event = {
+	id = party.11
+	desc = EVTDESCPARTY11
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = deregulation_party
+				trait = monopolization_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			trait = budget_control_party
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY11 #Party created
+		add_trait = deregulation_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY11 #Party not created
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 4
+				trait = spending_party
+			}
+			modifier = {
+				factor = 0.7
+				trait = budget_control_party
+			}
+		}
+	}
+}
+
+#Monopolization party formation
+
+character_event = {
+	id = party.12
+	desc = EVTDESCPARTY12
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		AND = {
+			age = 16
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			independent = no
+			NOT = {
+				trait = deregulation_party
+				trait = monopolization_party
+			}
+			OR = {
+				is_councillor = yes
+				#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+				#has_minor_title = royal_army_officer
+				is_ruler = yes
+				#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5 #This might be changed to manipulate party density
+		modifier = {
+			factor = 0.5
+			trait = spending_party
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY12 #Party created
+		add_trait = monopolization_party
+		factor = 100
+	}
+	
+	option = {
+		name = EVTOPTBPARTY12 #Party not created
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				trait = budget_control_party
+			}
+			modifier = {
+				factor = 0.7
+				trait = spending_party
+			}
+		}
+	}
+}
+
+############################################################
+#####################Party spread###########################
+############################################################
+
+#Heirs party spread
+
+character_event = {
+	id = party.100
+	desc = EVTDESCPARTY100
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		top_liege = { primary_title = { has_law = vice_royalty_2 } }
+		AND = {
+			trait = heirs_party
+			any_realm_character = {
+				age = 16
+				independent = no
+				AND = {
+					NOT = {
+						trait = heirs_party
+						trait = first_generation_party
+					}
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+	name = EVTOPTAPARTY100
+		random_realm_character = {
+			limit = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = heirs_party }
+					NOT = { trait = first_generation_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.101 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.101
+	desc = EVTDESCPARTY101
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY101
+		add_trait = heirs_party
+		FROM = { letter_event = { id = party.102 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY101
+		FROM = { letter_event = { id = party.103 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = hereditary_party
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 2
+				trait = meritocratic_party
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.102
+	is_triggered_only = yes
+	desc = EVTDESCPARTY102
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.103
+	is_triggered_only = yes
+	desc = EVTDESCPARTY103
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Upstarts party spread
+
+character_event = {
+	id = party.200
+	desc = EVTDESCPARTY200
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = first_generation_party
+			any_realm_character = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = {
+						trait = heirs_party
+						trait = first_generation_party
+					}
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+					NOT = {
+						father_even_if_dead = {
+							OR = {
+								is_councillor = yes
+								#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+								#has_minor_title = royal_army_officer
+								is_ruler = yes
+								#trait = [FORMER BUREAUCRAT] #This fails to check whom said forebearer served, might be foreign bureaucrat
+							}
+						}
+					}
+					NOT = {
+						mother_even_if_dead = {
+							OR = {
+								is_councillor = yes
+								#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+								#has_minor_title = royal_army_officer
+								is_ruler = yes
+								#trait = [FORMER BUREAUCRAT] #This fails to check whom said forebearer served, might be foreign bureaucrat
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY200
+		random_realm_character = {
+			limit = {
+				NOT = {
+					trait = heirs_party
+					trait = first_generation_party
+				}
+				AND = {
+				age = 16
+				independent = no
+				OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+					NOT = {
+						father_even_if_dead = {
+							OR = {
+								is_councillor = yes
+								#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+								#has_minor_title = royal_army_officer
+								is_ruler = yes
+								#trait = [FORMER BUREAUCRAT] #This fails to check whom said forebearer served, might be foreign bureaucrat
+							}
+						}
+					}
+					NOT = {
+						mother_even_if_dead = {
+							OR = {
+								is_councillor = yes
+								#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+								#has_minor_title = royal_army_officer
+								is_ruler = yes
+								#trait = [FORMER BUREAUCRAT] #This fails to check whom said forebearer served, might be foreign bureaucrat
+							}
+						}
+					}
+				}
+			}
+			character_event = { id = party.201 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.201
+	desc = EVTDESCPARTY201
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY201
+		add_trait = first_generation_party
+		FROM = { letter_event = { id = party.202 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY201
+		FROM = { letter_event = { id = party.203 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 2
+				trait = hereditary_party
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = meritocratic_party
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.202
+	is_triggered_only = yes
+	desc = EVTDESCPARTY202
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.203
+	is_triggered_only = yes
+	desc = EVTDESCPARTY203
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Hereditary party spread
+
+character_event = {
+	id = party.300
+	desc = EVTDESCPARTY300
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = heirs_party
+			any_realm_character = {
+				age = 16
+				independent = no
+				AND = {
+					NOT = {
+						trait = hereditary_party
+						trait = meritocratic_party
+					}
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+	name = EVTOPTAPARTY300
+		random_realm_character = {
+			limit = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = hereditary_party }
+					NOT = { trait = meritocratic_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.301 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.301
+	desc = EVTDESCPARTY301
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY301
+		add_trait = hereditary_party
+		FROM = { letter_event = { id = party.302 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY301
+		FROM = { letter_event = { id = party.303 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = heirs_party
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 2
+				trait = first_generation_party
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.302
+	is_triggered_only = yes
+	desc = EVTDESCPARTY302
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.303
+	is_triggered_only = yes
+	desc = EVTDESCPARTY303
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Meritocratic party spread
+
+character_event = {
+	id = party.400
+	desc = EVTDESCPARTY400
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = first_generation_party
+			any_realm_character = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = hereditary_party }
+					NOT = { trait = meritocratic_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY400
+		random_realm_character = {
+			limit = {
+				NOT = {
+					trait = hereditary_party
+					trait = meritocratic_party
+				}
+				AND = {
+					age = 16
+					independent = no
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.401 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.401
+	desc = EVTDESCPARTY401
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY401
+		add_trait = meritocratic_party
+		FROM = { letter_event = { id = party.402 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY401
+		FROM = { letter_event = { id = party.403 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = first_generation_party
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 2
+				trait = hereditary_party
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.402
+	is_triggered_only = yes
+	desc = EVTDESCPARTY402
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.403
+	is_triggered_only = yes
+	desc = EVTDESCPARTY403
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Militaristic party spread
+
+character_event = {
+	id = party.500
+	desc = EVTDESCPARTY500
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = militaristic_party
+			any_realm_character = {
+				age = 16
+				independent = no
+				AND = {
+					NOT = {
+						trait = militaristic_party
+						trait = plutocratic_party
+					}
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+	name = EVTOPTAPARTY500
+		random_realm_character = {
+			limit = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = militaristic_party }
+					NOT = { trait = plutocratic_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.501 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.501
+	desc = EVTDESCPARTY501
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY501
+		add_trait = militaristic_party
+		FROM = { letter_event = { id = party.502 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY501
+		FROM = { letter_event = { id = party.503 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+		
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.502
+	is_triggered_only = yes
+	desc = EVTDESCPARTY502
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.503
+	is_triggered_only = yes
+	desc = EVTDESCPARTY503
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Plutocratic party spread
+
+character_event = {
+	id = party.600
+	desc = EVTDESCPARTY600
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = plutocratic_party
+			any_realm_character = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = plutocratic_party }
+					NOT = { trait = meritocratic_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY600
+		random_realm_character = {
+			limit = {
+				NOT = {
+					trait = militaristic_party
+					trait = plutocratic_party
+				}
+				AND = {
+					age = 16
+					independent = no
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.601 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.601
+	desc = EVTDESCPARTY601
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY601
+		add_trait = meritocratic_party
+		FROM = { letter_event = { id = party.602 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY601
+		FROM = { letter_event = { id = party.603 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.602
+	is_triggered_only = yes
+	desc = EVTDESCPARTY602
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.603
+	is_triggered_only = yes
+	desc = EVTDESCPARTY603
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Militaristic party spread
+
+character_event = {
+	id = party.700
+	desc = EVTDESCPARTY700
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = militaristic_party
+			any_realm_character = {
+				age = 16
+				independent = no
+				AND = {
+					NOT = {
+						trait = centralized_army_party
+						trait = local_army_party
+					}
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+	name = EVTOPTAPARTY700
+		random_realm_character = {
+			limit = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = centralized_army_party }
+					NOT = { trait = local_army_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.701 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.701
+	desc = EVTDESCPARTY701
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY701
+		add_trait = centralized_army_party
+		FROM = { letter_event = { id = party.702 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY701
+		FROM = { letter_event = { id = party.703 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+		
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.702
+	is_triggered_only = yes
+	desc = EVTDESCPARTY702
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.703
+	is_triggered_only = yes
+	desc = EVTDESCPARTY703
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Local army party spread
+
+character_event = {
+	id = party.800
+	desc = EVTDESCPARTY800
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = local_army_party
+			any_realm_character = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = centralized_army_party }
+					NOT = { trait = local_army_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY800
+		random_realm_character = {
+			limit = {
+				NOT = {
+					trait = centralized_army_party
+					trait = local_army_party
+				}
+				AND = {
+					age = 16
+					independent = no
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.801 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.801
+	desc = EVTDESCPARTY801
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY801
+		add_trait = local_army_party
+		FROM = { letter_event = { id = party.802 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY801
+		FROM = { letter_event = { id = party.803 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.802
+	is_triggered_only = yes
+	desc = EVTDESCPARTY802
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.803
+	is_triggered_only = yes
+	desc = EVTDESCPARTY803
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Budget control party spread
+
+character_event = {
+	id = party.900
+	desc = EVTDESCPARTY900
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = budget_control_party
+			any_realm_character = {
+				age = 16
+				independent = no
+				AND = {
+					NOT = {
+						trait = budget_control_party
+						trait = spending_party
+					}
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+	name = EVTOPTAPARTY900
+		random_realm_character = {
+			limit = {
+				AND = {
+					age = 16
+					NOT = { trait = budget_control_party }
+					NOT = { trait = spending_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.901 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.901
+	desc = EVTDESCPARTY901
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY901
+		add_trait = budget_control_party
+		FROM = { letter_event = { id = party.902 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY901
+		FROM = { letter_event = { id = party.903 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = deregulation_party
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 2
+				trait = monopolization_party
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.902
+	is_triggered_only = yes
+	desc = EVTDESCPARTY902
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.903
+	is_triggered_only = yes
+	desc = EVTDESCPARTY903
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Spending party spread
+
+character_event = {
+	id = party.1000
+	desc = EVTDESCPARTY1000
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = first_generation_party
+			any_realm_character = {
+				AND = {
+					age = 16
+					NOT = {
+						trait = budget_control_party
+						trait = spending_party
+					}
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY1000
+		random_realm_character = {
+			limit = {
+				NOT = {
+					trait = budget_control_party
+					trait = spending_party
+				}
+				AND = {
+				age = 16
+				OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.1001 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.1001
+	desc = EVTDESCPARTY1001
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY1001
+		add_trait = spending_party
+		FROM = { letter_event = { id = party.1002 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY1001
+		FROM = { letter_event = { id = party.1003 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 2
+				trait = deregulation_party
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = monopolization_party
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.1002
+	is_triggered_only = yes
+	desc = EVTDESCPARTY1002
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.1003
+	is_triggered_only = yes
+	desc = EVTDESCPARTY1003
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Deregulation party spread
+
+character_event = {
+	id = party.1100
+	desc = EVTDESCPARTY1100
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = deregulation_party
+			any_realm_character = {
+				age = 16
+				independent = no
+				AND = {
+					NOT = {
+						trait = deregulation_party
+						trait = monopolization_party
+					}
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+	name = EVTOPTAPARTY1100
+		random_realm_character = {
+			limit = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = deregulation_party }
+					NOT = { trait = monopolization_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.1101 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.1101
+	desc = EVTDESCPARTY1101
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY1101
+		add_trait = deregulation_party
+		FROM = { letter_event = { id = party.1102 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY1101
+		FROM = { letter_event = { id = party.1103 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = budget_control_party
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 2
+				trait = spending_party
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.1102
+	is_triggered_only = yes
+	desc = EVTDESCPARTY1102
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.1103
+	is_triggered_only = yes
+	desc = EVTDESCPARTY1103
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+#Monopolization party spread
+
+character_event = {
+	id = party.1200
+	desc = EVTDESCPARTY1200
+	picture = GFX_evt_emissary
+	min_age = 16
+	
+	trigger = {
+		AND = {
+			top_liege = { primary_title = { has_law = vice_royalty_2 } }
+			trait = monopolization_party
+			any_realm_character = {
+				AND = {
+					age = 16
+					independent = no
+					NOT = { trait = deregulation_party }
+					NOT = { trait = monopolization_party }
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 7
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}
+	
+	option = {
+		name = EVTOPTAPARTY1200
+		random_realm_character = {
+			limit = {
+				NOT = {
+					trait = deregulation_party
+					trait = monopolization_party
+				}
+				AND = {
+					age = 16
+					independent = no
+					OR = {
+						is_councillor = yes
+						#has_minor_title =   #Add minor titles e.g. Agriculture Minister
+						#has_minor_title = royal_army_officer
+						is_ruler = yes
+						#trait = [FORMER BUREAUCRAT] #This exhausts the list of bureaucratic positions
+					}
+				}
+			}
+			character_event = { id = party.1201 }
+		}
+	}
+}
+	
+character_event = {
+	id = party.1201
+	desc = EVTDESCPARTY1201
+	is_triggered_only = yes
+	picture = GFX_evt_emissary
+	
+	option = { #Offer accted
+		name = EVTOPTAPARTY401
+		add_trait = monopolization_party
+		FROM = { letter_event = { id = party.1202 } } #Recruiter is informed
+		ai_chance = { factor = 100 }
+	}
+	
+	option = { #Offer not accepted
+		name = EVTOPTBPARTY1201
+		FROM = { letter_event = { id = party.1203 } } #Recruiter is informed
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				trait = spending_party
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+			
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			
+			modifier = {
+				factor = 2
+				trait = budget_control_party
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 90
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 80
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 70
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 60
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 40
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 30
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 20
+				}
+			}
+			
+			modifier = {
+				factor = 0.9
+				opinion = {
+					who = FROM
+					value = 10
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -9
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -19
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -29
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -39
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -49
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -59
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -69
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -79
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -89
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -99
+					}
+				}
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = party.1202
+	is_triggered_only = yes
+	desc = EVTDESCPARTY1202
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = party.1203
+	is_triggered_only = yes
+	desc = EVTDESCPARTY1203
+	picture = GFX_evt_emissary
+	
+	option = {
+		name = OK
+	}
+}

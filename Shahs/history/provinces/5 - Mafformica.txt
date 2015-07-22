@@ -1,0 +1,18 @@
+# c_mafformica
+
+# County Title
+title = c_mafformica
+
+# Settlements
+max_settlements = 4
+
+b_stramica = castle
+b_eolica = temple
+#b_mafformica = temple
+#b_mafformica_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

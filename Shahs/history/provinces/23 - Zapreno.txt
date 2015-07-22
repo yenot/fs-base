@@ -1,0 +1,18 @@
+# c_zapreno
+
+# County Title
+title = c_zapreno
+
+# Settlements
+max_settlements = 4
+
+b_issa = castle
+b_salinica = temple
+#b_zapreno = temple
+#b_zapreno_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

@@ -1,0 +1,136 @@
+decisions = {
+	
+	participate_in_the_next_county_examination = {
+		potential = {
+			independent = no
+			top_liege = {
+				primary_title = {
+					has_law = vice_royalty_2
+				}
+			}
+			NOT = { has_character_flag = preparing_to_take_county_exam }
+			NOT = { trait = passed_county_exam }
+			NOT = { trait = passed_duchy_exam }
+			NOT = { trait = passed_court_exam }
+			OR = {
+				NOT = { 
+					liege = {
+						primary_title = {
+							has_law = agnatic_succession
+						}
+					}
+				}
+				is_female = no
+			}
+		}
+		
+		# allow = {
+			# top_liege = {
+				# ROOT = {
+					# scaled_wealth = 5
+				# }
+			# }
+		# }
+		
+		effect = {
+			set_character_flag = preparing_to_take_county_exam
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	participate_in_the_next_duchy_examination = {
+		potential = {
+			independent = no
+			top_liege = {
+				primary_title = {
+					has_law = vice_royalty_2
+				}
+			}
+			NOT = { has_character_flag = preparing_to_take_duchy_exam }
+			trait = passed_county_exam
+			NOT = { trait = passed_duchy_exam }
+			NOT = { trait = passed_court_exam }
+			OR = {
+				NOT = { 
+					liege = {
+						primary_title = {
+							has_law = agnatic_succession
+						}
+					}
+				}
+				is_female = no
+			}
+		}
+		
+		# allow = {
+			# top_liege = {
+				# ROOT = {
+					# scaled_wealth = 5
+				# }
+			# }
+		# }
+		
+		effect = {
+			set_character_flag = preparing_to_take_duchy_exam
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	participate_in_the_next_court_examination = {
+		potential = {
+			independent = no
+			top_liege = {
+				primary_title = {
+					has_law = vice_royalty_2
+				}
+			}
+			NOT = { has_character_flag = preparing_to_take_court_exam }
+			trait = passed_duchy_exam
+			NOT = { trait = passed_court_exam }
+			OR = {
+				NOT = { 
+					liege = {
+						primary_title = {
+							has_law = agnatic_succession
+						}
+					}
+				}
+				is_female = no
+			}
+		}
+		
+		# allow = {
+			# top_liege = {
+				# ROOT = {
+					# scaled_wealth = 5
+				# }
+			# }
+		# }
+		
+		effect = {
+			set_character_flag = preparing_to_take_court_exam
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

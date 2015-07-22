@@ -1,0 +1,18 @@
+# c_manuvishte
+
+# County Title
+title = c_manuvishte
+
+# Settlements
+max_settlements = 4
+
+b_manuvishte = castle
+b_krasna_kepel = temple
+b_hmari = temple
+#b_manuvishte_2 = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

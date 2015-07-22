@@ -1,0 +1,19 @@
+# c_cembreggo
+
+# County Title
+title = c_cembreggo
+
+# Settlements
+max_settlements = 5
+
+b_cembreggo = castle
+b_capidorato = castle
+b_umanica = temple
+b_operito = castle
+#b_cembreggo_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

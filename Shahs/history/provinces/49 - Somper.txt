@@ -1,0 +1,21 @@
+# c_somper
+
+# County Title
+title = c_somper
+
+# Settlements
+max_settlements = 7
+
+b_domeregi = castle
+b_sivica = temple
+b_quistomaro = city
+#b_somper = castle
+#b_somper_2 = city
+#b_somper_3 = temple
+#b_somper_4 = castle
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

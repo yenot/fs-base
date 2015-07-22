@@ -1,0 +1,19 @@
+# c_falistimea
+
+# County Title
+title = c_falistimea
+
+# Settlements
+max_settlements = 5
+
+b_ekeoson = castle
+b_omanotrosos = castle
+b_aikinofos = castle
+#b_falistimea = castle
+#b_falistimea_2 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

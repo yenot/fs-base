@@ -1,0 +1,20 @@
+# c_azarmaperoz
+
+# County Title
+title = c_azarmaperoz
+
+# Settlements
+max_settlements = 6
+
+b_azarmaperoz = castle
+b_bahr = temple
+b_vakr = temple
+b_razurababran = temple
+#b_azarmaperoz_2 = city
+#b_azarmaperoz_3 = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

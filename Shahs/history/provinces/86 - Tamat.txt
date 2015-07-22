@@ -1,0 +1,18 @@
+# c_tamat
+
+# County Title
+title = c_tamat
+
+# Settlements
+max_settlements = 4
+
+b_tamat = castle
+b_paranica = temple
+#b_tamat_2 = temple
+#b_tamat_3 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

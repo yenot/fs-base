@@ -1,0 +1,17 @@
+# c_farrazdeh
+
+# County Title
+title = c_farrazdeh
+
+# Settlements
+max_settlements = 3
+
+b_behatrantay = castle
+b_ehringaran = temple
+b_forang = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

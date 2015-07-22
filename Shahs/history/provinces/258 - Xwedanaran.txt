@@ -1,0 +1,19 @@
+# c_xwedanaran
+
+# County Title
+title = c_xwedanaran
+
+# Settlements
+max_settlements = 5
+
+b_erzag = castle
+b_amtouskird = temple
+b_roshnasman = city
+#b_xwedanaran = castle
+#b_xwedanaran_2 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

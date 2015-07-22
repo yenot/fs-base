@@ -1,0 +1,20 @@
+# c_nestiri
+
+# County Title
+title = c_nestiri
+
+# Settlements
+max_settlements = 6
+
+b_nestiri = castle
+b_eventino = castle
+b_eliotica = temple
+b_lostriciana = castle
+b_caunari = city
+#b_nestiri_2 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

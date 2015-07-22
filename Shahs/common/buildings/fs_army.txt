@@ -1,0 +1,1698 @@
+castle = {
+
+	ca_imp_li_camp_1 = {
+		desc = imp_li_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		gold_cost = 17.5
+		build_time = 1
+		light_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_li_camp_2 = {
+		desc = imp_li_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_li_camp_1
+		gold_cost = 17.5
+		build_time = 1
+		light_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_li_camp_3 = {
+		desc = imp_li_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_li_camp_2
+		gold_cost = 17.5
+		build_time = 1
+		light_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_li_camp_4 = {
+		desc = imp_li_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_li_camp_3
+		gold_cost = 17.5
+		build_time = 1
+		light_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_li_camp_5 = {
+		desc = imp_li_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_li_camp_4
+		gold_cost = 17.5
+		build_time = 1
+		light_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ar_camp_1 = {
+		desc = imp_ar_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		gold_cost = 25
+		build_time = 1
+		archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ar_camp_2 = {
+		desc = imp_ar_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_ar_camp_1
+		gold_cost = 25
+		build_time = 1
+		archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ar_camp_3 = {
+		desc = imp_ar_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_ar_camp_2
+		gold_cost = 25
+		build_time = 1
+		archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ar_camp_4 = {
+		desc = imp_ar_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_ar_camp_3
+		gold_cost = 25
+		build_time = 1
+		archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ar_camp_5 = {
+		desc = imp_ar_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_ar_camp_4
+		gold_cost = 25
+		build_time = 1
+		archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hi_camp_1 = {
+		desc = imp_hi_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		gold_cost = 75
+		build_time = 1
+		heavy_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hi_camp_2 = {
+		desc = imp_hi_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_hi_camp_1
+		gold_cost = 75
+		build_time = 1
+		heavy_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hi_camp_3 = {
+		desc = imp_hi_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_hi_camp_2
+		gold_cost = 75
+		build_time = 1
+		heavy_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hi_camp_4 = {
+		desc = imp_hi_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_hi_camp_3
+		gold_cost = 75
+		build_time = 1
+		heavy_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hi_camp_5 = {
+		desc = imp_hi_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_hi_camp_4
+		gold_cost = 75
+		build_time = 1
+		heavy_infantry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_lc_camp_1 = {
+		desc = imp_lc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		gold_cost = 75
+		build_time = 1
+		light_cavalry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_lc_camp_2 = {
+		desc = imp_lc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_lc_camp_1
+		gold_cost = 75
+		build_time = 1
+		light_cavalry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_lc_camp_3 = {
+		desc = imp_lc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_lc_camp_2
+		gold_cost = 75
+		build_time = 1
+		light_cavalry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_lc_camp_4 = {
+		desc = imp_lc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_lc_camp_3
+		gold_cost = 75
+		build_time = 1
+		light_cavalry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_lc_camp_5 = {
+		desc = imp_lc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_lc_camp_4
+		gold_cost = 75
+		build_time = 1
+		light_cavalry = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hc_camp_1 = {
+		desc = imp_hc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		gold_cost = 150
+		build_time = 1
+		knights = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hc_camp_2 = {
+		desc = imp_hc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_hc_camp_1
+		gold_cost = 150
+		build_time = 1
+		knights = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hc_camp_3 = {
+		desc = imp_hc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_hc_camp_2
+		gold_cost = 150
+		build_time = 1
+		knights = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hc_camp_4 = {
+		desc = imp_hc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_hc_camp_3
+		gold_cost = 150
+		build_time = 1
+		knights = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_hc_camp_5 = {
+		desc = imp_hc_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_hc_camp_4
+		gold_cost = 150
+		build_time = 1
+		knights = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ha_camp_1 = {
+		desc = imp_ha_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		gold_cost = 100
+		build_time = 1
+		horse_archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ha_camp_2 = {
+		desc = imp_ha_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_ha_camp_1
+		gold_cost = 100
+		build_time = 1
+		horse_archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ha_camp_3 = {
+		desc = imp_ha_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_ha_camp_2
+		gold_cost = 100
+		build_time = 1
+		horse_archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ha_camp_4 = {
+		desc = imp_ha_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_ha_camp_3
+		gold_cost = 100
+		build_time = 1
+		horse_archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	ca_imp_ha_camp_5 = {
+		desc = imp_ha_camp
+		potential = {
+			has_province_flag = army_location
+			FROMFROM = {
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+		}
+		upgrades_from = ca_imp_ha_camp_4
+		gold_cost = 100
+		build_time = 1
+		horse_archers = 250
+		ai_creation_factor = 400
+		extra_tech_building_start = 0
+	}
+	
+	#Conscription office capturing the size of realm and translating it into standing army size
+	
+	conscription_office_1 = {
+		desc = conscription_office
+		potential = {
+			FROMFROM = { 
+				OR = {
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}
+			}
+			FROM = {
+				top_liege = {
+					any_realm_province = { count = 5 }
+					NOT = { any_realm_province = { count = 10 } }
+				}
+			}
+		}
+		gold_cost = 1
+		build_time = 1
+		castle_levy_size = 1
+		ai_creation_factor = 0
+		extra_tech_building_start = 0
+	}
+	
+	conscription_office_2 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 10 }
+					NOT = { any_realm_province = { count = 15 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 2			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_3 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 15 }
+					NOT = { any_realm_province = { count = 20 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 3			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_4 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 20 }
+					NOT = { any_realm_province = { count = 25 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 4			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_5 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 25 }
+					NOT = { any_realm_province = { count = 30 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 5			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_6 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 30 }
+					NOT = { any_realm_province = { count = 35 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 6			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}		
+	
+	conscription_office_7 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 35 }
+					NOT = { any_realm_province = { count = 40 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 7			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_8 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 40 }
+					NOT = { any_realm_province = { count = 45 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 8			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_9 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 45 }
+					NOT = { any_realm_province = { count = 50 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 9			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_10 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 50 }
+					NOT = { any_realm_province = { count = 55 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 10			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_11 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 55 }
+					NOT = { any_realm_province = { count = 60 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 11			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_12 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 60 }
+					NOT = { any_realm_province = { count = 65 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 12			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_13 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 65 }
+					NOT = { any_realm_province = { count = 70 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 13			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_14 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 70 }
+					NOT = { any_realm_province = { count = 75 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 14			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_15 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 75 }
+					NOT = { any_realm_province = { count = 80 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 15			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_16 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 80 }
+					NOT = { any_realm_province = { count = 85 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 16			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_17 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 85 }
+					NOT = { any_realm_province = { count = 90 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 17			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_18 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 90 }
+					NOT = { any_realm_province = { count = 95 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 18			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_19 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 95 }
+					NOT = { any_realm_province = { count = 100 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 19			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_20 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 100 }
+					NOT = { any_realm_province = { count = 105 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 20			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_21 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 105 }
+					NOT = { any_realm_province = { count = 110 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 21			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_22 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 110 }
+					NOT = { any_realm_province = { count = 115 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 22			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_23 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 115 }
+					NOT = { any_realm_province = { count = 120 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 23			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_24 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 120 }
+					NOT = { any_realm_province = { count = 125 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 24			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_25 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 125 }
+					NOT = { any_realm_province = { count = 130 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 25			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_26 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 130 }
+					NOT = { any_realm_province = { count = 135 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 26			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_27 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 135 }
+					NOT = { any_realm_province = { count = 140 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 27			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_28 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 140 }
+					NOT = { any_realm_province = { count = 145 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 28			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_29 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 145 }
+					NOT = { any_realm_province = { count = 150 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 29			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_30 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 150 }
+					NOT = { any_realm_province = { count = 155 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 30			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_31 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 155 }
+					NOT = { any_realm_province = { count = 160 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 31			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_32 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 160 }
+					NOT = { any_realm_province = { count = 165 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 32			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_33 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 165 }
+					NOT = { any_realm_province = { count = 170 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 33			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_34 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 170 }
+					NOT = { any_realm_province = { count = 175 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 34			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_35 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 175 }
+					NOT = { any_realm_province = { count = 180 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 35			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_36 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 180 }
+					NOT = { any_realm_province = { count = 185 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 36			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_37 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 185 }
+					NOT = { any_realm_province = { count = 190 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 37			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_38 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 190 }
+					NOT = { any_realm_province = { count = 195 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 38			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+	
+	conscription_office_39 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 195 }
+					NOT = { any_realm_province = { count = 200 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 39			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}				
+					
+	conscription_office_40 = {				
+		desc = conscription_office			
+		potential = {			
+			FROMFROM = { 		
+				OR = {	
+					has_title_flag = first_army_holding
+					has_title_flag = second_army_holding
+					has_title_flag = third_army_holding
+					has_title_flag = fourth_army_holding
+					has_title_flag = fifth_army_holding
+				}	
+			}		
+			FROM = {		
+				top_liege = {	
+					any_realm_province = { count = 200 }
+					NOT = { any_realm_province = { count = 205 } }
+				}	
+			}		
+		}			
+		gold_cost = 1			
+		build_time = 1			
+		castle_levy_size = 40			
+		ai_creation_factor = 0			
+		extra_tech_building_start = 0			
+	}
+}

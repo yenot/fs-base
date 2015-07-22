@@ -1,0 +1,16 @@
+# c_sontkay
+
+# County Title
+title = c_sontkay
+
+# Settlements
+max_settlements = 2
+
+b_gezshan = castle
+b_argeshan = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

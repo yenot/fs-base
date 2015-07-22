@@ -1,0 +1,19 @@
+# c_vittora
+
+# County Title
+title = c_vittora
+
+# Settlements
+max_settlements = 5
+
+b_citonni = castle
+b_claudia = temple
+b_gumbira = city
+b_antorica = castle
+#b_vittora = city
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

@@ -1,0 +1,17 @@
+# c_somanakustar
+
+# County Title
+title = c_somanakustar
+
+# Settlements
+max_settlements = 3
+
+b_somanakustar = castle
+#b_somanakustar_2 = city
+#b_somanakustar_3 = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

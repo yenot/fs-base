@@ -1,0 +1,18 @@
+# c_asbasia
+
+# County Title
+title = c_asbasia
+
+# Settlements
+max_settlements = 4
+
+b_bergavitse = castle
+b_strigitse = temple
+b_pastarevgrad = city
+#b_asbasia = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

@@ -1,0 +1,20 @@
+# c_savicino
+
+# County Title
+title = c_savicino
+
+# Settlements
+max_settlements = 6
+
+b_nenpe = castle
+b_ufari = city
+b_persitiana = temple
+#b_savicino = castle
+#b_savicino_2 = city
+#b_savicino_3 = temple
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

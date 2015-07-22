@@ -1,0 +1,16 @@
+# c_megurster
+
+# County Title
+title = c_megurster
+
+# Settlements
+max_settlements = 2
+
+b_keffelstadir = castle
+#b_megurster = city
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

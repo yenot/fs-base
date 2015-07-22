@@ -1,0 +1,21 @@
+# c_visgard
+
+# County Title
+title = c_visgard
+
+# Settlements
+max_settlements = 7
+
+b_visgard = city
+b_padariki = temple
+b_greminiki = city
+b_garmensia = castle
+b_kavarion = city
+b_kaironacas = temple
+#b_visgard_2 = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

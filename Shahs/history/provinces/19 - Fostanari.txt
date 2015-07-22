@@ -1,0 +1,21 @@
+# c_fostanari
+
+# County Title
+title = c_fostanari
+
+# Settlements
+max_settlements = 7
+
+b_creminia = castle
+b_cemetica = temple
+b_ceratti = city
+b_garinica = temple
+b_postalia = castle
+b_astarapatino = city
+#b_fostanari = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

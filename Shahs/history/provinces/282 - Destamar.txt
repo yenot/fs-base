@@ -1,0 +1,17 @@
+# c_destamar
+
+# County Title
+title = c_destamar
+
+# Settlements
+max_settlements = 3
+
+b_gilbar = castle
+b_vahramestigdastur = temple
+#b_destamar = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

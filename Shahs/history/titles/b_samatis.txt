@@ -1,0 +1,5 @@
+1066.1.1={
+	holding_dynasty = 1100106 # Samatis - makes this a FAMILY_PALACE type Holding
+	liege="d_dender"
+	holder = 1100280 # Dionysios Samatis
+}

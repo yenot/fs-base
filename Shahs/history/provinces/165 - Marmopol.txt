@@ -1,0 +1,18 @@
+# c_marmopol
+
+# County Title
+title = c_marmopol
+
+# Settlements
+max_settlements = 4
+
+b_salanograd = castle
+b_brodosvyatovo = temple
+b_drasoni = temple
+#b_marmopol = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

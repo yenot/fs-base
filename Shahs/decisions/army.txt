@@ -1,0 +1,191 @@
+#Hiring decisions etc.
+
+
+targetted_decisions = { 
+
+	check_if_liege_works_for_courtiers = {
+		filter = sub_realm
+		ai_target_filter = sub_realm
+		
+		from_potential = {
+			primary_title = { has_law = vice_royalty_2 }
+		}
+		
+		potential = {
+			ROOT = {
+				liege = {
+					character = FROM
+				}
+			}
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			ROOT = {
+				any_demesne_title = {
+					limit = {
+						OR = {
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}
+					}
+					gain_title = FROM
+					ROOT = { remove_claim = PREV }
+				}
+				set_character_flag = gave_control_of_an_army
+			}
+			
+			FROM = {
+				add_trait = leading_army
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				trait = leading_army
+			}
+			modifier = {
+				factor = 0
+				war = no
+			}
+		}
+	}
+	
+	take_control_of_an_army = {
+		filter = vassals
+		ai_target_filter = vassals
+		
+		from_potential = {
+			primary_title = { has_law = vice_royalty_2 }
+		}
+		
+		potential = {
+			ROOT = {
+				OR = {
+					has_minor_title = title_royal_army_general_1
+					has_minor_title = title_royal_army_general_2
+					has_minor_title = title_royal_army_general_3
+					has_minor_title = title_royal_army_general_4
+					has_minor_title = title_royal_army_general_5
+				}
+			}
+			FROM = { war = yes }
+		}
+		
+		allow = {
+			#hidden_tooltip = {
+				ROOT = {
+					any_demesne_title = {
+						OR = {
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}
+					}
+				}
+			#}
+		}
+		
+		effect = {
+			ROOT = {
+				any_demesne_title = {
+					limit = {
+						OR = {
+							has_title_flag = first_army_holding
+							has_title_flag = second_army_holding
+							has_title_flag = third_army_holding
+							has_title_flag = fourth_army_holding
+							has_title_flag = fifth_army_holding
+						}
+					}
+					gain_title = FROM
+					ROOT = { remove_claim = PREV }
+				}
+				set_character_flag = gave_control_of_an_army
+			}
+			
+			FROM = {
+				add_trait = leading_army
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				trait = leading_army
+			}
+			modifier = {
+				factor = 0
+				NOT = { war = yes }
+			}
+		}
+	}
+	
+
+}
+
+decisions = {
+	
+	release_control_an_army = {
+		
+		potential = {
+			trait = leading_army
+			any_realm_character = {
+				has_character_flag = gave_control_of_an_army
+			}
+		}
+		
+		effect = {
+			random_realm_character = {
+				limit = {
+					has_character_flag = gave_control_of_an_army
+				}
+				ROOT = {
+					any_demesne_title = {
+						limit = {
+							OR = {
+								has_title_flag = first_army_holding
+								has_title_flag = second_army_holding
+								has_title_flag = third_army_holding
+								has_title_flag = fourth_army_holding
+								has_title_flag = fifth_army_holding
+							}
+						}
+						grant_title_no_opinion = PREVPREV
+					}
+					remove_trait = leading_army
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+}

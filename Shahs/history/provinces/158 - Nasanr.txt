@@ -1,0 +1,21 @@
+# c_nasanr
+
+# County Title
+title = c_nasanr
+
+# Settlements
+max_settlements = 7
+
+b_drevenograd = castle
+b_belokamnevo = city
+b_kitabavo = castle
+b_nova_kirea = city
+b_taroevo = temple
+#b_nasanr = temple
+#b_nasanr_2 = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

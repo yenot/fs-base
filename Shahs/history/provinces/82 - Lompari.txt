@@ -1,0 +1,19 @@
+# c_lompari
+
+# County Title
+title = c_lompari
+
+# Settlements
+max_settlements = 5
+
+b_lompari = castle
+b_ricia = temple
+b_lomiricento = castle
+b_guadavi = city
+#b_lompari_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

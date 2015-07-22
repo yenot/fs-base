@@ -1,0 +1,21 @@
+# c_trotti
+
+# County Title
+title = c_trotti
+
+# Settlements
+max_settlements = 7
+
+b_trotti = castle
+b_ustica = temple
+b_sontice = city
+#b_trotti_2 = castle
+#b_trotti_3 = city
+#b_trotti_4 = temple
+#b_trotti_5 = castle
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

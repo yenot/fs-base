@@ -1,0 +1,19 @@
+# c_voligie
+
+# County Title
+title = c_voligie
+
+# Settlements
+max_settlements = 5
+
+b_voligie = castle
+b_cadonce = city
+b_lusica = temple
+b_ledanni = city
+#b_voligie_2 = city
+
+# Misc
+culture = auletian
+religion = celestinian
+
+#History

@@ -1,0 +1,21 @@
+# c_leuketos
+
+# County Title
+title = c_leuketos
+
+# Settlements
+max_settlements = 7
+
+b_athanasia_kirea = castle
+b_pheresia = temple
+b_rochedion = city
+b_pharopolis = city
+b_hagios_aleksandros = temple
+b_toumaia = castle
+#b_leuketos = castle
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

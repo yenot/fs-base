@@ -1,0 +1,18 @@
+# c_tertianik
+
+# County Title
+title = c_tertianik
+
+# Settlements
+max_settlements = 4
+
+b_tertianik = castle
+b_solodarevo = temple
+b_gorne_yaromitse = city
+#b_tertianik_2 = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

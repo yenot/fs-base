@@ -1,0 +1,17 @@
+# c_trodikea
+
+# County Title
+title = c_trodikea
+
+# Settlements
+max_settlements = 3
+
+b_ezyparos = castle
+b_vamasia = city
+#b_trodikea = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

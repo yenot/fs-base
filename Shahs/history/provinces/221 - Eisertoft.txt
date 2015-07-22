@@ -1,0 +1,18 @@
+# c_eisertoft
+
+# County Title
+title = c_eisertoft
+
+# Settlements
+max_settlements = 4
+
+b_eisertoft = castle
+b_agniholm = temple
+#b_eisertoft_2 = temple
+#b_eisertoft_3 = castle
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

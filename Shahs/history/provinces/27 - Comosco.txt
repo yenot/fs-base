@@ -1,0 +1,18 @@
+# c_comosco
+
+# County Title
+title = c_comosco
+
+# Settlements
+max_settlements = 4
+
+b_oldari = castle
+b_sardonica = temple
+#b_comosco = temple
+#b_comosco_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

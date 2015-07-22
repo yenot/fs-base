@@ -1,0 +1,16 @@
+# c_fraxdashtagul
+
+# County Title
+title = c_fraxdashtagul
+
+# Settlements
+max_settlements = 2
+
+b_fraxdashtagul = castle
+b_asayakhusro = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

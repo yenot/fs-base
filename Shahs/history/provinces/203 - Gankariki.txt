@@ -1,0 +1,20 @@
+# c_gankariki
+
+# County Title
+title = c_gankariki
+
+# Settlements
+max_settlements = 6
+
+b_gankariki = castle
+b_veler = temple
+b_pharkas = castle
+b_palesida = temple
+#b_gankariki_2 = city
+#b_gankariki_3 = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

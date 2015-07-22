@@ -1,0 +1,21 @@
+# c_damianograd
+
+# County Title
+title = c_damianograd
+
+# Settlements
+max_settlements = 7
+
+b_damianograd = castle
+b_sevaniki = city
+b_kavernea = city
+b_bastania = castle
+b_hvaleno = temple
+#b_damianograd_2 = temple
+#b_damianograd_3 = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

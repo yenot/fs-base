@@ -1,0 +1,18 @@
+# c_sacala
+
+# County Title
+title = c_sacala
+
+# Settlements
+max_settlements = 4
+
+b_sacala = castle
+b_guenica = temple
+#b_sacala_2 = temple
+#b_sacala_3 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

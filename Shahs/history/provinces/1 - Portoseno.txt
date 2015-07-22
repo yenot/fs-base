@@ -1,0 +1,21 @@
+# c_portoseno
+
+# County Title
+title = c_portoseno
+
+# Settlements
+max_settlements = 7
+
+b_portoseno = city
+b_fremica = temple
+b_davlicida = city
+b_tingali = castle
+b_diodorica = temple
+b_niketica = temple
+b_varnesia = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

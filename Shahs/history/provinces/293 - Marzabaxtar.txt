@@ -1,0 +1,19 @@
+# c_marzabaxtar
+
+# County Title
+title = c_marzabaxtar
+
+# Settlements
+max_settlements = 5
+
+b_binxar = castle
+b_asemdar = temple
+#b_marzabaxtar = temple
+#b_marzabaxtar_2 = castle
+#b_marzabaxtar_3 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

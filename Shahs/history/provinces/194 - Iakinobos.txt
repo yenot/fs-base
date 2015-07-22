@@ -1,0 +1,17 @@
+# c_iakinobos
+
+# County Title
+title = c_iakinobos
+
+# Settlements
+max_settlements = 3
+
+b_iakinobos = castle
+b_arasca = castle
+#b_iakinobos_2 = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

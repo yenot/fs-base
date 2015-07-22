@@ -1,0 +1,18 @@
+# c_mesor
+
+# County Title
+title = c_mesor
+
+# Settlements
+max_settlements = 4
+
+b_goralida = castle
+b_geradica = temple
+#b_mesor = temple
+#b_mesor_2 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

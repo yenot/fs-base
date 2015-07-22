@@ -1,0 +1,17 @@
+# c_davli
+
+# County Title
+title = c_davli
+
+# Settlements
+max_settlements = 3
+
+b_zenobar = castle
+b_bernerica = temple
+b_reson = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

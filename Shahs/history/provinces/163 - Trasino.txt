@@ -1,0 +1,17 @@
+# c_trasino
+
+# County Title
+title = c_trasino
+
+# Settlements
+max_settlements = 3
+
+b_darnavishte = castle
+b_troikevo = temple
+#b_trasino = temple
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

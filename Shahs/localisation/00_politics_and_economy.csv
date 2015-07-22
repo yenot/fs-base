@@ -1,0 +1,25 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+confirm_meritocracy;Confirm Meritocracy;;;;;;;;;;;;;
+meritocracy;Office Transfer;;;;;;;;;;;;;
+meritocracy_desc;Office transfer law determines the procedure of bureaucratic office transfer in the realm. It ranges from hereditary inheritance when bureaucratic titles work as hereditary posession of bureaucratic dynasties to antihereditary when bureaucratic office may not be transferred to a relative of the current holder.;;;;;;;;;;;;;
+meritocracy_0;Hereditary;;;;;;;;;;;;;
+meritocracy_0_desc;Under hereditary law bureaucratic office is transferred to a person appointed by the current office holder. It is most likely to a son or some other close relative of the current office holder.;;;;;;;;;;;;;
+meritocracy_1;Nepotistic;;;;;;;;;;;;;
+meritocracy_1_desc;Under nepotistic succession bureaucrats have a lot of freedom in determining who succeeds them when they leave the office. Bureaucratic position cannot be revoken but can be taken by higher ranking officials under the promice of a better position.;;;;;;;;;;;;;
+meritocracy_2;Mixed;;;;;;;;;;;;;
+meritocracy_2_desc;Under mixed succession bureaucrats are limited by their superiors and their sovereign. Bureaucratic office can be revoken by higher ranked officials or the monarch but bureaucrats still play a role in appointment of successors.;;;;;;;;;;;;;
+meritocracy_3;Meritocratic;;;;;;;;;;;;;
+meritocracy_3_desc;In meritocratic succession bureaucratic offices are distributed to the best of the candidates across the realm. An intricate system of education and exams is implemented to breed future officials and ensure that the any candidates is suitable for the office he is planned for.;;;;;;;;;;;;;
+meritocracy_4;Antihereditary;;;;;;;;;;;;;
+meritocracy_4_desc;Under antihereditary succession nepotism is further weakend by an explicit ban on appointing a relative as a successor to one's office. Even if the said relative is actually a suitable candidate, he needs to find a position where he has no family ties.;;;;;;;;;;;;;
+vice_royalty;Government;;;;;;;;;;;;;
+vice_royalty_desc;Realm may be governed by the means of bureaucratic system or feudal warlords.;;;;;;;;;;;;;
+vice_royalty_0;Feudal government;;;;;;;;;;;;;
+vice_royalty_0_option;Feudal;;;;;;;;;;;;;
+vice_royalty_0_desc;Feudal lords control parts of a realm as their hereditary property;;;;;;;;;;;;;
+vice_royalty_1;Mixed government;;;;;;;;;;;;;
+vice_royalty_1_option;Mixed;;;;;;;;;;;;;
+vice_royalty_1_desc;The ruler appoints governers to control titles in his name but those governors retain a lot of freedom akin to feudal vassals;;;;;;;;;;;;;
+vice_royalty_2;Bureaucratic government;;;;;;;;;;;;;
+vice_royalty_2_option;Bureaucratic;;;;;;;;;;;;;
+vice_royalty_2_desc;Bureaucratic officials control the realm as representatives of the monarch. They have no legitimacy apart from that of the sovereing.;;;;;;;;;;;;;

@@ -1,0 +1,19 @@
+# c_weshagwarazan
+
+# County Title
+title = c_weshagwarazan
+
+# Settlements
+max_settlements = 5
+
+b_weshagwarazan = castle
+b_sharbardozkird = city
+b_pahndasht = city
+b_shakram = temple
+#b_weshagwarazan_2 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

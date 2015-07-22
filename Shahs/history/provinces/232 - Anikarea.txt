@@ -1,0 +1,17 @@
+# c_anikarea
+
+# County Title
+title = c_anikarea
+
+# Settlements
+max_settlements = 3
+
+b_islabia = castle
+b_makarbos = city
+#b_anikarea = temple
+
+# Misc
+culture = kraitan
+religion = sabanean
+
+#History

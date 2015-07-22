@@ -1,0 +1,11 @@
+# c_ventino @Auletia|Sambria|Ventino
+500.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+800.1.1={
+	liege=d_ventino
+}
+1066.1.1={
+	holder=1000238
+}

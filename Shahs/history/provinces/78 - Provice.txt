@@ -1,0 +1,18 @@
+# c_provice
+
+# County Title
+title = c_provice
+
+# Settlements
+max_settlements = 4
+
+b_provice = castle
+b_balminisia = temple
+#b_provice_2 = temple
+#b_provice_3 = castle
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

@@ -1,0 +1,17 @@
+# c_marevo
+
+# County Title
+title = c_marevo
+
+# Settlements
+max_settlements = 3
+
+b_marevo = castle
+b_novo_dobraevo = temple
+b_amrasiki = city
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

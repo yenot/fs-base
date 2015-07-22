@@ -1,0 +1,20 @@
+# c_racimi
+
+# County Title
+title = c_racimi
+
+# Settlements
+max_settlements = 6
+
+b_racimi = castle
+b_duvia = temple
+#b_racimi_2 = temple
+#b_racimi_3 = castle
+#b_racimi_4 = city
+#b_racimi_5 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

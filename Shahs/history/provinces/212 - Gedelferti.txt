@@ -1,0 +1,18 @@
+# c_gedelferti
+
+# County Title
+title = c_gedelferti
+
+# Settlements
+max_settlements = 4
+
+b_gedelferti = castle
+b_finselvagr = city
+b_gamrfil = temple
+#b_gedelferti_2 = castle
+
+# Misc
+culture = niser
+religion = voldemarran
+
+#History

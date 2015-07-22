@@ -1,0 +1,19 @@
+# c_sechahan
+
+# County Title
+title = c_sechahan
+
+# Settlements
+max_settlements = 5
+
+b_sechahan = castle
+b_zarrankofestan = city
+b_pakizagdehasman = temple
+b_kemrag = castle
+#b_sechahan_2 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

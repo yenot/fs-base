@@ -1,0 +1,172 @@
+anachoritic_celestinian = {
+	opposites = {
+		oikumenic_celestinian
+		koinobiotic_celestinian
+		arcadic_celestinian
+		meletatic_celestinian
+		eraunatic_celestinian
+	}
+
+	opposite_opinion = -5
+	
+	learning = 2
+	monthly_character_piety = 0.5
+	
+	potential = {
+		religion = celestinian
+		top_liege = { trait = anachoritic_celestinian }
+	}
+	religious_branch = celestinian
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+oikumenic_celestinian = {
+	opposites = {
+		anachoritic_celestinian
+		koinobiotic_celestinian
+		arcadic_celestinian
+		meletatic_celestinian
+		eraunatic_celestinian
+	}
+
+	opposite_opinion = -5
+
+	vassal_opinion = 10
+	
+	potential = { religion = celestinian }
+	religious_branch = celestinian
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+koinobiotic_celestinian = {
+	opposites = {
+		anachoritic_celestinian
+		oikumenic_celestinian
+		arcadic_celestinian
+		meletatic_celestinian
+		eraunatic_celestinian
+	}
+
+	opposite_opinion = -5
+	sectarianism = yes
+	
+	potential = { religion = celestinian }
+	religious_branch = celestinian
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+arcadic_celestinian = {
+	opposites = {
+		anachoritic_celestinian
+		oikumenic_celestinian
+		koinobiotic_celestinian
+		meletatic_celestinian
+		eraunatic_celestinian
+	}
+
+	opposite_opinion = -5
+	
+	potential = {
+		religion = celestinian
+		culture = hamult
+	}
+	religious_branch = celestinian
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+meletatic_celestinian = {
+	opposites = {
+		anachoritic_celestinian
+		oikumenic_celestinian
+		koinobiotic_celestinian
+		arcadic_celestinian
+		eraunatic_celestinian
+	}
+
+	opposite_opinion = -5
+	sectarianism = yes
+	
+	potential = { religion = celestinian }
+	religious_branch = celestinian
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+eraunatic_celestinian = {
+	opposites = {
+		anachoritic_celestinian
+		oikumenic_celestinian
+		koinobiotic_celestinian
+		arcadic_celestinian
+		meletatic_celestinian
+	}
+
+	opposite_opinion = -5
+	
+	potential = { religion = celestinian }
+	religious_branch = celestinian
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+newly_created_sucessor = {
+
+	random = no
+	ruler_designer_cost = 0
+}
+
+######################################
+##Koinobiotic castes
+######################################
+
+prothetis = {
+	opposites = {
+		stratiotes
+		technites
+	}
+	
+	caste_tier = 3
+
+	monthly_character_piety = 0.1
+
+	customizer = no
+	random = no
+}
+
+stratiotes = {
+	opposites = {
+		prothetis
+		technites
+	}
+
+	caste_tier = 2
+
+	monthly_character_prestige = 0.1
+
+	customizer = no
+	random = no
+}
+
+technites = {
+	opposites = {
+		prothetis
+		stratiotes
+	}
+
+	caste_tier = 1
+
+	monthly_character_wealth = 0.03
+	
+	customizer = no
+	random = no
+}

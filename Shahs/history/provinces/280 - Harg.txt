@@ -1,0 +1,16 @@
+# c_harg
+
+# County Title
+title = c_harg
+
+# Settlements
+max_settlements = 2
+
+b_harg = castle
+b_kobsxar = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

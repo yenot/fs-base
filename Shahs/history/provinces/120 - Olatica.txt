@@ -1,0 +1,20 @@
+# c_olatica
+
+# County Title
+title = c_olatica
+
+# Settlements
+max_settlements = 6
+
+b_alexandropolis = castle
+b_olios = city
+b_isselia = city
+b_arophasia = castle
+b_kenphisos = temple
+#b_olatica = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

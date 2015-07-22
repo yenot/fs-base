@@ -1,0 +1,18 @@
+# c_poto
+
+# County Title
+title = c_poto
+
+# Settlements
+max_settlements = 4
+
+b_poto = castle
+b_lessica = temple
+b_rotoniste = city
+#b_poto_2 = castle
+
+# Misc
+culture = hamult
+religion = celestinian
+
+#History

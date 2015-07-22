@@ -1,0 +1,18 @@
+# c_skeria
+
+# County Title
+title = c_skeria
+
+# Settlements
+max_settlements = 4
+
+b_kavarino = castle
+b_leonopol = city
+b_kopalishte = city
+#b_skeria = castle
+
+# Misc
+culture = melin
+religion = celestinian
+
+#History

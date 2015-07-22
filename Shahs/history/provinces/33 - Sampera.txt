@@ -1,0 +1,18 @@
+# c_sampera
+
+# County Title
+title = c_sampera
+
+# Settlements
+max_settlements = 4
+
+b_sampera = castle
+b_emilica = temple
+#b_sampera_2 = temple
+#b_sampera_3 = castle
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

@@ -1,0 +1,82 @@
+1100040 = {
+	name="Mesemberitos"
+	culture = kraitan
+}
+
+1100018 = {
+	name = "Eumarikos"
+	culture = kraitan
+}
+
+1100106 = {
+	name = "Samatis"
+	culture = kraitan
+}
+
+1100158 = {
+	name = "Kelepontos"
+	culture = kraitan
+}
+
+1100166 = {
+	name = "Barkos"
+	culture = kraitan
+}
+
+1100175 = {
+	name = "Laikatros"
+	culture = kraitan
+}
+1100075 = {
+	name = "Akitis"
+	culture = kraitan
+}
+1100073 = {
+	name = "Gelekeiris"
+	culture = kraitan
+}
+
+1100139 = {
+	name = "Kabranos"
+	culture = kraitan
+}
+
+1100177 = {
+	name = "Logras"
+	culture = kraitan
+}
+
+1100176 = {
+	name = "Paleokratos"
+	culture = kraitan
+}
+
+1100178 = {
+	name = "Nimaros"
+	culture = kraitan
+}
+
+1100183 = {
+	name = "Sarakis"
+	culture = kraitan
+}
+
+1100193 = {
+	name = "Regos"
+	culture = kraitan
+}
+
+1100194 = {
+	name = "Komentotis"
+	culture = kraitan
+}
+
+1100196 = {
+	name = "Belisaros"
+	culture = kraitan
+}
+
+1100202 = {
+	name = "Petrosakos"
+	culture = kraitan
+}

@@ -1,0 +1,18 @@
+# c_strum
+
+# County Title
+title = c_strum
+
+# Settlements
+max_settlements = 4
+
+b_gramishte = castle
+b_timitse = temple
+b_staro_kovane = castle
+#b_strum = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

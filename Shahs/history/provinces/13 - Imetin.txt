@@ -1,0 +1,20 @@
+# c_imetin
+
+# County Title
+title = c_imetin
+
+# Settlements
+max_settlements = 6
+
+b_imetin = castle
+b_punacci = city
+b_deresica = temple
+b_reberdino = castle
+b_tonnesari = city
+#b_imetin_2 = temple
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

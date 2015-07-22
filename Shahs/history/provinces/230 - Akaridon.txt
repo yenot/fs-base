@@ -1,0 +1,18 @@
+# c_akaridon
+
+# County Title
+title = c_akaridon
+
+# Settlements
+max_settlements = 4
+
+b_ivria = castle
+b_poltinoe = city
+b_gordipankea = temple
+b_brabinarea = city
+
+# Misc
+culture = kraitan
+religion = sabanean
+
+#History

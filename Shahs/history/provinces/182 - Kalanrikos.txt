@@ -1,0 +1,20 @@
+# c_kalanrikos
+
+# County Title
+title = c_kalanrikos
+
+# Settlements
+max_settlements = 6
+
+b_kalanrikos = castle
+b_marrisea = temple
+b_kenton = castle
+#b_kalanrikos_2 = castle
+#b_kalanrikos_3 = city
+#b_kalanrikos_4 = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

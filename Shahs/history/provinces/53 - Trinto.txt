@@ -1,0 +1,19 @@
+# c_trinto
+
+# County Title
+title = c_trinto
+
+# Settlements
+max_settlements = 5
+
+b_lior = castle
+b_metrica = temple
+b_funi = city
+b_petirina = castle
+#b_trinto = city
+
+# Misc
+culture = hamult
+religion = celestinian
+
+#History

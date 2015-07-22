@@ -1,0 +1,20 @@
+# c_satriuci
+
+# County Title
+title = c_satriuci
+
+# Settlements
+max_settlements = 6
+
+b_satriuci = castle
+b_metelica = temple
+b_prece = city
+b_rerdica = city
+b_stivo = castle
+#b_satriuci_2 = temple
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

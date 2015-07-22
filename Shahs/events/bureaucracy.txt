@@ -1,0 +1,188 @@
+#Events for everyday life of a bureaucrat
+
+namespace = bureau
+
+character_event = {
+	id = bureau.0
+	title = EVTNAMEBUREAU0
+	desc = EVTDESCBUREAU0
+	picture = GFX_evt_throne_room
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		top_liege = {
+			primary_title = {
+				has_law = vice_royalty_2
+			}
+		}
+		primary_title = {
+			is_vice_royalty = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = EVTOPTABUREAU0
+		hidden_tooltip = { random = { chance = 10 set_character_flag = minor_bribery } }
+		scaled_wealth = 1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0
+				diplomacy = 15
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTBBUREAU0
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTCBUREAU0
+		scaled_wealth = 0.3
+		top_liege = {
+			any_realm_character = {
+				limit = {
+					trait = plutocratic_party
+				}
+				opinion = { who = ROOT modifier = opinion_presecutes_merchants years = 10 }
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0
+				diplomacy = 15
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTDBUREAU0
+		hidden_tooltip = { random = { chance = 15 set_character_flag = minor_bribery } }
+		scaled_wealth = 1.5
+		tooltip_info = diplomacy
+		trigger = {
+			diplomacy = 15
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0
+				diplomacy = 15
+			}
+		}
+	}
+}
+
+# province_event = {
+	# id = bureau.1
+	# title = EVTNAMEBUREAU1
+	# desc = EVTDESCBUREAU1
+	# picture = GFX_evt_throne_room
+	# border = GFX_event_normal_frame_diplomacy
+	# trigger = {
+		# holder_scope = {
+			# independent = yes
+			# primary_title = {
+				# has_law = vice_royalty_2
+			# }
+		# }
+	# }
+	
+	# mean_time_to_happen = {
+		# days = 30
+	# }
+	
+	# option = {
+		# name = EVTOPTABUREAU1
+		# duchy = { owner = { set_variable = { which = new_var value = 100.1 } } }
+		# ai_chance = {
+			# factor = 50
+			# modifier = {
+				# factor = 2
+				# trait = greedy
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = arbitrary
+			# }
+			# modifier = {
+				# factor = 0.5
+				# trait = just
+			# }
+			# modifier = {
+				# factor = 0.5
+				# trait = paranoid
+			# }
+			# modifier = {
+				# factor = 0
+				# diplomacy = 15
+			# }
+		# }
+	# }
+	
+	# option = {
+		# name = EVTOPTBBUREAU1
+		# duchy = { owner = {  multiply_variable = { which = new_var value = 100.1 } } }
+		# ai_chance = {
+			# factor = 50
+		# }
+	# }
+	
+	# option = {
+		# name = EVTOPTBBUREAU1
+		# duchy = { owner = { divide_variable = { which = new_var value = 100.1 } } }
+		# trigger = { holder_scope = { check_variable = { which = new_var value = 101 } } }
+		# ai_chance = {
+			# factor = 50
+		# }
+	# }
+# }

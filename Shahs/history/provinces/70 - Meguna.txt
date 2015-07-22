@@ -1,0 +1,19 @@
+# c_meguna
+
+# County Title
+title = c_meguna
+
+# Settlements
+max_settlements = 5
+
+b_meguna = castle
+b_svarecino = city
+b_reminica = temple
+b_orticalisto = city
+#b_meguna_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

@@ -1,0 +1,19 @@
+# c_gavras
+
+# County Title
+title = c_gavras
+
+# Settlements
+max_settlements = 5
+
+b_gavras = castle
+b_firvez = temple
+b_xwaresoperoz = city
+#b_gavras_2 = castle
+#b_gavras_3 = city
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

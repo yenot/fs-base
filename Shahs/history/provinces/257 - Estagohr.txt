@@ -1,0 +1,18 @@
+# c_estagohr
+
+# County Title
+title = c_estagohr
+
+# Settlements
+max_settlements = 4
+
+b_estagohr = castle
+b_kasaghastasher = city
+b_karnastav = temple
+b_bangar = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

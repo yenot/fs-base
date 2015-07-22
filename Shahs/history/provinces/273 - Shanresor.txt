@@ -1,0 +1,16 @@
+# c_shanresor
+
+# County Title
+title = c_shanresor
+
+# Settlements
+max_settlements = 2
+
+b_shanresor = castle
+b_gadasp = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

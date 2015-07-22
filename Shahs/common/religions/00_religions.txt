@@ -1,0 +1,155 @@
+celestinian_group = {
+	graphical_culture = westerngfx
+	playable = yes
+	hostile_within_group = yes
+
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2	# always try to convert
+
+	
+	sabanean = {
+		graphical_culture = westerngfx
+
+		icon = 4
+		heresy_icon = 121
+		piety_name = PIETY
+		priest_title = PRIEST
+		color = { 0.22 0.57 0.94 }
+	
+		god_names = {
+			GOD_THE_SKY GOD_THE_SKY_ABOVE GOD_THE_TRUE_SKY PROPHET_IGNATIUS PROPHET_ANACLET
+		}
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		ai_peaceful = yes
+		can_grant_divorce = yes
+		#priests_can_marry = yes
+		#priests_can_inherit = yes
+		max_wives = 3
+		peace_piety_gain = 1
+		
+	}
+	celestinian = {
+		graphical_culture = westerngfx
+		
+		icon = 2
+		heresy_icon = 94
+		piety_name = PIETY
+		priest_title = PRIEST
+		color = { 0.443137254901961 0.309803921568627	0.674509803921569 }
+		
+		god_names = {
+			GOD_THE_SKY GOD_THE_SKY_ABOVE GOD_THE_TRUE_SKY PROPHET_IGNATIUS PROPHET_ANACLET
+		}
+		
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+	}
+}
+
+scholastic_group = {
+	graphical_culture = westerngfx
+	playable = yes
+	hostile_within_group = yes
+
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2	# always try to convert
+
+	
+	scholastic = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 16
+		piety_name = VIRTUE
+		priest_title = SCHOLAR
+		color = { 1 1 0.8 }
+		
+		god_names = {
+			GOD_THE_ANCESTORS PROPHET_MARCUS
+		}
+		
+		ai_peaceful = yes
+		can_grant_divorce = yes
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		#peace_piety_gain = 1
+		
+	}
+}
+
+merya_svodna_group = {
+	graphical_culture = muslimgfx
+	playable = yes
+	hostile_within_group = no
+
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2	# always try to convert
+
+	
+	voldemarran = {
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 16
+		piety_name = PIETY
+		priest_title = PRIEST
+		color = { 0.25 0.33 0.41 }
+		
+		god_names = {
+			GOD_RAHOJ GOD_ZHIVA PROPHET_CORSEMAR PROPHET_VOLDEMAR
+		}
+		
+		evil_god_names = {
+			OPRECH
+		}
+		
+		religious_clothing_head = 11
+		religious_clothing_priest = 11
+		
+		ai_peaceful = yes
+		can_grant_divorce = yes
+		#priests_can_marry = yes
+		#priests_can_inherit= yes
+		peace_piety_gain = 1
+		
+	}
+}
+
+olpian_group = {
+	graphical_culture = hindugfx
+	playable = yes
+	hostile_within_group = no
+
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2	# always try to convert
+
+	
+	vysochyan = {
+		graphical_culture = hindugfx
+
+		icon = 11
+		heresy_icon = 16
+		piety_name = PIETY
+		priest_title = PRIEST
+		color = { 0.32 0.1 0.04 }
+		
+		god_names = {
+			GOD_SVETEN GOD_ZHIVA GOD_THE_THOUSAND_GODS PROPHET_OLPYA PROPHET_SVETOVID PROPHET_NISHIKAN PROPHET_MESIBOR
+		}
+		
+		evil_god_names = {
+			OPRECH
+		}
+		
+		ai_peaceful = yes
+		can_grant_divorce = yes
+		priests_can_marry = no
+		priests_can_inherit= no
+		peace_piety_gain = 0
+		
+	}
+}

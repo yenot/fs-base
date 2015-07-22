@@ -1,0 +1,19 @@
+# c_antoniki
+
+# County Title
+title = c_antoniki
+
+# Settlements
+max_settlements = 5
+
+b_antoniki = castle
+b_pulmia_2 = temple
+b_phansica = castle
+b_saralikia = castle
+#b_antoniki_2 = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

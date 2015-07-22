@@ -1,0 +1,19 @@
+# c_theklanea
+
+# County Title
+title = c_theklanea
+
+# Settlements
+max_settlements = 5
+
+b_chinasos = castle
+b_arpos = temple
+b_immos = city
+b_hagios_ouranikos = temple
+#b_theklanea = city
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

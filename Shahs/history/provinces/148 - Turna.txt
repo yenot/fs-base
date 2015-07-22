@@ -1,0 +1,18 @@
+# c_turna
+
+# County Title
+title = c_turna
+
+# Settlements
+max_settlements = 4
+
+b_smarvitse = castle
+b_alkitse = temple
+b_karapol = city
+#b_turna = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

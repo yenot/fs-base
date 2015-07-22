@@ -1,0 +1,20 @@
+# c_varmanbexwar
+
+# County Title
+title = c_varmanbexwar
+
+# Settlements
+max_settlements = 6
+
+b_varmanbexwar = castle
+b_omxwar = temple
+b_nezamyazasmankird = city
+b_pormayaz = city
+b_ehsanpasband = temple
+#b_varmanbexwar_2 = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

@@ -1,0 +1,17 @@
+# c_tetrikos
+
+# County Title
+title = c_tetrikos
+
+# Settlements
+max_settlements = 3
+
+b_tetrikos = castle
+b_nakirea = temple
+#b_tetrikos_2 = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

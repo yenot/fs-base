@@ -1,0 +1,26 @@
+title_expected_successor = {
+	dignity = 0.1
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 20
+	
+	monthly_salary = 0
+	monthly_prestige = 0.1
+	
+	# Granted only by event
+	allow = {
+		#OR = {
+		#	has_character_flag = flag_expected_successor
+		#	has_minor_title = title_expected_successor
+		#}
+		age = 16
+		NOT = { trait = incapable }
+		FROM = {
+			independent = no
+			any_demesne_title = { has_law = succ_appointment }
+		}
+	}
+	
+	gain_effect = { clr_character_flag = flag_expected_successor }
+	lose_effect = { }
+}

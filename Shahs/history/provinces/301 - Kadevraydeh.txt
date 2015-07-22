@@ -1,0 +1,17 @@
+# c_kadevraydeh
+
+# County Title
+title = c_kadevraydeh
+
+# Settlements
+max_settlements = 3
+
+b_gobal = castle
+b_peramshahravor = city
+b_shanag = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

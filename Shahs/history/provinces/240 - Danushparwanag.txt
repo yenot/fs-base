@@ -1,0 +1,21 @@
+# c_danushparwanag
+
+# County Title
+title = c_danushparwanag
+
+# Settlements
+max_settlements = 7
+
+b_danushparwanag = castle
+b_kosberxat = temple
+b_bor = temple
+b_amay = city
+b_daraug = temple
+b_tormanakird = city
+#b_danushparwanag_2 = castle
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

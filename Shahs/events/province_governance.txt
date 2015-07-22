@@ -1,0 +1,918 @@
+#Events to determine local quality of governance
+
+namespace = govern
+
+#Decide the governance level for the first time
+
+province_event = {
+	id = govern.0
+	hide_window = yes
+	
+	trigger = {
+		holder_scope = {
+			top_liege = { government = bureaucratic_government }
+		}
+		OR = {
+			duchy = {
+				is_vice_royalty = yes
+				owner = { independent = no }
+			}
+			AND = {
+				kingdom = {
+					is_vice_royalty = yes
+				}
+				holder_scope = {
+					tier = king
+					independent = no
+				}
+			}
+		}
+		NOT = {
+			has_province_modifier = extremely_poor_governance_results
+			has_province_modifier = poor_governance_results
+			has_province_modifier = lower_than_average_governance_results
+			has_province_modifier = average_governance_results
+			has_province_modifier = higher_than_average_governance_results
+			has_province_modifier = good_governance_results
+			has_province_modifier = extremely_good_governance_results
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = EVTOPTAGOVERN0
+		add_province_modifier = { name = extremely_poor_governance_results duration = 730 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 8 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 5 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 3 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { diplomacy = 5 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { diplomacy = 3 } } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { NOT = { learning = 5 } } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { NOT = { learning = 3 } } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTBGOVERN1
+		add_province_modifier = { name = poor_governance_results duration = 730 }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 10 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 8 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 5 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { diplomacy = 8 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { diplomacy = 5 } } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { NOT = { learning = 8 } } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { NOT = { learning = 5 } } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTCGOVERN2
+		add_province_modifier = { name = lower_than_average_governance_results duration = 730 }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 13 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 10 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 8 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { diplomacy = 10 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { diplomacy = 8 } } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { NOT = { learning = 10 } } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { NOT = { learning = 8 } } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTDGOVERN3
+		add_province_modifier = { name = average_governance_results duration = 730 }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { stewardship = 13 } } }
+				duchy = { owner = { stewardship = 10 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { diplomacy = 15 } } }
+				duchy = { owner = { diplomacy = 10 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { learning = 15 } } }
+				duchy = { owner = { learning = 10 } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTEGOVERN4
+		add_province_modifier = { name = higher_than_average_governance_results duration = 730 }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 13 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 15 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 17 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { diplomacy = 15 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { diplomacy = 17 } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { learning = 15 } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { learning = 17 } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTFGOVERN5
+		add_province_modifier = { name = good_governance_results duration = 730 }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 15 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 17 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 19 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { diplomacy = 17 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { diplomacy = 19 } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { learning = 17 } }
+			}
+				modifier = {
+				factor = 1.5
+				duchy = { owner = { learning = 19 } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTGGOVERN6
+		add_province_modifier = { name = extremely_good_governance_results duration = 730 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 17 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 19 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { stewardship = 21 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { diplomacy = 19 } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { diplomacy = 21 } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { learning = 19 } }
+			}
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { learning = 21 } }
+			}
+		}
+	}
+}
+
+province_event = {
+	id = govern.1
+	hide_window = yes
+	
+	trigger = {
+		holder_scope = {
+			top_liege = { government = bureaucratic_government }
+		}
+		OR = {
+			duchy = {
+				is_vice_royalty = yes
+				owner = {
+					independent = no
+					NOT = { has_character_flag = undergoing_governance_change }
+				}
+			}
+			AND = {
+				kingdom = { #Directly ruled by kingdom-tier viceroy
+					is_vice_royalty = yes
+				}
+				holder_scope = {
+					tier = king
+					independent = no
+					NOT = { has_character_flag = undergoing_governance_change }
+				}
+			}
+		}
+		OR = {
+			has_province_modifier = extremely_poor_governance_results
+			has_province_modifier = poor_governance_results
+			has_province_modifier = lower_than_average_governance_results
+			has_province_modifier = average_governance_results
+			has_province_modifier = higher_than_average_governance_results
+			has_province_modifier = good_governance_results
+			has_province_modifier = extremely_good_governance_results
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		duchy = {
+			owner = {
+				set_character_flag = undergoing_governance_change
+			}
+		}
+	#Check what has the guy achieved
+
+		if = {
+			limit = { 
+				has_province_modifier = extremely_poor_governance_results
+			}
+			duchy = { owner = { set_variable = { which = governance_realized value = 1 } } }
+		}
+		if = {
+			limit = { 
+				has_province_modifier = poor_governance_results
+			}
+			duchy = { owner = { set_variable = { which = governance_realized value = 2 } } }
+		}
+		if = {
+			limit = { 
+				has_province_modifier = lower_than_average_governance_results
+			}
+			duchy = { owner = { set_variable = { which = governance_realized value = 3 } } }
+		}
+		if = {
+			limit = { 
+				has_province_modifier = average_governance_results
+			}
+			duchy = { owner = { set_variable = { which = governance_realized value = 4 } } }
+		}
+		if = {
+			limit = { 
+				has_province_modifier = higher_than_average_governance_results
+			}
+			duchy = { owner = { set_variable = { which = governance_realized value = 5 } } }
+		}
+		if = {
+			limit = { 
+				has_province_modifier = good_governance_results
+			}
+			duchy = { owner = { set_variable = { which = governance_realized value = 6 } } }
+		}
+		if = {
+			limit = { 
+				has_province_modifier = extremely_good_governance_results
+			}
+			duchy = { owner = { set_variable = { which = governance_realized value = 7 } } }
+		}
+
+#Now check where he is expected to end up judging by his attributes:
+
+#Stewardship
+
+		if = { 
+			limit = {
+				duchy = { owner = { NOT = { stewardship = 5 } } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_stewardship value = 1 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { stewardship = 8 } } }
+				duchy = { owner = { stewardship = 5 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_stewardship value = 2 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { stewardship = 10 } } }
+				duchy = { owner = { stewardship = 8 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_stewardship value = 3 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { stewardship = 15 } } }
+				duchy = { owner = { stewardship = 10 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_stewardship value = 4 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { stewardship = 17 } } }
+				duchy = { owner = { stewardship = 15 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_stewardship value = 5 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { stewardship = 19 } } }
+				duchy = { owner = { stewardship = 17 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_stewardship value = 6 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { stewardship = 19 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_stewardship value = 7 } } }
+		}
+	
+#Diplomacy
+
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { diplomacy = 5 } } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_diplomacy value = 1 } } }
+			#character_event = { id = govern.2 }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { diplomacy = 8 } } }
+				duchy = { owner = { diplomacy = 5 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_diplomacy value = 2 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { diplomacy = 10 } } }
+				duchy = { owner = { diplomacy = 8 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_diplomacy value = 3 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { diplomacy = 15 } } }
+				duchy = { owner = { diplomacy = 10 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_diplomacy value = 4 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { diplomacy = 17 } } }
+				duchy = { owner = { diplomacy = 15 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_diplomacy value = 5 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { diplomacy = 19 } } }
+				duchy = { owner = { diplomacy = 17 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_diplomacy value = 6 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { diplomacy = 19 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_diplomacy value = 7 } } }
+		}
+
+#Learning
+
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { learning = 5 } } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_learning value = 1 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { learning = 8 } } }
+				duchy = { owner = { learning = 5 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_learning value = 2 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { learning = 10 } } }
+				duchy = { owner = { learning = 8 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_learning value = 3 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { learning = 15 } } }
+				duchy = { owner = { learning = 10 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_learning value = 4 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { learning = 17 } } }
+				duchy = { owner = { learning = 15 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_learning value = 5 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { NOT = { learning = 19 } } }
+				duchy = { owner = { learning = 17 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_learning value = 6 } } }
+		}
+		if = {
+			limit = {
+				duchy = { owner = { learning = 19 } }
+			}
+			duchy = { owner = { set_variable = { which = governance_expected_from_learning value = 7 } } }
+		}
+
+#Now calculate the weighted expected value and find the difference
+
+		duchy = {
+			owner = { 
+				multiply_variable = { which = governance_expected_from_stewardship value = 0.5 }
+				multiply_variable = { which = governance_expected_from_diplomacy value = 0.25 }
+				multiply_variable = { which = governance_expected_from_learning value = 0.25 }
+				set_variable = { which = governance_expected which = governance_expected_from_stewardship }
+				change_variable = { which = governance_expected which = governance_expected_from_diplomacy }
+				change_variable = { which = governance_expected which = governance_expected_from_learning }
+				subtract_variable = { which = governance_expected which = governance_realized }
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTAGOVERN1
+		duchy = { owner = { clr_character_flag = undergoing_governance_change } }
+		if = {
+			limit = {
+				has_province_modifier = extremely_poor_governance_results
+			}
+			remove_province_modifier = extremely_poor_governance_results
+			add_province_modifier = { name = extremely_poor_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = poor_governance_results
+			}
+			remove_province_modifier = poor_governance_results
+			add_province_modifier = { name = extremely_poor_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = lower_than_average_governance_results
+			}
+			remove_province_modifier = lower_than_average_governance_results
+			add_province_modifier = { name = extremely_poor_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = average_governance_results
+			}
+			remove_province_modifier = average_governance_results
+			add_province_modifier = { name = poor_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = higher_than_average_governance_results
+			}
+			remove_province_modifier = higher_than_average_governance_results
+			add_province_modifier = { name = lower_than_average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = good_governance_results
+			}
+			remove_province_modifier = good_governance_results
+			add_province_modifier = { name = average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = extremely_good_governance_results
+			}
+			remove_province_modifier = extremely_good_governance_results
+			add_province_modifier = { name = higher_than_average_governance_results duration = 730 }
+		}
+		
+		set_variable = { which = governance_expected value = 0 }
+		set_variable = { which = governance_expected_from_stewardship value = 0 }
+		set_variable = { which = governance_expected_from_diplomacy value = 0 }
+		set_variable = { which = governance_expected_from_learning value = 0 }
+		set_variable = { which = governance_realized value = 0 }
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -5 } } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -4 } } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -3 } } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -2 } } } }
+			}
+			modifier = {
+				factor = 2.5
+				duchy = { owner = { has_character_flag = minor_bribery } }
+			}
+			modifier = {
+				factor = 5
+				duchy = { owner = { has_character_flag = major_bribery } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTBGOVERN2
+		duchy = { owner = { clr_character_flag = undergoing_governance_change  } }
+		if = {
+			limit = {
+				has_province_modifier = extremely_poor_governance_results
+			}
+			remove_province_modifier = extremely_poor_governance_results
+			add_province_modifier = { name = extremely_poor_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = poor_governance_results
+			}
+			remove_province_modifier = poor_governance_results
+			add_province_modifier = { name = extremely_poor_governance_results duration = 730 }
+
+		}
+		if = {
+			limit = {
+				has_province_modifier = lower_than_average_governance_results
+			}
+			remove_province_modifier = lower_than_average_governance_results
+			add_province_modifier = { name = poor_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = average_governance_results
+			}
+			remove_province_modifier = average_governance_results
+			add_province_modifier = { name = lower_than_average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = higher_than_average_governance_results
+			}
+			remove_province_modifier = higher_than_average_governance_results
+			add_province_modifier = { name = average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = good_governance_results
+			}
+			remove_province_modifier = good_governance_results
+			add_province_modifier = { name = higher_than_average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = extremely_good_governance_results
+			}
+			remove_province_modifier = extremely_good_governance_results
+			add_province_modifier = { name = good_governance_results duration = 730 }
+		}
+		
+		set_variable = { which = governance_expected value = 0 }
+		set_variable = { which = governance_expected_from_stewardship value = 0 }
+		set_variable = { which = governance_expected_from_diplomacy value = 0 }
+		set_variable = { which = governance_expected_from_learning value = 0 }
+		set_variable = { which = governance_realized value = 0 }
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -5 } } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -4 } } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -3 } } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -2 } } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = -1 } } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { NOT = { check_variable = { which = governance_expected value = 0 } } } }
+			}
+			modifier = {
+				factor = 2.5
+				duchy = { owner = { has_character_flag = minor_bribery } }
+			}
+			modifier = {
+				factor = 5
+				duchy = { owner = { has_character_flag = major_bribery } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTCGOVERN3
+		duchy = { owner = { clr_character_flag = undergoing_governance_change } }
+		#Nothing happens
+		
+		set_variable = { which = governance_expected value = 0 }
+		set_variable = { which = governance_expected_from_stewardship value = 0 }
+		set_variable = { which = governance_expected_from_diplomacy value = 0 }
+		set_variable = { which = governance_expected_from_learning value = 0 }
+		set_variable = { which = governance_realized value = 0 }
+		
+		ai_chance = {
+			factor = 130
+			modifier = {
+				factor = 1.5
+				duchy = { owner = { is_variable_equal = { which = governance_expected value = 0 } } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTDGOVERN4
+		duchy = { owner = { clr_character_flag = undergoing_governance_change } }
+		if = {
+			limit = {
+				has_province_modifier = extremely_good_governance_results
+			}
+			remove_province_modifier = extremely_good_governance_results
+			add_province_modifier = { name = extremely_good_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = good_governance_results
+			}
+			remove_province_modifier = good_governance_results
+			add_province_modifier = { name = extremely_good_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = higher_than_average_governance_results
+			}
+			remove_province_modifier = higher_than_average_governance_results
+			add_province_modifier = { name = good_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = average_governance_results
+			}
+			remove_province_modifier = average_governance_results
+			add_province_modifier = { name = higher_than_average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = lower_than_average_governance_results
+			}
+			remove_province_modifier = lower_than_average_governance_results
+			add_province_modifier = { name = average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = poor_governance_results
+			}
+			remove_province_modifier = poor_governance_results
+			add_province_modifier = { name = lower_than_average_governance_results duration = 730 }
+		}		
+		if = {
+			limit = {
+				has_province_modifier = extremely_poor_governance_results
+			}
+			remove_province_modifier = extremely_poor_governance_results
+			add_province_modifier = { name = poor_governance_results duration = 730 }
+		}
+	
+		set_variable = { which = governance_expected value = 0 }
+		set_variable = { which = governance_expected_from_stewardship value = 0 }
+		set_variable = { which = governance_expected_from_diplomacy value = 0 }
+		set_variable = { which = governance_expected_from_learning value = 0 }
+		set_variable = { which = governance_realized value = 0 }
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 0.1 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 1.1 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 2.1 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 3.1 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 4.1 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 5.1 } } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTEGOVERN5
+		duchy = { owner = { clr_character_flag = undergoing_governance_change } }
+		if = {
+			limit = {
+				has_province_modifier = extremely_good_governance_results
+			}
+			remove_province_modifier = extremely_good_governance_results
+			add_province_modifier = { name = extremely_good_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = good_governance_results
+			}
+			remove_province_modifier = good_governance_results
+			add_province_modifier = { name = extremely_good_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = higher_than_average_governance_results
+			}
+			remove_province_modifier = higher_than_average_governance_results
+			add_province_modifier = { name = extremely_good_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = average_governance_results
+			}
+			remove_province_modifier = average_governance_results
+			add_province_modifier = { name = good_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = lower_than_average_governance_results
+			}
+			remove_province_modifier = lower_than_average_governance_results
+			add_province_modifier = { name = higher_than_average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = poor_governance_results
+			}
+			remove_province_modifier = poor_governance_results
+			add_province_modifier = { name = average_governance_results duration = 730 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = extremely_poor_governance_results
+			}
+			remove_province_modifier = extremely_poor_governance_results
+			add_province_modifier = { name = lower_than_average_governance_results duration = 730 }
+		}
+		
+		set_variable = { which = governance_expected value = 0 }
+		set_variable = { which = governance_expected_from_stewardship value = 0 }
+		set_variable = { which = governance_expected_from_diplomacy value = 0 }
+		set_variable = { which = governance_expected_from_learning value = 0 }
+		set_variable = { which = governance_realized value = 0 }
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 2.1 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 3.1 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 4.1 } } }
+			}
+			modifier = {
+				factor = 2
+				duchy = { owner = { check_variable = { which = governance_expected value = 5.1 } } }
+			}
+		}
+	}
+}

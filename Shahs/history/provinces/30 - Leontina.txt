@@ -1,0 +1,18 @@
+# c_leontina
+
+# County Title
+title = c_leontina
+
+# Settlements
+max_settlements = 4
+
+b_nepilisino = castle
+b_mesica = temple
+b_ferratinto = city
+#b_leontina = castle
+
+# Misc
+culture = doshastan
+religion = celestinian
+
+#History

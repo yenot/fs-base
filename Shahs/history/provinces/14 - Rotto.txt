@@ -1,0 +1,19 @@
+# c_rotto
+
+# County Title
+title = c_rotto
+
+# Settlements
+max_settlements = 5
+
+b_rotto = castle
+b_cumasia = castle
+b_damiana = temple
+b_esterica = temple
+#b_rotto_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

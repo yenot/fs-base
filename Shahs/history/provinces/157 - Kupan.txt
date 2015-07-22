@@ -1,0 +1,18 @@
+# c_kupan
+
+# County Title
+title = c_kupan
+
+# Settlements
+max_settlements = 4
+
+b_vatagovo = castle
+b_tarkevishte = temple
+#b_kupan = temple
+#b_kupan_2 = castle
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

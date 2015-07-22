@@ -1,0 +1,19 @@
+# c_erhad
+
+# County Title
+title = c_erhad
+
+# Settlements
+max_settlements = 5
+
+b_ormasevo = castle
+b_broevo = temple
+b_pervostavitse = temple
+#b_erhad = castle
+#b_erhad_2 = city
+
+# Misc
+culture = melin
+religion = vysochyan
+
+#History

@@ -1,0 +1,16 @@
+# c_xwastanafrin
+
+# County Title
+title = c_xwastanafrin
+
+# Settlements
+max_settlements = 2
+
+b_xwastanafrin = castle
+b_kivaresh = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

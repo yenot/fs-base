@@ -1,0 +1,19 @@
+# c_ceventino
+
+# County Title
+title = c_ceventino
+
+# Settlements
+max_settlements = 5
+
+b_ceventino = castle
+b_lantica = temple
+b_riotta = city
+b_paluarino = castle
+#b_ceventino_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

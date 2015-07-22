@@ -1,0 +1,19 @@
+# c_semnina
+
+# County Title
+title = c_semnina
+
+# Settlements
+max_settlements = 5
+
+b_polisero = castle
+b_tremica = temple
+b_slorida = castle
+#b_semnina = castle
+#b_semnina_2 = city
+
+# Misc
+culture = auletian
+religion = scholastic
+
+#History

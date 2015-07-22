@@ -1,0 +1,17 @@
+# c_teraz
+
+# County Title
+title = c_teraz
+
+# Settlements
+max_settlements = 3
+
+b_teraz = castle
+#b_teraz_2 = city
+#b_teraz_3 = temple
+
+# Misc
+culture = shahran
+religion = sabanean
+
+#History

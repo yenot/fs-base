@@ -1783,14 +1783,14 @@ character_event = {
 		NOT = { religion_group = indian_group }
 		is_heretic = no
 		OR = {
-			religion_group = christian
+			religion_group = celestinian
 			religion_group = muslim
 			religion_group = jewish_group
 		}
 		liege = {
 			is_heretic = no
 			OR = {
-				religion_group = christian
+				religion_group = celestinian
 				religion_group = muslim
 				religion_group = jewish_group
 			}

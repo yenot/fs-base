@@ -303,7 +303,7 @@ character_event = {
 								NOT = { character = ROOT }
 								NOT = {
 									AND = {
-										religion = catholic
+										religion = sabanean
 										ROOT = { liege = { religion_head = { character = PREVPREVPREV } } }
 									}
 								}
@@ -317,7 +317,7 @@ character_event = {
 									NOT = { character = ROOT }
 									NOT = {
 										AND = {
-											religion = catholic
+											religion = sabanean
 											ROOT = { liege = { religion_head = { character = PREVPREVPREV } } }
 										}
 									}

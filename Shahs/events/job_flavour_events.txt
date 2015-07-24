@@ -6,7 +6,7 @@
 #
 ##################################################
 #
-# Written by Sara Wendel-Örtqvist
+# Written by Sara Wendel-Ã–rtqvist
 
 ### Councillors are good at their work ###
 
@@ -218,12 +218,12 @@ character_event = {
 	
 	trigger = {
 		NOT = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 		job_spiritual = {
 			learning = 12
 			NOT = {
-				religion_group = muslim
+				religion_group = merefynnite
 			}
 			OR = {
 				trait = quick
@@ -258,7 +258,7 @@ character_event = {
 	}
 }
 
-### Chief Mufti is good at his/her job - Muslim ###
+### Chief Mufti is good at his/her job - Merefynnite ###
 character_event = {
 	id = 75005
 	desc = "EVTDESC75005"
@@ -269,10 +269,10 @@ character_event = {
 	capable_only = yes
 	
 	trigger = {
-		religion_group = muslim
+		religion_group = merefynnite
 		job_spiritual = {
 			learning = 12
-			religion_group = muslim
+			religion_group = merefynnite
 			OR = {
 				trait = quick
 				trait = genius

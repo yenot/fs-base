@@ -569,7 +569,7 @@ character_event = {
 		name = "EVTOPTA20021"
 		trigger = {
 			NOT = {
-				religion_group = muslim
+				religion_group = merefynnite
 			}
 			NOT = {
 				trait = wroth
@@ -592,7 +592,7 @@ character_event = {
 	option = {
 		name = "EVTOPTC20021"
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite
 			NOT = {
 				AND = {
 					trait = wroth

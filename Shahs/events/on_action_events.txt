@@ -2770,7 +2770,7 @@ character_event = {
 		}
 		OR = {
 			AND = {
-				NOT = { religion = zoroastrian }
+				NOT = { religion = merya_svodna }
 				NOT = { religion = messalian }
 			}
 			NOT = { new_character = { is_close_relative = FROM } }
@@ -2822,16 +2822,16 @@ character_event = {
 	}
 }
 
-# On-action event: Zoroastrian Xwedodah marriage
+# On-action event: Merya_svodna Xwedodah marriage
 character_event = {
 	id = 501
 	desc = EVTDESC501
-	picture = GFX_evt_marriage_zoroastrian_group
+	picture = GFX_evt_marriage_merya_svodna_group
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		religion = zoroastrian
+		religion = merya_svodna
 		new_character = { is_close_relative = FROM }
 		OR = {
 			FROM = { character = ROOT }

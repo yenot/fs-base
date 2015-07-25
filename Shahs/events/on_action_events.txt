@@ -1312,7 +1312,7 @@ narrative_event = {
 	}
 }
 
-# CELESTINIAN CRUSADE AGAINST PAGANS
+# CELESTINIAN CRUSADE AGAINST WEDEMICS
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1484,7 +1484,7 @@ narrative_event = {
 	}
 }
 
-# MEREFYNNITE JIHAD AGAINST PAGANS
+# MEREFYNNITE JIHAD AGAINST WEDEMICS
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1599,7 +1599,7 @@ narrative_event = {
 	}
 }
 
-# PAGAN HOLY WAR AGAINST CELESTINIANS
+# WEDEMIC HOLY WAR AGAINST CELESTINIANS
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1617,7 +1617,7 @@ narrative_event = {
 	
 	trigger = {
 		can_call_crusade = yes
-		ROOT = { religion_group = pagan_group }
+		ROOT = { religion_group = wedemic_group }
 		new_character = {
 			religion_group = celestinian
 		}
@@ -1656,7 +1656,7 @@ narrative_event = {
 	}
 }
 
-# PAGAN HOLY WAR AGAINST MEREFYNNITES
+# WEDEMIC HOLY WAR AGAINST MEREFYNNITES
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1674,7 +1674,7 @@ narrative_event = {
 	
 	trigger = {
 		can_call_crusade = yes
-		ROOT = { religion_group = pagan_group }
+		ROOT = { religion_group = wedemic_group }
 		new_character = {
 			religion_group = merefynnite
 		}
@@ -1713,7 +1713,7 @@ narrative_event = {
 	}
 }
 
-# PAGAN HOLY WAR AGAINST OTHER PAGANS
+# WEDEMIC HOLY WAR AGAINST OTHER PAGANS
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1731,7 +1731,7 @@ narrative_event = {
 	
 	trigger = {
 		can_call_crusade = yes
-		ROOT = { religion_group = pagan_group }
+		ROOT = { religion_group = wedemic_group }
 		new_character = {
 			NOT = { religion_group = merefynnite }
 			NOT = { religion_group = celestinian }

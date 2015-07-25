@@ -145,22 +145,22 @@ character_event = {
 				religion_group = indian_group
 			}
 		}
-		# Jains have a hard time converting ALL non-pagans
+		# Jains have a hard time converting ALL non-wedemics
 		modifier = {
 			factor = 3.0
 			religion = jain
 			location = {
-				NOT = { religion_group = pagan_group }
+				NOT = { religion_group = wedemic_group }
 			}
 		}
 		
 		modifier = {
 			factor = 3.0
-			religion_group = pagan_group
+			religion_group = wedemic_group
 			is_reformed_religion = no
 			location = {
 				OR = {
-					NOT = { religion_group = pagan_group }
+					NOT = { religion_group = wedemic_group }
 					is_reformed_religion = yes
 				}
 			}
@@ -334,7 +334,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 3.0
-			religion_group = pagan_group
+			religion_group = wedemic_group
 			is_reformed_religion = no
 		}
 	}
@@ -648,7 +648,7 @@ character_event = {
 	
 	trigger = {
 		has_job_action = action_inquisition
-		NOT = { religion_group = pagan_group }
+		NOT = { religion_group = wedemic_group }
 		NOT = { religion_group = indian_group }
 		location = {
 			any_province_lord = {
@@ -1095,7 +1095,7 @@ letter_event = {
 	}
 }
 
-# Chaplain arrives at Pagan capital
+# Chaplain arrives at Wedemic capital
 character_event = {
 	id = 39650
 	desc = EVTDESC39650
@@ -1114,7 +1114,7 @@ character_event = {
 				NOT = { character = ROOT }
 				NOT = { is_liege_of = ROOT }
 				NOT = { religion = ROOT }
-				religion_group = pagan_group
+				religion_group = wedemic_group
 				NOT = { same_realm = ROOT }
 				controls_religion = no
 			}
@@ -1136,7 +1136,7 @@ character_event = {
 	}
 }
 
-# Chaplain has a chance of converting the Pagan lord
+# Chaplain has a chance of converting the Wedemic lord
 character_event = {
 	id = 39651
 	desc = EVTDESC39651
@@ -1155,7 +1155,7 @@ character_event = {
 				NOT = { character = ROOT }
 				NOT = { is_liege_of = ROOT }
 				NOT = { religion = ROOT }
-				religion_group = pagan_group
+				religion_group = wedemic_group
 				NOT = { same_realm = ROOT }
 				controls_religion = no
 				at_location = ROOT
@@ -1228,7 +1228,7 @@ character_event = {
 	}
 }
 
-# Chaplain converts Pagan courtier
+# Chaplain converts Wedemic courtier
 character_event = {
 	id = 39652
 	desc = EVTDESC39652
@@ -1245,7 +1245,7 @@ character_event = {
 				NOT = { character = ROOT }
 				NOT = { is_liege_of = ROOT }
 				NOT = { religion = ROOT }
-				religion_group = pagan_group
+				religion_group = wedemic_group
 				NOT = { same_realm = ROOT }
 			}
 		}
@@ -1316,7 +1316,7 @@ character_event = {
 							at_location = ROOT
 							NOT = { trait = incapable }
 							ai = yes
-							religion_group = pagan_group
+							religion_group = wedemic_group
 						}
 						character_event = { id = 39610 days = 1 }
 					}
@@ -1343,7 +1343,7 @@ character_event = {
 				NOT = { character = ROOT }
 				NOT = { is_liege_of = ROOT }
 				NOT = { religion = ROOT }
-				religion_group = pagan_group
+				religion_group = wedemic_group
 				NOT = { same_realm = ROOT }
 			}
 		}
@@ -2338,7 +2338,7 @@ character_event = {
 						using_cb = crusade
 						using_cb = religious
 						using_cb = religious_revolt
-						using_cb = pagan_holy_war
+						using_cb = wedemic_holy_war
 						using_cb = buddhist_holy_war
 						using_cb = merefynnite_invasion
 						using_cb = manifest_destiny_invasion
@@ -2502,7 +2502,7 @@ character_event = {
 					using_cb = crusade
 					using_cb = religious
 					using_cb = religious_revolt
-					using_cb = pagan_holy_war
+					using_cb = wedemic_holy_war
 					using_cb = buddhist_holy_war
 					using_cb = merefynnite_invasion
 					using_cb = manifest_destiny_invasion

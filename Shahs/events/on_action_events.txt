@@ -165,7 +165,7 @@ character_event = {
 			if = {
 				limit = { 
 					dynasty = ROOT 
-					NOT = { religion_group = muslim }
+					NOT = { religion_group = merefynnite }
 				}
 				add_trait = kinslayer
 			}
@@ -705,7 +705,7 @@ character_event = {
 		if = {
 			limit = { 
 				dynasty = FROM 
-				NOT = { FROM = { religion_group = muslim } }
+				NOT = { FROM = { religion_group = merefynnite } }
 			}
 			FROM = { add_trait = kinslayer }
 		}
@@ -1255,7 +1255,7 @@ character_event = {
 	}
 }
 
-# CELESTINIAN CRUSADE AGAINST MUSLIMS
+# CELESTINIAN CRUSADE AGAINST MEREFYNNITES
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1332,7 +1332,7 @@ narrative_event = {
 		can_call_crusade = yes
 		ROOT = { religion_group = celestinian }
 		new_character = {
-			NOT = { religion_group = muslim }
+			NOT = { religion_group = merefynnite }
 			NOT = { religion_group = celestinian }
 		}
 	}
@@ -1427,7 +1427,7 @@ narrative_event = {
 	}
 }
 
-# MUSLIM JIHAD AGAINST CELESTINIANS
+# MEREFYNNITE JIHAD AGAINST CELESTINIANS
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1445,7 +1445,7 @@ narrative_event = {
 	
 	trigger = {
 		can_call_crusade = yes
-		ROOT = { religion_group = muslim }
+		ROOT = { religion_group = merefynnite }
 		new_character = {
 			religion_group = celestinian
 		}
@@ -1484,7 +1484,7 @@ narrative_event = {
 	}
 }
 
-# MUSLIM JIHAD AGAINST PAGANS
+# MEREFYNNITE JIHAD AGAINST PAGANS
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1502,9 +1502,9 @@ narrative_event = {
 	
 	trigger = {
 		can_call_crusade = yes
-		ROOT = { religion_group = muslim }
+		ROOT = { religion_group = merefynnite }
 		new_character = {
-			NOT = { religion_group = muslim }
+			NOT = { religion_group = merefynnite }
 			NOT = { religion_group = celestinian }
 		}
 	}
@@ -1542,7 +1542,7 @@ narrative_event = {
 	}
 }
 
-# MUSLIM JIHAD AGAINST HERETICS
+# MEREFYNNITE JIHAD AGAINST HERETICS
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1560,9 +1560,9 @@ narrative_event = {
 	
 	trigger = {
 		can_call_crusade = yes
-		ROOT = { religion_group = muslim }
+		ROOT = { religion_group = merefynnite }
 		new_character = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 	}
 	
@@ -1656,7 +1656,7 @@ narrative_event = {
 	}
 }
 
-# PAGAN HOLY WAR AGAINST MUSLIMS
+# PAGAN HOLY WAR AGAINST MEREFYNNITES
 # Called from 'on_crusade_creation'
 # new_character is the targetted enemy
 # ROOT is the religious head
@@ -1676,7 +1676,7 @@ narrative_event = {
 		can_call_crusade = yes
 		ROOT = { religion_group = pagan_group }
 		new_character = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 	}
 	
@@ -1733,7 +1733,7 @@ narrative_event = {
 		can_call_crusade = yes
 		ROOT = { religion_group = pagan_group }
 		new_character = {
-			NOT = { religion_group = muslim }
+			NOT = { religion_group = merefynnite }
 			NOT = { religion_group = celestinian }
 		}
 	}
@@ -2765,7 +2765,7 @@ character_event = {
 	
 	trigger = {
 		NOT = { 
-			religion_group = muslim 
+			religion_group = merefynnite
 			has_character_flag = recieved_royal_marriage_aid_duty
 		}
 		OR = {

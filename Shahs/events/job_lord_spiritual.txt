@@ -777,7 +777,7 @@ character_event = {
 		name = "EVTOPTA20030"
 		trigger = {
 			NOT = {
-				religion_group = muslim
+				religion_group = merefynnite
 			}
 		}
 		FROM = {
@@ -787,7 +787,7 @@ character_event = {
 	option = {
 		name = "EVTOPTB20030"
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 		FROM = {
 			liege = { letter_event = { id = 20032 days = 7 tooltip = "EVTTOOLTIP20032" } }
@@ -874,7 +874,7 @@ letter_event = {
 		name = "EVTOPTA20033"
 		trigger = {
 			NOT = {
-				religion_group = muslim
+				religion_group = merefynnite
 			}
 		}
 		piety = 5
@@ -883,7 +883,7 @@ letter_event = {
 	option = {
 		name = "EVTOPTB20033"
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 		piety = 5
 		clr_character_flag = suspected_heretic
@@ -1784,14 +1784,14 @@ character_event = {
 		is_heretic = no
 		OR = {
 			religion_group = celestinian
-			religion_group = muslim
+			religion_group = merefynnite
 			religion_group = jewish_group
 		}
 		liege = {
 			is_heretic = no
 			OR = {
 				religion_group = celestinian
-				religion_group = muslim
+				religion_group = merefynnite
 				religion_group = jewish_group
 			}
 		}
@@ -1872,7 +1872,7 @@ letter_event = {
 }
 
 ##############################
-# MUSLIM LORD SPIRITUAL (Mufti)
+# MEREFYNNITE LORD SPIRITUAL (Mufti)
 # JOB: action_charity
 ##############################
 
@@ -2340,7 +2340,7 @@ character_event = {
 						using_cb = religious_revolt
 						using_cb = pagan_holy_war
 						using_cb = buddhist_holy_war
-						using_cb = muslim_invasion
+						using_cb = merefynnite_invasion
 						using_cb = manifest_destiny_invasion
 					}
 				}
@@ -2504,7 +2504,7 @@ character_event = {
 					using_cb = religious_revolt
 					using_cb = pagan_holy_war
 					using_cb = buddhist_holy_war
-					using_cb = muslim_invasion
+					using_cb = merefynnite_invasion
 					using_cb = manifest_destiny_invasion
 				}
 			}

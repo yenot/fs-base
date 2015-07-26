@@ -20694,19 +20694,7 @@ character_event = {
 						# }
 					# }
 				# }
-				# if = {
-					# limit = {
-						# religion = fraticelli
-					# }
-					# d_fraticelli = {
-						# holder_scope = {
-							# opinion = {
-								# who = PREVPREV
-								# modifier = opinion_deposed_antipope
-							# }
-						# }
-					# }
-				# }
+				
 			# }
 		# }
 		# hidden_tooltip = {

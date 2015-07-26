@@ -1275,7 +1275,7 @@ narrative_event = {
 		can_call_crusade = yes
 		ROOT = { religion_group = celestinian }
 		new_character = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 	}
 	

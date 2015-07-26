@@ -1,19 +1,70 @@
-christian =
-  catholic = 
-  cathar = 
-  fraticelli = 
-  waldensian = 
-  lollard = 
-  orthodox =
-  miaphysite =
-  monophysite =
-  bogomilist = 
-  monothelite = 
-  iconoclast = 
-  paulician = 
-  nestorian =
-  messalian =
-muslim = 
-  sunni = 
-  zikri = 
-  
+Note that OR in the list below means in-code OR i.e.
+
+	norse_pagan = wedemic OR voldemarran
+	
+means that original trigger
+
+	religion = norse_pagan
+	
+turns into
+
+	OR = {
+		religion = wedemic
+		religion = voldemarran
+	}
+
+christian = celestinian_group
+  catholic = sabanean
+  cathar = celestinian OR axiotic OR mekosite
+  fraticelli = remove
+  waldensian = barkarean OR porphyrian
+  lollard = barkarean OR porphyrian
+  orthodox = olpyan_group
+  miaphysite = remove
+  monophysite = remove
+  bogomilist = celestinian OR axiotic OR mekosite
+  monothelite = remove
+  iconoclast = barkarean
+  paulician = celestinian OR axiotic OR mekosite
+  nestorian = remove
+  messalian = remove
+muslim = merefynnite
+  sunni = merefynnite
+  zikri = merefynnite
+  yazidi = sophisterrow
+  ibadi = merefynnite
+  kharijite = merefynnite
+  shiite = merefynnite
+  druze = merefynnite
+  hurufi = merefynnite
+pagan_group = pagan_group
+  pagan = remove
+  norse_pagan_reformed = remove
+  norse_pagan = wedemic OR voldemarran (latter with no blot)
+  tengri_pagan_reformed
+  tengri_pagan = sakhalia
+  baltic_pagan_reformed = remove
+  baltic_pagan = remove
+  finnish_pagan_reformed = remove
+  finnish_pagan = remove
+  aztec_reformed = remove
+  aztec = remove
+  slavic_pagan_reformed = remove
+  slavic_pagan = remove
+  west_african_pagan_reformed = remove
+  west_african_pagan = parana
+  zun_pagan_reformed = remove
+  zun_pagan = parana
+  hellenic_pagan = remove
+zoroastrian_group = merya_svodna_group (no xwedodah for voldemarran)
+  zoroastrian = merya_svodna_group (no xwedodah for voldemarran)
+  mazdaki = megalist
+  manichean = axiotic OR mekosites (only if the original trigger does not include zoroastrian, if it does, put just merya_svodna_group)
+jewish_group
+  jewish
+  samaritan
+  karaite
+indian_group = olpyan_group OR merya_svodna_group
+  hindu = olpyan_group
+  buddhist = voldemarran
+  jain = axiotic (only if the original trigger does not include hindu/buddhist, if it does, put just olpyan_group)

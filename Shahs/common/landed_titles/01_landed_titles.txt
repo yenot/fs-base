@@ -1,4 +1,4 @@
-###### AUTO GENERATED CONTENT (c) CKTools v15 ######
+###### AUTO GENERATED CONTENT (c) CKTools v16 ######
 
 
 
@@ -610,13 +610,17 @@ e_auletia = {
 				color={ 43 85 39 }
 				color2={ 255 255 255 }
 				
+				b_leontina = {
+				}
 				b_nepilisino = {
 				}
 				b_mesica = {
 				}
 				b_ferratinto = {
 				}
-				b_leontina = {
+				b_leontina_2 = {
+				}
+				b_leontina_3 = {
 				}
 			}
 			c_vozcore_i_marica = { # 31
@@ -3613,7 +3617,7 @@ e_uman = {
 				b_boranasi_3 = {
 				}
 			}
-			c_turdea = { # 209
+			c_toridea = { # 209
 				color={ 152 142 101 }
 				color2={ 255 255 255 }
 				
@@ -3621,7 +3625,7 @@ e_uman = {
 				}
 				b_ispica = {
 				}
-				b_turdea = {
+				b_toridea = {
 				}
 			}
 			c_visgard = { # 204
@@ -3644,7 +3648,7 @@ e_uman = {
 				}
 			}
 		}
-		
+
 		d_ketrion = {
 			color={ 164 141 78 }
 			color2={ 255 255 255 }

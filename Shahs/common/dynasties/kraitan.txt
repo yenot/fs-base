@@ -80,3 +80,73 @@
 	name = "Petrosakos"
 	culture = kraitan
 }
+
+1000701 = {
+	name = "Krasos"
+	culture = kraitan
+}
+
+1000702 = {
+	name = "Arnikos"
+	culture = kraitan
+}
+
+1000707 = {
+	name = "Erbos"
+	culture = kraitan
+}
+
+1000711 = {
+	name = "Kviris"
+	culture = kraitan
+}
+
+1000712 = {
+	name = "Inatis"
+	culture = kraitan
+}
+
+1000716 = {
+	name = "Urmakis"
+	culture = kraitan
+}
+
+1000719 = {
+	name = "Kalikorodos"
+	culture = kraitan
+}
+
+1000720 = {
+	name = "Stermikos"
+	culture = kraitan
+}
+
+1000723 = {
+	name = "Kukaros"
+	culture = kraitan
+}
+
+1000725 = {
+	name = "Barok"
+	culture = kraitan
+}
+
+1000727 = {
+	name = "Tzarmakis"
+	culture = kraitan
+}
+
+1000728 = {
+	name = "Kyrikos"
+	culture = kraitan
+}
+
+1000732 = {
+	name = "Nontios"
+	culture = kraitan
+}
+
+1000734 = {
+	name = "Petrophonos"
+	culture = kraitan
+}

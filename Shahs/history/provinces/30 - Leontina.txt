@@ -4,12 +4,12 @@
 title = c_leontina
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
+b_leontina = city
 b_nepilisino = castle
 b_mesica = temple
 b_ferratinto = city
-#b_leontina = castle
 
 # Misc
 culture = doshastan

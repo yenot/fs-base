@@ -1,0 +1,5 @@
+1066.1.1={
+	holding_dynasty = 1000707 # Erbos - makes this a FAMILY_PALACE type Holding
+	liege="d_visgard"
+	holder = 1000707 # Alexios Erbos
+}

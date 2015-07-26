@@ -1,0 +1,39 @@
+1000350 = {
+    name = "Kanush"
+    culture = doshastan
+}
+
+1000353 = {
+    name = "Axrag"
+    culture = doshastan
+}
+
+1000354 = {
+    name = "Hersheg"
+    culture = doshastan
+}
+
+1000367 = {
+    name = "Narman"
+    culture = doshastan
+}
+
+1000357 = {
+    name = "Burakh"
+    culture = doshastan
+}
+
+1000359 = {
+    name = "Golakdev"
+    culture = doshastan
+}
+
+1000362 = {
+    name = "Kexroy"
+    culture = doshastan
+}
+
+1000368 = {
+    name = "Emerozasp"
+    culture = doshastan
+}

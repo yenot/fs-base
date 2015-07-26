@@ -1,0 +1,19 @@
+1010501 = {
+    name = "Halming"
+    culture = shahran
+}
+
+1010503 = {
+    name = "Kovel"
+    culture = shahran
+}
+
+1010504 = {
+    name = "Hasseltrof"
+    culture = shahran
+}
+
+1010506 = {
+    name = "Burisson"
+    culture = shahran
+}

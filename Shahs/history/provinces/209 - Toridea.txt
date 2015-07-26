@@ -1,0 +1,17 @@
+# c_toridea
+
+# County Title
+title = c_toridea
+
+# Settlements
+max_settlements = 3
+
+b_agarica = castle
+b_ispica = temple
+#b_toridea = temple
+
+# Misc
+culture = kraitan
+religion = celestinian
+
+#History

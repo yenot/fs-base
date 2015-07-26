@@ -1,0 +1,5 @@
+1066.1.1={
+	holding_dynasty = 1000368 # Emerozasp - makes this a FAMILY_PALACE type Holding
+	liege="d_bascat"
+	holder = 1000268 # Bahmanyar Emerozasp
+}

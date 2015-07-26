@@ -61,6 +61,7 @@ feudal_governments = {
 			}
 			NOT = {	religion_group = muslim	}
 			is_patrician = no
+			higher_tier_than = baron
 		}
 		
 		color = { 197 250 51 }

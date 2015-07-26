@@ -277,3 +277,53 @@ b_aikaris = {
 	culture = kraitan
 	religion = celestinian
 }
+
+b_narman = {
+	culture = doshastan
+	religion = celestinian
+}
+
+b_burakh = {
+	culture = doshastan
+	religion = celestinian
+}
+
+b_golakdev = {
+	culture = doshastan
+	religion = celestinian
+}
+
+b_kexroy = {
+	culture = doshastan
+	religion = celestinian
+}
+
+b_emerozasp = {
+	culture = doshastan
+	religion = celestinian
+}
+
+b_krasos = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_arnikos = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_erbos = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_kviris = {
+	culture = kraitan
+	religion = celestinian
+}
+
+b_inatis = {
+	culture = kraitan
+	religion = celestinian
+}

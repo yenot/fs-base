@@ -137,3 +137,15 @@
     name = "Cansato"
     culture = auletian
 }
+1000339 = {
+	name = "Croto"
+	culture = auletian
+}
+1000339 = {
+	name = "Croto"
+	culture = auletian
+}
+1000322 = {
+	name = "Errucio"
+	culture = auletian
+}

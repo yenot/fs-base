@@ -6,3 +6,6 @@
 800.1.1={
 	liege=d_dashtawaran
 }
+1066.1.1={
+	holder=1010226
+}

@@ -1,4 +1,4 @@
-1000250={
+1000550={
 name="Ermengard"
 female=yes
 dynasty=1000350
@@ -17,11 +17,11 @@ trait="temperate"
 trait="just"
 trait="ill"
 1012.1.1={birth=yes}
-1027.8.7 = {add_spouse=1000251}
+1027.8.7 = {add_spouse=1000551}
 1078.10.27={death=yes}
 }
 
-1000251={
+1000551={
 name="Lutbert"
 dynasty=1000351
 dna="ejddgdhlmkl"
@@ -36,11 +36,11 @@ trait="skilled_tactician"
 trait="gluttonous"
 trait="honest"
 1012.1.28={birth=yes}
-1027.8.7 = {add_spouse=1000250}
+1027.8.7 = {add_spouse=1000550}
 1055.10.9={death=yes}
 }
 
-1000252={
+1000552={
 name="Augustin"
 dynasty=1000352
 dna="afknojnkahn"
@@ -56,11 +56,11 @@ trait="envious"
 trait="just"
 trait="ambitious"
 1031.1.1={birth=yes}
-1054.1.8 = {add_spouse=1000253}
+1054.1.8 = {add_spouse=1000553}
 1095.1.21={death=yes}
 }
 
-1000253={
+1000553={
 name="Sybille"
 female=yes
 dynasty=1000353
@@ -78,11 +78,11 @@ trait="honest"
 trait="brave"
 trait="envious"
 1034.7.11={birth=yes}
-1054.1.8 = {add_spouse=1000252}
+1054.1.8 = {add_spouse=1000552}
 1086.2.1={death=yes}
 }
 
-1000254={
+1000554={
 name="Karlotte"
 female=yes
 dynasty=1000354
@@ -99,11 +99,11 @@ trait="kind"
 trait="wroth"
 trait="diligent"
 1007.1.1={birth=yes}
-1024.1.20 = {add_spouse=1000255}
+1024.1.20 = {add_spouse=1000555}
 1045.11.2={death=yes}
 }
 
-1000255={
+1000555={
 name="Kuno"
 dynasty=1000355
 dna="kgmecfpdaki"
@@ -119,11 +119,11 @@ trait="shy"
 trait="kind"
 trait="cynical"
 1007.5.27={birth=yes}
-1024.1.20 = {add_spouse=1000254}
+1024.1.20 = {add_spouse=1000554}
 1050.2.15={death=yes}
 }
 
-1000256={
+1000556={
 name="Wilhelm"
 dynasty=1000356
 dna="hfiimnjodmh"
@@ -138,11 +138,11 @@ trait="grey_eminence"
 trait="greedy"
 trait="shy"
 1041.1.1={birth=yes}
-1061.6.10 = {add_spouse=1000257}
+1061.6.10 = {add_spouse=1000557}
 1067.12.28={death=yes}
 }
 
-1000257={
+1000557={
 name="Adelinde"
 female=yes
 dynasty=1000357
@@ -158,11 +158,11 @@ trait="thrifty_clerk"
 trait="content"
 trait="just"
 1046.5.3={birth=yes}
-1061.6.10 = {add_spouse=1000256}
+1061.6.10 = {add_spouse=1000556}
 1095.9.29={death=yes}
 }
 
-1000258={
+1000558={
 name="Irmeltrud"
 female=yes
 dynasty=1000358
@@ -181,11 +181,11 @@ trait="kind"
 trait="paranoid"
 trait="arbitrary"
 1018.1.1={birth=yes}
-1040.6.1 = {add_spouse=1000259}
+1040.6.1 = {add_spouse=1000559}
 1065.10.2={death=yes}
 }
 
-1000259={
+1000559={
 name="Adolf"
 dynasty=1000359
 dna="hkcaklchphm"
@@ -199,11 +199,11 @@ learning=6
 trait="skilled_tactician"
 trait="just"
 1020.10.22={birth=yes}
-1040.6.1 = {add_spouse=1000258}
+1040.6.1 = {add_spouse=1000558}
 1083.7.28={death=yes}
 }
 
-1000260={
+1000560={
 name="Serhilda"
 female=yes
 dynasty=1000360
@@ -219,11 +219,11 @@ trait="flamboyant_schemer"
 trait="just"
 trait="temperate"
 1021.1.1={birth=yes}
-1040.9.26 = {add_spouse=1000261}
+1040.9.26 = {add_spouse=1000561}
 1082.8.11={death=yes}
 }
 
-1000261={
+1000561={
 name="Udo"
 dynasty=1000361
 dna="caojlclalib"
@@ -240,11 +240,11 @@ trait="cruel"
 trait="content"
 trait="wroth"
 1024.3.17={birth=yes}
-1040.9.26 = {add_spouse=1000260}
+1040.9.26 = {add_spouse=1000560}
 1088.9.23={death=yes}
 }
 
-1000262={
+1000562={
 name="Ruprecht"
 dynasty=1000362
 dna="elnliepapfm"
@@ -260,11 +260,11 @@ trait="lustful"
 trait="greedy"
 trait="honest"
 1039.1.1={birth=yes}
-1056.5.20 = {add_spouse=1000263}
+1056.5.20 = {add_spouse=1000563}
 1090.3.25={death=yes}
 }
 
-1000263={
+1000563={
 name="Mathilde"
 female=yes
 dynasty=1000363
@@ -281,11 +281,11 @@ trait="honest"
 trait="zealous"
 trait="arbitrary"
 1039.5.5={birth=yes}
-1056.5.20 = {add_spouse=1000262}
+1056.5.20 = {add_spouse=1000562}
 1095.8.20={death=yes}
 }
 
-1000264={
+1000564={
 name="Meinhard"
 dynasty=1000364
 dna="gocojcomikg"
@@ -301,11 +301,11 @@ trait="cruel"
 trait="honest"
 trait="kind"
 1044.1.1={birth=yes}
-1065.4.10 = {add_spouse=1000265}
+1065.4.10 = {add_spouse=1000565}
 1113.8.13={death=yes}
 }
 
-1000265={
+1000565={
 name="Eufemia"
 female=yes
 dynasty=1000365
@@ -322,13 +322,13 @@ trait="charitable"
 trait="slothful"
 trait="ill"
 1049.3.12={birth=yes}
-1065.4.10 = {add_spouse=1000264}
+1065.4.10 = {add_spouse=1000564}
 1108.4.17={death=yes}
 }
 
-1000266={
+1000566={
 name="Otto"
-dynasty=1000366
+dynasty=1000566
 dna="heldbeaijml"
 culture=hamult
 religion=celestinian
@@ -341,11 +341,11 @@ trait="charismatic_negotiator"
 trait="ambitious"
 trait="lustful"
 1038.1.1={birth=yes}
-1059.11.18 = {add_spouse=1000267}
+1059.11.18 = {add_spouse=1000567}
 1107.4.3={death=yes}
 }
 
-1000267={
+1000567={
 name="Helene"
 female=yes
 dynasty=1000367
@@ -360,11 +360,11 @@ learning=7
 trait="flamboyant_schemer"
 trait="patient"
 1039.5.29={birth=yes}
-1059.11.18 = {add_spouse=1000266}
+1059.11.18 = {add_spouse=1000566}
 1098.3.5={death=yes}
 }
 
-1000268={
+1000568={
 name="Mechtild"
 female=yes
 dynasty=1000368
@@ -382,11 +382,11 @@ trait="zealous"
 trait="deceitful"
 trait="drunkard"
 1016.1.1={birth=yes}
-1037.1.8 = {add_spouse=1000269}
+1037.1.8 = {add_spouse=1000569}
 1071.10.16={death=yes}
 }
 
-1000269={
+1000569={
 name="Simon"
 dynasty=1000369
 dna="icmplnoglhp"
@@ -402,7 +402,7 @@ trait="brave"
 trait="ambitious"
 trait="arbitrary"
 1016.8.31={birth=yes}
-1037.1.8 = {add_spouse=1000268}
+1037.1.8 = {add_spouse=1000568}
 1081.4.11={death=yes}
 }
 

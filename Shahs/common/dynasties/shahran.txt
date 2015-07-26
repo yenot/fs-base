@@ -1,0 +1,79 @@
+1010200 = {
+    name = "Sanym"
+    culture = shahran
+}
+
+1010203 = {
+    name = "Bashayar"
+    culture = shahran
+}
+
+1010204 = {
+    name = "Kafanag"
+    culture = shahran
+}
+
+1010206 = {
+    name = "Izam"
+    culture = shahran
+}
+
+1010209 = {
+    name = "Medshokhdriv"
+    culture = shahran
+}
+
+1010210 = {
+    name = "Xashter"
+    culture = shahran
+}
+
+1010213 = {
+    name = "Beshehr"
+    culture = shahran
+}
+
+1010215 = {
+    name = "Arnashadir"
+    culture = shahran
+}
+
+1010216 = {
+    name = "Awazoshad"
+    culture = shahran
+}
+
+1010219 = {
+    name = "Nenur"
+    culture = shahran
+}
+
+1010220 = {
+    name = "Assuri"
+    culture = shahran
+}
+
+1010222 = {
+    name = "Barmak"
+    culture = shahran
+}
+
+1010225 = {
+    name = "Xerish"
+    culture = shahran
+}
+
+1010227 = {
+    name = "Shahparaz"
+    culture = shahran
+}
+
+1010228 = {
+    name = "Burnaz"
+    culture = shahran
+}
+
+1010230 = {
+    name = "Ishixrevar"
+    culture = shahran
+}

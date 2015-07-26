@@ -2,3 +2,43 @@
     name = "Patan"
     culture = melin
 }
+1010001 = {
+    name = "Kabalov"
+    culture = melin
+}
+1010004 = {
+    name = "Baranich"
+    culture = melin
+}
+1010006 = {
+    name = "Ryapov"
+    culture = melin
+}
+1010007 = {
+    name = "Borov"
+    culture = melin
+}
+1010010 = {
+    name = "Krepelich"
+    culture = melin
+}
+1010012 = {
+    name = "Maruk"
+    culture = melin
+}
+1010014 = {
+    name = "ot Bebely"
+    culture = melin
+}
+1010015 = {
+    name = "Karakov"
+    culture = melin
+}
+1010018 = {
+    name = "Samradich"
+    culture = melin
+}
+1010020 = {
+    name = "Asparus"
+    culture = melin
+}

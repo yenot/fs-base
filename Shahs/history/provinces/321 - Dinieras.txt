@@ -1,0 +1,18 @@
+# c_dinieras
+
+# County Title
+title = c_dinieras
+
+# Settlements
+max_settlements = 4
+
+b_dinieras = castle
+b_tresi = temple
+b_erpol = city
+b_vermosa = castle
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

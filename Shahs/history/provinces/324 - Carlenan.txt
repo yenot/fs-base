@@ -1,0 +1,17 @@
+# c_carlenan
+
+# County Title
+title = c_carlenan
+
+# Settlements
+max_settlements = 3
+
+b_carlenan = castle
+b_escerona = temple
+b_livarno = castle
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

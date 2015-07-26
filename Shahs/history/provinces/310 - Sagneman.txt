@@ -1,0 +1,18 @@
+# c_sagneman
+
+# County Title
+title = c_sagneman
+
+# Settlements
+max_settlements = 4
+
+b_sagneman = castle
+b_danjarkc = temple
+b_sercilya = city
+#b_sagneman_2 = castle
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

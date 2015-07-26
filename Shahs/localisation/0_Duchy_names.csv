@@ -3,6 +3,8 @@ d_akaridon;Akaridon;Akaridon;Akaridon;;Akaridon;;;;;;;;;x
 d_akaridon_adj;Akaridonian;;akaridoner;;;;;;;;;;;x
 d_alkesia;Alkesia;Alkesia;Alkesia;;Alkesia;;;;;;;;;x
 d_alkesia_adj;Alkesian;;alkeser;;;;;;;;;;;x
+d_auram;Auram;Auram;Auram;;Auram;;;;;;;;;x
+d_auram_adj;Auramian;;auramer;;;;;;;;;;;x
 d_baria;Baria;Baria;Baria;;Baria;;;;;;;;;x
 d_baria_adj;Barian;;barer;;;;;;;;;;;x
 d_barkos;Barkos;Barkos;Barkos;;Barkos;;;;;;;;;x
@@ -19,6 +21,10 @@ d_bras;Bras;Bras;Bras;;Bras;;;;;;;;;x
 d_bras_adj;Brasian;;braser;;;;;;;;;;;x
 d_byala_tserkva;Byala Tserkva;Byala Tserkva;Byala Tserkva;;Byala Tserkva;;;;;;;;;x
 d_byala_tserkva_adj;Byala Tserkvan;;Byala Tserkver;;;;;;;;;;;x
+d_capanieris;Capanieris;Capanieris;Capanieris;;Capanieris;;;;;;;;;x
+d_capanieris_adj;Capanierisian;;capanieriser;;;;;;;;;;;x
+d_carana;Carana;Carana;Carana;;Carana;;;;;;;;;x
+d_carana_adj;Caranan;;caraner;;;;;;;;;;;x
 d_colpari;Colpari;Colpari;Colpari;;Colpari;;;;;;;;;x
 d_colpari_adj;Colparian;;colparer;;;;;;;;;;;x
 d_dagrberg;Dagrberg;Dagrberg;Dagrberg;;Dagrberg;;;;;;;;;x
@@ -47,8 +53,14 @@ d_elikaria;Elikaria;Elikaria;Elikaria;;Elikaria;;;;;;;;;x
 d_elikaria_adj;Elikarian;;elikarer;;;;;;;;;;;x
 d_farrummeddeh;Farrummeddeh;Farrummeddeh;Farrummeddeh;;Farrummeddeh;;;;;;;;;x
 d_farrummeddeh_adj;Farrummeddehian;;farrummeddeher;;;;;;;;;;;x
+d_foranval;Foranval;Foranval;Foranval;;Foranval;;;;;;;;;x
+d_foranval_adj;Foranvalian;;foranvaler;;;;;;;;;;;x
+d_garta;Garta;Garta;Garta;;Garta;;;;;;;;;x
+d_garta_adj;Gartan;;garter;;;;;;;;;;;x
 d_garupol;Garupol;Garupol;Garupol;;Garupol;;;;;;;;;x
 d_garupol_adj;Garupolian;;garupoler;;;;;;;;;;;x
+d_gastron;Gastron;Gastron;Gastron;;Gastron;;;;;;;;;x
+d_gastron_adj;Gastronian;;gastroner;;;;;;;;;;;x
 d_gaxbrashired;Gaxbrashired;Gaxbrashired;Gaxbrashired;;Gaxbrashired;;;;;;;;;x
 d_gaxbrashired_adj;Gaxbrashiredian;;gaxbrashireder;;;;;;;;;;;x
 d_giuronnova;Giuronnova;Giuronnova;Giuronnova;;Giuronnova;;;;;;;;;x
@@ -77,6 +89,8 @@ d_kulangdeh;Kulangdeh;Kulangdeh;Kulangdeh;;Kulangdeh;;;;;;;;;x
 d_kulangdeh_adj;Kulangdehian;;kulangdeher;;;;;;;;;;;x
 d_kurkan;Kurkan;Kurkan;Kurkan;;Kurkan;;;;;;;;;x
 d_kurkan_adj;Kurkanian;;kurkaner;;;;;;;;;;;x
+d_kvesi;Kvesi;Kvesi;Kvesi;;Kvesi;;;;;;;;;x
+d_kvesi_adj;Kvesian;;kveser;;;;;;;;;;;x
 d_lagida;Lagida;Lagida;Lagida;;Lagida;;;;;;;;;x
 d_lagida_adj;Lagidan;;lagider;;;;;;;;;;;x
 d_lepanica;Lepanica;Lepanica;Lepanica;;Lepanica;;;;;;;;;x
@@ -109,6 +123,8 @@ d_nantica;Nantica;Nantica;Nantica;;Nantica;;;;;;;;;x
 d_nantica_adj;Nantican;;nanticer;;;;;;;;;;;x
 d_nessinea;Nessinea;Nessinea;Nessinea;;Nessinea;;;;;;;;;x
 d_nessinea_adj;Nessinean;;nessiner;;;;;;;;;;;x
+d_nevac;Nevac;Nevac;Nevac;;Nevac;;;;;;;;;x
+d_nevac_adj;Nevacian;;nevacer;;;;;;;;;;;x
 d_nintere;Nintere;Nintere;Nintere;;Nintere;;;;;;;;;x
 d_nintere_adj;Ninterean;;ninterer;;;;;;;;;;;x
 d_norfeld;Norfeld;Norfeld;Norfeld;;Norfeld;;;;;;;;;x
@@ -129,6 +145,8 @@ d_santipina;Santipina;Santipina;Santipina;;Santipina;;;;;;;;;x
 d_santipina_adj;Santipinan;;santipiner;;;;;;;;;;;x
 d_sechahan;Sechahan;Sechahan;Sechahan;;Sechahan;;;;;;;;;x
 d_sechahan_adj;Sechahanian;;sechahaner;;;;;;;;;;;x
+d_serhentina;Serhentina;Serhentina;Serhentina;;Serhentina;;;;;;;;;x
+d_serhentina_adj;Serhentinan;;serhentiner;;;;;;;;;;;x
 d_shanresor;Shanresor;Shanresor;Shanresor;;Shanresor;;;;;;;;;x
 d_shanresor_adj;Shanresorian;;shanresorer;;;;;;;;;;;x
 d_spedxan;Spedxan;Spedxan;Spedxan;;Spedxan;;;;;;;;;x

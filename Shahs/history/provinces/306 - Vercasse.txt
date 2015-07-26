@@ -1,0 +1,20 @@
+# c_vercasse
+
+# County Title
+title = c_vercasse
+
+# Settlements
+max_settlements = 6
+
+b_crotero = castle
+b_darieta = temple
+b_ciutanriba = city
+b_bastinhac = temple
+b_sinental = castle
+#b_vercasse = temple
+
+# Misc
+culture = sautan
+religion = scholastic
+
+#History

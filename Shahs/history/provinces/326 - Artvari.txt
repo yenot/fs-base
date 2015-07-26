@@ -1,0 +1,17 @@
+# c_artvari
+
+# County Title
+title = c_artvari
+
+# Settlements
+max_settlements = 3
+
+b_lirrea = castle
+b_escuma = city
+#b_artvari = temple
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

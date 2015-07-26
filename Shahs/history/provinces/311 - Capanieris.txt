@@ -1,0 +1,20 @@
+# c_capanieris
+
+# County Title
+title = c_capanieris
+
+# Settlements
+max_settlements = 6
+
+b_castelrog = castle
+b_digabro = city
+b_castanara = temple
+b_sampel = castle
+#b_capanieris = city
+#b_capanieris_2 = temple
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

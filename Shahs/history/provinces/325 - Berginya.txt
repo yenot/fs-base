@@ -1,0 +1,18 @@
+# c_berginya
+
+# County Title
+title = c_berginya
+
+# Settlements
+max_settlements = 4
+
+b_tepanas = castle
+b_gelevera = city
+b_cadic = city
+#b_berginya = castle
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

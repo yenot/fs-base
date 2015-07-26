@@ -9,8 +9,8 @@ max_settlements = 5
 b_gavras = castle
 b_firvez = temple
 b_xwaresoperoz = city
-#b_gavras_2 = castle
-#b_gavras_3 = city
+b_valeclos = temple
+#b_gavras_2 = city
 
 # Misc
 culture = shahran

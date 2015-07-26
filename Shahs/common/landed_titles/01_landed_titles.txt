@@ -610,17 +610,13 @@ e_auletia = {
 				color={ 43 85 39 }
 				color2={ 255 255 255 }
 				
-				b_leontina = {
-				}
 				b_nepilisino = {
 				}
 				b_mesica = {
 				}
 				b_ferratinto = {
 				}
-				b_leontina_2 = {
-				}
-				b_leontina_3 = {
+				b_leontina = {
 				}
 			}
 			c_vozcore_i_marica = { # 31
@@ -1721,6 +1717,571 @@ e_auletia = {
 				b_notimerida = {
 				}
 				b_trevia = {
+				}
+			}
+		}
+	}
+}
+e_berenica = {
+	color={ 160 247 249 }
+	color2={ 255 255 20 }
+	
+	capital = 306 # c_vercasse
+	culture = sautan
+	
+	k_orbannon = {
+		color={ 170 237 254 }
+		color2={ 255 255 255 }
+		
+		capital = 306 # c_vercasse
+		culture = sautan
+		
+		d_carana = {
+			color={ 190 217 8 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 306 province_id = 307 province_id = 318 } }
+				}
+			}
+			capital = 306 # c_vercasse
+			
+			c_vercasse = { # 306
+				color={ 200 207 13 }
+				color2={ 255 255 255 }
+				
+				b_crotero = {
+				}
+				b_darieta = {
+				}
+				b_ciutanriba = {
+				}
+				b_bastinhac = {
+				}
+				b_sinental = {
+				}
+				b_vercasse = {
+				}
+			}
+			c_castero = { # 307
+				color={ 175 178 103 }
+				color2={ 255 255 255 }
+				
+				b_castero = {
+				}
+				b_portesin = {
+				}
+				b_castero_2 = {
+				}
+				b_castero_3 = {
+				}
+			}
+			c_savar = { # 318
+				color={ 154 157 71 }
+				color2={ 255 255 255 }
+				
+				b_maniserrahn = {
+				}
+				b_anssul = {
+				}
+				b_parlennes = {
+				}
+				b_pelpoet = {
+				}
+				b_savar = {
+				}
+				b_savar_2 = {
+				}
+			}
+		}
+		d_auram = {
+			color={ 215 239 109 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 312 province_id = 317 province_id = 321 province_id = 322 } }
+				}
+			}
+			capital = 312 # c_panares
+			
+			c_panares = { # 312
+				color={ 225 229 114 }
+				color2={ 255 255 255 }
+				
+				b_montecaro = {
+				}
+				b_elsenan = {
+				}
+				b_pulan = {
+				}
+				b_verlaus = {
+				}
+				b_panares = {
+				}
+			}
+			c_bastidon = { # 322
+				color={ 141 145 44 }
+				color2={ 255 255 255 }
+				
+				b_bastidon = {
+				}
+				b_veirmont = {
+				}
+				b_montepaso = {
+				}
+				b_selveth = {
+				}
+			}
+			c_dinieras = { # 321
+				color={ 223 229 62 }
+				color2={ 255 255 255 }
+				
+				b_dinieras = {
+				}
+				b_tresi = {
+				}
+				b_erpol = {
+				}
+				b_vermosa = {
+				}
+			}
+			c_tormanhac = { # 317
+				color={ 85 88 12 }
+				color2={ 255 255 255 }
+				
+				b_tormanhac = {
+				}
+				b_montepanato = {
+				}
+				b_bistero = {
+				}
+			}
+		}
+		d_capanieris = {
+			color={ 205 227 150 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 308 province_id = 311 province_id = 313 province_id = 325 province_id = 334 } }
+				}
+			}
+			capital = 308 # c_toissan
+			
+			c_toissan = { # 308
+				color={ 215 217 155 }
+				color2={ 255 255 255 }
+				
+				b_toissan = {
+				}
+				b_lasara = {
+				}
+				b_gestracaso = {
+				}
+				b_toissan_2 = {
+				}
+			}
+			c_berginya = { # 325
+				color={ 180 184 80 }
+				color2={ 255 255 255 }
+				
+				b_tepanas = {
+				}
+				b_gelevera = {
+				}
+				b_cadic = {
+				}
+				b_berginya = {
+				}
+			}
+			c_capanieris = { # 311
+				color={ 151 154 68 }
+				color2={ 255 255 255 }
+				
+				b_castelrog = {
+				}
+				b_digabro = {
+				}
+				b_castanara = {
+				}
+				b_sampel = {
+				}
+				b_capanieris = {
+				}
+				b_capanieris_2 = {
+				}
+			}
+			c_ostivac = { # 313
+				color={ 192 197 84 }
+				color2={ 255 255 255 }
+				
+				b_ostivac = {
+				}
+				b_bescona = {
+				}
+				b_ostivac_2 = {
+				}
+			}
+			c_rifata = { # 334
+				color={ 218 220 167 }
+				color2={ 255 255 255 }
+				
+				b_catepano = {
+				}
+				b_arzal = {
+				}
+				b_caslaval = {
+				}
+				b_narnhas = {
+				}
+				b_rifata = {
+				}
+			}
+		}
+		d_foranval = {
+			color={ 225 249 116 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 310 province_id = 315 province_id = 332 } }
+				}
+			}
+			capital = 310 # c_sagneman
+			
+			c_sagneman = { # 310
+				color={ 235 239 121 }
+				color2={ 255 255 255 }
+				
+				b_sagneman = {
+				}
+				b_danjarkc = {
+				}
+				b_sercilya = {
+				}
+				b_sagneman_2 = {
+				}
+			}
+			c_foranval = { # 315
+				color={ 206 208 151 }
+				color2={ 255 255 255 }
+				
+				b_arrinhac = {
+				}
+				b_repago = {
+				}
+				b_foranval = {
+				}
+			}
+			c_tressan = { # 332
+				color={ 97 100 18 }
+				color2={ 255 255 255 }
+				
+				b_tressan = {
+				}
+				b_caredain = {
+				}
+				b_tressan_2 = {
+				}
+			}
+		}
+		d_garta = {
+			color={ 201 227 51 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 327 province_id = 328 province_id = 330 } }
+				}
+			}
+			capital = 327 # c_eseltana
+			
+			c_eseltana = { # 327
+				color={ 211 217 56 }
+				color2={ 255 255 255 }
+				
+				b_eseltana = {
+				}
+				b_bertec = {
+				}
+				b_tumaya = {
+				}
+				b_casoclaro = {
+				}
+				b_valric = {
+				}
+				b_eseltana_2 = {
+				}
+			}
+			c_bostas = { # 330
+				color={ 213 217 101 }
+				color2={ 255 255 255 }
+				
+				b_bostas = {
+				}
+				b_sutomira = {
+				}
+				b_rovanhac = {
+				}
+				b_bostas_2 = {
+				}
+			}
+			c_garta = { # 328
+				color={ 120 124 20 }
+				color2={ 255 255 255 }
+				
+				b_garta = {
+				}
+				b_nurosino = {
+				}
+				b_capanieris_3 = {
+				}
+				b_fras = {
+				}
+				b_garta_2 = {
+				}
+			}
+		}
+		d_gastron = {
+			color={ 166 187 139 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 320 province_id = 329 province_id = 336 province_id = 337 } }
+				}
+			}
+			capital = 320 # c_tiveric
+			
+			c_tiveric = { # 320
+				color={ 176 177 144 }
+				color2={ 255 255 255 }
+				
+				b_tiveric = {
+				}
+				b_bonaveria = {
+				}
+				b_germela = {
+				}
+			}
+			c_entona = { # 337
+				color={ 163 166 92 }
+				color2={ 255 255 255 }
+				
+				b_esterlon = {
+				}
+				b_cadron = {
+				}
+				b_sartenhac = {
+				}
+				b_entona = {
+				}
+			}
+			c_laginhac = { # 336
+				color={ 50 51 13 }
+				color2={ 255 255 255 }
+				
+				b_laginhac = {
+				}
+				b_gaurduhn = {
+				}
+				b_slemac = {
+				}
+				b_kalat = {
+				}
+				b_laginhac_2 = {
+				}
+			}
+			c_pendevin = { # 329
+				color={ 161 164 77 }
+				color2={ 255 255 255 }
+				
+				b_salayan = {
+				}
+				b_pasebelo = {
+				}
+				b_pendevin = {
+				}
+			}
+		}
+		d_kvesi = {
+			color={ 154 137 56 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 323 province_id = 326 province_id = 331 province_id = 335 } }
+				}
+			}
+			capital = 323 # c_laumen
+			
+			c_laumen = { # 323
+				color={ 144 147 51 }
+				color2={ 255 255 255 }
+				
+				b_laumen = {
+				}
+				b_motasano = {
+				}
+				b_kevnan = {
+				}
+				b_gavers = {
+				}
+				b_laumen_2 = {
+				}
+				b_laumen_3 = {
+				}
+			}
+			c_artvari = { # 326
+				color={ 130 131 103 }
+				color2={ 255 255 255 }
+				
+				b_lirrea = {
+				}
+				b_escuma = {
+				}
+				b_artvari = {
+				}
+			}
+			c_kvesi = { # 331
+				color={ 161 164 80 }
+				color2={ 255 255 255 }
+				
+				b_kvesi = {
+				}
+				b_casabar = {
+				}
+				b_torricas = {
+				}
+				b_kvesi_2 = {
+				}
+			}
+			c_treman = { # 335
+				color={ 184 186 133 }
+				color2={ 255 255 255 }
+				
+				b_treman = {
+				}
+				b_artenhac = {
+				}
+				b_treman_2 = {
+				}
+			}
+		}
+		d_nevac = {
+			color={ 194 216 151 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 309 province_id = 316 province_id = 324 province_id = 333 } }
+				}
+			}
+			capital = 309 # c_lesovia
+			
+			c_lesovia = { # 309
+				color={ 204 206 156 }
+				color2={ 255 255 255 }
+				
+				b_lesovia = {
+				}
+				b_epirana = {
+				}
+				b_paranhac = {
+				}
+				b_losica = {
+				}
+			}
+			c_carlenan = { # 324
+				color={ 199 203 100 }
+				color2={ 255 255 255 }
+				
+				b_carlenan = {
+				}
+				b_escerona = {
+				}
+				b_livarno = {
+				}
+			}
+			c_cerbos = { # 316
+				color={ 230 234 127 }
+				color2={ 255 255 255 }
+				
+				b_menargues = {
+				}
+				b_corman = {
+				}
+				b_resi = {
+				}
+				b_kelenforn = {
+				}
+				b_sentrargues = {
+				}
+			}
+			c_salenac = { # 333
+				color={ 92 94 42 }
+				color2={ 255 255 255 }
+				
+				b_salenac = {
+				}
+				b_ulitanan = {
+				}
+				b_cajars = {
+				}
+				b_avl = {
+				}
+				b_salenac_2 = {
+				}
+			}
+		}
+		d_serhentina = {
+			color={ 214 235 179 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 314 province_id = 319 } }
+				}
+			}
+			capital = 314 # c_resenac
+			
+			c_resenac = { # 314
+				color={ 224 225 184 }
+				color2={ 255 255 255 }
+				
+				b_resenac = {
+				}
+				b_portecolon = {
+				}
+				b_forcaut = {
+				}
+			}
+			c_camesas = { # 319
+				color={ 144 147 48 }
+				color2={ 255 255 255 }
+				
+				b_nidelo = {
+				}
+				b_bersanhac = {
+				}
+				b_aletvina = {
+				}
+				b_ferusam = {
+				}
+				b_alikano = {
+				}
+				b_camesas = {
 				}
 			}
 		}
@@ -3441,6 +4002,62 @@ e_uman = {
 				}
 			}
 		}
+		d_ketrion = {
+			color={ 164 141 78 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 287 province_id = 288 province_id = 289 } }
+				}
+			}
+			capital = 287 # c_gemerida
+			
+			c_gemerida = { # 287
+				color={ 154 151 73 }
+				color2={ 255 255 255 }
+				
+				b_gemerida = {
+				}
+				b_baruvica = {
+				}
+				b_trempidion = {
+				}
+				b_gemerida_2 = {
+				}
+			}
+			c_brunnios = { # 289
+				color={ 148 144 31 }
+				color2={ 255 255 255 }
+				
+				b_brunnios = {
+				}
+				b_aphkaria = {
+				}
+				b_brunnios_2 = {
+				}
+				b_brunnios_3 = {
+				}
+			}
+			c_porsentida = { # 288
+				color={ 95 93 40 }
+				color2={ 255 255 255 }
+				
+				b_porsentida = {
+				}
+				b_slodi = {
+				}
+				b_girravia = {
+				}
+				b_omosilaria = {
+				}
+				b_porsentida_2 = {
+				}
+				b_porsentida_3 = {
+				}
+			}
+		}
 		d_nessinea = {
 			color={ 98 147 56 }
 			color2={ 255 255 255 }
@@ -3645,63 +4262,6 @@ e_uman = {
 				b_kaironacas = {
 				}
 				b_visgard_2 = {
-				}
-			}
-		}
-
-		d_ketrion = {
-			color={ 164 141 78 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 287 province_id = 288 province_id = 289 } }
-				}
-			}
-			capital = 287 # c_gemerida
-			
-			c_gemerida = { # 287
-				color={ 154 151 73 }
-				color2={ 255 255 255 }
-				
-				b_gemerida = {
-				}
-				b_baruvica = {
-				}
-				b_trempidion = {
-				}
-				b_gemerida_2 = {
-				}
-			}
-			c_brunnios = { # 289
-				color={ 148 144 31 }
-				color2={ 255 255 255 }
-				
-				b_brunnios = {
-				}
-				b_aphkaria = {
-				}
-				b_brunnios_2 = {
-				}
-				b_brunnios_3 = {
-				}
-			}
-			c_porsentida = { # 288
-				color={ 95 93 40 }
-				color2={ 255 255 255 }
-				
-				b_porsentida = {
-				}
-				b_slodi = {
-				}
-				b_girravia = {
-				}
-				b_omosilaria = {
-				}
-				b_porsentida_2 = {
-				}
-				b_porsentida_3 = {
 				}
 			}
 		}
@@ -4541,9 +5101,9 @@ e_wuzurg_estashahr = {
 				}
 				b_xwaresoperoz = {
 				}
-				b_gavras_2 = {
+				b_valeclos = {
 				}
-				b_gavras_3 = {
+				b_gavras_2 = {
 				}
 			}
 			c_kadevraydeh = { # 301

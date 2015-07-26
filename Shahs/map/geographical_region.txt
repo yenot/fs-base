@@ -29,6 +29,12 @@ world_kasava_uman = {
 	}
 }
 
+world_kasava_berenica = {
+	duchies = {
+		d_carana d_auram d_capanieris d_foranval d_garta d_gastron d_kvesi d_nevac d_serhentina
+	}
+}
+
 world_kasava_nordika = {
 	duchies = {
 		d_megurster d_samhey d_dagrberg d_hvalrvik

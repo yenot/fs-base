@@ -1,0 +1,17 @@
+# c_resenac
+
+# County Title
+title = c_resenac
+
+# Settlements
+max_settlements = 3
+
+b_resenac = castle
+b_portecolon = city
+b_forcaut = temple
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

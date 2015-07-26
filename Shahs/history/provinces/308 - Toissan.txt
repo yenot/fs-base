@@ -1,0 +1,18 @@
+# c_toissan
+
+# County Title
+title = c_toissan
+
+# Settlements
+max_settlements = 4
+
+b_toissan = castle
+b_lasara = temple
+b_gestracaso = city
+#b_toissan_2 = castle
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

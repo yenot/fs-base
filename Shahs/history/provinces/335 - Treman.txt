@@ -1,0 +1,17 @@
+# c_treman
+
+# County Title
+title = c_treman
+
+# Settlements
+max_settlements = 3
+
+b_treman = castle
+b_artenhac = temple
+#b_treman_2 = temple
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

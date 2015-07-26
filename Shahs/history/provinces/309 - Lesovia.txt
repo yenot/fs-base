@@ -1,0 +1,18 @@
+# c_lesovia
+
+# County Title
+title = c_lesovia
+
+# Settlements
+max_settlements = 4
+
+b_lesovia = castle
+b_epirana = temple
+b_paranhac = temple
+b_losica = castle
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

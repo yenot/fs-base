@@ -1,0 +1,18 @@
+# c_entona
+
+# County Title
+title = c_entona
+
+# Settlements
+max_settlements = 4
+
+b_esterlon = castle
+b_cadron = city
+b_sartenhac = temple
+#b_entona = castle
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

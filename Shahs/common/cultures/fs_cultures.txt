@@ -53,6 +53,50 @@ auletian = {
 	}
 }
 
+bernican = {
+	graphical_culture = westerngfx
+
+	sautan = {
+		graphical_culture = southerngfx
+		
+		color = { 0.5 0.7 0.9 }
+
+		male_names = { 
+			Adhйmar Acfred_Alfred Aimeric_Aymeric Alberic_Alberic Albert_Albert Aldebert_Albert Alias_Helias Anfтs_Alphonse Amalric_Amalric Amaneus Ancelmes Andrй_Andrew Archambaut_Archibald Arnaut_Arnold Artau_Artal Aton Audoпn Aymar_Aymeric Aymeric_Aymeric Aznar_Aznar
+			Barral Bartoumiйu_Bartolomeus Baudoпn_Baldwin Beneset_Benedict Bйrard_Bernard Berenguiй_Berengar Bermond_Vermudo Bernat_Bernard Bernat-Aton Bernat-Ezi Bertrand_Bertrand Blasi_Blaise Borel Boson_Boson Carles_Charles
+			Clamenз_Clement Centolh_Centule Dаvi_David Dat_Theodat Dodon Doumenge Duran Ebles_Otto Emmanuиl_Manuel Enric_Henry Ermengau Estиve_Stephen Filip_Philip 
+			Ferrand_Ferdinand Florиnз Folquet_Folke Francйs_Francis Frederi_Frederick Garcia_Garcia Gaston_Gaston Gausbert_Gausbert Gautier_Walter Gilbиrt_Gilbert Girard_Gerard Girvais Godafres_Godfrey 
+			Gui_Guy Guichard Guigues_Guy Guilhиm_William Guiraud_Gerald Guitart_Gerard Ives Jacme_Jacob Jaufret_Godfrey Joan_John Jordan_Jordan Jorge_George 
+			Josselin_Joscelin Julian_Julian Laurиnз_Laurence Leon_Leo Loпs_Louis Loui_Louis Lop_Lupo Marзau Martin_Martin Matfre_Manfred Matias_Matthew Milo Miquel_Michael
+			Nicholaus_Nicholas Odon_Otto Otton_Otto Pиire_Peter Pйire-Arnaut Pйire-Raimond Peranudet Pol_Paul Pons_Pons Raimond_Raymond Raimond-Berenguiй_Raymond-Berengar Rainaut_Reinhold Rainer
+			Raolf_Ralph Ricard_Richard Robиrt_Robert Rogier_Roger Sancho_Sancho Savarics Simon_Simon Tiиrri_Thierry Tibaud_Theobald Toumas_Thomas Ubald Ubert_Humbert Uc_Hugh Ugues_Hugh
+			Vйzian Vicenз_Vincent
+		}
+		female_names = {
+			Adиla_Adela Adalaпda_Adelaide Adeltrudis Agata_Agatha Aпna_Emma Ainиs_Agnes Alaпs_Alice Alienтr_Eleanor Aliз_Alice Almтdis_Almodis Alpaпs Ana_Anna Arsenda_Arsenda Assalhida Ava
+			Azalaпs Azelma Bтna_Bonne Beatritz_Beatrice Berenguela Berta Blanca_Blanche Brandimena Bregida_Brigid Brunissenda Camila Carlтta Caterina_Catherine Cecilia_Cecilia
+			Clara_Clara Clarmonda_Esclarmunda Clemиncia_Clementia Cloutilda_Clotilde Constаncia_Constance Dolзa_Douce Eisabиu_Elisabeth Elena_Helen
+			Elisa_Elisabeth Elisabиta_Elisabeth Ermengarda_Ermengarde Ermessentz_Ermesinda Esclarmonda_Esclarmunda Estefania_Stephania Eufиmia Eufrosina_Euphrosyne
+			Faidida Filipa_Philippa Filomena Flтra_Flora Francesa_Francesca Garcenda Geneviva Gerbиrga_Gerberga Gersenda Gisla_Gisela Guigone Guilheumina Heloise_Eloise
+			Ioulanda_Yolanda Isabиu_Elisabeth Isabиla_Elisabeth Joana_Joan Juliana_Juliana Lъcia_Lucia Laura_Laura Loпsa_Louise Mabila Madalena_Magdalena
+			Margarida_Margaret Maria_Maria Marquisa Marta_Martha Mascarтsa_Mascarosa Matilda_Matilda Melisиnda_Melisende Navar Patricia_Patricia Peironиla_Peronella 
+			Petronilha_Petronilla Puelle Raisenda Raimonda Richиnda_Ricarda Rosиla Rosa Sanзa_Sancha Sibilla_Sibylla Terиsa_Teresa Tiborg_Tiburge Verounica Violent_Yolanda
+		}
+		from_dynasty_prefix = "de "
+		grammar_transform = french
+		modifier = default_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 15
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 10
+		mother_name_chance = 5
+	}
+}
+	
 shartan = {
 	graphical_culture = easterngfx
 

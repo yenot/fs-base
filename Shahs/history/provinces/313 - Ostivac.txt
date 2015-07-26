@@ -1,0 +1,17 @@
+# c_ostivac
+
+# County Title
+title = c_ostivac
+
+# Settlements
+max_settlements = 3
+
+b_ostivac = castle
+b_bescona = temple
+#b_ostivac_2 = temple
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

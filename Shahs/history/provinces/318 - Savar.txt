@@ -1,0 +1,20 @@
+# c_savar
+
+# County Title
+title = c_savar
+
+# Settlements
+max_settlements = 6
+
+b_maniserrahn = castle
+b_anssul = temple
+b_parlennes = city
+b_pelpoet = temple
+#b_savar = city
+#b_savar_2 = temple
+
+# Misc
+culture = sautan
+religion = scholastic
+
+#History

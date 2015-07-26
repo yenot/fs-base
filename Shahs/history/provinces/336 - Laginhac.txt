@@ -1,0 +1,19 @@
+# c_laginhac
+
+# County Title
+title = c_laginhac
+
+# Settlements
+max_settlements = 5
+
+b_laginhac = castle
+b_gaurduhn = temple
+b_slemac = city
+b_kalat = city
+#b_laginhac_2 = city
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

@@ -1,0 +1,18 @@
+# c_bostas
+
+# County Title
+title = c_bostas
+
+# Settlements
+max_settlements = 4
+
+b_bostas = castle
+b_sutomira = temple
+b_rovanhac = city
+#b_bostas_2 = castle
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

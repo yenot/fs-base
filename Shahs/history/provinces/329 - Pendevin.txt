@@ -1,0 +1,17 @@
+# c_pendevin
+
+# County Title
+title = c_pendevin
+
+# Settlements
+max_settlements = 3
+
+b_salayan = castle
+b_pasebelo = temple
+#b_pendevin = temple
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

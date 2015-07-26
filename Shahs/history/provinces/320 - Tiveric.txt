@@ -1,0 +1,17 @@
+# c_tiveric
+
+# County Title
+title = c_tiveric
+
+# Settlements
+max_settlements = 3
+
+b_tiveric = castle
+b_bonaveria = city
+b_germela = city
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

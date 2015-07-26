@@ -1,0 +1,17 @@
+# c_tormanhac
+
+# County Title
+title = c_tormanhac
+
+# Settlements
+max_settlements = 3
+
+b_tormanhac = castle
+b_montepanato = castle
+b_bistero = temple
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

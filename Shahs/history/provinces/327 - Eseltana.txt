@@ -1,0 +1,20 @@
+# c_eseltana
+
+# County Title
+title = c_eseltana
+
+# Settlements
+max_settlements = 6
+
+b_eseltana = castle
+b_bertec = temple
+b_tumaya = castle
+b_casoclaro = city
+b_valric = city
+#b_eseltana_2 = temple
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

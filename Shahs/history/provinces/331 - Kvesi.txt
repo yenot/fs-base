@@ -1,0 +1,18 @@
+# c_kvesi
+
+# County Title
+title = c_kvesi
+
+# Settlements
+max_settlements = 4
+
+b_kvesi = castle
+b_casabar = temple
+b_torricas = temple
+#b_kvesi_2 = castle
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

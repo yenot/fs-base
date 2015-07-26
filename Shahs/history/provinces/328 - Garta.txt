@@ -1,0 +1,19 @@
+# c_garta
+
+# County Title
+title = c_garta
+
+# Settlements
+max_settlements = 5
+
+b_garta = castle
+b_nurosino = city
+b_capanieris_3 = temple
+b_fras = temple
+#b_garta_2 = city
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

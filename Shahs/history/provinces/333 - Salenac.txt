@@ -1,0 +1,19 @@
+# c_salenac
+
+# County Title
+title = c_salenac
+
+# Settlements
+max_settlements = 5
+
+b_salenac = castle
+b_ulitanan = temple
+b_cajars = city
+b_avl = temple
+#b_salenac_2 = city
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

@@ -1,0 +1,20 @@
+# c_laumen
+
+# County Title
+title = c_laumen
+
+# Settlements
+max_settlements = 6
+
+b_laumen = castle
+b_motasano = temple
+b_kevnan = city
+b_gavers = castle
+#b_laumen_2 = city
+#b_laumen_3 = temple
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

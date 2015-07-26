@@ -1,0 +1,20 @@
+# c_camesas
+
+# County Title
+title = c_camesas
+
+# Settlements
+max_settlements = 6
+
+b_nidelo = castle
+b_bersanhac = city
+b_aletvina = city
+b_ferusam = castle
+b_alikano = city
+#b_camesas = temple
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

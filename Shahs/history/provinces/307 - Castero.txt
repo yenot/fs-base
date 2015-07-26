@@ -1,0 +1,18 @@
+# c_castero
+
+# County Title
+title = c_castero
+
+# Settlements
+max_settlements = 4
+
+b_castero = castle
+b_portesin = city
+#b_castero_2 = temple
+#b_castero_3 = castle
+
+# Misc
+culture = sautan
+religion = scholastic
+
+#History

@@ -1,0 +1,18 @@
+# c_bastidon
+
+# County Title
+title = c_bastidon
+
+# Settlements
+max_settlements = 4
+
+b_bastidon = castle
+b_veirmont = temple
+b_montepaso = castle
+b_selveth = temple
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

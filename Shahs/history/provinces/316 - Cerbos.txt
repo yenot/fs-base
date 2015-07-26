@@ -1,0 +1,19 @@
+# c_cerbos
+
+# County Title
+title = c_cerbos
+
+# Settlements
+max_settlements = 5
+
+b_menargues = castle
+b_corman = city
+b_resi = temple
+b_kelenforn = temple
+b_sentrargues = castle
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

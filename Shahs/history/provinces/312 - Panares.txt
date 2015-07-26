@@ -1,0 +1,19 @@
+# c_panares
+
+# County Title
+title = c_panares
+
+# Settlements
+max_settlements = 5
+
+b_montecaro = castle
+b_elsenan = city
+b_pulan = temple
+b_verlaus = city
+#b_panares = city
+
+# Misc
+culture = sautan
+religion = voldemarran
+
+#History

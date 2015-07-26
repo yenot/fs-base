@@ -1,0 +1,17 @@
+# c_foranval
+
+# County Title
+title = c_foranval
+
+# Settlements
+max_settlements = 3
+
+b_arrinhac = castle
+b_repago = city
+#b_foranval = temple
+
+# Misc
+culture = sautan
+religion = celestinian
+
+#History

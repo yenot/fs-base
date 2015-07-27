@@ -134,21 +134,21 @@ character_event = {
 			religion_authority = 0.9
 		}
 		
-		# Hindus and Buddhists have a hard time converting other Indian religions
+		# Olpyan_group and Voldemarran have a hard time converting other Indian religions
 		modifier = {
 			factor = 3.0
 			OR = {
-				religion = hindu
-				religion = buddhist
+				religion = olpyan_group
+				religion = voldemarran
 			}
 			location = {
-				religion_group = indian_group
+				religion_group = olpyan_group
 			}
 		}
-		# Jains have a hard time converting ALL non-wedemics
+		# Olpyan_group have a hard time converting ALL non-wedemics
 		modifier = {
 			factor = 3.0
-			religion = jain
+			religion = axiotic
 			location = {
 				NOT = { religion_group = wedemic_group }
 			}
@@ -649,7 +649,7 @@ character_event = {
 	trigger = {
 		has_job_action = action_inquisition
 		NOT = { religion_group = wedemic_group }
-		NOT = { religion_group = indian_group }
+		NOT = { religion_group = olpyan_group }
 		location = {
 			any_province_lord = {
 				NOT = { is_liege_of = ROOT }
@@ -1569,7 +1569,7 @@ character_event = {
 	
 	trigger = {
 		has_job_action = action_improve_rel_relations
-		NOT = { religion_group = indian_group }
+		NOT = { religion_group = olpyan_group }
 		location = { 
 			any_province_lord = {
 				is_priest = yes
@@ -1780,7 +1780,7 @@ character_event = {
 	
 	trigger = {
 		has_job_action = action_advance_cul_tech
-		NOT = { religion_group = indian_group }
+		NOT = { religion_group = olpyan_group }
 		is_heretic = no
 		OR = {
 			religion_group = celestinian
@@ -2339,7 +2339,7 @@ character_event = {
 						using_cb = religious
 						using_cb = religious_revolt
 						using_cb = wedemic_holy_war
-						using_cb = buddhist_holy_war
+						using_cb = voldemarran_holy_war
 						using_cb = merefynnite_invasion
 						using_cb = manifest_destiny_invasion
 					}
@@ -2503,7 +2503,7 @@ character_event = {
 					using_cb = religious
 					using_cb = religious_revolt
 					using_cb = wedemic_holy_war
-					using_cb = buddhist_holy_war
+					using_cb = voldemarran_holy_war
 					using_cb = merefynnite_invasion
 					using_cb = manifest_destiny_invasion
 				}

@@ -217,9 +217,9 @@ character_event = {
 			}
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
-			custom_tooltip = { text = jain_ahimsa_tooltip }
+			custom_tooltip = { text = axiotic_ahimsa_tooltip }
 		}
 	}
 	option = {
@@ -739,7 +739,7 @@ character_event = {
 		name = EVTOPTB94051
 		trigger = {
 			NOT = { uses_decadence = yes }
-			NOT = { religion_group = indian_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		character_event = { id = 94052 days = 30 random = 10 tooltip = EVTTOOLTIP94052 }
 	}
@@ -752,7 +752,7 @@ character_event = {
 		name = EVTOPTD94051
 		trigger = {
 			NOT = { uses_decadence = yes }
-			NOT = { religion_group = indian_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		character_event = { id = 94052 days = 30 random = 10 tooltip = EVTTOOLTIP94052 }
 	}
@@ -842,8 +842,8 @@ character_event = {
 		name = EVTOPTA94053
 		trigger = {
 			OR = {
-				religion_group = christian
-				religion_group = muslim
+				religion_group = celestinian_group
+				religion_group = merefynnite_group
 			}
 		}
 		character_event = { id = 94054 days = 30 random = 10 tooltip = EVTTOOLTIP94054 }
@@ -858,7 +858,7 @@ character_event = {
 		name = EVTOPTC94053
 		trigger = {
 			NOT = {
-				religion_group = indian_group
+				religion_group = olpyan_group
 			}
 		}
 		character_event = { id = 94056 days = 30 random = 10 tooltip = EVTTOOLTIP94056 }
@@ -1371,16 +1371,16 @@ character_event = {
 	option = { # Otis
 		name = EVTOPTA94082
 		trigger = {
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = indian_group }
+			NOT = { religion_group = merefynnite_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		character_event = { id = 94083 days = 5 tooltip = EVTTOOLTIP94083 }
 	}
 	option = { # Meldrick
 		name = EVTOPTB94082
 		trigger = {
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = indian_group }
+			NOT = { religion_group = merefynnite_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		character_event = { id = 94084 days = 5 tooltip = EVTTOOLTIP94084 }
 	}
@@ -1392,8 +1392,8 @@ character_event = {
 		name = EVTOPTD94082
 		trigger = {
 			OR = {
-				religion_group = muslim
-				religion_group = indian_group
+				religion_group = merefynnite_group
+				religion_group = olpyan_group
 			}
 		}
 		character_event = { id = 94092 days = 5 tooltip = EVTTOOLTIP94092 }

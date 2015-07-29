@@ -138,14 +138,14 @@ character_event = {
 		modifier = {
 			factor = 3.0
 			OR = {
-				religion = olpyan_group
+				religion_group = olpyan_group
 				religion = voldemarran
 			}
 			location = {
 				religion_group = olpyan_group
 			}
 		}
-		# Olpyan_group have a hard time converting ALL non-wedemics
+		# Olpyan_group have a hard time converting ALL non-pagans
 		modifier = {
 			factor = 3.0
 			religion = axiotic

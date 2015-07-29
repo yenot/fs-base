@@ -4172,10 +4172,8 @@ trait="underhanded_rogue"
 trait="diligent"
 trait="temperate"
 trait="cruel"
-father=1100199
-mother=1100198
-1103.12.14={birth=yes}
-1174.1.9={death=yes}
+1033.12.14={birth=yes}
+1104.1.9={death=yes}
 }
 
 1100202={

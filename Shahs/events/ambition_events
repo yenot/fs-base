@@ -1402,8 +1402,8 @@ character_event = {
 		name = EVTOPTE94082
 		trigger = {
 			OR = {
-				religion_group = muslim
-				religion_group = indian_group
+				religion_group = merefynnite_group
+				religion_group = olpyan_group
 			}
 		}
 		character_event = { id = 94093 days = 5 tooltip = EVTTOOLTIP94093 }
@@ -1427,7 +1427,7 @@ character_event = {
 	}
 }
 
-# al-Otis Flies (Muslim version)
+# al-Otis Flies (Merefynnite version)
 character_event = {
 	id = 94092
 	desc = EVTDESC94092
@@ -1461,7 +1461,7 @@ character_event = {
 	}
 }
 
-# Ba'ah al-Drik Flies (Muslim version)
+# Ba'ah al-Drik Flies (Merefynnite version)
 character_event = {
 	id = 94093
 	desc = EVTDESC94093
@@ -1517,7 +1517,7 @@ character_event = {
 	}
 }
 
-# al-Otis Aftermath (Muslim version)
+# al-Otis Aftermath (Merefynnite version)
 character_event = {
 	id = 94094
 	desc = EVTDESC94094
@@ -1559,7 +1559,7 @@ character_event = {
 	}
 }
 
-# Ba'ah al-Drik Aftermath (Muslim version)
+# Ba'ah al-Drik Aftermath (Merefynnite version)
 character_event = {
 	id = 94095
 	desc = EVTDESC94095
@@ -1593,12 +1593,12 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA94088
-		trigger = { NOT = { religion_group = muslim } }
+		trigger = { NOT = { religion_group = merefynnite_group } }
 		change_learning = 1
 	}
 	option = {
 		name = EVTOPTA94091
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = merefynnite_group }
 		change_learning = 1
 	}
 }
@@ -1620,7 +1620,7 @@ character_event = {
 	}
 }
 
-# al-Otis Second Attempt (Muslim version)
+# al-Otis Second Attempt (Merefynnite version)
 character_event = {
 	id = 94096
 	desc = EVTDESC94096
@@ -1715,8 +1715,8 @@ character_event = {
 			}
 			has_ambition = obj_improve_learning
 		}
-		NOT = { religion_group = muslim }
-		NOT = { religion_group = indian_group }
+		NOT = { religion_group = merefynnite_group }
+		NOT = { religion_group = olpyan_group }
 		NOT = { has_character_flag = flying_machine }
 		NOT = { has_character_flag = ancient_tome }
 		NOT = { has_character_flag = hermit_visit }
@@ -1779,8 +1779,8 @@ character_event = {
 			has_ambition = obj_improve_learning
 		}
 		OR = {
-			religion_group = muslim
-			religion_group = indian_group
+			religion_group = merefynnite_group
+			religion_group = olpyan_group
 		}
 		NOT = { has_character_flag = flying_machine }
 		NOT = { has_character_flag = ancient_tome }
@@ -1959,7 +1959,7 @@ character_event = {
 			}
 			has_ambition = obj_improve_learning
 		}
-		NOT = { religion_group = indian_group }
+		NOT = { religion_group = olpyan_group }
 		NOT = { has_character_flag = flying_machine }
 		NOT = { has_character_flag = ancient_tome }
 		NOT = { has_character_flag = hermit_visit }
@@ -1994,7 +1994,7 @@ character_event = {
 			}
 			has_ambition = obj_improve_learning
 		}
-		NOT = { religion_group = indian_group }
+		NOT = { religion_group = olpyan_group }
 		NOT = { has_character_flag = flying_machine }
 		NOT = { has_character_flag = ancient_tome }
 		NOT = { has_character_flag = hermit_visit }
@@ -2218,9 +2218,9 @@ character_event = {
 	option = {
 		name = EVTOPTA94116
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
-			custom_tooltip = { text = jain_ahimsa_tooltip }
+			custom_tooltip = { text = axiotic_ahimsa_tooltip }
 		}
 		character_event = { id = 94117 tooltip = EVTTOOLTIP94112 }
 	}

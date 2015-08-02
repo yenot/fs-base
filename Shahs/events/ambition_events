@@ -2709,22 +2709,22 @@ character_event = {
 	
 	option = { # Magda
 		name = EVTOPTA94141
-		trigger = { NOT = { religion_group = muslim } }
+		trigger = { NOT = { religion_group = merefynnite_group } }
 		character_event = { id = 94142 tooltip = EVTTOOLTIP94142 }
 	}
 	option = { # Meldrick
 		name = EVTOPTB94141
-		trigger = { NOT = { religion_group = muslim } }
+		trigger = { NOT = { religion_group = merefynnite_group } }
 		character_event = { id = 94149 tooltip = EVTTOOLTIP94149 }
 	}
 	option = { # Wafaa
 		name = EVTOPTC94141
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = merefynnite_group }
 		character_event = { id = 94142 tooltip = EVTTOOLTIP94142 }
 	}
 	option = {	# Bah al-Drik
 		name = EVTOPTD94141
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = merefynnite_group }
 		character_event = { id = 94149 tooltip = EVTTOOLTIP94149 }
 	}
 }
@@ -2759,12 +2759,12 @@ character_event = {
 	
 	option = { # Magda
 		name = EVTOPTA94143
-		trigger = { NOT = { religion_group = muslim } }
+		trigger = { NOT = { religion_group = merefynnite_group } }
 		character_event = { id = 94144 tooltip = EVTTOOLTIP94144 }
 	}
 	option = { # Wafaa
 		name = EVTOPTB94143
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = merefynnite_group }
 		character_event = { id = 94144 tooltip = EVTTOOLTIP94144 }
 	}
 }
@@ -2846,7 +2846,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA94146
-		trigger = { NOT = { religion_group = muslim } }
+		trigger = { NOT = { religion_group = merefynnite_group } }
 		custom_tooltip = {
 			text = hurry_dungeons
 			hidden_tooltip = {
@@ -2863,7 +2863,7 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB94146
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = merefynnite_group }
 		hidden_tooltip = {
 			random_list = {
 				50 = {
@@ -2941,12 +2941,12 @@ character_event = {
 	
 	option = { # Meldrick
 		name = EVTOPTA94150
-		trigger = { NOT = { religion_group = muslim } }
+		trigger = { NOT = { religion_group = merefynnite_group } }
 		character_event = { id = 94151 tooltip = EVTTOOLTIP94151 }
 	}
 	option = { # Arab Meldrick
 		name = EVTOPTB94150
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = merefynnite_group }
 		character_event = { id = 94151 tooltip = EVTTOOLTIP94151 }
 	}
 }
@@ -3062,7 +3062,7 @@ character_event = {
 				}
 			}
 		}
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = merefynnite_group }
 	}
 }
 

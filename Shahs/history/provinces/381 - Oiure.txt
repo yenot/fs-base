@@ -1,0 +1,19 @@
+# c_oiure
+
+# County Title
+title = c_oiure
+
+# Settlements
+max_settlements = 5
+
+b_ossonec = castle
+b_queriera = temple
+b_valdaquencias = city
+#b_oiure = castle
+#b_oiure_2 = city
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

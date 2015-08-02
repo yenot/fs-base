@@ -1,0 +1,17 @@
+# c_samedo
+
+# County Title
+title = c_samedo
+
+# Settlements
+max_settlements = 3
+
+b_careses = castle
+b_betemo = city
+b_albria = city
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

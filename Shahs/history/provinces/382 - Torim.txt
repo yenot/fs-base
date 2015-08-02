@@ -1,0 +1,19 @@
+# c_torim
+
+# County Title
+title = c_torim
+
+# Settlements
+max_settlements = 5
+
+b_torim = castle
+b_quices = castle
+b_olives = city
+b_colunyares = temple
+#b_torim_2 = city
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

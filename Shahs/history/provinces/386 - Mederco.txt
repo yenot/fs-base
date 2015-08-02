@@ -1,0 +1,17 @@
+# c_mederco
+
+# County Title
+title = c_mederco
+
+# Settlements
+max_settlements = 3
+
+b_mederco = castle
+b_jable = city
+#b_mederco_2 = temple
+
+# Misc
+culture = orillan
+religion = scholastic
+
+#History

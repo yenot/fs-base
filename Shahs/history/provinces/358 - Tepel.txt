@@ -1,0 +1,19 @@
+# c_tepel
+
+# County Title
+title = c_tepel
+
+# Settlements
+max_settlements = 5
+
+b_tepel = castle
+b_causta = temple
+b_verasino = temple
+#b_tepel_2 = castle
+#b_tepel_3 = city
+
+# Misc
+culture = orillan
+religion = voldemarran
+
+#History

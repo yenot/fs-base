@@ -11,8 +11,12 @@ c_alipertino;Alipertino;Alipertino;Alipertino;;Alipertino;;;;;;;;;x
 c_alipertino_adj;Alipertinian;;alipertiner;;;;;;;;;;;x
 c_alkesia;Alkesia;Alkesia;Alkesia;;Alkesia;;;;;;;;;x
 c_alkesia_adj;Alkesian;;alkeser;;;;;;;;;;;x
+c_alquinya;Alquinya;Alquinya;Alquinya;;Alquinya;;;;;;;;;x
+c_alquinya_adj;Alquinyan;;alquiner;;;;;;;;;;;x
 c_ampen;Ampen;Ampen;Ampen;;Ampen;;;;;;;;;x
 c_ampen_adj;Ampenian;;ampener;;;;;;;;;;;x
+c_angranda;Angranda;Angranda;Angranda;;Angranda;;;;;;;;;x
+c_angranda_adj;Angrandan;;angrander;;;;;;;;;;;x
 c_anikarea;Anikarea;Anikarea;Anikarea;;Anikarea;;;;;;;;;x
 c_anikarea_adj;Anikarean;;anikarer;;;;;;;;;;;x
 c_annida;Annida;Annida;Annida;;Annida;;;;;;;;;x
@@ -37,6 +41,8 @@ c_bakiatida;Bakiatida;Bakiatida;Bakiatida;;Bakiatida;;;;;;;;;x
 c_bakiatida_adj;Bakiatidan;;bakiatider;;;;;;;;;;;x
 c_bakrid;Bakrid;Bakrid;Bakrid;;Bakrid;;;;;;;;;x
 c_bakrid_adj;Bakridian;;bakrider;;;;;;;;;;;x
+c_baliren;Baliren;Baliren;Baliren;;Baliren;;;;;;;;;x
+c_baliren_adj;Balirenian;;balirener;;;;;;;;;;;x
 c_baria;Baria;Baria;Baria;;Baria;;;;;;;;;x
 c_baria_adj;Barian;;barer;;;;;;;;;;;x
 c_barkos;Barkos;Barkos;Barkos;;Barkos;;;;;;;;;x
@@ -51,6 +57,8 @@ c_berginya;Berginya;Berginya;Berginya;;Berginya;;;;;;;;;x
 c_berginya_adj;Berginyan;;berginer;;;;;;;;;;;x
 c_beridice;Beridice;Beridice;Beridice;;Beridice;;;;;;;;;x
 c_beridice_adj;Beridicean;;beridicer;;;;;;;;;;;x
+c_bertinya;Bertinya;Bertinya;Bertinya;;Bertinya;;;;;;;;;x
+c_bertinya_adj;Bertinyan;;bertiner;;;;;;;;;;;x
 c_bissini;Bissini;Bissini;Bissini;;Bissini;;;;;;;;;x
 c_bissini_adj;Bissinian;;bissiner;;;;;;;;;;;x
 c_bistrim;Bistrim;Bistrim;Bistrim;;Bistrim;;;;;;;;;x
@@ -71,10 +79,16 @@ c_brunnios;Brunnios;Brunnios;Brunnios;;Brunnios;;;;;;;;;x
 c_brunnios_adj;Brunniosian;;brunnioser;;;;;;;;;;;x
 c_byala_tserkva;Byala Tserkva;Byala Tserkva;Byala Tserkva;;Byala Tserkva;;;;;;;;;x
 c_byala_tserkva_adj;Byala Tserkvan;;Byala Tserkver;;;;;;;;;;;x
+c_cabredo;Cabredo;Cabredo;Cabredo;;Cabredo;;;;;;;;;x
+c_cabredo_adj;Cabredian;;cabreder;;;;;;;;;;;x
 c_camarica;Camarica;Camarica;Camarica;;Camarica;;;;;;;;;x
 c_camarica_adj;Camarican;;camaricer;;;;;;;;;;;x
 c_camesas;Camesas;Camesas;Camesas;;Camesas;;;;;;;;;x
 c_camesas_adj;Camesasian;;camesaser;;;;;;;;;;;x
+c_campas;Campas;Campas;Campas;;Campas;;;;;;;;;x
+c_campas_adj;Campasian;;campaser;;;;;;;;;;;x
+c_campodelesa;Campodelesa;Campodelesa;Campodelesa;;Campodelesa;;;;;;;;;x
+c_campodelesa_adj;Campodelesan;;campodeleser;;;;;;;;;;;x
 c_capanieris;Capanieris;Capanieris;Capanieris;;Capanieris;;;;;;;;;x
 c_capanieris_adj;Capanierisian;;capanieriser;;;;;;;;;;;x
 c_carlenan;Carlenan;Carlenan;Carlenan;;Carlenan;;;;;;;;;x
@@ -89,14 +103,22 @@ c_centida;Centida;Centida;Centida;;Centida;;;;;;;;;x
 c_centida_adj;Centidan;;centider;;;;;;;;;;;x
 c_cerbos;Cerbos;Cerbos;Cerbos;;Cerbos;;;;;;;;;x
 c_cerbos_adj;Cerbosian;;cerboser;;;;;;;;;;;x
+c_cercadal;Cercadal;Cercadal;Cercadal;;Cercadal;;;;;;;;;x
+c_cercadal_adj;Cercadalian;;cercadaler;;;;;;;;;;;x
 c_cerezzo;Cerezzo;Cerezzo;Cerezzo;;Cerezzo;;;;;;;;;x
 c_cerezzo_adj;Cerezzian;;cerezzer;;;;;;;;;;;x
 c_ceventino;Ceventino;Ceventino;Ceventino;;Ceventino;;;;;;;;;x
 c_ceventino_adj;Ceventinian;;ceventiner;;;;;;;;;;;x
+c_ciona;Ciona;Ciona;Ciona;;Ciona;;;;;;;;;x
+c_ciona_adj;Cionan;;cioner;;;;;;;;;;;x
+c_cleman;Cleman;Cleman;Cleman;;Cleman;;;;;;;;;x
+c_cleman_adj;Clemanian;;clemaner;;;;;;;;;;;x
 c_comosco;Comosco;Comosco;Comosco;;Comosco;;;;;;;;;x
 c_comosco_adj;Comoscian;;comoscer;;;;;;;;;;;x
 c_covadi;Covadi;Covadi;Covadi;;Covadi;;;;;;;;;x
 c_covadi_adj;Covadian;;covader;;;;;;;;;;;x
+c_cuasin;Cuasin;Cuasin;Cuasin;;Cuasin;;;;;;;;;x
+c_cuasin_adj;Cuasinian;;cuasiner;;;;;;;;;;;x
 c_dagrberg;Dagrberg;Dagrberg;Dagrberg;;Dagrberg;;;;;;;;;x
 c_dagrberg_adj;Dagrbergian;;dagrberger;;;;;;;;;;;x
 c_dahikofan;Dahikofan;Dahikofan;Dahikofan;;Dahikofan;;;;;;;;;x
@@ -115,6 +137,8 @@ c_darmakarvos;Darmakarvos;Darmakarvos;Darmakarvos;;Darmakarvos;;;;;;;;;x
 c_darmakarvos_adj;Darmakarvosian;;darmakarvoser;;;;;;;;;;;x
 c_davli;Davli;Davli;Davli;;Davli;;;;;;;;;x
 c_davli_adj;Davlian;;davler;;;;;;;;;;;x
+c_defamas;Defamas;Defamas;Defamas;;Defamas;;;;;;;;;x
+c_defamas_adj;Defamasian;;defamaser;;;;;;;;;;;x
 c_demedo;Demedo;Demedo;Demedo;;Demedo;;;;;;;;;x
 c_demedo_adj;Demedian;;demeder;;;;;;;;;;;x
 c_dender;Dender;Dender;Dender;;Dender;;;;;;;;;x
@@ -143,6 +167,8 @@ c_entona;Entona;Entona;Entona;;Entona;;;;;;;;;x
 c_entona_adj;Entonan;;entoner;;;;;;;;;;;x
 c_erhad;Erhad;Erhad;Erhad;;Erhad;;;;;;;;;x
 c_erhad_adj;Erhadian;;erhader;;;;;;;;;;;x
+c_eridonya;Eridonya;Eridonya;Eridonya;;Eridonya;;;;;;;;;x
+c_eridonya_adj;Eridonyan;;eridoner;;;;;;;;;;;x
 c_escravineti;Escravineti;Escravineti;Escravineti;;Escravineti;;;;;;;;;x
 c_escravineti_adj;Escravinetian;;escravineter;;;;;;;;;;;x
 c_eseltana;Eseltana;Eseltana;Eseltana;;Eseltana;;;;;;;;;x
@@ -183,6 +209,8 @@ c_gandumdasht;Gandumdasht;Gandumdasht;Gandumdasht;;Gandumdasht;;;;;;;;;x
 c_gandumdasht_adj;Gandumdashtian;;gandumdashter;;;;;;;;;;;x
 c_gankariki;Gankariki;Gankariki;Gankariki;;Gankariki;;;;;;;;;x
 c_gankariki_adj;Gankarikian;;gankariker;;;;;;;;;;;x
+c_gape;Gape;Gape;Gape;;Gape;;;;;;;;;x
+c_gape_adj;Gapean;;gaper;;;;;;;;;;;x
 c_garomseradoshast;Garomseradoshast;Garomseradoshast;Garomseradoshast;;Garomseradoshast;;;;;;;;;x
 c_garomseradoshast_adj;Garomseradoshastian;;garomseradoshaster;;;;;;;;;;;x
 c_garta;Garta;Garta;Garta;;Garta;;;;;;;;;x
@@ -213,6 +241,8 @@ c_gramo;Gramo;Gramo;Gramo;;Gramo;;;;;;;;;x
 c_gramo_adj;Gramian;;gramer;;;;;;;;;;;x
 c_granopol;Granopol;Granopol;Granopol;;Granopol;;;;;;;;;x
 c_granopol_adj;Granopolian;;granopoler;;;;;;;;;;;x
+c_guicampes;Guicampes;Guicampes;Guicampes;;Guicampes;;;;;;;;;x
+c_guicampes_adj;Guicampesian;;guicampeser;;;;;;;;;;;x
 c_harg;Harg;Harg;Harg;;Harg;;;;;;;;;x
 c_harg_adj;Hargian;;harger;;;;;;;;;;;x
 c_hestia;Hestia;Hestia;Hestia;;Hestia;;;;;;;;;x
@@ -261,6 +291,8 @@ c_keshrev;Keshrev;Keshrev;Keshrev;;Keshrev;;;;;;;;;x
 c_keshrev_adj;Keshrevian;;keshrever;;;;;;;;;;;x
 c_keshvarabeh;Keshvarabeh;Keshvarabeh;Keshvarabeh;;Keshvarabeh;;;;;;;;;x
 c_keshvarabeh_adj;Keshvarabehian;;keshvarabeher;;;;;;;;;;;x
+c_keval;Keval;Keval;Keval;;Keval;;;;;;;;;x
+c_keval_adj;Kevalian;;kevaler;;;;;;;;;;;x
 c_kobadnerog;Kobadnerog;Kobadnerog;Kobadnerog;;Kobadnerog;;;;;;;;;x
 c_kobadnerog_adj;Kobadnerogian;;kobadneroger;;;;;;;;;;;x
 c_kolonea;Kolonea;Kolonea;Kolonea;;Kolonea;;;;;;;;;x
@@ -305,6 +337,12 @@ c_leuketos;Leuketos;Leuketos;Leuketos;;Leuketos;;;;;;;;;x
 c_leuketos_adj;Leuketosian;;leuketoser;;;;;;;;;;;x
 c_livarnia;Livarnia;Livarnia;Livarnia;;Livarnia;;;;;;;;;x
 c_livarnia_adj;Livarnian;;livarner;;;;;;;;;;;x
+c_lletomises;Lletomises;Lletomises;Lletomises;;Lletomises;;;;;;;;;x
+c_lletomises_adj;Lletomisesian;;lletomiseser;;;;;;;;;;;x
+c_llicosar;Llicosar;Llicosar;Llicosar;;Llicosar;;;;;;;;;x
+c_llicosar_adj;Llicosarian;;llicosarer;;;;;;;;;;;x
+c_llines;Llines;Llines;Llines;;Llines;;;;;;;;;x
+c_llines_adj;Llinesian;;llineser;;;;;;;;;;;x
 c_lompari;Lompari;Lompari;Lompari;;Lompari;;;;;;;;;x
 c_lompari_adj;Lomparian;;lomparer;;;;;;;;;;;x
 c_lonna;Lonna;Lonna;Lonna;;Lonna;;;;;;;;;x
@@ -335,6 +373,8 @@ c_marzabaxtar;Marzabaxtar;Marzabaxtar;Marzabaxtar;;Marzabaxtar;;;;;;;;;x
 c_marzabaxtar_adj;Marzabaxtarian;;marzabaxtarer;;;;;;;;;;;x
 c_mattarida;Mattarida;Mattarida;Mattarida;;Mattarida;;;;;;;;;x
 c_mattarida_adj;Mattaridan;;mattarider;;;;;;;;;;;x
+c_mederco;Mederco;Mederco;Mederco;;Mederco;;;;;;;;;x
+c_mederco_adj;Medercian;;medercer;;;;;;;;;;;x
 c_meguna;Meguna;Meguna;Meguna;;Meguna;;;;;;;;;x
 c_meguna_adj;Megunan;;meguner;;;;;;;;;;;x
 c_megurster;Megurster;Megurster;Megurster;;Megurster;;;;;;;;;x
@@ -385,16 +425,22 @@ c_numarnia;Numarnia;Numarnia;Numarnia;;Numarnia;;;;;;;;;x
 c_numarnia_adj;Numarnian;;numarner;;;;;;;;;;;x
 c_ocine;Ocine;Ocine;Ocine;;Ocine;;;;;;;;;x
 c_ocine_adj;Ocinean;;ociner;;;;;;;;;;;x
+c_oiure;Oiure;Oiure;Oiure;;Oiure;;;;;;;;;x
+c_oiure_adj;Oiurean;;oiurer;;;;;;;;;;;x
 c_okromis;Okromis;Okromis;Okromis;;Okromis;;;;;;;;;x
 c_okromis_adj;Okromisian;;okromiser;;;;;;;;;;;x
 c_olatica;Olatica;Olatica;Olatica;;Olatica;;;;;;;;;x
 c_olatica_adj;Olatican;;olaticer;;;;;;;;;;;x
 c_olato;Olato;Olato;Olato;;Olato;;;;;;;;;x
 c_olato_adj;Olatian;;olater;;;;;;;;;;;x
+c_olstano;Olstano;Olstano;Olstano;;Olstano;;;;;;;;;x
+c_olstano_adj;Olstanian;;olstaner;;;;;;;;;;;x
 c_onci;Onci;Onci;Onci;;Onci;;;;;;;;;x
 c_onci_adj;Oncian;;oncer;;;;;;;;;;;x
 c_orozasp;Orozasp;Orozasp;Orozasp;;Orozasp;;;;;;;;;x
 c_orozasp_adj;Orozaspian;;orozasper;;;;;;;;;;;x
+c_orrona;Orrona;Orrona;Orrona;;Orrona;;;;;;;;;x
+c_orrona_adj;Orronan;;orroner;;;;;;;;;;;x
 c_ortia;Ortia;Ortia;Ortia;;Ortia;;;;;;;;;x
 c_ortia_adj;Ortian;;orter;;;;;;;;;;;x
 c_ortos;Ortos;Ortos;Ortos;;Ortos;;;;;;;;;x
@@ -437,6 +483,8 @@ c_polikyrron;Polikyrron;Polikyrron;Polikyrron;;Polikyrron;;;;;;;;;x
 c_polikyrron_adj;Polikyrronian;;polikyrroner;;;;;;;;;;;x
 c_polonica;Polonica;Polonica;Polonica;;Polonica;;;;;;;;;x
 c_polonica_adj;Polonican;;polonicer;;;;;;;;;;;x
+c_ponima;Ponima;Ponima;Ponima;;Ponima;;;;;;;;;x
+c_ponima_adj;Poniman;;ponimer;;;;;;;;;;;x
 c_poraxdesh;Poraxdesh;Poraxdesh;Poraxdesh;;Poraxdesh;;;;;;;;;x
 c_poraxdesh_adj;Poraxdeshian;;poraxdesher;;;;;;;;;;;x
 c_porsentida;Porsentida;Porsentida;Porsentida;;Porsentida;;;;;;;;;x
@@ -457,6 +505,12 @@ c_provice;Provice;Provice;Provice;;Provice;;;;;;;;;x
 c_provice_adj;Provicean;;provicer;;;;;;;;;;;x
 c_psari;Psari;Psari;Psari;;Psari;;;;;;;;;x
 c_psari_adj;Psarian;;psarer;;;;;;;;;;;x
+c_quelsita;Quelsita;Quelsita;Quelsita;;Quelsita;;;;;;;;;x
+c_quelsita_adj;Quelsitan;;quelsiter;;;;;;;;;;;x
+c_quilerroig;Quilerroig;Quilerroig;Quilerroig;;Quilerroig;;;;;;;;;x
+c_quilerroig_adj;Quilerroigian;;quilerroiger;;;;;;;;;;;x
+c_quiurella;Quiurella;Quiurella;Quiurella;;Quiurella;;;;;;;;;x
+c_quiurella_adj;Quiurellan;;quiureller;;;;;;;;;;;x
 c_racimi;Racimi;Racimi;Racimi;;Racimi;;;;;;;;;x
 c_racimi_adj;Racimian;;racimer;;;;;;;;;;;x
 c_raganovo;Raganovo;Raganovo;Raganovo;;Raganovo;;;;;;;;;x
@@ -477,6 +531,8 @@ c_sagneman;Sagneman;Sagneman;Sagneman;;Sagneman;;;;;;;;;x
 c_sagneman_adj;Sagnemanian;;sagnemaner;;;;;;;;;;;x
 c_salenac;Salenac;Salenac;Salenac;;Salenac;;;;;;;;;x
 c_salenac_adj;Salenacian;;salenacer;;;;;;;;;;;x
+c_samedo;Samedo;Samedo;Samedo;;Samedo;;;;;;;;;x
+c_samedo_adj;Samedian;;sameder;;;;;;;;;;;x
 c_sampadria;Sampadria;Sampadria;Sampadria;;Sampadria;;;;;;;;;x
 c_sampadria_adj;Sampadrian;;sampadrer;;;;;;;;;;;x
 c_sampera;Sampera;Sampera;Sampera;;Sampera;;;;;;;;;x
@@ -501,6 +557,8 @@ c_semnina;Semnina;Semnina;Semnina;;Semnina;;;;;;;;;x
 c_semnina_adj;Semninan;;semniner;;;;;;;;;;;x
 c_shanresor;Shanresor;Shanresor;Shanresor;;Shanresor;;;;;;;;;x
 c_shanresor_adj;Shanresorian;;shanresorer;;;;;;;;;;;x
+c_sipago;Sipago;Sipago;Sipago;;Sipago;;;;;;;;;x
+c_sipago_adj;Sipagian;;sipager;;;;;;;;;;;x
 c_skarnea;Skarnea;Skarnea;Skarnea;;Skarnea;;;;;;;;;x
 c_skarnea_adj;Skarnean;;skarner;;;;;;;;;;;x
 c_skeria;Skeria;Skeria;Skeria;;Skeria;;;;;;;;;x
@@ -529,12 +587,18 @@ c_taspur;Taspur;Taspur;Taspur;;Taspur;;;;;;;;;x
 c_taspur_adj;Taspurian;;taspurer;;;;;;;;;;;x
 c_telemir;Telemir;Telemir;Telemir;;Telemir;;;;;;;;;x
 c_telemir_adj;Telemirian;;telemirer;;;;;;;;;;;x
+c_tenifado;Tenifado;Tenifado;Tenifado;;Tenifado;;;;;;;;;x
+c_tenifado_adj;Tenifadian;;tenifader;;;;;;;;;;;x
+c_tepel;Tepel;Tepel;Tepel;;Tepel;;;;;;;;;x
+c_tepel_adj;Tepelian;;tepeler;;;;;;;;;;;x
 c_teraz;Teraz;Teraz;Teraz;;Teraz;;;;;;;;;x
 c_teraz_adj;Terazian;;terazer;;;;;;;;;;;x
 c_termikos;Termikos;Termikos;Termikos;;Termikos;;;;;;;;;x
 c_termikos_adj;Termikosian;;termikoser;;;;;;;;;;;x
 c_tertianik;Tertianik;Tertianik;Tertianik;;Tertianik;;;;;;;;;x
 c_tertianik_adj;Tertianikian;;tertianiker;;;;;;;;;;;x
+c_tertonya;Tertonya;Tertonya;Tertonya;;Tertonya;;;;;;;;;x
+c_tertonya_adj;Tertonyan;;tertoner;;;;;;;;;;;x
 c_tetrikos;Tetrikos;Tetrikos;Tetrikos;;Tetrikos;;;;;;;;;x
 c_tetrikos_adj;Tetrikosian;;tetrikoser;;;;;;;;;;;x
 c_theklanea;Theklanea;Theklanea;Theklanea;;Theklanea;;;;;;;;;x
@@ -559,6 +623,8 @@ c_torica;Torica;Torica;Torica;;Torica;;;;;;;;;x
 c_torica_adj;Torican;;toricer;;;;;;;;;;;x
 c_toridea;Toridea;Toridea;Toridea;;Toridea;;;;;;;;;x
 c_toridea_adj;Toridean;;torider;;;;;;;;;;;x
+c_torim;Torim;Torim;Torim;;Torim;;;;;;;;;x
+c_torim_adj;Torimian;;torimer;;;;;;;;;;;x
 c_tormanhac;Tormanhac;Tormanhac;Tormanhac;;Tormanhac;;;;;;;;;x
 c_tormanhac_adj;Tormanhacian;;tormanhacer;;;;;;;;;;;x
 c_trasino;Trasino;Trasino;Trasino;;Trasino;;;;;;;;;x
@@ -567,12 +633,16 @@ c_treman;Treman;Treman;Treman;;Treman;;;;;;;;;x
 c_treman_adj;Tremanian;;tremaner;;;;;;;;;;;x
 c_tressan;Tressan;Tressan;Tressan;;Tressan;;;;;;;;;x
 c_tressan_adj;Tressanian;;tressaner;;;;;;;;;;;x
+c_treves;Treves;Treves;Treves;;Treves;;;;;;;;;x
+c_treves_adj;Trevesian;;treveser;;;;;;;;;;;x
 c_trevia;Trevia;Trevia;Trevia;;Trevia;;;;;;;;;x
 c_trevia_adj;Trevian;;trever;;;;;;;;;;;x
 c_trinto;Trinto;Trinto;Trinto;;Trinto;;;;;;;;;x
 c_trinto_adj;Trintian;;trinter;;;;;;;;;;;x
 c_trodikea;Trodikea;Trodikea;Trodikea;;Trodikea;;;;;;;;;x
 c_trodikea_adj;Trodikean;;trodiker;;;;;;;;;;;x
+c_trosna;Trosna;Trosna;Trosna;;Trosna;;;;;;;;;x
+c_trosna_adj;Trosnan;;trosner;;;;;;;;;;;x
 c_trotti;Trotti;Trotti;Trotti;;Trotti;;;;;;;;;x
 c_trotti_adj;Trottian;;trotter;;;;;;;;;;;x
 c_turna;Turna;Turna;Turna;;Turna;;;;;;;;;x
@@ -585,6 +655,8 @@ c_urantia;Urantia;Urantia;Urantia;;Urantia;;;;;;;;;x
 c_urantia_adj;Urantian;;uranter;;;;;;;;;;;x
 c_urayham;Urayham;Urayham;Urayham;;Urayham;;;;;;;;;x
 c_urayham_adj;Urayhamian;;urayhamer;;;;;;;;;;;x
+c_vallenrog;Vallenrog;Vallenrog;Vallenrog;;Vallenrog;;;;;;;;;x
+c_vallenrog_adj;Vallenrogian;;vallenroger;;;;;;;;;;;x
 c_varmanbexwar;Varmanbexwar;Varmanbexwar;Varmanbexwar;;Varmanbexwar;;;;;;;;;x
 c_varmanbexwar_adj;Varmanbexwarian;;varmanbexwarer;;;;;;;;;;;x
 c_vedirhavn;Vedirhavn;Vedirhavn;Vedirhavn;;Vedirhavn;;;;;;;;;x
@@ -609,6 +681,8 @@ c_voligie;Voligie;Voligie;Voligie;;Voligie;;;;;;;;;x
 c_voligie_adj;Voligiean;;voliger;;;;;;;;;;;x
 c_volonne;Volonne;Volonne;Volonne;;Volonne;;;;;;;;;x
 c_volonne_adj;Volonnean;;volonner;;;;;;;;;;;x
+c_vorta;Vorta;Vorta;Vorta;;Vorta;;;;;;;;;x
+c_vorta_adj;Vortan;;vorter;;;;;;;;;;;x
 c_vozcore_i_marica;Vozcore i Marica;Vozcore i Marica;Vozcore i Marica;;Vozcore i Marica;;;;;;;;;x
 c_vozcore_i_marica_adj;Vozcore i Marican;;Vozcore i Maricer;;;;;;;;;;;x
 c_wehishvat;Wehishvat;Wehishvat;Wehishvat;;Wehishvat;;;;;;;;;x

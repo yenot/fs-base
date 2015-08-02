@@ -1,0 +1,7 @@
+# e_berenica
+500.1.1={
+	law = agnatic_succession
+}
+1066.1.1={
+	holder=108537
+}

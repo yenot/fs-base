@@ -1,0 +1,17 @@
+# c_gape
+
+# County Title
+title = c_gape
+
+# Settlements
+max_settlements = 3
+
+b_gape = castle
+b_frovsin = city
+#b_gape_2 = temple
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

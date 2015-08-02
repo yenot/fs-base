@@ -1,0 +1,18 @@
+# c_ciona
+
+# County Title
+title = c_ciona
+
+# Settlements
+max_settlements = 4
+
+b_paduvero = castle
+b_barrenco = city
+b_panatac = temple
+#b_ciona = castle
+
+# Misc
+culture = orillan
+religion = merefynnite
+
+#History

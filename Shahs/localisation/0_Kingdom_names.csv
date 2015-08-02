@@ -11,6 +11,8 @@ k_kayastan;Kayastan;Kayastan;Kayastan;;Kayastan;;;;;;;;;x
 k_kayastan_adj;Kayastanian;;kayastaner;;;;;;;;;;;x
 k_kolonea;Kolonea;Kolonea;Kolonea;;Kolonea;;;;;;;;;x
 k_kolonea_adj;Kolonean;;koloner;;;;;;;;;;;x
+k_letania;Letania;Letania;Letania;;Letania;;;;;;;;;x
+k_letania_adj;Letanian;;letaner;;;;;;;;;;;x
 k_lycinia;Lycinia;Lycinia;Lycinia;;Lycinia;;;;;;;;;x
 k_lycinia_adj;Lycinian;;lyciner;;;;;;;;;;;x
 k_melida;Melida;Melida;Melida;;Melida;;;;;;;;;x
@@ -29,3 +31,5 @@ k_ventino;Ventino;Ventino;Ventino;;Ventino;;;;;;;;;x
 k_ventino_adj;Ventinian;;ventiner;;;;;;;;;;;x
 k_xedvar;Xedvar;Xedvar;Xedvar;;Xedvar;;;;;;;;;x
 k_xedvar_adj;Xedvarian;;xedvarer;;;;;;;;;;;x
+k_gladden;Gladden;;Gladden;;Gladden;;;;;;;;;x
+k_gladden_adj;Gladdish;;Gladdener;;;;;;;;;;;x

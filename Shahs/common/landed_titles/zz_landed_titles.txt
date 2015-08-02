@@ -221,6 +221,87 @@ d_taria = {
 		color={ 189 206 155 }
 }
 
+d_carana = {
+		color={ 22 105 53 }
+}
+
+d_auram = {
+		color={ 58 161 165 }
+}
+
+d_capanieris = {
+		color={ 243 1 1 }
+}
+
+d_foranval = {
+		color={ 104 47 162 }
+}
+
+d_garta = {
+		color={ 95 243 78 }
+}
+
+d_gastron = {
+		color={ 109 111 87 }
+}
+
+d_kvesi = {
+		color={ 247 230 199 }
+}
+
+d_nevac = {
+		color={ 90 12 64 }
+}
+
+d_serhentina = {
+		color={ 74 90 100 }
+}
+
+d_erisan = {
+		color={ 79 100 86 }
+}
+
+d_balar = {
+		color={ 207 142 239 }
+}
+
+d_campodelesa = {
+		color={ 131 195 232 }
+}
+
+d_casterano = {
+		color={ 213 239 142 }
+}
+
+d_cercadal = {
+		color={ 198 144 19 }
+}
+
+d_cuasin = {
+		color={ 27 11 135 }
+}
+
+d_madaren = {
+		color={ 43 107 102 }
+}
+
+d_nenoras = {
+		color={ 172 98 138 }
+}
+
+d_treves = {
+		color={ 111 208 238 }
+}
+
+d_trosna = {
+		color={ 178 198 52 }
+}
+
+d_verarcas = {
+		color={ 90 122 90 }
+}
+
+
 ###########################
 #Capitals
 ###########################
@@ -243,6 +324,35 @@ k_kayastan = {
 	
 }
 
+d_capanieris = {
+
+	capital = 311 #Capanieris
+	
+}
+
+d_foranval = {
+
+	capital = 315 #Foranval
+	
+}
+
+d_garta = {
+
+	capital = 328 #Garta
+	
+}
+
+d_gastron = {
+
+	capital = 336 #Laginhac
+	
+}
+
+c_resenac = {
+
+	capital = 319 #Camesas
+	
+}
 
 ###########################
 #Merchant Republics
@@ -327,3 +437,40 @@ b_inatis = {
 	culture = kraitan
 	religion = celestinian
 }
+
+
+###########################
+#Holy sites
+###########################
+
+c_portoseno = {
+	holy_site = scholastic
+}
+
+c_hestia = {
+	holy_site = scholastic
+}
+
+c_resenac = {
+	holy_site = scholastic
+}
+
+c_trinto = {
+	holy_site = scholastic
+}
+
+c_leuketos = {
+	holy_site = scholastic
+}
+
+###########################
+#Temporarily unlanded
+###########################
+
+k_gladden = {
+	color={ 226 204 94 }
+	color2={ 255 255 255 }
+	
+	culture = livaish
+}
+

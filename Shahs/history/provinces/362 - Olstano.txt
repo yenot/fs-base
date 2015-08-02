@@ -1,0 +1,17 @@
+# c_olstano
+
+# County Title
+title = c_olstano
+
+# Settlements
+max_settlements = 3
+
+b_olstano = castle
+b_luvinese = city
+#b_olstano_2 = temple
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

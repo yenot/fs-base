@@ -53,6 +53,14 @@ feudal_governments = {
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
 		}
+		forced_contract = {
+			feudal_government
+			bureaucratic_government
+			theocracy_government
+			merchant_republic_government
+			republic_government
+			tribal_government
+		}
 		potential = {
 			NAND = {
 				controls_religion = yes

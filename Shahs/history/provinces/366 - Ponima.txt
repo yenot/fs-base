@@ -1,0 +1,18 @@
+# c_ponima
+
+# County Title
+title = c_ponima
+
+# Settlements
+max_settlements = 4
+
+b_ponima = castle
+b_bastace = temple
+b_garinya = city
+#b_ponima_2 = castle
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

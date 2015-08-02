@@ -1,0 +1,17 @@
+# c_baliren
+
+# County Title
+title = c_baliren
+
+# Settlements
+max_settlements = 3
+
+b_querole = castle
+b_caprineros = temple
+b_cajol = city
+
+# Misc
+culture = orillan
+religion = merefynnite
+
+#History

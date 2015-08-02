@@ -1,0 +1,18 @@
+# c_eridonya
+
+# County Title
+title = c_eridonya
+
+# Settlements
+max_settlements = 4
+
+b_eridonya = castle
+b_fenestas = temple
+b_teheda = temple
+b_acojeno = city
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

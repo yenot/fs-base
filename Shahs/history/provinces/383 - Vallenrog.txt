@@ -1,0 +1,18 @@
+# c_vallenrog
+
+# County Title
+title = c_vallenrog
+
+# Settlements
+max_settlements = 4
+
+b_eferla = castle
+b_carres = city
+b_jibral = temple
+#b_vallenrog = castle
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

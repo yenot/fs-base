@@ -8,7 +8,7 @@ max_settlements = 3
 
 b_salayan = castle
 b_pasebelo = temple
-#b_pendevin = temple
+b_caruneso = city
 
 # Misc
 culture = sautan

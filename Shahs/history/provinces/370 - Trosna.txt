@@ -1,0 +1,17 @@
+# c_trosna
+
+# County Title
+title = c_trosna
+
+# Settlements
+max_settlements = 3
+
+b_caparenos = castle
+b_castelman = temple
+#b_trosna = temple
+
+# Misc
+culture = orillan
+religion = merefynnite
+
+#History

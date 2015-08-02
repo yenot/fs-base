@@ -1,0 +1,20 @@
+# c_llines
+
+# County Title
+title = c_llines
+
+# Settlements
+max_settlements = 6
+
+b_llines = castle
+b_loisadore = temple
+b_ragvasnic = city
+b_aneguereta = temple
+b_calleroig = castle
+#b_llines_2 = temple
+
+# Misc
+culture = orillan
+religion = merefynnite
+
+#History

@@ -1,0 +1,18 @@
+# c_tenifado
+
+# County Title
+title = c_tenifado
+
+# Settlements
+max_settlements = 4
+
+b_tenifado = castle
+b_vernim = temple
+b_livarna = city
+#b_tenifado_2 = castle
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

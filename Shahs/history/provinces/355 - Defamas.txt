@@ -1,0 +1,17 @@
+# c_defamas
+
+# County Title
+title = c_defamas
+
+# Settlements
+max_settlements = 3
+
+b_siguenella = castle
+b_robanya = temple
+b_bargunyas = city
+
+# Misc
+culture = orillan
+religion = merefynnite
+
+#History

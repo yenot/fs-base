@@ -1,0 +1,18 @@
+# c_campas
+
+# County Title
+title = c_campas
+
+# Settlements
+max_settlements = 4
+
+b_campas = castle
+b_pirbatera = temple
+b_tirsen = temple
+#b_campas_2 = castle
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

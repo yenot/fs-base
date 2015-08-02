@@ -1,0 +1,20 @@
+# c_campodelesa
+
+# County Title
+title = c_campodelesa
+
+# Settlements
+max_settlements = 6
+
+b_campodelesa = castle
+b_corbales = city
+b_impal = temple
+b_renui = castle
+b_coplesquerra = city
+#b_campodelesa_2 = temple
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

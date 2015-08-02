@@ -31,7 +31,7 @@ world_kasava_uman = {
 
 world_kasava_berenica = {
 	duchies = {
-		d_carana d_auram d_capanieris d_foranval d_garta d_gastron d_kvesi d_nevac d_serhentina
+		d_carana d_auram d_capanieris d_foranval d_garta d_gastron d_kvesi d_nevac d_serhentina d_erisan d_balar d_campodelesa d_casterano d_cercadal d_nenoras d_treves d_trosna d_verarcas
 	}
 }
 

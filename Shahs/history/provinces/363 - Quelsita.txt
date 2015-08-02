@@ -1,0 +1,17 @@
+# c_quelsita
+
+# County Title
+title = c_quelsita
+
+# Settlements
+max_settlements = 3
+
+b_abritonya = castle
+b_igrebi = temple
+#b_quelsita = temple
+
+# Misc
+culture = orillan
+religion = voldemarran
+
+#History

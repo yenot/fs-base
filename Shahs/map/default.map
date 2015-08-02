@@ -1,5 +1,5 @@
-max_provinces = 346
-# stats:  345 provinces
+max_provinces = 387
+# stats:  386 provinces
 # unused:
 definitions = "definition.csv"
 provinces = "provinces.bmp"
@@ -21,7 +21,7 @@ sea_zones = { 93 109 }
 sea_zones = { 142 145 }
 sea_zones = { 210 211 }
 sea_zones = { 290 291 }
-sea_zones = { 338 345 }
+sea_zones = { 338 349 }
 
 ocean_region = {	# Great Ocean
 	sea_zones = { 1 2 3 4 5 }

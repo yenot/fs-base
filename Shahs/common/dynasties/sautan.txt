@@ -1,0 +1,44 @@
+1010601 = {
+    name = "Valer"
+    culture = sautan
+}
+
+1010603 = {
+    name = "Abre"
+    culture = sautan
+}
+
+1010605 = {
+    name = "de Capanieris"
+    culture = sautan
+}
+
+1010606 = {
+    name = "Emergue"
+    culture = sautan
+}
+
+1010609 = {
+    name = "Daranal"
+    culture = sautan
+}
+
+1010610 = {
+    name = "de Carac"
+    culture = sautan
+}
+
+1010612 = {
+    name = "Cadran"
+    culture = sautan
+}
+
+1010614 = {
+    name = "Meguel"
+    culture = sautan
+}
+
+1010616 = {
+    name = "Leore"
+    culture = sautan
+}

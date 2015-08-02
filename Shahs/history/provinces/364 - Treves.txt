@@ -1,0 +1,18 @@
+# c_treves
+
+# County Title
+title = c_treves
+
+# Settlements
+max_settlements = 4
+
+b_majeis = castle
+b_armita = city
+b_dibragavas = castle
+b_quintella = city
+
+# Misc
+culture = orillan
+religion = voldemarran
+
+#History

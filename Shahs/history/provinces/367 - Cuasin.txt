@@ -1,0 +1,17 @@
+# c_cuasin
+
+# County Title
+title = c_cuasin
+
+# Settlements
+max_settlements = 3
+
+b_castoviran = castle
+b_bortonya = temple
+b_fosna = city
+
+# Misc
+culture = orillan
+religion = merefynnite
+
+#History

@@ -1,0 +1,19 @@
+# c_keval
+
+# County Title
+title = c_keval
+
+# Settlements
+max_settlements = 5
+
+b_keval = castle
+b_barquinosa = temple
+#b_keval_2 = temple
+#b_keval_3 = castle
+#b_keval_4 = city
+
+# Misc
+culture = orillan
+religion = voldemarran
+
+#History

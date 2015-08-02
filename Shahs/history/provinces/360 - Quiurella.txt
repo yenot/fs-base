@@ -1,0 +1,18 @@
+# c_quiurella
+
+# County Title
+title = c_quiurella
+
+# Settlements
+max_settlements = 4
+
+b_sciderrona = castle
+b_montorrinya = city
+b_campenya = castle
+#b_quiurella = castle
+
+# Misc
+culture = orillan
+religion = scholastic
+
+#History

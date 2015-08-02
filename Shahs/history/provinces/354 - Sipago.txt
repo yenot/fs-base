@@ -1,0 +1,18 @@
+# c_sipago
+
+# County Title
+title = c_sipago
+
+# Settlements
+max_settlements = 4
+
+b_osigueres = castle
+b_pano = city
+b_queveres = city
+#b_sipago = castle
+
+# Misc
+culture = orillan
+religion = merefynnite
+
+#History

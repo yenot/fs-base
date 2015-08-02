@@ -1,0 +1,18 @@
+# c_vorta
+
+# County Title
+title = c_vorta
+
+# Settlements
+max_settlements = 4
+
+b_cerrado = castle
+b_trevanya = city
+b_tuami = temple
+#b_vorta = castle
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

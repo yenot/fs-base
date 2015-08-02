@@ -27,7 +27,6 @@ celestinian_group = {
 		can_grant_divorce = yes
 		#priests_can_marry = yes
 		#priests_can_inherit = yes
-		max_wives = 3
 		peace_piety_gain = 1
 		
 	}
@@ -149,6 +148,45 @@ olpian_group = {
 		can_grant_divorce = yes
 		priests_can_marry = no
 		priests_can_inherit= no
+		peace_piety_gain = 0
+		
+	}
+}
+
+merefynnite_group = {
+	graphical_culture = indiangfx
+	playable = yes
+	hostile_within_group = no
+
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2	# always try to convert
+
+	
+	merefynnite = {
+		graphical_culture = jaingfx
+
+		icon = 5
+		heresy_icon = 14
+		piety_name = PIETY
+		priest_title = PRIEST
+		color = { 0.32 0.1 0.04 }
+		
+		god_names = {
+			GOD_THE_JUDGE 
+		}
+		
+		evil_god_names = {
+			GAMARAK
+		}
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+		
+		ai_peaceful = yes
+		can_grant_divorce = yes
+		priests_can_marry = yes
+		priests_can_inherit= yes
+		max_wives = 3
 		peace_piety_gain = 0
 		
 	}

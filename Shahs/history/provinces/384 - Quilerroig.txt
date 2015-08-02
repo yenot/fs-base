@@ -1,0 +1,19 @@
+# c_quilerroig
+
+# County Title
+title = c_quilerroig
+
+# Settlements
+max_settlements = 5
+
+b_quilerroig = castle
+b_adella = city
+b_cevercises = temple
+b_villasino = temple
+#b_quilerroig_2 = city
+
+# Misc
+culture = orillan
+religion = scholastic
+
+#History

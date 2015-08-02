@@ -1,0 +1,20 @@
+# c_orrona
+
+# County Title
+title = c_orrona
+
+# Settlements
+max_settlements = 6
+
+b_questander = castle
+b_collestabano = city
+b_arlesato = castle
+b_ilunya = temple
+b_petigras = city
+#b_orrona = temple
+
+# Misc
+culture = orillan
+religion = scholastic
+
+#History

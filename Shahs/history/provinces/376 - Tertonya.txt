@@ -1,0 +1,18 @@
+# c_tertonya
+
+# County Title
+title = c_tertonya
+
+# Settlements
+max_settlements = 4
+
+b_tertonya = castle
+b_isposon = temple
+b_resco = city
+#b_tertonya_2 = castle
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

@@ -1,0 +1,39 @@
+1010700 = {
+    name = "Corges"
+    culture = orillan
+}
+
+1010702 = {
+    name = "de Garran"
+    culture = orillan
+}
+
+1010705 = {
+    name = "Nerevella"
+    culture = orillan
+}
+
+1010706 = {
+    name = "de Villas"
+    culture = orillan
+}
+
+1010709 = {
+    name = "Polan"
+    culture = orillan
+}
+
+1010710 = {
+    name = "Estenserra"
+    culture = orillan
+}
+
+1010713 = {
+    name = "Armilla"
+    culture = orillan
+}
+
+1010715 = {
+    name = "Kirel"
+    culture = orillan
+}

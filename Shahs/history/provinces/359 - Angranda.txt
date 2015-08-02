@@ -1,0 +1,19 @@
+# c_angranda
+
+# County Title
+title = c_angranda
+
+# Settlements
+max_settlements = 5
+
+b_angranda = castle
+b_patumas = castle
+b_cevelsina = city
+b_bedecamp = temple
+#b_angranda_2 = city
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

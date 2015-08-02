@@ -1,0 +1,17 @@
+# c_lletomises
+
+# County Title
+title = c_lletomises
+
+# Settlements
+max_settlements = 3
+
+b_perenni = castle
+b_bularig = city
+#b_lletomises = temple
+
+# Misc
+culture = orillan
+religion = merefynnite
+
+#History

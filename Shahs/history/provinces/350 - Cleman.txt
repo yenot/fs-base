@@ -1,0 +1,19 @@
+# c_cleman
+
+# County Title
+title = c_cleman
+
+# Settlements
+max_settlements = 5
+
+b_cleman = castle
+b_veri = temple
+b_eracinosa = city
+b_covizas = castle
+#b_cleman_2 = city
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

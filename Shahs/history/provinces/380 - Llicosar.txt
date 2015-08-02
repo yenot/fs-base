@@ -1,0 +1,18 @@
+# c_llicosar
+
+# County Title
+title = c_llicosar
+
+# Settlements
+max_settlements = 4
+
+b_cosi = castle
+b_bremia = temple
+b_oquelleces = city
+#b_llicosar = castle
+
+# Misc
+culture = orillan
+religion = voldemarran
+
+#History

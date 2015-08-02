@@ -1267,11 +1267,11 @@ trait="humble"
 }
 
 108537={
-name="Zdeslavs"
-dynasty=108737
+name="Cadan"
+dynasty=1010699
 dna="epaonaihkpa"
-culture=melin
-religion=celestinian
+culture=livaish
+religion=merefynnite
 martial=3
 diplomacy=3
 stewardship=4
@@ -1282,8 +1282,8 @@ trait="mystic"
 trait="greedy"
 trait="just"
 trait="wroth"
-1083.1.1={birth=yes}
-1138.7.14={death=yes}
+1023.1.1={birth=yes}
+1098.7.14={death=yes}
 }
 
 108538={

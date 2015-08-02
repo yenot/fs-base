@@ -1,0 +1,19 @@
+# c_bertinya
+
+# County Title
+title = c_bertinya
+
+# Settlements
+max_settlements = 5
+
+b_bertinya = castle
+b_tronca = city
+b_olyano = temple
+b_rolnic = city
+#b_bertinya_2 = city
+
+# Misc
+culture = orillan
+religion = celestinian
+
+#History

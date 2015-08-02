@@ -25,8 +25,12 @@ scholastic_DESC;Scholasticism is a name for the worldview developed by Auletian 
 scholastic_group;Scholastic;;;;;;;;;;;;;
 celestinian_group;Celestinian;;;;;;;;;;;;;
 sabanean;Sabanean;;;;;;;;;;;;;
+merya_svodna_group;Merya Svodna;;;;;;;;;;;;;
 voldemarran;Voldemarran;;;;;;;;;;;;;
+olpian_group;Olpyan;;;;;;;;;;;;;
 vysochan;Vysochan;;;;;;;;;;;;;
+merefynnite;Merefynnite;;;;;;;;;;;;;
+merefynnite_group;Merefynnite;;;;;;;;;;;;;
 temple_barony_scholastic;Schola;;;;;;;;;;;;;
 temple_barony_of_scholastic;Schola;;;;;;;;;;;;;
 temple_baron_scholastic;Scholar;;;;;;;;;;;;;
@@ -49,3 +53,5 @@ koinobiotic_celestinian_desc;This character follows Koinobiotic branch of Celest
 arcadic_celestinian_desc;This character follows Arcadic branch of Celestinian faith;;;;;;;;;;;;;
 meletatic_celestinian_desc;This character follows Meletatic branch of Celestinian faith;;;;;;;;;;;;;
 create_holy_order;Send Away as Holy Warrior;;;;;;;;;;;;;
+GOD_THE_JUDGE;The Judge;;;;;;;;;;;;;
+GAMARAK;Gamarak;;;;;;;;;;;;;

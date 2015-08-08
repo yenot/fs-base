@@ -2326,13 +2326,11 @@ character_event = {
 			modifier = {
 				factor = 0.5
 				trait = zealous
-				religion_group = christian
+				religion_group = celestinian_group
 				NOT = {
 					OR = {
-						religion = bogomilist
-						religion = cathar
-						religion = paulician
-						religion = messalian
+						religion = axiotic
+						religion = mekosite
 					}
 				}
 			}

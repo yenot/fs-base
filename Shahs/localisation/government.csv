@@ -3,5 +3,7 @@ bureaucratic_government;Bureaucratic;;;;;;;;;;;;;
 bureaucratic_government_desc;Bureaucratic realms rely on a strata of professional officials to govern the country. This type of government tends to be very stable but strong and influencial ministers might at times render their supreme ruler powerless in his own kingdom.;;;;;;;;;;;;;
 heavenly_kingdom_government;Heavenly Kingdom;;;;;;;;;;;;;
 heavenly_kingdom_government_desc;Heavenly Kingdom;;;;;;;;;;;;;
+kylgh_government;Kylgh;;;;;;;;;;;;;
+kylgh_government_desc;Kylgh is a form of power distribution specific to the Spalenish peoples. It is based on centers of power as opposed to continental Kasavan system defining a state through its borders. A strong polity gathers support of weaker neighbours but once it weakens they have no obligation to keep being subordinares: tributary states will seek a stronger protector or declare independence.;;;;;;;;;;;;;
 DYNAMIC_HOLY_ORDER;Acolytes of [Root.GetFirstName];;;;;;;;;;;;;
 GRANDMASTER;Grand Master;;;;;;;;;;;;;

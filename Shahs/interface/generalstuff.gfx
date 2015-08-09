@@ -550,6 +550,99 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	
+	spriteType = {
+		name = "GFX_charframe_150_bureaucracy"
+		texturefile = "gfx\\interface\\charframe_150_bureaucracy.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_bureaucracy"
+		texturefile = "gfx\\interface\\charframe_100_bureaucracy.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_bureaucracy"
+		texturefile = "gfx\\interface\\charframe_75_bureaucracy.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_bureaucracy"
+		texturefile = "gfx\\interface\\charframe_50_bureaucracy.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_bureaucracy"
+		texturefile = "gfx\\interface\\charframe_34_bureaucracy.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_charframe_150_heavenly"
+		texturefile = "gfx\\interface\\charframe_150_heavenly.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_heavenly"
+		texturefile = "gfx\\interface\\charframe_100_heavenly.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_heavenly"
+		texturefile = "gfx\\interface\\charframe_75_heavenly.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_heavenly"
+		texturefile = "gfx\\interface\\charframe_50_heavenly.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_heavenly"
+		texturefile = "gfx\\interface\\charframe_34_heavenly.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_charframe_150_kylgh"
+		texturefile = "gfx\\interface\\charframe_150_kylgh.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_kylgh"
+		texturefile = "gfx\\interface\\charframe_100_kylgh.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_kylgh"
+		texturefile = "gfx\\interface\\charframe_75_kylgh.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_kylgh"
+		texturefile = "gfx\\interface\\charframe_50_kylgh.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_kylgh"
+		texturefile = "gfx\\interface\\charframe_34_kylgh.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
 	#####
 	spriteType = {
 		name = "GFX_char_150"
@@ -999,6 +1092,14 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_icon_bureaucratic_government"
 		texturefile = "gfx\\interface\\government_icon_bureaucratic.dds"
+	}
+		spriteType = {
+		name = "GFX_icon_heavenly_kingdom_government"
+		texturefile = "gfx\\interface\\government_icon_heavenly.dds"
+	}
+		spriteType = {
+		name = "GFX_icon_kylgh_government"
+		texturefile = "gfx\\interface\\government_icon_kylgh.dds"
 	}
 	spriteType = {
 		name = "GFX_icon_merchant_republic_government"

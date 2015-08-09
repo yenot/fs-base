@@ -61,6 +61,8 @@ feudal_governments = {
 			republic_government
 			tribal_government
 		}
+		frame_suffix = "_bureaucracy"
+		#title_prefix = "bureaucracy_"
 		potential = {
 			NAND = {
 				controls_religion = yes

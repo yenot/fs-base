@@ -1283,6 +1283,9 @@ trait="greedy"
 trait="just"
 trait="wroth"
 1023.1.1={birth=yes}
+1065.1.1={
+		effect = {set_government_type = kylgh_government}
+	}
 1098.7.14={death=yes}
 }
 

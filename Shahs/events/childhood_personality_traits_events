@@ -1660,10 +1660,10 @@ character_event = {
 	
 	trigger = {
 		NOT = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 		NOT = {
-			religion_group = indian_group
+			religion_group = olpyan_group
 		}
 		NOT = { personality_traits = 5 }
 		NOT = { trait = zealous }
@@ -1769,7 +1769,7 @@ character_event = {
 	}
 }
 
-### Zealous - Muslim ###
+### Zealous - Merefynnite ###
 character_event = {
 	id = 1632
 	desc = "EVTDESC1632"
@@ -1781,7 +1781,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		religion_group = muslim
+		religion_group = merefynnite
 		NOT = { personality_traits = 5 }
 		NOT = { trait = zealous }
 		NOT = { trait = cynical }
@@ -2867,7 +2867,7 @@ character_event = {
 	
 	trigger = {
 		NOT = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 		NOT = { personality_traits = 5 }
 		NOT = { trait = zealous }
@@ -2973,7 +2973,7 @@ character_event = {
 	}
 }
 
-### Cynical Child - Muslim ###
+### Cynical Child - Merefynnite ###
 character_event = {
 	id = 1732
 	desc = "EVTDESC1732"
@@ -2985,7 +2985,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		religion_group = muslim
+		religion_group = merefynnite
 		NOT = { personality_traits = 5 }
 		NOT = { trait = zealous }
 		NOT = { trait = cynical }
@@ -3181,9 +3181,9 @@ character_event = {
 		name = "EVTOPTA1965"
 		add_trait = cruel
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
-			custom_tooltip = { text = jain_ahimsa_tooltip }
+			custom_tooltip = { text = axiotic_ahimsa_tooltip }
 		}
 		hidden_tooltip = {
 			guardian = {
@@ -3308,7 +3308,7 @@ character_event = {
 		num_traits = 4
 		trait = homosexual
 		NOT = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 	}
 
@@ -3331,7 +3331,7 @@ character_event = {
 	}
 }
 
-### Remove Homosexual - Muslim ###
+### Remove Homosexual - Merefynnite ###
 character_event = {
 	id = 1986
 	desc = "EVTDESC1986"
@@ -3346,8 +3346,8 @@ character_event = {
 		num_traits = 4
 		trait = homosexual
 		OR = {
-			religion_group = muslim
-			religion_group = indian_group
+			religion_group = merefynnite
+			religion_group = olpyan
 		}
 	}
 
@@ -3433,7 +3433,7 @@ character_event = {
 		num_traits = 4
 		trait = homosexual
 		NOT = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 	}
 
@@ -3454,39 +3454,6 @@ character_event = {
 		remove_trait = homosexual
 	}
 }
-
-#Nobody believes me! - removed, no text and no event that triggers this
-#character_event = {
-#	id = 30013
-#	desc = "EVTDESC30013"
-#	picture = GFX_evt_child_bully
-#
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = "EVTOPTA30013"
-#		prestige = -50
-#	}
-#}
-	
-#Spouse is kicked out and the heir takes over - removed, no text and no event that triggers this
-#character_event = {
-#	id = 30014
-#	desc = "EVTDESC30014"
-#	picture = GFX_evt_scandal
-#
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = "EVTOPTA30014"
-#		banish = yes
-#	}
-#
-#	option = {
-#		name = "EVTOPTB30014"
-#		prestige = -1000
-#	}
-#}
 
 #################################
 # More flavor events
@@ -4222,7 +4189,7 @@ character_event = {
 		has_guardian = yes
 		NOT = { personality_traits = 5 }
 		NOT = {
-			religion_group = muslim
+			religion_group = merefynnite
 		}
 	}
 	
@@ -4317,7 +4284,7 @@ character_event = {
 	
 	trigger = {
 		has_guardian = yes
-		religion_group = christian
+		religion_group = celestinian
 		NOT = { trait = zealous }
 		NOT = { trait = cynical }
 		NOT = { personality_traits = 5 }
@@ -4448,7 +4415,7 @@ character_event = {
 	
 	trigger = {
 		has_guardian = yes
-		#religion_group = christian
+		#religion_group = celestinian
 		NOT = { trait = zealous }
 		NOT = { trait = cynical }
 		NOT = { personality_traits = 5 }
@@ -4757,7 +4724,7 @@ character_event = {
 	}
 }
 
-# If we're Catholic and our enemies are Catholic, why are we fighting?
+# If we're Sabanean and our enemies are Sabanean, why are we fighting?
 character_event = {
 	id = 1914
 	desc = "EVTDESC1914"
@@ -4773,10 +4740,10 @@ character_event = {
 		religion = catholic
 		NOT = { trait = cynical }
 		guardian = {
-			religion = catholic
+			religion = sabanean
 			OR = {
-				any_current_enemy = { religion = catholic }
-				any_liege = { any_current_enemy = { religion = catholic } } 
+				any_current_enemy = { religion = sabanean }
+				any_liege = { any_current_enemy = { religion = sabanean } } 
 			}
 		}
 		NOT = { personality_traits = 5 }
@@ -4873,7 +4840,7 @@ character_event = {
 	
 	trigger = {
 		has_guardian = yes
-		religion_group = christian
+		religion_group = celestinian
 		NOT = { trait = zealous }
 		NOT = { trait = cynical }
 		NOT = { trait = charitable }

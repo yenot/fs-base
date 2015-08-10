@@ -5219,7 +5219,7 @@ character_event = {
 	
 	trigger = {
 		has_guardian = yes
-		NOT = { religion_group = indian_group }
+		NOT = { religion_group = olpyan }
 		NOT = { trait = lustful }
 		NOT = { trait = chaste }
 		NOT = { trait = temperate }
@@ -5318,8 +5318,8 @@ character_event = {
 	trigger = {
 		has_guardian = yes
 		OR = {
-			religion_group = christian
-			religion_group = muslim
+			religion_group = celestinian
+			religion_group = merefynnite
 			religion_group = jewish_group
 		}
 		NOT = { trait = cynical }
@@ -5435,9 +5435,11 @@ character_event = {
 	}
 	
 	weight_multiplier = {
-		days = 1
+		days = 1 
 		modifier = {
-			religion = cathar
+			religion = celestinian
+			religion = axiotic
+			religion = mekosite
 			factor = 3
 		}
 		modifier = {

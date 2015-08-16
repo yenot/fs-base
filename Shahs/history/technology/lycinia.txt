@@ -16,12 +16,14 @@ technology = {
 		military = 1.2
 		economy = 1.5
 		culture = 1.5
+		#TECH_ZEALOTRY = 5.0
 	}
 		
 	1337 = {
 		military = 4.5
 		economy = 4.5
 		culture = 4.5
+		#TECH_ZEALOTRY = 5.0
 	}
 }
 
@@ -39,6 +41,8 @@ technology = {
 		TECH_CASTLE_CONSTRUCTION = 2.0
 		TECH_TEMPLE_CONSTRUCTION = 2.0
 		TECH_LEGALISM = 2.0
+		
+		#TECH_ZEALOTRY = 5.0
 	}
 		
 	1337 = {
@@ -50,6 +54,8 @@ technology = {
 		TECH_CASTLE_CONSTRUCTION = 4.5
 		TECH_TEMPLE_CONSTRUCTION = 4.5
 		TECH_LEGALISM = 4.5
+		
+		#TECH_ZEALOTRY = 5.0
 	}
 }
 

@@ -6,8 +6,8 @@ title = c_pardica
 # Settlements
 max_settlements = 4
 
-b_laspaianos = castle
-b_eriaphea = temple
+b_laspaianos = temple
+b_eriaphea = city
 b_sapoxentia = castle
 #b_pardica = castle
 

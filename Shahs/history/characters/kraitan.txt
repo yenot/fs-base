@@ -9051,7 +9051,7 @@ mother=1100435
 1029.8.22={birth=yes}
 1053.6.9 = {add_spouse=1100438}
 1086.1.10={death=yes}
-1065.1.1={
+1064.1.1={
         effect = {set_government_type = heavenly_kingdom_government}
     }
 }

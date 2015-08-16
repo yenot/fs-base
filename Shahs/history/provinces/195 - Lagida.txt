@@ -6,7 +6,7 @@ title = c_lagida
 # Settlements
 max_settlements = 4
 
-b_teri = castle
+b_teri = temple
 b_goski_2 = castle
 b_evaropagos = castle
 #b_lagida = castle

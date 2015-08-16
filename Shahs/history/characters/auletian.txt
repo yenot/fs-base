@@ -162,6 +162,7 @@ trait="impaler"
 trait="charitable"
 trait="craven"
 trait="kind"
+trait="hestian_culture"
 father=1000000
 mother=1000001
 1026.11.2={birth=yes}

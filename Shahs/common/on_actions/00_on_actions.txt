@@ -5,6 +5,7 @@ on_startup = {
 		fsfact.0
 		exam.0
 		fs_government.0
+		fs_hestian.0
 	}
 }
 

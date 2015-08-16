@@ -1,0 +1,11 @@
+hestian_culture = {
+	potential = {
+		OR = {
+			religion_group = celestinian_group
+			religion_group = scholastic_group
+			religion = voldemarran
+		}
+	}
+	same_opinion = 15
+	random = no
+}

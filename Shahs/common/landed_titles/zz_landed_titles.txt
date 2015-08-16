@@ -474,3 +474,67 @@ k_gladden = {
 	culture = livaish
 }
 
+###########################
+#Holy orders
+###########################
+
+d_dyrvordrinn = {
+
+	color={ 164 6 6 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = norseholygfx
+	
+	capital = 219 #Hvalvirk
+
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = voldemarran
+	
+	culture = niser
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	mercenary_type = jomsvikings_composition
+}
+
+d_munkrekkrinn = {
+	
+	color={ 74 6 164 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = norseholygfx
+	
+	capital = 212 # Change later
+
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = teutonic_order_composition
+	
+	# Parent Religion 
+	religion = voldemarran
+	
+	culture = niser
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 4 # (Must be an integer between 1 and 512)
+}

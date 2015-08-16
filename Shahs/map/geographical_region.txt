@@ -47,3 +47,8 @@ world_kasava_shartica = {
 	}
 }
 
+custom_old_hestia = {
+	regions = {
+		world_kasava_auletia world_kasava_uman world_kasava_berenica
+	}
+}

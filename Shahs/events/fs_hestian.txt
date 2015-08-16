@@ -1,0 +1,40 @@
+#Events related to Hestian culture
+
+namespace = fs_hestian
+
+character_event = {
+	id = fs_hestian.0
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#independent = yes
+		NOT = { trait = hestian_culture }
+		date = 1066.1.1
+	}
+	
+	immediate = {
+		random = {
+			chance = 40
+			modifier = {
+				factor = 0.1
+				NOT = {
+					culture_group = auletian
+					culture_group = bernican
+					culture_group = hestian
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					location = { region = custom_old_hestia }
+				}
+			}
+			modifier = {
+				factor = 2
+				top_liege = { trait = hestian_culture }
+			}
+			add_trait = hestian_culture
+		}
+	}
+}

@@ -12,6 +12,7 @@ character_event = {
 			top_liege = { government = heavenly_kingdom_government }
 			top_liege = { government = bureaucratic_government }
 		}
+		date = 1066.1.1
 	}
 	
 	immediate = {

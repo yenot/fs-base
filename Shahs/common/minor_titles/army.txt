@@ -60,12 +60,14 @@ title_royal_army_general_1 = {
 		set_defacto_liege = FROM
 		any_claim = { remove_claim = PREV }
 		any_demesne_title = { succession = appointment }
+		set_government_type = standing_army_government
 		FROM = {
 			random_realm_province = {
 				limit = {
 					has_empty_holding = yes
 				}
 				build_holding = {title = b_firstarmycamp type = castle holder = ROOT}
+				#create_fort = yes
 			}
 		}
 		FROM = {

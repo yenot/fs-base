@@ -6,7 +6,7 @@ title = c_moriman
 # Settlements
 max_settlements = 5
 
-b_moriman = castle
+b_moriman = temple
 b_goski = castle
 b_rataka = temple
 #b_moriman_2 = castle

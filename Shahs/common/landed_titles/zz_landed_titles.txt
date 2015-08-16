@@ -506,7 +506,7 @@ d_dyrvordrinn = {
 	# Extra income due to donations, etc
 	monthly_income = 2 # (Must be an integer between 1 and 512)
 
-	mercenary_type = jomsvikings_composition
+	mercenary_type = dyrvordrinn_composition
 }
 
 d_munkrekkrinn = {
@@ -525,7 +525,7 @@ d_munkrekkrinn = {
 	landless = yes
 	
 	holy_order = yes
-	mercenary_type = teutonic_order_composition
+	mercenary_type = munkrekkrinn_composition
 	
 	# Parent Religion 
 	religion = voldemarran
@@ -537,4 +537,571 @@ d_munkrekkrinn = {
 	
 	# Extra income due to donations, etc
 	monthly_income = 4 # (Must be an integer between 1 and 512)
+}
+
+###########################
+#Mercenaries
+###########################
+
+d_scarred_ones = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 212 # Kasterheim
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = merya_svodna_group
+			religion_group = celestinian_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = voldemarran
+	
+	culture = niser
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = scarred_ones_composition
+}
+
+d_orillan_company = {
+	color={ 230 100 100 }
+	color2={ 255 255 255 }
+
+	capital = 351 # Orrona
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = celestinian_group
+			religion_group = scholastic_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	culture = orillan
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = orillan_company_composition
+}
+
+d_berenican_company = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	capital = 310 # Sagneman
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = celestinian_group
+			religion_group = scholastic_group
+			religion = voldemarran
+		}
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	culture = sautan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = berenican_company_composition
+}
+
+d_melin_company = {
+	color = { 100 50 30 }
+	color2 = { 255 255 255 }
+
+	capital = 166 # Byala Tserkva
+	
+	# Parent Religion 
+	religion = celestinian
+	
+	culture = melin
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = melin_company_composition
+}
+
+d_melin_band = {
+	color = { 100 50 30 }
+	color2 = { 255 255 255 }
+
+	capital = 166 # Byala Tserkva
+	
+	# Parent Religion 
+	religion = celestinian
+	
+	culture = melin
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = melin_band_composition
+}
+
+d_waterlily = {
+	color={ 150 40 40 }
+	color2={ 255 255 255 }
+
+	capital = 139 # Dender
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = celestinian_group
+			religion_group = scholastic_group
+			religion_group = merya_svodna_group
+			religion_group = olpian_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	culture = kraitan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = waterlily_composition
+}
+
+d_dragon_company = {
+	color={ 100 100 100 }
+	color2={ 255 255 255 }
+
+	capital = 232 # Anikarea
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = celestinian_group
+			religion_group = scholastic_group
+			religion_group = merya_svodna_group
+			religion_group = olpian_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = sabanean
+	culture = kraitan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = dragon_company_composition
+}
+
+d_grivpanvar = {
+	color={ 80 160 80 }
+	color2={ 255 255 255 }
+	
+	capital = 269 # Bistrim
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = celestinian_group
+			religion_group = scholastic_group
+			religion_group = merya_svodna_group
+			religion_group = olpian_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = sabanean
+	culture = shahran
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = grivpanvar_composition
+}
+
+d_shartan_band = {
+	color = { 30 90 182 }
+	color2 = { 255 255 255 }
+
+	capital = 43 # Bissini
+	
+	# Hire Trigger
+	allow = {
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	culture = doshastan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = shartan_band_composition
+}
+
+d_hamult_band = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 53 # Trinto
+	
+	# Hire Trigger
+	allow = {
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	
+	culture = hamult
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = hamult_band_composition
+}
+
+d_sautan_band = {
+	color={ 230 100 100 }
+	color2={ 255 255 255 }
+
+	capital = 310 # Sagneman
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = celestinian_group
+			religion_group = scholastic_group
+			religion_group = merya_svodna_group
+			religion_group = olpian_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	
+	culture = sautan
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = sautan_band_composition
+}
+
+d_peacekeepers = {
+	color={ 150 40 40 }
+	color2={ 255 255 255 }
+
+	capital = 77 # Cerezzo
+	
+	# Hire Trigger
+	allow = {
+		religion_group = scholastic_group
+	}
+	
+	# Parent Religion 
+	religion = scholastic
+	culture = auletian
+	
+	mercenary = yes
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = peacekeepers_composition
+}
+
+d_auletian_company = {
+	color={ 150 40 40 }
+	color2={ 255 255 255 }
+
+	capital = 45 # Gaspanica
+	
+	# Hire Trigger
+	allow = {
+		religion_group = celestinian_group
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	culture = auletian
+	
+	mercenary = yes
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = auletian_company_composition
+}
+
+d_auletian_band = {
+	color={ 150 40 40 }
+	color2={ 255 255 255 }
+
+	capital = 45 # Gaspanica
+	
+	# Hire Trigger
+	allow = {
+		religion_group = celestinian_group
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	culture = auletian
+	
+	mercenary = yes
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = auletian_band_composition
+}
+
+d_nordic_company = {
+	color={ 200 80 200 }
+	color2={ 255 255 255 }
+
+	capital = 219 # Hvalvirk, change later
+	
+	# Hire Trigger
+	allow = {
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	culture = hamult
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = nordic_company_composition
+}
+
+d_lightning_company = {
+	color={ 235 235 235 }
+	color2={ 255 255 255 }
+
+	capital = 200 # Barkos
+	
+	# Hire Trigger
+	allow = {
+	}
+	
+	# Parent Religion 
+	religion = celestinian
+	culture = kraitan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	mercenary_type = lightning_company_composition
+	
 }

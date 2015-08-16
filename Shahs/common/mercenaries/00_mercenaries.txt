@@ -2,18 +2,11 @@
 # Also remember to tell the landed title to use this mercenary type instead.
 # Several titles can refer to the same type as well now.
 
-knights_templar_composition = {
+munkrekkrinn_composition = {
 	levy_size = 4
 	heavy_infantry = 600
 	knights = 300
 	archers = 200
-}
-
-teutonic_order_composition = {
-	levy_size = 4
-	heavy_infantry = 750
-	knights = 100
-	archers = 250
 }
 
 knights_hospitaler_composition = {
@@ -40,7 +33,7 @@ bektashi_composition = {
 	horse_archers = 100
 }
 
-jomsvikings_composition = {
+dyrvordrinn_composition = {
 	levy_size = 6
 	heavy_infantry = 700
 	light_infantry = 200
@@ -204,7 +197,7 @@ victual_brothers_composition = {
 	galleys = 40
 }
 
-white_company_composition = {
+lightning_company_composition = {
 	levy_size = 5
 	archers = 150
 	light_infantry = 150
@@ -212,7 +205,7 @@ white_company_composition = {
 	knights = 15
 }
 
-great_company_composition = {
+dragon_company_composition = {
 	levy_size = 5
 	archers = 150
 	heavy_infantry = 570
@@ -227,7 +220,7 @@ company_of_st_george_composition = {
 	knights = 15
 }
 
-star_company_composition = {
+nordic_company_composition = {
 	levy_size = 4
 	archers = 150
 	light_infantry = 150
@@ -251,7 +244,7 @@ rose_company_composition = {
 	knights = 15
 }
 
-catalan_company_composition = {
+orillan_company_composition = {
 	levy_size = 3
 	archers = 150
 	light_infantry = 150
@@ -259,7 +252,7 @@ catalan_company_composition = {
 	knights = 15
 }
 
-navarrese_company_composition = {
+berenican_company_composition = {
 	levy_size = 2
 	archers = 150
 	light_infantry = 150
@@ -267,7 +260,21 @@ navarrese_company_composition = {
 	light_cavalry = 75
 }
 
-swiss_company_composition = {
+waterlily_composition = {
+	levy_size = 2
+	archers = 150
+	pikemen = 300
+	heavy_infantry = 300
+}
+
+auletian_company_composition = {
+	levy_size = 2
+	archers = 150
+	pikemen = 300
+	heavy_infantry = 300
+}
+
+peacekeepers_composition = {
 	levy_size = 2
 	archers = 150
 	pikemen = 300
@@ -290,7 +297,7 @@ lombard_band_composition = {
 	light_cavalry = 150
 }
 
-swiss_band_composition = {
+auletian_band_composition = {
 	levy_size = 1
 	archers = 150
 	pikemen = 300
@@ -305,7 +312,7 @@ breton_band_composition = {
 	light_cavalry = 150
 }
 
-catalan_band_composition = {
+sautan_band_composition = {
 	levy_size = 1
 	archers = 150
 	light_infantry = 150
@@ -328,7 +335,7 @@ varangian_guard_composition = {
 	archers = 50
 }
 
-mamluks_composition = {
+grivpanvar_composition = {
 	levy_size = 6
 	horse_archers = 225
 	light_cavalry = 300
@@ -352,7 +359,7 @@ cuman_company_composition = {
 	light_cavalry = 150
 }
 
-rus_company_composition = {
+scarred_ones_composition = {
 	levy_size = 4
 	archers = 150
 	light_infantry = 300
@@ -374,7 +381,7 @@ turkic_company_composition = {
 	horse_archers = 75
 }
 
-bulgarian_company_composition = {
+melin_company_composition = {
 	levy_size = 2
 	archers = 150
 	light_infantry = 300
@@ -382,7 +389,7 @@ bulgarian_company_composition = {
 	light_cavalry = 150
 }
 
-rus_band_composition = {
+hamult_band_composition = {
 	levy_size = 1.5
 	archers = 150
 	light_infantry = 450
@@ -435,7 +442,7 @@ ghanan_band_composition = {
 	light_cavalry = 150
 }
 
-scottish_band_composition = {
+shartan_band_composition = {
 	levy_size = 1.5
 	archers = 150
 	light_infantry = 350
@@ -478,7 +485,7 @@ turkic_band_composition = {
 	horse_archers = 75
 }
 
-bulgarian_band_composition = {
+melin_band_composition = {
 	levy_size = 1
 	archers = 150
 	light_infantry = 300

@@ -46,6 +46,8 @@ celestinian_group = {
 		
 		religious_clothing_head = 7
 		religious_clothing_priest = 7
+		
+		intermarry = scholastic_group
 	}
 }
 
@@ -76,6 +78,8 @@ scholastic_group = {
 		priests_can_marry = yes
 		priests_can_inherit = yes
 		#peace_piety_gain = 1
+		
+		intermarry = celestinian_group
 		
 	}
 }

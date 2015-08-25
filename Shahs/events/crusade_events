@@ -146,7 +146,7 @@ character_event = {
 				}
 			}
 		}
-		religion = catholic
+		religion = sabanean
 		crusade_target = {
 			is_located_in = ROOT
 		}
@@ -190,22 +190,22 @@ character_event = {
 	trigger = {
 		controls_religion = yes
 		has_called_crusade = yes
-		religion = catholic
+		religion = sabanean
 		
 		OR = {
 			any_independent_ruler = {
 				ai = yes
-				religion = catholic
+				religion = sabanean
 				any_war = {
 					using_cb = crusade
 				}
 				excommunicated_for = ROOT
 			}
 			any_independent_ruler = {
-				religion = catholic
+				religion = sabanean
 				any_realm_lord = {
 					ai = yes
-					religion = catholic
+					religion = sabanean
 					any_war = {
 						using_cb = crusade
 					}
@@ -224,7 +224,7 @@ character_event = {
 		any_independent_ruler = {
 			limit = {
 				ai = no
-				religion = catholic
+				religion = sabanean
 				any_war = {
 					using_cb = crusade
 				}
@@ -235,12 +235,12 @@ character_event = {
 		}
 		any_independent_ruler = {
 			limit = {
-				religion = catholic
+				religion = sabanean
 			}
 			any_realm_lord = {
 				limit = {
 					ai = no
-					religion = catholic
+					religion = sabanean
 					any_war = {
 						using_cb = crusade
 					}
@@ -270,7 +270,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		religion = catholic
+		religion = sabanean
 		NOT = { trait = zealous }
 		NOT = { trait = cynical }
 		
@@ -308,7 +308,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		religion = catholic
+		religion = sabanean
 		NOT = { trait = cynical }
 		NOT = { trait = zealous }
 		
@@ -347,7 +347,7 @@ character_event = {
 	
 	trigger = {
 		FROM = { is_capital = yes }
-		religion = catholic
+		religion = sabanean
 		
 		has_called_crusade = yes
 		OR = {
@@ -469,7 +469,7 @@ character_event = {
 	is_triggered_only = yes
 		
 	trigger = {
-		religion = catholic
+		religion = sabanean
 		FROM = { title = b_jerusalem }
 		OR = {
 			any_war = {
@@ -509,7 +509,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		religion = catholic
+		religion = sabanean
 		FROM = { title = b_syrcaesarea }
 		OR = {
 			any_war = {
@@ -549,7 +549,7 @@ character_event = {
 	is_triggered_only = yes
 		
 	trigger = {
-		religion = catholic
+		religion = sabanean
 		FROM = { title = b_jerusalem }
 		OR = {
 			any_war = {
@@ -583,7 +583,7 @@ character_event = {
 	
 	trigger = {
 		FROM = { is_capital = yes }
-		religion = catholic
+		religion = sabanean
 		OR = {
 			any_war = {
 				using_cb = crusade
@@ -704,7 +704,7 @@ character_event = {
 	trigger = {
 		controls_religion = yes
 		has_called_crusade = yes
-		religion = catholic
+		religion = sabanean
 		had_global_flag = { flag = crusade_called days = 180 }
 		
 		any_independent_ruler = {
@@ -745,7 +745,7 @@ character_event = {
 				any_realm_province = {
 					any_neighbor_province = {
 						has_owner = yes
-						NOT = { religion_group = christian } 
+						NOT = { religion_group = celestinian_group } 
 					}
 				}
 			}
@@ -766,7 +766,7 @@ character_event = {
 		name = "EVTOPTA8400"
 		random_independent_ruler = {
 			limit = {
-				religion = catholic
+				religion = sabanean
 				NOT = {
 					any_war = {
 						using_cb = crusade
@@ -803,7 +803,7 @@ character_event = {
 					any_realm_province = {
 						any_neighbor_province = {
 							has_owner = yes
-							NOT = { religion_group = christian } 
+							NOT = { religion_group = celestinian_group } 
 						}
 					}
 				}
@@ -883,12 +883,12 @@ character_event = {
 	trigger = {
 		controls_religion = yes
 		has_called_crusade = yes
-		religion = catholic
+		religion = sabanean
 		had_global_flag = { flag = crusade_called days = 180 }
 		
 		any_independent_ruler = {
 			had_character_flag = { flag = reminded_about_crusade days = 30 }
-			religion = catholic
+			religion = sabanean
 			NOT = {
 				any_war = {
 					using_cb = crusade
@@ -920,7 +920,7 @@ character_event = {
 		random_independent_ruler = {
 			limit = {
 				had_character_flag = { flag = reminded_about_crusade days = 30 }
-				religion = catholic
+				religion = sabanean
 				NOT = {
 					any_war = {
 						using_cb = crusade
@@ -1017,12 +1017,12 @@ character_event = {
 		NOT = { has_character_flag = no_complains_about_not_crusading }
 		is_priest = yes
 		independent = no
-		religion = catholic
+		religion = sabanean
 		controls_religion = no
 		
 		liege = {
 			independent = yes
-			religion = catholic
+			religion = sabanean
 			prisoner = no
 			NOT = { primary_title = { tier = COUNT } } # Exclude small rulers
 			NOT = {
@@ -1053,7 +1053,7 @@ character_event = {
 				any_realm_province = {
 					any_neighbor_province = {
 						has_owner = yes
-						NOT = { religion_group = christian } 
+						NOT = { religion_group = celestinian_group } 
 					}
 				}
 			}
@@ -1233,12 +1233,12 @@ character_event = {
 		had_global_flag = { flag = crusade_called days = 180 }
 		NOT = { has_character_flag = no_complains_about_not_crusading }
 		independent = no
-		religion = catholic
+		religion = sabanean
 		controls_religion = no
 		
 		liege = {
 			independent = yes
-			religion = catholic
+			religion = sabanean
 			prisoner = no
 			NOT = { primary_title = { tier = COUNT } } # Exclude small rulers
 			NOT = {
@@ -1269,7 +1269,7 @@ character_event = {
 				any_realm_province = {
 					any_neighbor_province = {
 						has_owner = yes
-						NOT = { religion_group = christian } 
+						NOT = { religion_group = celestinian_group } 
 					}
 				}
 			}
@@ -1437,7 +1437,7 @@ letter_event = {
 
 ### Pope Offer to Forgive Excommunicated ###
 
-# Pope finds an excommunicated catholic
+# Pope finds an excommunicated sabanean
 character_event = {
 	id = 8460
 	desc = "EVTDESC8460"
@@ -1449,12 +1449,12 @@ character_event = {
 	trigger = {
 		controls_religion = yes
 		has_called_crusade = yes
-		religion = catholic
+		religion = sabanean
 		
 		OR = {
 			any_independent_ruler = {
 				ai = no	# Only for players
-				religion = catholic
+				religion = sabanean
 				prisoner = no
 				NOT = {
 					any_war = {
@@ -1472,16 +1472,16 @@ character_event = {
 					any_realm_province = {
 						any_neighbor_province = {
 							has_owner = yes
-							NOT = { religion = catholic } 
+							NOT = { religion = sabanean } 
 						}
 					}
 				}
 			}
 			any_independent_ruler = {
-				religion = catholic
+				religion = sabanean
 				any_realm_lord = {
 					ai = no
-					religion = catholic
+					religion = sabanean
 					prisoner = no
 					NOT = {
 						any_war = {
@@ -1499,7 +1499,7 @@ character_event = {
 						any_realm_province = {
 							any_neighbor_province = {
 								has_owner = yes
-								NOT = { religion_group = christian } 
+								NOT = { religion_group = celestinian_group } 
 							}
 						}
 					}
@@ -1517,7 +1517,7 @@ character_event = {
 		any_independent_ruler = {
 			limit = {
 				ai = no	# Only for players
-				religion = catholic
+				religion = sabanean
 				prisoner = no
 				NOT = {
 					any_war = {
@@ -1535,7 +1535,7 @@ character_event = {
 					any_realm_province = {
 						any_neighbor_province = {
 							has_owner = yes
-							NOT = { religion_group = christian } 
+							NOT = { religion_group = celestinian_group } 
 						}
 					}
 				}
@@ -1545,12 +1545,12 @@ character_event = {
 		}
 		any_independent_ruler = {
 			limit = {
-				religion = catholic
+				religion = sabanean
 			}
 			any_realm_lord = {
 				limit = {
 					ai = no
-					religion = catholic
+					religion = sabanean
 					prisoner = no
 					NOT = {
 						any_war = {
@@ -1568,7 +1568,7 @@ character_event = {
 						any_realm_province = {
 							any_neighbor_province = {
 								has_owner = yes
-								NOT = { religion_group = christian } 
+								NOT = { religion_group = celestinian_group } 
 							}
 						}
 					}
@@ -1609,12 +1609,12 @@ character_event = {
 	trigger = {
 		controls_religion = yes
 		has_called_crusade = yes
-		religion = catholic
+		religion = sabanean
 		
 		OR = {
 			any_independent_ruler = {
 				ai = no
-				religion = catholic
+				religion = sabanean
 				prisoner = no
 				any_war = {
 					using_cb = crusade
@@ -1628,10 +1628,10 @@ character_event = {
 				has_character_flag = offered_revoked_excommunication
 			}
 			any_independent_ruler = {
-				religion = catholic
+				religion = sabanean
 				any_realm_lord = {
 					ai = no
-					religion = catholic
+					religion = sabanean
 					prisoner = no
 					any_war = {
 						using_cb = crusade
@@ -1657,7 +1657,7 @@ character_event = {
 		any_independent_ruler = {
 			limit = {
 				ai = no
-				religion = catholic
+				religion = sabanean
 				prisoner = no
 				any_war = {
 					using_cb = crusade
@@ -1674,12 +1674,12 @@ character_event = {
 		}
 		any_independent_ruler = {
 			limit = {
-				religion = catholic
+				religion = sabanean
 			}
 			any_realm_lord = {
 				limit = {
 					ai = no
-					religion = catholic
+					religion = sabanean
 					prisoner = no
 					any_war = {
 						using_cb = crusade

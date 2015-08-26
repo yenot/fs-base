@@ -251,7 +251,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = merefynnite
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -281,7 +281,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = merefynnite
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -311,7 +311,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = merefynnite
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -341,7 +341,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -371,7 +371,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -401,7 +401,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -431,7 +431,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -461,7 +461,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -491,7 +491,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -521,7 +521,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -551,7 +551,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -581,7 +581,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -611,7 +611,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -641,7 +641,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -671,7 +671,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -701,7 +701,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -731,7 +731,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -761,7 +761,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -793,7 +793,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -823,7 +823,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -853,7 +853,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -883,7 +883,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -913,7 +913,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -943,7 +943,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -973,7 +973,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1003,7 +1003,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1033,7 +1033,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1063,7 +1063,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1093,7 +1093,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1123,7 +1123,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1153,7 +1153,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1183,7 +1183,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1213,7 +1213,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1243,7 +1243,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1273,7 +1273,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1303,7 +1303,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -1415,7 +1415,7 @@ character_event = {
 }
 
 # IMPORTANT EVENT
-# Muslim gains the Decadent Trait
+# Merefynnite gains the Decadent Trait
 
 character_event = {
 	id = 91300
@@ -1426,7 +1426,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		num_of_dynasty_members = 3 # Does not trigger for tiny dynasties
@@ -1590,7 +1590,7 @@ character_event = {
 	}
 }
 
-# Muslim ruler tries to convince a dynasty member to lose the 'Decadent' Trait
+# Merefynnite ruler tries to convince a dynasty member to lose the 'Decadent' Trait
 # Fired from decision "convince_to_straighten_up"
 character_event = {
 	id = 91350
@@ -1993,9 +1993,7 @@ character_event = {
 		trigger = {
 			is_ruler = no
 			OR = {
-				religion = sunni
-				religion = zikri
-				religion = yazidi
+				religion = merefynnite
 			}
 			is_heretic = no
 			d_bektashi = {
@@ -2043,9 +2041,7 @@ character_event = {
 		trigger = {
 			is_ruler = no
 			OR = {
-				religion = shiite
-				religion = druze
-				religion = hurufi
+				religion = merefynnite
 			}
 			is_heretic = no
 			d_hashshashin = {

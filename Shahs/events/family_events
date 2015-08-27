@@ -403,7 +403,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 5.0
-				religion_group = muslim
+				religion_group = merefynnite_group
 			}
 			modifier = {
 				factor = 0.25
@@ -942,7 +942,7 @@ character_event = {
 	prisoner = no
 	
 	trigger = {
-		religion_group = christian
+		religion_group = celestinian_group
 	}
 	
 	mean_time_to_happen = {
@@ -952,7 +952,7 @@ character_event = {
 	immediate = {
 		random_courtier = {
 			limit = {
-				religion_group = christian
+				religion_group = celestinian_group
 				is_ruler = no
 				is_marriage_adult = yes
 				NOT = { age = 40 }
@@ -1012,8 +1012,8 @@ character_event = {
 	option = {
 		name = EVTOPTB37051 # Mention a Church career...
 		trigger = {
-			religion_group = christian
-			FROM = { religion_group = christian }
+			religion_group = celestinian_group
+			FROM = { religion_group = celestinian_group }
 		}
 		FROM = { character_event = { id = 37053 tooltip = EVTTOOLTIP37053 } }
 	}
@@ -1152,8 +1152,8 @@ character_event = {
 	option = {
 		name = EVTOPTB37055 # You're off to the monastery!
 		trigger = {
-			religion_group = christian
-			FROM = { religion_group = christian }
+			religion_group = celestinian_group
+			FROM = { religion_group = celestinian_group }
 			FROM = {
 				is_married = no
 			}

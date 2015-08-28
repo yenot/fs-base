@@ -4523,7 +4523,7 @@ character_event = {
 			NOT = { trait = chaste }
 		}
 		OR = {
-			religion_group = christian
+			religion_group = celestinian_group
 			religion_group = jewish_group
 		}
 		has_lover = no

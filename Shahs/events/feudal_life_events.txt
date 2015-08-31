@@ -2123,7 +2123,7 @@ character_event = {
 	trigger = {
 		war = no
 		in_command = no
-		NOT = { religion = jain }
+		NOT = { religion = axiotic }
 		OR = {
 			trait = falconer
 			trait = hunter
@@ -2674,7 +2674,7 @@ character_event = {
 		is_female = no
 		num_of_rivals = 1
 		num_of_friends = 1
-		religion_group = christian
+		religion_group = celestinian_group
 		any_courtier = {
 			martial = 15
 			reverse_opinion = { who = ROOT value = 25 }
@@ -2794,7 +2794,7 @@ character_event = {
 		in_command = no
 		martial = 15
 		intrigue = 10
-		religion_group = christian
+		religion_group = celestinian_group
 		OR = {
 			tier = duke
 			tier = count
@@ -3317,7 +3317,7 @@ character_event = {
 	trigger = {
 		war = no
 		in_command = no
-		religion_group = christian
+		religion_group = celestinian_group
 		father_even_if_dead = {
 			is_alive = no
 		}
@@ -3439,7 +3439,7 @@ character_event = {
 	trigger = {
 		war = no
 		in_command = no
-		religion_group = christian
+		religion_group = celestinian_group
 		NOT = {
 			has_character_modifier = the_sullen
 		}

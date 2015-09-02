@@ -2188,7 +2188,7 @@ character_event = {
 		if = {
 			limit = {
 				NOT = {
-					religion_group = muslim
+					religion_group = merefynnite_group
 				}
 				NOT = {
 					num_of_traits = 5
@@ -3200,7 +3200,7 @@ character_event = {
 	max_age = 14
 	prisoner = no
 	only_playable = yes
-	religion_group = christian
+	religion_group = celestinian_group
 	
 	trigger = {
 		trait = zealous
@@ -4079,7 +4079,7 @@ character_event = {
 	only_men = yes
 	min_age = 16
 	prisoner = no
-	religion_group = christian
+	religion_group = celestinian_group
 	
 	trigger = {
 		in_command = yes
@@ -4099,7 +4099,7 @@ character_event = {
 				war = yes
 				at_location = ROOT
 				trait = crusader
-				religion_group = christian
+				religion_group = celestinian_group
 				NOT = {
 					sibling = ROOT
 				}
@@ -4162,7 +4162,7 @@ character_event = {
 					war = yes
 					at_location = ROOT
 					trait = crusader
-					religion_group = christian
+					religion_group = celestinian_group
 					NOT = {
 						sibling = ROOT
 					}
@@ -4202,7 +4202,7 @@ character_event = {
 					war = yes
 					at_location = ROOT
 					trait = crusader
-					religion_group = christian
+					religion_group = celestinian_group
 					NOT = {
 						sibling = ROOT
 					}
@@ -6172,10 +6172,10 @@ character_event = {
 		num_of_friends = 1
 		scaled_wealth = 0.5
 		OR = {
-			religion_group = christian
-			religion_group = muslim
+			religion_group = celestinian_group
+			religion_group = merefynnite_group
 			religion_group = jewish_group
-			religion_group = zoroastrian_group
+			religion_group = merya_svodna_group
 		}
 		NOT = {
 			has_character_modifier = heretic_friend_timer

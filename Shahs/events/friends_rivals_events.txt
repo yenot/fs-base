@@ -8013,7 +8013,7 @@ character_event = {
 		num_of_friends = 1
 		learning = 5
 		NOT = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 		}
 		NOT = {
 			learning = 10
@@ -8030,7 +8030,7 @@ character_event = {
 			prisoner = no
 			learning = 11
 			NOT = {
-				religion_group = muslim
+				religion_group = merefynnite_group
 			}
 			OR = {
 				piety = 100
@@ -8098,7 +8098,7 @@ character_event = {
 				prisoner = no
 				learning = 11
 				NOT = {
-					religion_group = muslim
+					religion_group = merefynnite_group
 				}
 			}
 			character_event = {
@@ -9685,7 +9685,7 @@ character_event = {
 		war = no
 		in_command = no
 		independent = no
-		NOT = { religion = jain }
+		NOT = { religion = axiotic }
 		num_of_rivals = 1
 		NOT = {
 			trait = wounded
@@ -9830,7 +9830,7 @@ character_event = {
 			factor = 49
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -10967,7 +10967,7 @@ character_event = {
 	capable_only = yes
 	only_rulers = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = celestinian_group
 	
 	trigger = {
 		war = no
@@ -12279,7 +12279,7 @@ character_event = {
 	capable_only = yes
 	only_rulers = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = celestinian_group
 	
 	is_triggered_only = yes
 	
@@ -12397,7 +12397,7 @@ character_event = {
 	}
 }
 
-#Christian Rival decides if rivalry continues
+#Celestinian Rival decides if rivalry continues
 character_event = {
 	id = 100501
 	desc = EVTDESC100501
@@ -12459,7 +12459,7 @@ character_event = {
 	}
 }
 
-#ROOT learns Christian Rival decided rivalry discontinues
+#ROOT learns Celestinian Rival decided rivalry discontinues
 character_event = {
 	id = 100502
 	desc = EVTDESC100502

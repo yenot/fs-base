@@ -12473,7 +12473,7 @@ character_event = {
 	}
 }
 
-#ROOT learns Christian Rival decided rivalry continues
+#ROOT learns Celestinian Rival decided rivalry continues
 character_event = {
 	id = 100503
 	desc = EVTDESC100503
@@ -15861,7 +15861,7 @@ character_event = {
 			in_command = no
 			prisoner = no
 			learning = 11
-			religion_group = muslim
+			religion_group = merefynnite_group
 			OR = {
 				piety = 100
 				trait = zealous
@@ -15902,7 +15902,7 @@ character_event = {
 				in_command = no
 				prisoner = no
 				learning = 11
-				religion_group = muslim
+				religion_group = merefynnite_group
 			}
 			character_event = {
 				id = 100551

@@ -1,0 +1,97 @@
+namespace = hestia
+
+# Child is influenced by the culture of his or her guardian
+character_event = {
+	id = hestia.0
+	desc = EVTDESCHESTIA0
+	picture = GFX_evt_guardian
+	
+	max_age = 15
+	
+	trigger = {
+		has_guardian = yes
+		father = {
+			NOT = { is_nomadic = yes }
+		}
+		guardian = {
+			NOT = { culture = ROOT }
+			employer = {
+				culture = PREV
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.1
+			guardian = {
+				top_liege = {
+					trait = hestian_culture
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			guardian = {
+				trait = diligent
+			}
+		}
+		modifier = {
+			factor = 0.5
+			guardian = {
+				trait = gregarious
+			}
+		}
+		modifier = {
+			factor = 2.0
+			guardian = {
+				trait = shy
+			}
+		}
+		modifier = {
+			factor = 2.0
+			guardian = {
+				trait = slothful
+			}
+		}
+		modifier = {
+			factor = 2.0
+			guardian = {
+				top_liege = {
+					NOT = { trait = hestian_culture }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAHESTIA0 #Embrace Hestian culture
+		ai_chance = { factor = 100}
+		guardian = {
+			add_trait = hestian_culture
+			hidden_tooltip = {
+				character_event = {
+					id = hestia.1
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB38100 # Go play with my friends
+		ai_chance = { factor = 0 }
+	}
+}
+
+character_event = {
+	id = hestia.1
+	desc = EVTDESCHESTIA1
+	picture = GFX_evt_child_play
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA38111 # What a bright child
+		prestige = 1
+	}
+}

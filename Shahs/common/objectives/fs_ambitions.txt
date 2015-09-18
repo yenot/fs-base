@@ -1,0 +1,107 @@
+obj_become_emperor = {
+	type = character
+	
+	can_cancel = no
+	
+	ai_capital_kingdom_focus = yes # AI characters with this ambition will actually focus on taking the kingdom
+	
+	potential = {
+		is_adult = yes
+		is_playable = yes
+		is_landed = yes
+		lower_tier_than = EMPEROR
+		NOT = {
+			any_heir_title = {
+				higher_tier_than = KING
+			}
+		}
+	}
+	
+	allow = {
+		NOT = { trait = incapable }
+	}
+	
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 0
+			NOR = {
+				religion_group = celestinian_group
+				religion_group = scholastic_group
+				religion = voldemarran
+			}
+			independent = no
+			#NOT = { trait = ambitious }
+		}
+		modifier = {
+			factor = 3.0
+			capital_scope = {
+				empire = {
+					has_holder = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			trait = brave
+		}
+		modifier = {
+			factor = 0.1
+			trait = craven
+		}
+		modifier = {
+			factor = 0.01
+			trait = content
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.1
+			tier = COUNT
+		}
+	}
+	
+	success = {
+		custom_tooltip = {
+			#text = obj_become_king_tip
+			e_hestia = {
+				holder_scope = {
+					character = ROOT
+				}
+			}
+		}
+	}
+	
+	abort = {
+		OR = {
+			trait = incapable
+			is_playable = no
+			is_landed = no
+			AND = {
+				higher_tier_than = KING
+				primary_title = {
+					temporary = no
+				}
+			}
+			any_heir_title = {
+				higher_tier_than = KING
+				temporary = no
+			}
+		}
+	}
+	
+	abort_effect = {
+	}
+	
+	effect = {
+		prestige = 1000
+	}
+	
+}

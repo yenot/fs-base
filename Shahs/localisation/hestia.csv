@@ -1,0 +1,9 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCHESTIA0;"My guardian cares a lot about being ""civilized"". From table manners to favoured reading, everything is to be civilized.";;;;;;;;;;;;;
+EVTOPTAHESTIA0;I will be civilized from now on!;;;;;;;;;;;;;
+EVTDESCHESTIA1;My ward is acting as a proper young [From.GetManWoman]. [From.GetSheHe] will be a decent person whe [From.GetSheHe] grows up a little more.;;;;;;;;;;;;;
+CB_NAME_HESTIAN_SUBJUGATION;Subjugation of  $OTHER_TITLE$;;;;;;;;;;;;;
+CB_NAME_HESTIAN_SUBJUGATION;This casus belli allows a ruler who is aspiring to rebuild Jestian Hegemonia subjugate a lower-tier ruler in Hestian lands.;;;;;;;;;;;;;
+WAR_NAME_HESTIAN_SUBJUGATION;Establish hegemony;;;;;;;;;;;;;
+e_hestia;Hestian Empire;;;;;;;;;;;;;
+e_hestia_adj;Hestian;;;;;;;;;;;;;

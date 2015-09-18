@@ -355,6 +355,47 @@ c_resenac = {
 }
 
 ###########################
+#Special conditions
+###########################
+
+e_auletia = {
+	allow = {
+		NOT = { trait = hestian_culture }
+	}
+}
+
+e_berenica = {
+	allow = {
+		NOT = { trait = hestian_culture }
+	}
+}
+
+e_pargodeos = {
+	allow = {
+		NOT = { trait = hestian_culture }
+	}
+}
+
+e_uman = {
+	allow = {
+		NOT = { trait = hestian_culture }
+	}
+}
+
+###########################
+#Custom
+###########################
+
+e_hestia = {
+	color={ 179 174 17 }
+	color2={ 255 255 20 }
+	
+	capital = 112 # c_hestia
+	culture = kraitan
+}
+
+
+###########################
 #Merchant Republics
 ###########################
 

@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_obj_become_emperor"
+		texturefile = "gfx/ambitions/obj_become_emperor.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

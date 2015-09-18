@@ -1347,8 +1347,8 @@ character_event = {
 		name = EVTOPTC2070 # Thank God for X's virtues!
 		trigger = {
 			NOT = { trait = cynical }
-			NOT = { religion = buddhist }
-			NOT = { religion = jain }
+			NOT = { religion_group = merya_svodna_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		ai_chance = {
 			factor = 2
@@ -1492,7 +1492,7 @@ character_event = {
 			}
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -1693,8 +1693,8 @@ character_event = {
 		name = EVTOPTC2090 # Thank God for X's virtues!
 		trigger = {
 			NOT = { trait = cynical }
-			NOT = { religion = buddhist }
-			NOT = { religion = jain }
+			NOT = { religion_group = merya_svodna_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		ai_chance = {
 			factor = 2
@@ -1836,7 +1836,7 @@ character_event = {
 			}
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -1979,8 +1979,8 @@ character_event = {
 		name = EVTOPTB2110 # Thank God for X's virtues!
 		trigger = {
 			NOT = { trait = cynical }
-			NOT = { religion = buddhist }
-			NOT = { religion = jain }
+			NOT = { religion_group = merya_svodna_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		ai_chance = {
 			factor = 2
@@ -2137,7 +2137,7 @@ character_event = {
 		}
 		
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -2330,7 +2330,7 @@ character_event = {
 	}
 }
 
-#Fosterling is Zealous - Muslim
+#Fosterling is Zealous - Merefynnite
 character_event = {
 	id = 2132
 	desc = EVTDESC2132
@@ -2921,7 +2921,7 @@ character_event = {
 		}
 		
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -2994,8 +2994,8 @@ character_event = {
 		name = EVTOPTD2170 # Pray God will give her strength.
 		trigger = {
 			NOT = { trait = cynical }
-			NOT = { religion = buddhist }
-			NOT = { religion = jain }
+			NOT = { religion_group = merya_svodna_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		ai_chance = {
 			factor = 2
@@ -3127,8 +3127,8 @@ character_event = {
 		name = EVTOPTC2180 # Thank God for X's virtues!
 		trigger = {
 			NOT = { trait = cynical }
-			NOT = { religion = buddhist }
-			NOT = { religion = jain }
+			NOT = { religion_group = merya_svodna_group }
+			NOT = { religion_group = olpyan_group }
 		}
 		ai_chance = {
 			factor = 2
@@ -3535,7 +3535,7 @@ character_event = {
 			if = {
 				limit = {
 					NOT = {
-						religion_group = muslim
+						religion_group = merefynnite_group
 					}
 				}
 				hidden_tooltip = {
@@ -3546,7 +3546,7 @@ character_event = {
 			}
 			if = {
 				limit = {
-					religion_group = muslim
+					religion_group = merefynnite_group
 				}
 				hidden_tooltip = {
 					character_event = {
@@ -3587,7 +3587,7 @@ character_event = {
 		}
 		
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -3630,7 +3630,7 @@ character_event = {
 			}
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -3766,7 +3766,7 @@ character_event = {
 				NOT = {
 					AND = {
 						is_female = yes
-						religion_group = muslim
+						religion_group = merefynnite_group
 					}
 				}
 				has_guardian = no
@@ -3993,7 +3993,7 @@ character_event = {
 		name = EVTOPTA38100 # Ask the guardian about God
 		trigger = {
 			NOT = {
-				religion_group = muslim
+				religion_group = merefynnite_group
 			}
 		}
 		ai_chance = { factor = 100}
@@ -4014,7 +4014,7 @@ character_event = {
 	option = {
 		name = EVTOPTC38100 # Ask the guardian about Allah
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 		}
 		ai_chance = { factor = 100}
 		guardian = {
@@ -4215,7 +4215,7 @@ character_event = {
 			}			
 		}			
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -4325,7 +4325,7 @@ character_event = {
 			}
 		}			
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -4424,7 +4424,7 @@ character_event = {
 			}
 		}			
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -4471,7 +4471,7 @@ character_event = {
 	option = {
 		name = EVTOPTD38203 # Let the monks purge sin from the child
 		trigger = {
-			religion_group = christian
+			religion_group = celestinian_group
 		}
 		ai_chance = { 
 			factor = 10
@@ -4571,8 +4571,8 @@ character_event = {
 		name = EVTOPTA38205 # Mom is an angel now
 		trigger = {
 			OR = {
-				religion_group = christian
-				religion_group = muslim
+				religion_group = celestinian_group
+				religion_group = merefynnite_group
 				religion_group = jewish_group
 			}
 		}
@@ -4759,7 +4759,7 @@ character_event = {
 			}
 		}		
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -5024,7 +5024,7 @@ character_event = {
 	option = {
 		name = EVTOPTC38211 # It's all part of God's plan
 		trigger = {
-			religion_group = christian
+			religion_group = celestinian_group
 		}
 		ai_chance = { 
 			factor = 10
@@ -5045,7 +5045,7 @@ character_event = {
 	option = {
 		name = EVTOPTD38211 # It's all part of Allah's plan
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 		}
 		ai_chance = { 
 			factor = 10
@@ -5188,7 +5188,7 @@ character_event = {
 				if = {
 					limit = {
 						NOT = {
-							religion_group = muslim
+							religion_group = merefynnite_group
 						}
 					}
 					FROM = {
@@ -5243,7 +5243,7 @@ character_event = {
 				if = {
 					limit = {
 						NOT = {
-							religion_group = muslim
+							religion_group = merefynnite_group
 						}
 					}
 					FROM = { 

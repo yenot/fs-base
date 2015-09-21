@@ -5265,7 +5265,7 @@ character_event = {
 	}
 }
 
-# If we're Catholic and our enemies are Catholic, why are we fighting?
+# If we're Sabanean and our enemies are Sabanean, why are we fighting?
 character_event = {
 	id = 38214
 	desc = EVTDESC38214
@@ -5530,7 +5530,7 @@ character_event = {
 				if = {
 					limit = {
 						NOT = {
-							religion_group = muslim
+							religion_group = merefynnite_group
 						}
 					}
 					FROM = { 
@@ -5818,7 +5818,7 @@ character_event = {
 			}
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -6375,7 +6375,7 @@ character_event = {
 	option = {
 		name = EVTOPTD38227 #Money is for god
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 		}
 		FROM = {
 			random_list = {
@@ -6691,7 +6691,7 @@ character_event = {
 	option = {
 		name = EVTOPTC38229 #This will turn him into a great swordsmaster!
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 		}
 		if = {
 			limit = {
@@ -7104,7 +7104,7 @@ character_event = {
 			}
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}
@@ -7237,7 +7237,7 @@ character_event = {
 	option = {
 		name = EVTOPTA38233 #Make the child fast to atone for its sins
 		trigger = {
-			religion_group = christian
+			religion_group = celestinian_group
 		}
 		ai_chance = {
 			factor = 1
@@ -7330,7 +7330,7 @@ character_event = {
 	option = {
 		name = EVTOPTC38233 #Only God decides over life and death
 		trigger = {
-			religion_group = christian
+			religion_group = celestinian_group
 		}
 		FROM = {
 			random = {
@@ -7376,7 +7376,7 @@ character_event = {
 	option = {
 		name = EVTOPTD38233 #Only Allah decides over life and death
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 		}
 		FROM = {
 			random = {
@@ -7422,7 +7422,7 @@ character_event = {
 	option = {
 		name = EVTOPTE38233 #Do nothing
 		trigger = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 		}
 		ai_chance = {
 			factor = 1
@@ -7486,7 +7486,7 @@ character_event = {
 	option = {
 		name = EVTOPTA38234 #Make the child fast to atone for its sins
 		trigger = {
-			religion_group = christian
+			religion_group = celestinian_group
 		}
 		ai_chance = {
 			factor = 10
@@ -7520,7 +7520,7 @@ character_event = {
 			}
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -20
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}

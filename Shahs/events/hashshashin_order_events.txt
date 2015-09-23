@@ -301,7 +301,7 @@ narrative_event = {
 	
 	trigger = {
 		year = 1220
-		religion = catholic
+		religion = sabanean
 		controls_religion = yes # Let it happen for the Pope - he's always around
 		has_global_flag = assassins_scatter
 		NOT = { 
@@ -323,7 +323,7 @@ narrative_event = {
 				random_traits = no
 				name = "Ala ad-Din"
 				dynasty = random
-				religion = shiite
+				religion = merefynnite
 				culture = persian
 				female = no
 				age = 19
@@ -682,7 +682,7 @@ character_event = {
 	ai = no
 	only_playable = yes
 	only_independent = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -774,7 +774,7 @@ character_event = {
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
 
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		uses_decadence = yes
@@ -820,7 +820,7 @@ character_event = {
 			is_playable = yes
 			independent = yes
 			prisoner = no
-			religion_group = muslim
+			religion_group = merefynnite_group
 			NOT = { spouse = { character = ROOT } }
 			d_hashshashin = {
 				holder_scope = {
@@ -947,7 +947,7 @@ character_event = {
 	ai = no
 	only_playable = yes
 	only_independent = yes
-	religion_group = muslim
+	religion_group = merefynnite_group
 	
 	trigger = {
 		war = yes
@@ -976,7 +976,7 @@ character_event = {
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
 	
-	religion_group = muslim
+	religion_group = merefynnite_group
 
 	trigger = {
 		has_character_flag = warned_by_assassins

@@ -840,12 +840,12 @@ character_event = {
 			owner = {
 				trigger_switch = {
 					on_trigger = religion_group
-					christian 			= { FROM = { add_trait = sympathy_christendom } }
-					muslim 				= { FROM = { add_trait = sympathy_islam } }
+					celestinian_group 			= { FROM = { add_trait = sympathy_christendom } }
+					merefynnite_group 				= { FROM = { add_trait = sympathy_islam } }
 					pagan_group 		= { FROM = { add_trait = sympathy_pagans } }
-					zoroastrian_group 	= { FROM = { add_trait = sympathy_zoroastrianism } }
+					merya_svodna_group 	= { FROM = { add_trait = sympathy_zoroastrianism } }
 					jewish_group 		= { FROM = { add_trait = sympathy_judaism } }
-					indian_group 		= { FROM = { add_trait = sympathy_indian } }
+					olpyan_group 		= { FROM = { add_trait = sympathy_indian } }
 				}
 			}
 		}
@@ -922,13 +922,13 @@ character_event = {
 					owner = {
 						OR = {
 							AND = {
-								religion_group = christian
+								religion_group = celestinian_group
 								ROOT = {
 									trait = sympathy_christendom
 								}
 							}
 							AND = {
-								religion_group = muslim
+								religion_group = merefynnite_group
 								ROOT = {
 									trait = sympathy_islam
 								}
@@ -940,7 +940,7 @@ character_event = {
 								}
 							}
 							AND = {
-								religion_group = zoroastrian_group
+								religion_group = merya_svodna_group
 								ROOT = {
 									trait = sympathy_zoroastrianism
 								}
@@ -952,7 +952,7 @@ character_event = {
 								}
 							}
 							AND = {
-								religion_group = indian_group
+								religion_group = olpyan_group
 								ROOT = {
 									trait = sympathy_indian
 								}
@@ -1029,12 +1029,12 @@ character_event = {
 								PREV = {
 									trigger_switch = {
 										on_trigger = religion_group
-										christian 			= { ROOT = { add_trait = sympathy_christendom } }
-										muslim 				= { ROOT = { add_trait = sympathy_islam } }
+										celestinian_group 			= { ROOT = { add_trait = sympathy_christendom } }
+										merefynnite_group 				= { ROOT = { add_trait = sympathy_islam } }
 										pagan_group 		= { ROOT = { add_trait = sympathy_pagans } }
-										zoroastrian_group 	= { ROOT = { add_trait = sympathy_zoroastrianism } }
+										merya_svodna_group 	= { ROOT = { add_trait = sympathy_zoroastrianism } }
 										jewish_group 		= { ROOT = { add_trait = sympathy_judaism } }
-										indian_group 		= { ROOT = { add_trait = sympathy_indian } }
+										olpyan_group 		= { ROOT = { add_trait = sympathy_indian } }
 									}
 								}
 							}

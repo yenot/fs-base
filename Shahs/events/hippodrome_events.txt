@@ -28,8 +28,9 @@ narrative_event = {
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
+			has_landed_title = k_lycinia
+			has_landed_title = e_auletia
+			has_landed_title = e_hestia
 		}
 		NOT = { has_global_flag = hippodrome_scheme }
 		age = 16
@@ -492,10 +493,11 @@ character_event = {
 		age = 16
 		in_command = no
 		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
+			has_landed_title = k_lycinia
+			has_landed_title = e_auletia
+			has_landed_title = e_hestia
 		}
-		religion_group = christian
+		religion_group = celestinian_group
 		NOT = { has_global_flag = hippodrome_scheme_ongoing }
 		NOT = { trait = in_hiding }
 	}

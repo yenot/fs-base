@@ -20,7 +20,7 @@ character_event = {
 	
 	trigger = {
 		NOT = { trait = craven }
-		NOT = { religion_group = muslim }
+		NOT = { religion_group = merefynnite_group }
 		has_character_modifier = house_arrest
 	}
 	
@@ -567,11 +567,11 @@ character_event = {
 	option = {
 		name = EVTOPTB50010 # Oil up the rack!
 		if = {
-			limit = { NOT = { religion = jain } }
+			limit = { NOT = { religion = axiotic } }
 			piety = -10
 		}
 		if = {
-			limit = { religion = jain }
+			limit = { religion = axiotic }
 			piety = -30
 			custom_tooltip = { text = jain_ahimsa_tooltip }
 		}

@@ -1166,7 +1166,7 @@ character_event = {
 			attributes = {
 				learning = 9
 			}
-			religion = sunni
+			religion = merefynnite
 			culture = persian
 			age = 25
 			female = no
@@ -1192,14 +1192,14 @@ province_event = {
 			has_province_modifier = famous_muslim_timer
 		}
 		owner = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 			top_liege = {
 				in_command = no
 				age = 16
 				NOT = {
 					trait = on_hajj
 				}
-				religion_group = muslim
+				religion_group = merefynnite_group
 				NOT = {
 					any_courtier = {
 						has_character_flag = muhammad_ibn_mahmud_amuli_flag
@@ -1294,14 +1294,14 @@ province_event = {
 			has_province_modifier = famous_muslim_timer
 		}
 		owner = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 			top_liege = {
 				in_command = no
 				age = 16
 				NOT = {
 					trait = on_hajj
 				}
-				religion_group = muslim
+				religion_group = merefynnite_group
 				NOT = {
 					any_courtier = {
 						has_character_flag = rumi_flag
@@ -1398,14 +1398,14 @@ province_event = {
 			has_province_modifier = famous_muslim_timer
 		}
 		owner = {
-			religion_group = muslim
+			religion_group = merefynnite_group
 			top_liege = {
 				in_command = no
 				age = 16
 				NOT = {
 					trait = on_hajj
 				}
-				religion_group = muslim
+				religion_group = merefynnite_group
 				NOT = {
 					any_courtier = {
 						has_character_flag = naqshband_bukhari_flag
